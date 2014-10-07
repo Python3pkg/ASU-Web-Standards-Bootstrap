@@ -1,0 +1,30 @@
+/**
+ * Variables
+ */
+
+$asu-gray:                 #b0b0b0 !default;
+$asu-gray-lighter:         #b7b7b7 !default;
+
+$asu-yellow:               #ffc425 !default;
+$asu-green:                #006838 !default;
+
+$asu-brand-primary:        #a30046 !default;
+
+$asu-link-hover-color:     #d23153 !default;
+
+//== Form states and alerts
+
+$asu-state-success-text:   #148e4b !default;
+
+$state-info-text:          #008ed6 !default;
+
+$asu-state-warning-text:   #bfe319 !default;
+$asu-state-warning-bg:     #bfe319 !default;
+$asu-state-warning-border: darken(adjust-hue($asu-state-warning-bg, -10), 5%) !default;
+
+$state-danger-text:         #ec5937 !default;
+
+$asu-line-height-base:      1.44 !default;
+$asu-line-height-computed:  24px !default;
+
+$asu-border-radius-base:    4px !default;
