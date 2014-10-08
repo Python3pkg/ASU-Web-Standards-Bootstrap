@@ -4356,22 +4356,22 @@ input[type="checkbox"].disabled + .outer-wrap > .fa-check {
 }
 
 .hero-bg-img.hero-programs {
-  background-image: url(test_site/img/hero-background-1.jpg);
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='test_site/img/hero-background-1.jpg', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='test_site/img/hero-background-1.jpg', sizingMethod='scale')";
+  background-image: url(../img/hero-background-1.jpg);
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/hero-background-1.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/hero-background-1.jpg', sizingMethod='scale')";
 }
 
 .hero-bg-img.hero-action-call {
-  background-image: url(test_site/img/hero-background-1.jpg);
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='test_site/img/hero-background-1.jpg', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='test_site/img/hero-background-1.jpg', sizingMethod='scale')";
+  background-image: url(../img/hero-background-1.jpg);
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/hero-background-1.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/hero-background-1.jpg', sizingMethod='scale')";
 }
 
 .hero-bg-img.hero-degrees {
   padding: 110px 0 20px 0;
-  background-image: url(test_site/img/hero-background-2.jpg);
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='test_site/img/hero-background-2.jpg', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='test_site/img/hero-background-2.jpg', sizingMethod='scale')";
+  background-image: url(../img/hero-background-2.jpg);
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/hero-background-2.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/hero-background-2.jpg', sizingMethod='scale')";
 }
 
 .hero-text-only {
