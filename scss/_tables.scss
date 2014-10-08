@@ -1,0 +1,55 @@
+//== Tables
+.table {
+  margin-bottom: $asu-line-height-base;
+
+  > {
+    thead, tbody, tfoot {
+      > tr > {
+        th, td {
+          line-height: $asu-line-height-base;
+          border-top: 1px solid $asu-gray-lighter;
+        }
+      }
+    }
+
+    thead > tr > th {
+      border-bottom: 2px solid $asu-gray-lighter;
+    }
+
+    tbody + tbody {
+      border-top: 2px solid $asu-gray-lighter;
+    }
+  }
+}
+
+.table-bordered {
+  border: 1px solid $asu-gray-lighter;
+
+  > {
+    thead, tbody, tfoot {
+      > tr > {
+        th, td {
+          border: 1px solid $asu-gray-lighter;
+        }
+      }
+    }
+  }
+}
+
+.table-striped > tbody > tr:nth-child(odd) > {
+  td, th {
+    background-color: $asu-gray-lightest;
+  }
+}
+
+@include table-row-variant('success', $asu-state-success-bg);
+@include table-row-variant('info', $asu-state-info-bg);
+@include table-row-variant('warning', $asu-state-warning-bg);
+@include table-row-variant('danger', $asu-state-danger-bg);
+
+.table-responsive {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 18px;
+    border: 1px solid $asu-gray-lighter;
+  }
+}

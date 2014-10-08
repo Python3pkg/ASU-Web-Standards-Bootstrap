@@ -1,0 +1,269 @@
+html {
+  -webkit-font-smoothing: antialiased; 
+}
+
+body {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.44;
+  font-weight: 200;
+  color: #2a2a2a;
+
+  @media (min-width: 1200px) {
+    font-size: 18px;
+  }
+}
+
+a {
+  color: $asu-brand-primary;
+  font-weight: normal;
+  border-bottom: 1px dotted $asu-brand-primary;
+
+  &:hover, &:focus {
+    color: $asu-link-hover-color;
+    text-decoration: none;
+    border-bottom: 1px dotted $asu-link-hover-color;
+  }
+
+  &.no-border {
+    border-bottom: 0;
+
+    &:hover, &:focus {
+      border-bottom: 0;
+    }
+  }
+}
+
+.img-bordered {
+  border: 1px solid $asu-gray;
+}
+
+.img-rounded {
+  border-radius: $asu-border-radius-base;
+}
+
+.img-thumbnail {
+  line-height: $asu-line-height-base;
+}
+
+hr {
+  margin-top: $asu-line-height-computed;
+  margin-bottom: $asu-line-height-computed;
+  border-top: 1px solid $asu-gray-lighter;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: inherit;
+  font-weight: normal;
+  color: black;
+}
+
+h1, .h1 {
+  margin-top: ($asu-line-height-computed * 2);
+  margin-bottom: ($asu-line-height-computed * 2);
+  line-height: 1.2;
+}
+
+h2, h3,
+.h2, .h3 {
+  margin-top: ($asu-line-height-computed * 2);
+  margin-bottom: ($asu-line-height-computed);
+  line-height: $asu-line-height-base;
+}
+
+h4, .h4 {
+  margin-top: ($asu-line-height-computed);
+  margin-bottom: ($asu-line-height-computed);
+  line-height: $asu-line-height-base;
+  color: black;
+}
+
+h5, .h5 {
+  margin-top: ($asu-line-height-computed);
+  margin-bottom: 0;
+  font-weight: bold;
+  line-height: ($asu-line-height-computed);
+}
+
+h6, .h6 {
+  margin-top: ($asu-line-height-computed);
+  margin-bottom: 0;
+  font-weight: 200;
+  font-style: italic;
+  line-height: ($asu-line-height-computed);
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  small, .small {
+    font-size: 65%;
+    font-weight: normal;
+    line-height: 1;
+    color: #777777;
+  }
+}
+
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  small, .small {
+    font-size: 75%;
+    font-weight: normal;
+    line-height: 1;
+    color: #777777;
+  }
+}
+
+h1, .h1 {
+  font-size: 48px;
+}
+
+h2, .h2 {
+  font-size: 36px;
+}
+
+h3, .h3 {
+  font-size: 24px;
+}
+
+h4, .h4 {
+  font-size: 21px;
+}
+
+h5, .h5 {
+  font-size: 16px;
+}
+
+h6, .h6 {
+  font-size: 16px;
+}
+
+
+@media (min-width: 768px) {
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-top: 0;
+  }
+}
+
+.sidebar-nav, .panel-body {
+  > {
+    h1, .h1,
+    h2, .h2,
+    h3, .h3,
+    h4, .h4,
+    h5, .h5,
+    h6, .h6 {
+      margin-top: 0;
+    }
+  }
+}
+
+p {
+  max-width: 800px;
+  margin: 0 0 24px;
+  font-weight: 200;
+  line-height: 24px;
+  &.text-center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.lead {
+  max-width: 1000px;
+  margin-bottom: 24px;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1.4;
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+small, .small {
+  font-size: 75%;
+}
+
+mark, .mark {
+  background-color: $asu-state-warning-bg;
+}
+
+@include text-emphasis-variant('.text-yellow', $asu-yellow);
+
+@include text-emphasis-variant('.text-green', $asu-green);
+
+@include text-emphasis-variant('.text-primary', $asu-brand-primary);
+
+@include text-emphasis-variant('.text-success', $asu-state-success-text);
+
+@include text-emphasis-variant('.text-info', $asu-state-info-text);
+
+@include text-emphasis-variant('.text-warning', $asu-state-warning-text);
+
+@include text-emphasis-variant('.text-danger', $asu-state-danger-text);
+
+@include bg-variant('.bg-primary', $asu-brand-primary);
+
+@include bg-variant('.bg-success', $asu-state-success-bg);
+
+@include bg-variant('.bg-info', $asu-state-info-bg);
+
+@include bg-variant('.bg-warning', $asu-state-warning-bg);
+
+@include bg-variant('.bg-danger', $asu-state-danger-bg);
+
+.page-header {
+  padding-bottom: 11px;
+  margin: 0 0 ($asu-line-height-computed);
+}
+
+ul, ol {
+  margin-bottom: ($asu-line-height-computed);
+}
+
+dl {
+  margin-bottom: ($asu-line-height-computed);
+}
+
+dt, dd {
+  line-height: ($asu-line-height-base);
+}
+
+blockquote {
+  padding: ($asu-line-height-computed / 2) ($asu-line-height-computed);
+  margin: 0 0 ($asu-line-height-computed);
+  font-size: 20px;
+
+  footer, small, .small {
+    line-height: $asu-line-height-base;
+  }
+}
+
+address {
+  font-weight: 200;
+  margin-bottom: ($asu-line-height-computed);
+  line-height: $asu-line-height-base;
+
+  strong {
+    font-weight: normal;
+  }
+}
+
+kbd {
+  border-radius: $asu-border-radius-base;
+}
+
+pre {
+  padding: 11.5px;
+  margin: 0 0 ($asu-line-height-computed / 2);
+  font-size: 15px;
+  line-height: $asu-line-height-base;
+}

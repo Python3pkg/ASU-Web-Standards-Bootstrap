@@ -1,0 +1,9 @@
+//== Popovers
+.popover {
+  border-radius: $asu-border-radius-base;
+}
+
+.popover-title {
+  font-size: $asu-font-size-medium;
+  border-radius: ($asu-border-radius-base - 1) ($asu-border-radius-base - 1) 0 0;
+}
