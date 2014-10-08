@@ -2,8 +2,10 @@
  * Variables
  */
 
+$asu-gray-dark:            #505050 !default;
 $asu-gray:                 #b0b0b0 !default;
 $asu-gray-lighter:         #b7b7b7 !default;
+$asu-gray-lightest:        #fafafa !default;
 
 $asu-yellow:               #ffc425 !default;
 $asu-green:                #006838 !default;
@@ -14,17 +16,44 @@ $asu-link-hover-color:     #d23153 !default;
 
 //== Form states and alerts
 
-$asu-state-success-text:   #148e4b !default;
+$asu-state-success-text:    #148e4b !default;
+$asu-state-success-bg:      #1dd16e !default;
+$asu-state-success-bg-asu:  #148e4b !default;
+$asu-state-success-border:  darken(adjust-hue($asu-state-success-bg, -10), 5%) !default;
 
-$state-info-text:          #008ed6 !default;
+$asu-state-info-text:       #008ed6 !default;
+$asu-state-info-bg:         #23b5ff !default;
+$asu-state-info-bg-asu:     #008ed6 !default;
+$asu-state-info-border:     darken(adjust-hue($asu-state-info-bg, -10), 7%) !default;
 
-$asu-state-warning-text:   #bfe319 !default;
-$asu-state-warning-bg:     #bfe319 !default;
-$asu-state-warning-border: darken(adjust-hue($asu-state-warning-bg, -10), 5%) !default;
+$asu-state-warning-text:    #bfe319 !default;
+$asu-state-warning-bg:      #d3ed5c !default;
+$asu-state-warning-border:  darken(adjust-hue($asu-state-warning-bg, -10), 5%) !default;
 
-$state-danger-text:         #ec5937 !default;
+$asu-state-danger-text:     #ec5937 !default;
+$asu-state-danger-bg:       #f3937d !default;
+$asu-state-danger-bg-asu:   #ec5937 !default;
+$asu-state-danger-border:   darken(adjust-hue($asu-state-danger-bg, -10), 5%) !default;
+
+$asu-padding-small-vertical:    5px;
+$asu-padding-large-vertical:    12px;
+
+$asu-padding-small-horizontal:  12px;
+$asu-padding-large-horizontal:  24px;
 
 $asu-line-height-base:      1.44 !default;
+$asu-line-height-small:     1.5 !default;
+$asu-line-height-large:     1.33 !default;
 $asu-line-height-computed:  24px !default;
 
+$asu-font-size-small:       14px;
+$asu-font-size-medium:       16px;
+$asu-font-size-large:       20px;
+
+// == Form inputs
+$asu-input-height-small:    33px;
+$asu-input-height-large:    53px;
+
 $asu-border-radius-base:    4px !default;
+$asu-border-radius-small:   4px !default;
+$asu-border-radius-large:   4px !default;
