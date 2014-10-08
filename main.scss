@@ -1,6 +1,6 @@
 // Core variables and mixins
-@import "variables";
-@import "mixins";
+@import "scss/variables";
+@import "scss/mixins";
 
 html {
   -webkit-font-smoothing: antialiased; 
@@ -1345,7 +1345,7 @@ a.list-group-item {
   border-radius: ($asu-border-radius-base - 1) ($asu-border-radius-base - 1) 0 0;
 }
 
-@import "font_awesome/font-awesome";
+@import "scss/font_awesome/font-awesome";
 
 //== Custom Fonts
 
