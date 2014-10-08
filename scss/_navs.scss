@@ -1,0 +1,185 @@
+.nav  {
+  > li > a { 
+    border-bottom: 0px;
+  }
+  .open > a {
+    &, &:hover, &:focus { 
+      border-color: $asu-brand-primary;
+    }
+  }
+
+  .nav-divider { 
+    margin: 11px 0;
+  }
+}
+
+.nav-tabs > li {
+  border-top: 5px solid transparent;
+
+  > a {
+    margin-right: 0;
+    line-height:inherit;
+    border: none;
+    border-radius: 0;
+
+    color: #a7a7a7;
+    line-height: $asu-line-height-base;
+    border: 1px solid #d7d7d7;
+    border-bottom-color: transparent;
+    border-radius: 0;
+  }
+
+  &:hover, &.active {
+    border-top: 5px solid $asu-brand-primary;
+
+    > a {
+      border-top-color: transparent;
+    }
+  }
+
+  &.active > a {
+    &, &:hover, &:focus {
+      color: $asu-brand-primary;
+    }
+  }
+}
+
+.nav-pills > li.active > a {
+  &, &:hover, &:focus {
+    background-color: $asu-brand-primary;
+  }
+}
+
+.nav-justified, .nav-tabs.nav-justified, .alterna-tabs.nav-justified { 
+  width: 100%; 
+
+  > li {
+    float: none;
+
+    > a {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.nav-tabs-justified, .nav-tabs.nav-justified, .alterna-tabs.nav-justified {  
+  border-bottom: 0;
+
+  > li > a {
+    margin-right: 0;
+    border-radius: 4px;
+  }
+
+  > .active > a {
+    &, :hover, &:focus {
+      border: 1px solid #ddd;
+    }
+  }
+
+  @media (min-width: 768px) {
+    > li > a {
+      border-bottom: 1px solid #ddd;
+      border-radius: 4px 4px 0 0;
+    }
+
+    > .active > a {
+      &, :hover, &:focus {
+        border-bottom-color: white;
+      }
+    }
+  }
+}
+
+.tab-content {
+  padding: 24px;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+
+.container, .container-fluid {
+  > {
+    .navbar-header, .navbar-collapse {
+      margin-right: 0;
+      margin-left: 0;
+
+      @media (min-width: 768px) {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+
+.navbar-brand {
+  padding: ($asu-padding-large-vertical + 1) 15px;
+  font-size: $asu-font-size-large;
+  border-bottom: 0;
+
+  &:focus, &:hover {
+    border-bottom: 0;
+  }
+
+  @media (min-width: 992px) {
+    display: none;
+  }
+}
+
+.navbar-nav { 
+  margin: 6.5px -15px; 
+
+  @media (min-width: $asu-screen-md) {
+    float:left;
+    margin:0;
+  }
+}
+
+.navbar-nav > li > a { 
+  line-height: $asu-line-height-computed;
+}
+
+.navbar-nav .open .dropdown-menu {
+  > li > a, 
+  .dropdown-header {
+    @media (max-width: 991px) {
+      white-space: normal;
+      padding: 0;    
+    }
+  }
+  > li > a { 
+    @media (max-width: $asu-screen-sm) {
+      line-height: inherit;   
+    }
+  }
+}
+
+.navbar-nav > li > a {
+  @media (min-width: $asu-screen-sm) {
+    padding-top: 13px; 
+    padding-bottom: 13px; 
+  }
+}
+
+.navbar-form {
+  margin-top: $asu-padding-base-vertical;
+  margin-bottom: $asu-padding-base-vertical;
+}
+
+.navbar-btn {
+  margin-top: $asu-padding-base-vertical;
+  margin-bottom: $asu-padding-base-vertical;
+
+  &.btn-sm, .btn-group-sm > &.btn {
+    margin-top: 8.5px;
+    margin-bottom: 8.5px;
+  }
+}
+
+.navbar-text {
+  margin-top: 13px;
+  margin-bottom: 13px;
+}

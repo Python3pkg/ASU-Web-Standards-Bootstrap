@@ -1,0 +1,61 @@
+//== Panels
+.panel {
+  margin-bottom: $asu-padding-xlarge-vertical;
+  background-color: #fbfbfb;
+  border: 1px solid #d7d7d7;
+}
+
+.panel-body {
+  padding: 30px 20px;
+}
+
+.panel-title {
+  font-size: 18px;
+}
+
+.panel > .panel-body + {
+  .table, .table-responsive {
+    border-top: 1px solid $asu-gray-lighter;
+  }
+}
+
+.panel-group {
+  margin-bottom: $asu-padding-xlarge-vertical;
+}
+
+// Contextual variations
+.panel-primary {
+  @include panel-variant(
+    $asu-panel-primary-border, 
+    $asu-panel-primary-text, 
+    $asu-panel-primary-heading-bg, 
+    $asu-panel-primary-border);
+}
+.panel-success {
+  @include panel-variant(
+    $asu-panel-success-border, 
+    $asu-panel-success-text, 
+    $asu-panel-success-heading-bg, 
+    $asu-panel-success-border);
+}
+.panel-info {
+  @include panel-variant(
+    $asu-panel-info-border, 
+    $asu-panel-info-text, 
+    $asu-panel-info-heading-bg, 
+    $asu-panel-info-border);
+}
+.panel-warning {
+  @include panel-variant(
+    $asu-panel-warning-border, 
+    $asu-panel-warning-text,
+    $asu-panel-warning-heading-bg, 
+    $asu-panel-warning-border);
+}
+.panel-danger {
+  @include panel-variant(
+    $asu-panel-danger-border, 
+    $asu-panel-danger-text, 
+    $asu-panel-danger-heading-bg, 
+    $asu-panel-danger-border);
+}

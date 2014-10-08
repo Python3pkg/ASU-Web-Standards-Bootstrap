@@ -1,0 +1,21 @@
+//== Labels
+
+.label-primary {
+  @include label-variant($asu-label-primary-bg);
+}
+
+.label-success {
+  @include label-variant($asu-label-success-bg);
+}
+
+.label-info {
+  @include label-variant($asu-label-info-bg);
+}
+
+.label-warning {
+  @include label-variant($asu-label-warning-bg);
+}
+
+.label-danger {
+  @include label-variant($asu-label-danger-bg);
+}

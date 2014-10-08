@@ -1,0 +1,20 @@
+// == breadcrumb
+.breadcrumb {
+  padding: 0 0;
+  margin-top: $asu-padding-xlarge-vertical;
+  margin-bottom: (2 * $asu-padding-xlarge-vertical);
+  font-size: $asu-font-size-small;
+  background-color: transparent;
+
+  > li + li:before {
+    color: #828282;
+  }  
+
+  > li > a {
+    border-bottom: 0;
+  }
+
+  > .active {
+    color: #828282;
+  }
+}

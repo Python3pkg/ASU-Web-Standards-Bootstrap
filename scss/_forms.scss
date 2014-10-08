@@ -1,0 +1,161 @@
+::-webkit-input-placeholder {
+  font-weight: 200;
+  color: #7f7f7f;
+}
+
+:-moz-placeholder {
+
+  font-weight: 200;
+  color: #7f7f7f;
+}
+
+::-moz-placeholder {
+
+  font-weight: 200;
+  color: #7f7f7f;
+}
+
+:-ms-input-placeholder {
+  font-weight: 200;
+  color: #7f7f7f;
+}
+
+legend {
+  margin-bottom: $asu-line-height-computed;
+  font-size: $asu-line-height-computed;
+}
+
+label {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+output {
+  font-size: 16px;
+  line-height: $asu-line-height-base;
+  color: $asu-gray-dark;
+}
+
+.form-control {
+  height: 38px; 
+  font-size: 16px; 
+  font-weight: 200; 
+  line-height: $asu-line-height-base; 
+  color: $asu-gray-dark;
+  border: 1px solid $asu-gray;
+  @include box-shadow(inset 1px 2px 9px rgba(213, 213, 213, 0.5));
+}
+
+.form-control:focus {
+  border-color: #038dd5; 
+  @include box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(3, 141, 213, 0.6));
+}
+
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+  line-height: 38px; 
+  // IE8+ misaligns the text within date inputs, so we reset
+  line-height: $asu-line-height-base #{\0};
+
+  &.input-sm {
+    line-height: $asu-input-height-small;
+  }
+  &.input-lg {
+    line-height: $asu-input-height-large;
+  } 
+}
+
+.radio, .checkbox {
+  min-height: 24px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+
+  .inline {
+    display: inline-block;
+    margin-right: 20px;
+  }
+}
+
+// Form control sizing
+//
+// Build on `.form-control` with modifier classes to decrease or increase the
+// height and font-size of form controls.
+
+@include input-size(
+  '.input-sm', 
+  $asu-input-height-small, 
+  $asu-padding-small-vertical, 
+  $asu-padding-small-horizontal, 
+  $asu-font-size-small, 
+  $asu-line-height-small, 
+  $asu-border-radius-small);
+
+@include input-size(
+  '.input-lg', 
+  $asu-input-height-large, 
+  $asu-padding-large-vertical, 
+  $asu-padding-large-horizontal, 
+  $asu-font-size-large, 
+  $asu-line-height-large, 
+  $asu-border-radius-large);
+
+.has-feedback {
+  .form-control {
+    padding-right: 47.5px;
+  }
+}
+
+.form-control-feedback {
+  top: 29px;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+}
+
+.input-lg + .form-control-feedback {
+  width: $asu-input-height-large;
+  height: $asu-input-height-large;
+  line-height: $asu-input-height-large;
+}
+.input-sm + .form-control-feedback {
+  width: $asu-input-height-small;
+  height: $asu-input-height-small;
+  line-height: $asu-input-height-small;
+}
+
+// Feedback states
+.has-success {
+  @include form-control-validation(
+    $asu-state-success-text, 
+    $asu-state-success-text, 
+    $asu-state-success-bg);
+}
+.has-warning {
+  @include form-control-validation(
+    $asu-state-warning-text, 
+    $asu-state-warning-text, 
+    $asu-state-warning-bg);
+}
+.has-error {
+  @include form-control-validation(
+    $asu-state-danger-text, 
+    $asu-state-danger-text, 
+    $asu-state-danger-bg);
+}
+
+.help-block {
+  color: #6a6a6a;
+}
+
+.form-horizontal {
+  .radio, .checkbox {
+    min-height: 31px;
+  }
+}
+.form-horizontal .form-group-lg .control-label { 
+  @media (min-width: 768px) { 
+    padding-top: 16.96px;
+  }
+}
