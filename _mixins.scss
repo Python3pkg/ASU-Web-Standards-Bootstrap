@@ -3,9 +3,9 @@
 
 // Utilities
 // @import "mixins/hide-text";
-// @import "mixins/opacity";
+@import "mixins/opacity";
 // @import "mixins/image";
-// @import "mixins/labels";
+@import "mixins/labels";
 // @import "mixins/reset-filter";
 // @import "mixins/resize";
 // @import "mixins/responsive-visibility";
@@ -17,7 +17,7 @@
 
 // Components
 // @import "mixins/alerts";
-// @import "mixins/buttons";
+@import "mixins/buttons";
 // @import "mixins/panels";
 // @import "mixins/pagination";
 // @import "mixins/list-group";
