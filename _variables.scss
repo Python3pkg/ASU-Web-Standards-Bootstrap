@@ -18,19 +18,19 @@ $asu-link-hover-color:     #d23153 !default;
 
 $asu-state-success-text:    #148e4b !default;
 $asu-state-success-bg:      #1dd16e !default;
-$asu-state-success-border:  darken(adjust-hue($asu-state-success-bg, -10), 5%) !default;
+$asu-state-success-border:  #0b4b28 !default;
 
 $asu-state-info-text:       #008ed6 !default;
 $asu-state-info-bg:         #23b5ff !default;
-$asu-state-info-border:     darken(adjust-hue($asu-state-info-bg, -10), 7%) !default;
+$asu-state-info-border:     #005b8a !default;
 
 $asu-state-warning-text:    #bfe319 !default;
 $asu-state-warning-bg:      #d3ed5c !default;
-$asu-state-warning-border:  darken(adjust-hue($asu-state-warning-bg, -10), 5%) !default;
+$asu-state-warning-border:  #859e11 !default;
 
 $asu-state-danger-text:     #ec5937 !default;
 $asu-state-danger-bg:       #f3937d !default;
-$asu-state-danger-border:   darken(adjust-hue($asu-state-danger-bg, -10), 5%) !default;
+$asu-state-danger-border:   #c43413 !default;
 
 //== Vertical Margin and Padding
 $asu-padding-base-vertical:     6px;
@@ -123,19 +123,19 @@ $asu-label-danger-bg:        $asu-state-danger-text;
 
 //== Alerts
 $asu-alert-success-bg:       $asu-state-success-text; 
-$asu-alert-success-border:   $asu-state-success-bg;
+$asu-alert-success-border:   $asu-state-success-border;
 $asu-alert-success-text:     white;   
 
 $asu-alert-info-bg:          $asu-state-info-text; 
-$asu-alert-info-border:      $asu-state-info-bg;
+$asu-alert-info-border:      $asu-state-info-border;
 $asu-alert-info-text:        white;
 
 $asu-alert-warning-bg:       $asu-state-warning-text; 
-$asu-alert-warning-border:   $asu-state-warning-bg; 
+$asu-alert-warning-border:   $asu-state-warning-border; 
 $asu-alert-warning-text:     #2a2a2a;
 
 $asu-alert-danger-bg:        $asu-state-danger-text;  
-$asu-alert-danger-border:    $asu-state-danger-bg;   
+$asu-alert-danger-border:    $asu-state-danger-border;
 $asu-alert-danger-text:      white;
 
 //== Panels
