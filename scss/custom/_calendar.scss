@@ -1,0 +1,18 @@
+//== Calendar Colors
+
+.calendar-date {
+  color: $ws-calendar-date-text;
+  background-color: $ws-calendar-date-bg;
+  border: 1px solid $ws-calendar-date-border;
+
+  &:hover {
+    border: 1px solid $ws-calendar-date-hover-border;
+    -webkit-box-shadow: 0 0 10px $ws-calendar-date-hover-box-shadow;
+    box-shadow: 0 0 10px $ws-calendar-date-hover-box-shadow;
+  }
+
+  .weekday {
+    background-color: $ws-calendar-date-weekday-bg;
+    border: 1px solid $ws-calendar-date-weekday-border;
+  }
+}

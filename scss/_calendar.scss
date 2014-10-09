@@ -1,0 +1,66 @@
+//== Calendar
+
+.calendar-group {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+.calendar-date {
+  width: 125px;
+  display: block;
+  float: left;
+  padding: 10px;
+  margin: 0 30px 24px 0;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 4px;
+  cursor: default;
+
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear:both;
+  }
+
+  &.last {
+    margin-right: 0;
+  }
+
+  + .popover {
+    white-space: nowrap;
+  }
+
+  .weekday {
+    float: left;
+    padding: 3px 7px;
+    margin-bottom: 5px;
+    font-size: 11px;
+    line-height: 1;
+    border-radius: 4px;
+  }
+
+  .month {
+    float: left;
+    padding: 3px 7px;
+    font-size: 13px;
+    line-height: 1;
+  }
+
+  .date {
+    width: 60px;
+    float: right;
+    font-size: 50px;
+    line-height: .9;
+    font-weight: 200;
+  }
+}

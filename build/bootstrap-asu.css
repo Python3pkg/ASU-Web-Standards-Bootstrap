@@ -1838,6 +1838,60 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   border-radius: 3px 3px 0 0;
 }
 
+.calendar-group:before, .calendar-group:after {
+  content: " ";
+  display: table;
+}
+.calendar-group:after {
+  clear: both;
+}
+
+.calendar-date {
+  width: 125px;
+  display: block;
+  float: left;
+  padding: 10px;
+  margin: 0 30px 24px 0;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 4px;
+  cursor: default;
+}
+.calendar-date:before, .calendar-date:after {
+  content: " ";
+  display: table;
+}
+.calendar-date:after {
+  clear: both;
+}
+.calendar-date.last {
+  margin-right: 0;
+}
+.calendar-date + .popover {
+  white-space: nowrap;
+}
+.calendar-date .weekday {
+  float: left;
+  padding: 3px 7px;
+  margin-bottom: 5px;
+  font-size: 11px;
+  line-height: 1;
+  border-radius: 4px;
+}
+.calendar-date .month {
+  float: left;
+  padding: 3px 7px;
+  font-size: 13px;
+  line-height: 1;
+}
+.calendar-date .date {
+  width: 60px;
+  float: right;
+  font-size: 50px;
+  line-height: .9;
+  font-weight: 200;
+}
+
 /*!
  *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
