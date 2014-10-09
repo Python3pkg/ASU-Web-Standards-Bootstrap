@@ -183,3 +183,86 @@
   margin-top: 13px;
   margin-bottom: 13px;
 }
+
+//== Custom Navbar (webspark)
+
+.navbar-ws {
+  border: 0;
+  border-radius: 0;
+
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+  }
+
+  .navbar-nav > {
+    li > a {
+      padding: 20px;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1;
+
+      @media (min-width: 1200px) {
+        padding: 20px 25px;
+      }
+    }
+  }
+
+  .navbar-brand {
+    width: calc(100% - 60px);
+    height: auto;
+    padding-right: 0;
+    overflow: hidden;
+    font-size: 16px;
+  }
+
+  .navbar-toggle {
+    border: 0;
+  }
+
+  .dropdown-menu {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-width: 160px;
+    max-height: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 4px;
+
+    @media (min-width: 992px) {
+      position: absolute;
+      width: auto;
+    }
+
+    .divider {
+      height: 1px;
+      margin: 9px 0;
+      overflow: hidden;
+      background-color: black;
+    }
+
+    > li > a {
+      padding: 9px 25px 10px 25px;
+      font-size: 15px;
+      font-weight: normal;
+      line-height: 1;
+
+      &:hover, &:focus {
+        text-decoration: none;
+      }
+    }
+
+    > .active > a {
+      &, &:hover, &:focus {
+        text-decoration: none;
+        outline: 0;
+      }
+    }
+  }
+}

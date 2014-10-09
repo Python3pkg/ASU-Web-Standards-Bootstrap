@@ -1,0 +1,116 @@
+//== Navbar WS Colors
+.navbar-ws {
+  background-color: $ws-navbar-bg;
+
+  .navbar-nav > {
+    li > a {
+      color: $ws-navbar-text;
+
+      &:hover, &:focus {
+        color: $ws-navbar-focus-text;
+        background-color: $ws-navbar-focus-bg;
+      }
+    }
+
+    .active > a {
+      &, &:hover, &:focus {
+        color: $ws-navbar-text;
+        background-color: $ws-navbar-active-bg;
+      }
+    }
+
+     .disabled > a {
+      &, &:hover, &:focus {
+        color: $ws-navbar-disabled-text;
+        background-color: $ws-navbar-disabled-bg;
+      }
+    }
+  }
+
+  .navbar-brand {
+    color: $ws-navbar-brand-text;
+
+    &:hover, &:focus {
+      color: $ws-navbar-brand-hover-text;
+    }
+
+    .navbar-text {
+      color: $ws-navbar-brand-text-text;
+    }
+  }
+
+  .navbar-toggle {
+    &:hover, &:focus {
+      background-color: $ws-navbar-toggle-focus-bg;
+
+      .icon-bar {
+        background-color: $ws-navbar-toggle-focus-icon-bg;
+      }
+    }
+
+    .icon-bar {
+      background-color: $ws-navbar-toggle-icon-bg;
+    }
+  }
+
+  .navbar-collapse,
+  .navbar-form {
+    border-color: $ws-navbar-form-border;
+  }
+
+  .navbar-nav > .open > a {
+    &, &:hover, &:focus {
+      background-color: $ws-navbar-nav-focus-bg;
+      color: $ws-navbar-nav-focus-text;
+    }
+  }
+
+  .navbar-link {
+    color: $ws-navbar-link-text;
+
+    &:hover {
+      color: $ws-navbar-link-hover-text;
+    }
+  }
+
+  .btn-link {
+    color: $ws-navbar-btn-link-text;
+
+    &:hover, &:focus {
+      color: $ws-navbar-btn-link-focus-text;
+    }
+
+    &[disabled]:hover,
+    &[disabled]:focus,
+    fieldset[disabled] &:hover,
+    fieldset[disabled] &:focus {
+      color: $ws-navbar-btn-link-disabled-text;
+    }
+  }
+
+  .dropdown-menu {
+    background-color: $ws-navbar-dropdown-menu-bg;
+    border: 1px solid $ws-navbar-dropdown-menu-border;
+    border-color: transparent;
+
+    .divider {
+      background-color: black;
+    }
+
+    > li > a {
+      color: $ws-navbar-dropdown-menu-link-text;
+
+      &:hover, :focus {
+        color: $ws-navbar-dropdown-menu-link-focus-text;
+        background-color: $ws-navbar-dropdown-menu-link-focus-bg;
+      }
+    }
+
+    > .active > a {
+      &, &:hover, &:focus {
+        color: $ws-navbar-dropdown-menu-link-focus-text;
+        background-color: $ws-navbar-dropdown-menu-link-focus-bg;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+//== Custom CSS
+
+// Grays
+$ws-darker-gray-2:          #1f1f1f;
+$ws-darker-gray:            #333;
+$ws-dark-gray:              #777;
+$ws-light-gray:             #ccc;
+$ws-lighter-gray:           #ededed;
+
+// Only colors!
+//== Navbar
+$ws-navbar-bg:              #353535 !default;
+$ws-navbar-text:            $ws-lighter-gray !default;
+$ws-navbar-focus-bg:        black   !default;
+$ws-navbar-focus-text:      #ffb310 !default;
+$ws-navbar-active-bg:       #1e1e1e !default;
+$ws-navbar-active-text:     $ws-lighter-gray !default;
+$ws-navbar-disabled-bg:     transparent !default;
+$ws-navbar-disabled-text:   $ws-light-gray !default;
+
+$ws-navbar-brand-text:           $ws-lighter-gray !default;
+$ws-navbar-brand-hover-text:     $ws-lighter-gray !default;
+$ws-navbar-brand-text-text:      $ws-dark-gray !default;
+
+$ws-navbar-toggle-focus-bg:      black !default;
+$ws-navbar-toggle-focus-icon-bg: $ws-navbar-focus-text !default; // #ffb310
+$ws-navbar-toggle-icon-bg:       $ws-lighter-gray !default; // #ededed
+
+$ws-navbar-form-border:          black !default;
+
+$ws-navbar-nav-focus-bg:         black !default;
+$ws-navbar-nav-focus-text:       $ws-navbar-focus-text !default;
+
+$ws-navbar-link-text:            $ws-dark-gray !default;
+$ws-navbar-link-hover-text:      $ws-darker-gray !default;
+
+$ws-navbar-btn-link-text:        $ws-dark-gray !default;
+$ws-navbar-btn-link-focus-text:  $ws-darker-gray !default;
+$ws-navbar-btn-link-disabled-text:  $ws-light-gray !default;
+
+$ws-navbar-dropdown-menu-bg:     $ws-darker-gray-2 !default;
+$ws-navbar-dropdown-menu-border: black !default;
+
+$ws-navbar-dropdown-menu-link-text:   $ws-lighter-gray !default;
+$ws-navbar-dropdown-menu-link-focus-text: $ws-lighter-gray !default;
+$ws-navbar-dropdown-menu-link-focus-bg: black !default;
