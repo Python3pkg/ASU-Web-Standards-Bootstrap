@@ -1,0 +1,23 @@
+//== Animations
+.navbar-ws {
+  .dropdown-menu {
+    -webkit-perspective: 100;
+    -moz-perspective: 100;
+    perspective: 100;
+    -webkit-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+
+  .open > .dropdown-menu {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+a,
+button {
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}

@@ -1,46 +1,3 @@
-
-
-.sidebar-nav {
-  position: relative;
-  padding: 30px;
-  margin-bottom: 24px;
-  border-top: 8px solid #a30046;
-}
-.sidebar-nav:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  display: block;
-  width: 100%;
-  height: 100%;
-  content: "";
-  border-right: 1px solid #e9e9e9;
-  border-bottom: 1px solid #e9e9e9;
-  border-left: 1px solid #e9e9e9;
-}
-.sidebar-nav :last-child {
-  margin-bottom: 0;
-}
-.sidebar-nav.affix {
-  position: relative;
-  width: 100%;
-}
-@media (min-width: 992px) {
-
-  .sidebar-nav.affix {
-    position: fixed;
-    top: 24px;
-    width: 293px;
-  }
-}
-@media (min-width: 1200px) {
-
-  .sidebar-nav.affix {
-    width: 360px;
-  }
-}
-
 .radio,
 .checkbox {
   margin-bottom: 12px;
@@ -584,29 +541,4 @@ input[type="checkbox"].disabled + .outer-wrap > .fa-check {
   width: 100%;
   height: 225px;
   background: transparent;
-}
-
-.panel.explore-programs h3 {
-  font-size: 30px;
-}
-.panel.explore-programs p {
-  font-size: 14px;
-  line-height: 20px;
-}
-
-
-//== Navs
-.navbar-ws {
- .dropdown-menu {
-    -webkit-perspective: 100;
-    -moz-perspective: 100;
-    perspective: 100;
-    -webkit-transition: all 0.25s ease-out;
-    -o-transition: all 0.25s ease-out;
-    transition: all 0.25s ease-out;
-  }
-  .open > .dropdown-menu {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
 }

@@ -35,13 +35,6 @@ a.no-border:hover, a.no-border:focus {
   border-bottom: 0;
 }
 
-a,
-button {
-  -webkit-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-}
-
 .img-bordered {
   border: 1px solid #b0b0b0;
 }
@@ -1319,6 +1312,7 @@ input[type="button"].btn-block {
   border: 0;
 }
 .navbar-ws .dropdown-menu {
+  border: 1px solid;
   position: relative;
   display: block;
   width: 100%;
@@ -1339,7 +1333,6 @@ input[type="button"].btn-block {
   height: 1px;
   margin: 9px 0;
   overflow: hidden;
-  background-color: black;
 }
 .navbar-ws .dropdown-menu > li > a {
   padding: 9px 25px 10px 25px;
@@ -1353,6 +1346,49 @@ input[type="button"].btn-block {
 .navbar-ws .dropdown-menu > .active > a, .navbar-ws .dropdown-menu > .active > a:hover, .navbar-ws .dropdown-menu > .active > a:focus {
   text-decoration: none;
   outline: 0;
+}
+.navbar-ws .open > .dropdown-menu {
+  max-height: 2000px;
+  padding: 10px 0;
+}
+
+.sidebar-nav {
+  position: relative;
+  padding: 30px;
+  margin-bottom: 24px;
+  border-top: 8px solid;
+}
+.sidebar-nav:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: "";
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+}
+.sidebar-nav :last-child {
+  margin-bottom: 0;
+}
+.sidebar-nav.affix {
+  position: relative;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .sidebar-nav.affix {
+    position: fixed;
+    top: 24px;
+    width: 293px;
+  }
+}
+@media (min-width: 1200px) {
+  .sidebar-nav.affix {
+    width: 360px;
+  }
 }
 
 .breadcrumb {
@@ -1688,6 +1724,13 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   background-color: #fbfbfb;
   border: 1px solid #d7d7d7;
 }
+.panel.explore-programs h3 {
+  font-size: 30px;
+}
+.panel.explore-programs p {
+  font-size: 14px;
+  line-height: 20px;
+}
 
 .panel-body {
   padding: 30px 20px;
@@ -1890,6 +1933,26 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   font-size: 50px;
   line-height: .9;
   font-weight: 200;
+}
+
+.navbar-ws .dropdown-menu {
+  -webkit-perspective: 100;
+  -moz-perspective: 100;
+  perspective: 100;
+  -webkit-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+.navbar-ws .open > .dropdown-menu {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+a,
+button {
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 /*!

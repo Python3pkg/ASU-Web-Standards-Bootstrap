@@ -3,6 +3,14 @@
   margin-bottom: $asu-padding-xlarge-vertical;
   background-color: #fbfbfb;
   border: 1px solid #d7d7d7;
+
+  &.explore-programs h3 {
+    font-size: 30px;
+  }
+  &.explore-programs p {
+    font-size: $asu-font-size-small;
+    line-height: 20px;
+  }
 }
 
 .panel-body {
