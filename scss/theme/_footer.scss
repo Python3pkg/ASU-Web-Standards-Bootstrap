@@ -1,0 +1,40 @@
+.footer {
+  .social-media {
+    > li > a {
+      color: $ws-footer-social-link-text;
+
+      &:hover, &:focus {
+        color: $ws-footer-social-link-focus-text;
+      }
+    }
+  }
+
+  .big-foot {
+    background-color: $ws-big-foot-bg;
+  }
+
+  .big-foot-nav {
+    > li {
+      > a {
+        color: $ws-big-foot-nav-link-text;
+        border-bottom-color: $ws-big-foot-nav-link-border;
+
+        &:hover, &:focus {
+          color: $ws-big-foot-nav-link-focus-text;
+        }
+      }
+    }
+  }
+
+  .little-foot {
+    background-color: $ws-little-foot-bg;
+  }
+
+  .little-foot-nav {
+    > li > a {
+      &:hover, &:focus {
+        color: $ws-little-foot-focus-text;
+      }
+    }
+  }
+}

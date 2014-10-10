@@ -94,7 +94,7 @@
     border-color: transparent;
 
     .divider {
-      background-color: black;
+      background-color: $ws-navbar-dropdown-divider-bg;
     }
 
     > li > a {
@@ -115,7 +115,7 @@
   }
 
   .open > .dropdown-menu {
-    border-color: black;
+    border-color: $ws-navbar-dropdown-open-border;
   }
 }
 

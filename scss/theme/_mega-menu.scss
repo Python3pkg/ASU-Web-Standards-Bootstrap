@@ -1,0 +1,31 @@
+//== Mega Menu
+.mega-menu {
+  .dropdown-menu {
+    > .row > .column {
+
+      > li > a {
+        color: $ws-mega-menu-drop-link-text;
+
+        &:hover, &:focus {
+          color: $ws-mega-menu-drop-link-focus-text;
+          background-color: $ws-mega-menu-drop-link-focus-bg;
+        }
+      }
+
+      > .active > a {
+        &, &:hover,  &:focus {
+          background-color: $ws-mega-menu-drop-link-active-focus-bg;
+          color: $ws-mega-menu-drop-link-active-focus-text;
+        }
+      }
+    }
+  }
+
+  .dropdown-title {
+    color: $ws-dropdown-title-color;
+  }
+
+  .vertical-border-right {
+    border-right-color: $ws-vertical-border-right-border;
+  }
+}

@@ -159,3 +159,88 @@ input[type="month"] {
     padding-top: 16.96px;
   }
 }
+
+//== Special inputs
+.radio,
+.checkbox {
+  margin-bottom: 12px;
+
+  .outer-wrap {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+    background-color: white;
+    border: 1px solid #b0b0b0;
+
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  label {
+    padding-left: 0;
+    font-size: 16px;
+    font-weight: 200;
+  }
+
+  .fa-circle, .fa-check {
+    position: absolute;
+    font-size: 23px;
+    color: white;
+
+    @media (min-width: 1200px) {
+      top: 4px;
+    }
+  }
+
+  .fa-circle {
+    top: 3px;
+    left: 4px;
+  }
+
+  .fa-check {
+    top: 3px;
+    left: 3px;
+  }
+}
+
+//=== Radio
+.radio {
+  input[type="radio"] {
+    display: none;
+
+    &:checked + .outer-wrap > .fa-circle {
+      color: #505050;
+    }
+  }
+  .outer-wrap, .fa-circle {
+    border-radius: 50%;
+  }
+}
+
+//=== Checkbox
+.checkbox {
+  input[type="checkbox"] {
+    display: none;
+    &:checked + .outer-wrap > .fa-check {
+      color: #505050;
+    }
+  }
+
+  .outer-wrap {
+    border-radius: 4px;
+  }
+
+  &[type="radio"],
+  &[type="checkbox"] {
+    &[disabled],
+    &.disabled {
+      + .outer-wrap,
+      + .outer-wrap > .fa-circle {
+        cursor: not-allowed;
+        opacity: .5;
+      }
+    }
+  }
+}

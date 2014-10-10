@@ -1,158 +1,158 @@
 /**
  * Variables
  */
-$asu-gray-darker:          #2a2a2a !default;
-$asu-gray-dark:            #505050 !default;
-$asu-gray:                 #b0b0b0 !default;
-$asu-gray-lighter:         #b7b7b7 !default;
-$asu-gray-lightest:        #fafafa !default;
+$asu-gray-darker:               #2a2a2a !default;
+$asu-gray-dark:                 #505050 !default;
+$asu-gray:                      #b0b0b0 !default;
+$asu-gray-lighter:              #b7b7b7 !default;
+$asu-gray-lightest:             #fafafa !default;
 
-$asu-yellow:               #ffc425 !default;
-$asu-green:                #006838 !default;
+$asu-yellow:                    #ffc425 !default;
+$asu-green:                     #006838 !default;
 
-$asu-brand-primary:        #a30046 !default;
+$asu-brand-primary:             #a30046 !default;
 
-$asu-link-hover-color:     #d23153 !default;
+$asu-link-hover-color:          #d23153 !default;
 
 //== Form states and alerts
 
-$asu-state-success-text:    #148e4b !default;
-$asu-state-success-bg:      #1dd16e !default;
-$asu-state-success-border:  #0b4b28 !default;
+$asu-state-success-text:        #148e4b !default;
+$asu-state-success-bg:          #1dd16e !default;
+$asu-state-success-border:      #0b4b28 !default;
 
-$asu-state-info-text:       #008ed6 !default;
-$asu-state-info-bg:         #23b5ff !default;
-$asu-state-info-border:     #005b8a !default;
+$asu-state-info-text:           #008ed6 !default;
+$asu-state-info-bg:             #23b5ff !default;
+$asu-state-info-border:         #005b8a !default;
 
-$asu-state-warning-text:    #bfe319 !default;
-$asu-state-warning-bg:      #d3ed5c !default;
-$asu-state-warning-border:  #859e11 !default;
+$asu-state-warning-text:        #bfe319 !default;
+$asu-state-warning-bg:          #d3ed5c !default;
+$asu-state-warning-border:      #859e11 !default;
 
-$asu-state-danger-text:     #ec5937 !default;
-$asu-state-danger-bg:       #f3937d !default;
-$asu-state-danger-border:   #c43413 !default;
+$asu-state-danger-text:         #ec5937 !default;
+$asu-state-danger-bg:           #f3937d !default;
+$asu-state-danger-border:       #c43413 !default;
 
 //== Vertical Margin and Padding
-$asu-padding-base-vertical:     6px;
-$asu-padding-xs-vertical:       1px;
-$asu-padding-small-vertical:    5px;
-$asu-padding-large-vertical:    12px;
-$asu-padding-xlarge-vertical:   24px;
+$asu-padding-base-vertical:     6px !default;
+$asu-padding-xs-vertical:       1px !default;
+$asu-padding-small-vertical:    5px !default;
+$asu-padding-large-vertical:    12px !default;
+$asu-padding-xlarge-vertical:   24px !default;
 
 //== Horizontal Margin and Padding
-$asu-padding-base-horizontal:   19px;
-$asu-padding-xs-horizontal:     5px;
-$asu-padding-small-horizontal:  12px;
-$asu-padding-large-horizontal:  24px;
+$asu-padding-base-horizontal:   19px !default;
+$asu-padding-xs-horizontal:     5px !default;
+$asu-padding-small-horizontal:  12px !default;
+$asu-padding-large-horizontal:  24px !default;
 
 //== Line Heights
-$asu-line-height-base:      1.44 !default;
-$asu-line-height-small:     1.5 !default;
-$asu-line-height-large:     1.33 !default;
-$asu-line-height-computed:  24px !default;
+$asu-line-height-base:          1.44 !default;
+$asu-line-height-small:         1.5 !default;
+$asu-line-height-large:         1.33 !default;
+$asu-line-height-computed:      24px !default;
 
 //== Fonts
-$asu-font-size-small:       14px;
-$asu-font-size-medium:      16px;
-$asu-font-size-base:        16px;
-$asu-font-size-large:       20px;
-$asu-font-size-h1:          72px;
+$asu-font-size-small:           14px !default;
+$asu-font-size-medium:          16px !default;
+$asu-font-size-base:            16px !default;
+$asu-font-size-large:           20px !default;
+$asu-font-size-h1:              72px !default;
 
 //== Form inputs
-$asu-input-height-small:    33px;
-$asu-input-height-large:    53px;
+$asu-input-height-small:        33px !default;
+$asu-input-height-large:        53px !default;
 
 //== Borders
-$asu-border-radius-base:    4px !default;
-$asu-border-radius-small:   4px !default;
-$asu-border-radius-large:   4px !default;
+$asu-border-radius-base:        4px !default;
+$asu-border-radius-small:       4px !default;
+$asu-border-radius-large:       4px !default;
 
 //== Buttons
-$asu-link-color:             $asu-brand-primary;
-$asu-link-hover-color:       #d23153;
-$asu-btn-link-disabled-color:#777;
+$asu-link-color:                $asu-brand-primary !default;
+$asu-link-hover-color:          #d23153 !default;
+$asu-btn-link-disabled-color:   #777 !default;
 
-$asu-btn-default-color:      #505050;
-$asu-btn-default-bg:         whitesmoke;
-$asu-btn-default-border:     #b0b0b0;
+$asu-btn-default-color:         #505050 !default;
+$asu-btn-default-bg:            whitesmoke !default;
+$asu-btn-default-border:        #b0b0b0 !default;
 
-$asu-btn-primary-color:      white;
-$asu-btn-primary-bg:         #a30046;
-$asu-btn-primary-border:     #a30046;
+$asu-btn-primary-color:         white !default;
+$asu-btn-primary-bg:            #a30046 !default;
+$asu-btn-primary-border:        #a30046 !default;
 
-$asu-btn-secondary-color:    $asu-gray-darker;
-$asu-btn-secondary-bg:       #dbdbdb;
-$asu-btn-secondary-border:   #dbdbdb;
+$asu-btn-secondary-color:       $asu-gray-darker !default;
+$asu-btn-secondary-bg:          #dbdbdb !default;
+$asu-btn-secondary-border:      #dbdbdb !default;
 
-$asu-btn-gold-color:         $asu-gray-darker;
-$asu-btn-gold-bg:            #ffc425;
-$asu-btn-gold-border:        #ffc425;
+$asu-btn-gold-color:            $asu-gray-darker !default;
+$asu-btn-gold-bg:               #ffc425 !default;
+$asu-btn-gold-border:           #ffc425 !default;
 
-$asu-btn-blue-color:         white;
-$asu-btn-blue-bg:            #038dd5;
-$asu-btn-blue-border:        #038dd5;
+$asu-btn-blue-color:            white !default;
+$asu-btn-blue-bg:               #038dd5 !default;
+$asu-btn-blue-border:           #038dd5 !default;
 
-$asu-btn-success-color:      white;
-$asu-btn-success-bg:         #148e4b;
-$asu-btn-success-border:     #148e4b;
+$asu-btn-success-color:         white !default;
+$asu-btn-success-bg:            #148e4b !default;
+$asu-btn-success-border:        #148e4b !default;
 
-$asu-btn-info-color:         white;
-$asu-btn-info-bg:            #008ed6;
-$asu-btn-info-border:        #004a70;
+$asu-btn-info-color:            white !default;
+$asu-btn-info-bg:               #008ed6 !default;
+$asu-btn-info-border:           #004a70 !default;
 
-$asu-btn-warning-color:      #2a2a2a;
-$asu-btn-warning-bg:         #98b514;
-$asu-btn-warning-border:     #435009;
+$asu-btn-warning-color:         #2a2a2a !default;
+$asu-btn-warning-bg:            #98b514 !default;
+$asu-btn-warning-border:        #435009 !default;
 
-$asu-btn-danger-color:       white;
-$asu-btn-danger-bg:          #db3a15;
-$asu-btn-danger-border:      #751f0b;
+$asu-btn-danger-color:          white !default;
+$asu-btn-danger-bg:             #db3a15 !default;
+$asu-btn-danger-border:         #751f0b !default;
 
 //== Media
 $asu-screen-sm:                 768px !default;
 $asu-screen-md:                 992px !default;
 
 //== Labels
-$asu-label-primary-bg:          $asu-brand-primary;
-$asu-label-success-bg:          $asu-state-success-text;
-$asu-label-info-bg:             $asu-state-info-text;
-$asu-label-warning-bg:          $asu-state-warning-text;
-$asu-label-danger-bg:           $asu-state-danger-text;
+$asu-label-primary-bg:          $asu-brand-primary !default;
+$asu-label-success-bg:          $asu-state-success-text !default;
+$asu-label-info-bg:             $asu-state-info-text !default;
+$asu-label-warning-bg:          $asu-state-warning-text !default;
+$asu-label-danger-bg:           $asu-state-danger-text !default;
 
 //== Alerts
-$asu-alert-success-bg:          $asu-state-success-text; 
-$asu-alert-success-border:      $asu-state-success-border;
-$asu-alert-success-text:        white;   
+$asu-alert-success-bg:          $asu-state-success-text !default; 
+$asu-alert-success-border:      $asu-state-success-border !default;
+$asu-alert-success-text:        white !default;   
 
-$asu-alert-info-bg:             $asu-state-info-text; 
-$asu-alert-info-border:         $asu-state-info-border;
-$asu-alert-info-text:           white;
+$asu-alert-info-bg:             $asu-state-info-text !default; 
+$asu-alert-info-border:         $asu-state-info-border !default;
+$asu-alert-info-text:           white !default;
 
-$asu-alert-warning-bg:          $asu-state-warning-text; 
-$asu-alert-warning-border:      $asu-state-warning-border; 
-$asu-alert-warning-text:        $asu-gray-darker;
+$asu-alert-warning-bg:          $asu-state-warning-text !default; 
+$asu-alert-warning-border:      $asu-state-warning-border !default; 
+$asu-alert-warning-text:        $asu-gray-darker !default;
 
-$asu-alert-danger-bg:           $asu-state-danger-text;  
-$asu-alert-danger-border:       $asu-state-danger-border;
-$asu-alert-danger-text:         white;
+$asu-alert-danger-bg:           $asu-state-danger-text !default;  
+$asu-alert-danger-border:       $asu-state-danger-border !default;
+$asu-alert-danger-text:         white !default;
 
 //== Panels
-$asu-panel-primary-border:      $asu-brand-primary;
-$asu-panel-primary-text:        white;
-$asu-panel-primary-heading-bg:  $asu-brand-primary;
+$asu-panel-primary-border:      $asu-brand-primary !default;
+$asu-panel-primary-text:        white !default;
+$asu-panel-primary-heading-bg:  $asu-brand-primary !default;
 
-$asu-panel-success-border:      $asu-state-success-border;
-$asu-panel-success-text:        white;
-$asu-panel-success-heading-bg:  $asu-state-success-text;
+$asu-panel-success-border:      $asu-state-success-border !default;
+$asu-panel-success-text:        white !default;
+$asu-panel-success-heading-bg:  $asu-state-success-text !default;
 
-$asu-panel-info-border:         $asu-state-info-border;
-$asu-panel-info-text:           white;
-$asu-panel-info-heading-bg:     $asu-state-info-text;
+$asu-panel-info-border:         $asu-state-info-border !default;
+$asu-panel-info-text:           white !default;
+$asu-panel-info-heading-bg:     $asu-state-info-text !default;
 
-$asu-panel-warning-border:      $asu-state-warning-border;
-$asu-panel-warning-text:        white;
-$asu-panel-warning-heading-bg:  $asu-state-warning-text;
+$asu-panel-warning-border:      $asu-state-warning-border !default;
+$asu-panel-warning-text:        white !default;
+$asu-panel-warning-heading-bg:  $asu-state-warning-text !default;
 
-$asu-panel-danger-border:      $asu-state-danger-border;
-$asu-panel-danger-text:        white;
-$asu-panel-danger-heading-bg:  $asu-state-danger-text;
+$asu-panel-danger-border:       $asu-state-danger-border !default;
+$asu-panel-danger-text:         white !default;
+$asu-panel-danger-heading-bg:   $asu-state-danger-text !default;

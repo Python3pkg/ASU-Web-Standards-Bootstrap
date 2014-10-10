@@ -28,10 +28,18 @@
 @import "scss/tooltips.scss";
 @import "scss/popovers.scss";
 @import "scss/calendar.scss";
+@import "scss/hero.scss";
+@import "scss/profile.scss";
+@import "scss/flex-video.scss";
+@import "scss/footer.scss";
+@import "scss/mega-menu.scss";
+@import "scss/alterna-tabs.scss";
+@import "scss/campus-visit.scss";
 @import "scss/animations.scss";
 
 //== FontAwesome
 @import "scss/font_awesome/font-awesome";
 
 //== Custom
-// @import "scss/_custom_fonts.scss";
+// Uncomment this line if you plan on hosting the Roboto font yourself
+// @import "scss/fonts.scss";

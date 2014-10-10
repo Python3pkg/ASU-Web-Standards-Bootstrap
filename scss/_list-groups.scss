@@ -54,3 +54,31 @@ a.list-group-item {
 @include list-group-item-variant(danger, 
   $asu-state-danger-bg, 
   $asu-state-danger-text);
+
+
+.inline-link-list {
+  padding-left: 0;
+  list-style: none;
+
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+  li {
+    float: left;
+
+    &:after {
+      content: "|";
+      font-weight: normal;
+      margin: 0 5px;
+    }
+
+    &:last-child:after {
+      display: none;
+    }
+  }
+}

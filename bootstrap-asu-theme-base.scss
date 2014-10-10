@@ -1,9 +1,12 @@
 //== Core variables and mixins
-@import "scss/variables";
-@import "scss/custom/variables";
-@import "scss/mixins";
+@import "scss/theme/variables";
 
 //== Custom Theme
-@import "scss/custom/navbar-ws.scss";
-@import "scss/custom/calendar.scss";
-@import "scss/_custom.scss";
+@import "scss/theme/navbar-ws.scss";
+@import "scss/theme/calendar.scss";
+@import "scss/theme/hero.scss";
+@import "scss/theme/profile.scss";
+@import "scss/theme/footer.scss";
+@import "scss/theme/mega-menu.scss";
+@import "scss/theme/tables.scss";
+@import "scss/theme/scaffolding.scss";

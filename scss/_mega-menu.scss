@@ -1,0 +1,70 @@
+//== Mega Menu
+
+.mega-menu {
+  &.dropdown {
+    position: static;
+  }
+
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+    margin-top: -1px;
+
+    @media (min-width: 992px) {
+      position: absolute;
+      left: 50%;
+      width: 940px;
+      margin-left: -470px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 1140px;
+      margin-left: -570px;
+    }
+
+    > .row > .column {
+      > li > a {
+        display: block;
+        clear: both;
+        padding: 9px 10px 10px 10px;
+        font-size: 15px;
+        font-weight: normal;
+        line-height: 1;
+        
+        border-bottom: 0;
+        white-space: nowrap;
+
+        &:hover, &:focus {
+          text-decoration: none;
+        }
+      }
+
+      > .active > a {
+        &, &:hover,  &:focus {
+          text-decoration: none;
+          outline: 0;
+        }
+      }
+    }
+  }
+
+  .dropdown-title {
+    display: block;
+    clear: both;
+    padding: 9px 10px 10px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    border-bottom: 0;
+    white-space: nowrap;
+  }
+
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .vertical-border-right {
+    border-right: 1px solid;
+  }
+}

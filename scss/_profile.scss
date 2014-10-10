@@ -1,0 +1,28 @@
+
+.profile {
+  border: 1px solid;
+  margin-bottom: 24px;
+
+  .profile-heading {
+    padding: 40px 40px 14px 40px;
+  }
+
+  .profile-pic {
+    max-width: 200px;
+  }
+
+  .profile-actions {
+    padding-left: 0;
+    list-style: none;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .tab-content {
+    padding: 40px 40px 14px 40px;
+  }
+
+  .nav-tabs {
+    padding-left: 40px;
+  }
+}
