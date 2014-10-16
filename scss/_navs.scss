@@ -77,7 +77,7 @@
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 991px) {
     > li > a {
       border-bottom: 1px solid #ddd;
       border-radius: 4px 4px 0 0;
@@ -99,6 +99,18 @@
   margin-bottom: 0;
   border-color: transparent;
   min-height: 46px;
+
+  > .container {
+    .navbar-brand {
+      @media (min-width: 768px) {
+        margin-left: 0;
+      }
+
+      @media (min-width: 991px) {
+        margin-left: -15px;
+      }
+    }
+  }
 }
 
 
@@ -108,9 +120,36 @@
       margin-right: 0;
       margin-left: 0;
 
-      @media (min-width: 768px) {
+      &.collapse {
+        // Order here matters! 768 then 991
+        @media (min-width: 768px) {
+          display:none !important;
+
+          &.in {
+            display:block !important;
+          }
+        }
+
+        @media (min-width: 991px) {
+          display:block !important;
+        }
+      }
+
+      @media (min-width: 991px) {
         margin-right: 0;
         margin-left: 0;
+      }
+    }
+
+    .navbar-header {
+
+      @media (min-width: 768px) {
+        float: none;
+      }
+
+      @media (min-width: 991px) {
+        display: none;
+        float: left;
       }
     }
   }
@@ -132,24 +171,49 @@
 }
 
 .navbar-nav { 
-  margin: 6.5px -15px; 
+  margin: 1px -15px; 
 
-  @media (min-width: $asu-screen-md) {
+  @media (min-width: 768px) {
+    float:none;
+  }
+
+  @media (min-width: 991px) {
     float:left;
     margin:0;
   }
+
+  > li {
+    @media (min-width: 768px) {
+      float:none;
+    }
+
+    @media (min-width: 991px) {
+      float:left;
+    }
+
+    > a { 
+      line-height: $asu-line-height-computed;
+    }
+  }
 }
 
-.navbar-nav > li > a { 
-  line-height: $asu-line-height-computed;
-}
 
 .navbar-nav .open .dropdown-menu {
+
+  @media (max-width: 991px) {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+
   > li > a, 
   .dropdown-header {
     @media (max-width: 991px) {
       white-space: normal;
-      padding: 0;    
     }
   }
   > li > a { 
@@ -197,7 +261,8 @@
     padding-right: 0;
 
     @media (max-width: 991px) {
-      width: 100%;
+      // Not being used by official standards yet.
+      //width: 100%;
     }
   }
 
@@ -224,7 +289,17 @@
 
   .navbar-toggle {
     border: 0;
+
+    @media (min-width: 768px) {
+      display:block;
+    }
+
+    @media (min-width: 991px) {
+      display:none;
+    }
+
   }
+
 
 
   .dropdown-menu {
@@ -239,7 +314,7 @@
     overflow: hidden;
     border-radius: 4px;
 
-    @media (min-width: 992px) {
+    @media (min-width: 991px) {
       position: absolute;
       width: auto;
     }
@@ -258,6 +333,7 @@
 
       &:hover, &:focus {
         text-decoration: none;
+        border:none;
       }
     }
 
