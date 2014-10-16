@@ -1,10 +1,11 @@
+// TODO make modernizr optional
 Modernizr.load({
   test: Modernizr.touch,
   yep : '/js/lightningtouch.js'
 });
 
 // Document Loaded
-$(document).ready(function() {
+jQuery(document).ready(function($) {
 
   // Smooth scrolling
   smoothScroll.init();

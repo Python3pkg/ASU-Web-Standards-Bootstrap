@@ -19,6 +19,7 @@
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 350px;
 
   h2, .h2 {
     margin-bottom: 10px;
@@ -90,3 +91,35 @@
     }
   }
 }
+
+.hero-video {
+  padding: 0px;
+  overflow: hidden;
+  position: relative;
+
+  @media (min-width: 768px) {
+    min-height: 500px;
+  }
+
+  video {
+    max-width: 100%;
+    width: 100% !important;
+    height: inherit !important;
+
+    @media (min-width: 768px) {
+      position: absolute;
+      top: 0;
+      overflow: hidden;
+      z-index: 1;
+    }
+  }
+
+  > .container {
+    @media (min-width: 768px) {
+      z-index: 12;
+      position: absolute;
+      bottom: 10px;
+    }
+  }
+}
+
