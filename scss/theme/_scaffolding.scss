@@ -2,7 +2,8 @@
     background-color: $ws-gray-back;
 }
 
-//== Masthead
+//== Header
+//   As per the web standards, the top of the page is to always be white.
 #masthead, body {
-  background-color: $page-background;
+  background-color: $ws-header-bg;
 }

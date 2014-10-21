@@ -12,4 +12,3 @@ TODO
   - Run JS Tests
   - Compile SaSS
   - Compile JS
-- Create a "CONTRIBUTING.md" file. Similar to https://github.com/twbs/bootstrap/blob/master/CONTRIBUTING.md

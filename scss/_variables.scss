@@ -1,6 +1,30 @@
 /**
  * Variables
  */
+
+//== Web Standards Approved
+
+//=== Typography
+//    You can download this font directly from 
+//    the Android developers site:
+//    http://developer.android.com/design/downloads/index.html
+//    
+//    It is also available as a Google Font:
+//    http://www.google.com/fonts/specimen/Roboto
+$ws-font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+//== Standard Header
+$ws-header-bg: #FFF;
+
+
+
+
+
+
+
+
+
+//== 29th Drive Vars
 $asu-gray-darker:               #2a2a2a !default;
 $asu-gray-dark:                 #505050 !default;
 $asu-gray:                      #b0b0b0 !default;

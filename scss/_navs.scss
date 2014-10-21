@@ -404,17 +404,12 @@
       font-size: $asu-font-size-large;
 
       a {
-        color: #666;
         text-decoration: none;
         border-bottom-color: transparent;
         font-weight: bold;
 
         &:hover, &:focus {
           text-decoration: underline;
-        }
-
-        &:first-child {
-          color: black;
         }
       }
     }

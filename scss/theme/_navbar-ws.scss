@@ -129,3 +129,16 @@
     border-bottom-color: $ws-sidebar-nav-border-other;
   }
 }
+
+//== Site Name Desktop
+#site-name-desktop {
+  h1 {
+    a {
+      color: $ws-site-name-color;
+
+      &:first-child {
+        color: $ws-site-name-first-color;
+      }
+    }
+  }
+}
