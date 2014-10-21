@@ -145,6 +145,14 @@ license your work under the terms of the [MIT License](LICENSE.md).
 - Use CDNs and HTTPS for third-party JS when possible. We don't use protocol-relative URLs in this case because they break when viewing the page locally via `file://`.
 - Use [WAI-ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) attributes in documentation examples to promote accessibility.
 
+### SaSS
+
+- Pull out variables as much as possible.
+- Variables that theme the site but to not add functionality should go into the bootstrap-asu-theme-base.scss's _variable.scss file. 
+- Variables that have to do with positioning, padding, etc. should go in bootstrap-asu.scss's _variable.scss file. 
+- Use only SCSS files, not SASS files.
+- Nesting should only be used to nest functionality that logically goes together, not just for the sake of nesting.
+
 ### CSS
 
 [Adhere to the Code Guide.](http://codeguide.co/#css)
