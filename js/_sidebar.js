@@ -15,9 +15,20 @@
       $this.affix( {
         offset: {
           top : $this.offset().top,
-          bottom: $('.footer').outerHeight(true) + 94
+          bottom : function () {
+            return ( this.bottom = $('.footer').outerHeight(true) )
+          }
         }
       } )
+
+      // Hacky fix for responsive width
+      var responsiveFix = function () {
+        $this.width( $this.parent().width() )
+      }
+
+      $(window).smartresize( responsiveFix )
+      
+      responsiveFix()
     })
 
     /*
