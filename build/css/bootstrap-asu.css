@@ -2540,6 +2540,7 @@ button {
 }
 .collapse.in {
   display: block;
+  max-height: none !important;
 }
 
 tr.collapse.in {
