@@ -16,7 +16,10 @@
         offset: {
           top : $this.offset().top,
           bottom : function () {
-            return ( this.bottom = $('.footer').outerHeight(true) )
+            var fix = parseInt($this.css('margin-bottom'), 10)
+            fix += parseInt($this.css('padding-top'), 10)
+            fix += parseInt($this.css('padding-bottom'), 10)
+            return  $('.footer').outerHeight(true) + fix
           }
         }
       } )
@@ -27,7 +30,7 @@
       }
 
       $(window).smartresize( responsiveFix )
-      
+
       responsiveFix()
     })
 
