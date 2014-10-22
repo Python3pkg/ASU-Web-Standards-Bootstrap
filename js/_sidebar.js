@@ -10,7 +10,7 @@
 
   $(document).ready(function () {
     var affixed = $('#sidebarNav').each(function ( i, e ) {
-      $this = $(this);
+      var $this = $(this);
 
       $this.affix( {
         offset: {
