@@ -9,7 +9,7 @@
   'use strict';
 
   $(document).ready(function () {
-    var affixed = $('#sidebarNav').each(function ( i, e ) {
+    var affixed = $('#sidebarNav').each(function ( ) {
       var $this = $(this);
 
       $this.affix( {

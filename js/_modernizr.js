@@ -11,5 +11,5 @@ if ( typeof Modernizr !== 'undefined' ) {
     yep : '/js/lightningtouch.js'
   } )
 } else {
-  console.log('Modernizr is required!')
+  throw new Error( 'Modernizr is required!' )
 }
