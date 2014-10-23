@@ -14,6 +14,7 @@
     placement: 'bottom',
     trigger: 'click',
     content: function () {
+      // TODO
       return '<a href="#">Add this event to your calendar<\/a>';
     }
   } )

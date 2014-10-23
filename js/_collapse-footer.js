@@ -22,7 +22,7 @@
   }
 
   $(document).ready(function () {
-    // Keep all window resize scripts withing the trottling function
+    // Keep all window resize scripts within the throttling function
     $(window).smartresize( collapseFooter )
 
     // Run collapse footer right off the bat
