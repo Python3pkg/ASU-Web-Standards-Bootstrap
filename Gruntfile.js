@@ -19,6 +19,16 @@ module.exports = function (grunt) {
                 src: 'js/*.js'
             }
         },
+        // JS Coding Style
+        // ===============
+        jscs: {
+            options: {
+                config: 'js/.jscsrc'
+            },
+            core: {
+                src: '<%= jshint.core.src %>'
+            }
+        },
         // QUnit
         // =====
         qunit: {
@@ -38,7 +48,8 @@ module.exports = function (grunt) {
         // ============
         sass: {
             options: {
-                style: 'expanded'
+                style: 'expanded',
+                sourcemap: 'auto'
             },
             dist: {
                 files: {
@@ -49,7 +60,30 @@ module.exports = function (grunt) {
         },
         // JS Compile
         // ==========
-        
+        concat: {
+            bootstrapAsu: {
+                src: [
+                    'js/_modernizr.js',
+                    'js/_smoothscroll.js',
+                    'js/_debounce.js',
+                    'js/_calendar.js',
+                    'js/_sidebar.js',
+                    'js/_collapse-footer.js'
+                ],
+                 dest: 'build/js/bootstrap-asu.js'
+            }
+        },
+        // JS Uglify
+        // =========
+        uglify: {
+          options: {
+            preserveComments: 'some'
+          },
+          core: {
+            src: 'build/js/bootstrap-asu.js',
+            dest: 'build/js/bootstrap-asu.min.js'
+          }
+        },
         // Watch
         // =====
         watch: {
@@ -63,15 +97,21 @@ module.exports = function (grunt) {
     // These plugins provide necessary tasks
     grunt.loadNpmTasks('grunt-contrib-qunit');
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-jscs');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-scss-lint');
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-concat');
 
     // Default task
     grunt.registerTask('default', [
         'jshint', 
+        'jscs',
         'scsslint',
         'qunit',
-        'sass']);
+        'sass',
+        'concat',
+        'uglify']);
 };
 

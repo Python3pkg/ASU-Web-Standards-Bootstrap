@@ -17,8 +17,9 @@
    */
   var debounce = function ( func, threshold, execAsap ) {
     var timeout
-    return function debounced () {
-      var obj = this, args = arguments
+    return function () {
+      var obj = this
+      var args = arguments
 
       function delayed () {
         if ( ! execAsap ) {
