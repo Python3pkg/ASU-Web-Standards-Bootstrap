@@ -10,7 +10,7 @@
 
   function generateICS ( data ) {
     // TODO
-    return ''
+    return '' + data
   }
 
   $('.calendarPopover').popover( {
@@ -26,10 +26,12 @@
       var filename = $(this).attr('data-filename') || 'invite.ics'
 
       var ics = generateICS( {
-        dateTime, eventName, timeZone
+        dateTime : dateTime,
+        eventName : eventName,
+        timeZone : timeZone
       } )
 
-      return '<a download="' . filename . '" href="' + 'data:text/plain;charset=utf-8,' + encodeURIComponent(text) + '">Add this event to your calendar<\/a>';
+      return '<a download="' + filename + '" href="' + 'data:text/plain;charset=utf-8,' + encodeURIComponent(ics) + '">Add this event to your calendar<\/a>';
     }
   } )
 } (jQuery);
