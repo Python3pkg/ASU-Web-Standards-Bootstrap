@@ -8,14 +8,28 @@
 +function ($) {
   'use strict';
 
+  function generateICS ( data ) {
+    // TODO
+    return ''
+  }
+
   $('.calendarPopover').popover( {
     animation: true,
     html: true,
     placement: 'bottom',
     trigger: 'click',
     content: function () {
-      // TODO
-      return '<a href="#">Add this event to your calendar<\/a>';
+      // Grab the datetime from the content
+      var dateTime = $(this).find('time').attr('datetime') || ''
+      var eventName = $(this).attr('title') || ''
+      var timeZone = $(this).find('time').attr('data-timezone') || ''
+      var filename = $(this).attr('data-filename') || 'invite.ics'
+
+      var ics = generateICS( {
+        dateTime, eventName, timeZone
+      } )
+
+      return '<a download="' . filename . '" href="' + 'data:text/plain;charset=utf-8,' + encodeURIComponent(text) + '">Add this event to your calendar<\/a>';
     }
   } )
 } (jQuery);
