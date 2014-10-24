@@ -35,7 +35,7 @@ module.exports = function (grunt) {
             options: {
                 inject: 'test/qunit/phantom.js'
             },
-            files: ['test/qunit/**/*.html']
+            files: ['test/qunit/index.html']
         },
         // SCSS Lint
         // =========
@@ -53,8 +53,8 @@ module.exports = function (grunt) {
             },
             dist: {
                 files: {
-                    'build/css/bootstrap-asu.css' : 'bootstrap-asu.scss',
-                    'build/css/bootstrap-asu-theme-base.css' : 'bootstrap-asu-theme-base.scss'
+                    'build/css/bootstrap-asu.css' : 'scss/bootstrap-asu.scss',
+                    'build/css/bootstrap-asu-theme-base.css' : 'scss/bootstrap-asu-theme-base.scss'
                 }
             }
         },
