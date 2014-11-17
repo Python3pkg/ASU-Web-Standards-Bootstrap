@@ -22,6 +22,15 @@
       margin-left: -570px;
     }
 
+    .row {
+      display: table-row;
+
+      .column {
+        display: table-cell;
+        float: none;
+      }
+    }
+
     > .row > .column {
       > li > a {
         display: block;

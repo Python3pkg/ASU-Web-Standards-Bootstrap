@@ -2428,6 +2428,13 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
     margin-left: -570px;
   }
 }
+.mega-menu .dropdown-menu .row {
+  display: table-row;
+}
+.mega-menu .dropdown-menu .row .column {
+  display: table-cell;
+  float: none;
+}
 .mega-menu .dropdown-menu > .row > .column > li > a {
   display: block;
   clear: both;
