@@ -21,13 +21,14 @@
   background-repeat: no-repeat;
   min-height: 350px;
 
-  h2, .h2 {
+  h2, 
+  .h2 {
     margin-bottom: 10px;
     color: white;
     font-size: 50px;
     line-height: 1;
     font-weight: 900;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 5px rgba(0, 0, 0, .5);
   }
 
   p {
@@ -35,7 +36,7 @@
     color: white;
     font-size: 24px;
     font-weight: 900;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+    text-shadow: 0 0 5px rgba(0, 0, 0, .5); 
   }
 
   .cite {
@@ -93,7 +94,7 @@
 }
 
 .hero-video {
-  padding: 0px;
+  padding: 0;
   overflow: hidden;
   position: relative;
 

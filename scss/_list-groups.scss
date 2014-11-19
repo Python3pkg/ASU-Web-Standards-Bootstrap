@@ -2,7 +2,7 @@
 .list-group-item {
   padding: 10px 5px;
   font-weight: normal;
-  border: none;
+  border: 0;
   border-top: 1px solid #d7d7d7;
 
   &:first-child {
@@ -15,7 +15,9 @@
   }
 
   &.active {
-    &, &:hover, &:focus {
+    &, 
+    &:hover, 
+    &:focus {
       color: $asu-brand-primary;
       background-color: white;
       border-color: #d7d7d7;

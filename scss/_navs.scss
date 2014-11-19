@@ -1,6 +1,6 @@
 .nav  {
   > li > a { 
-    border-bottom: 0px;
+    border-bottom: 0;
   }
   .open > a {
     &, &:hover, &:focus { 
@@ -18,10 +18,6 @@
 
   > a {
     margin-right: 0;
-    line-height:inherit;
-    border: none;
-    border-radius: 0;
-
     color: #a7a7a7;
     line-height: $asu-line-height-base;
     border: 1px solid #d7d7d7;

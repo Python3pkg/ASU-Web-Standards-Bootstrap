@@ -1,14 +1,14 @@
 //= Custom CSS
-/**
- * This file only contains colors that are related to the look of the 
- * website!
- */
+//
+// This file only contains colors that are related to the look of the 
+// website!
+//
 
 //== Web Standards
 
 //=== Header
 $ws-header-bg:              #FFFFFF;
-$ws-site-name-color:        #4F5557;
+$ws-site-name-color:        #4f5557;
 $ws-site-name-first-color:  #000000; // TODO verify
 
 
@@ -75,7 +75,7 @@ $ws-calendar-date-bg:               #fafafa !default;
 $ws-calendar-date-border:           #a1a1a1 !default;
 
 $ws-calendar-date-hover-border:     $asu-red !default;
-$ws-calendar-date-hover-box-shadow: rgba(0, 0, 0, 0.2) !default;
+$ws-calendar-date-hover-box-shadow: rgba(0, 0, 0, .2) !default;
 
 $ws-calendar-date-weekday-bg:       white !default;
 $ws-calendar-date-weekday-border:   #afa593 !default;

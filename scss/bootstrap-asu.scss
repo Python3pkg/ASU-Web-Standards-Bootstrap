@@ -6,47 +6,47 @@
  * ======================================================================== */
 
 //== Core variables and mixins
-@import "scss/variables";
-@import "scss/mixins";
+@import 'scss/variables';
+@import 'scss/mixins';
 
 //== Base elements
-@import "scss/scaffolding.scss";
+@import 'scss/scaffolding';
 
 //== Scaffolding
-@import "scss/tables.scss";
-@import "scss/forms.scss";
-@import "scss/buttons.scss";
-@import "scss/dropdowns.scss";
-@import "scss/inputs.scss";
+@import 'scss/tables';
+@import 'scss/forms';
+@import 'scss/buttons';
+@import 'scss/dropdowns';
+@import 'scss/inputs';
 
 //== Components
-@import "scss/navs.scss";
-@import "scss/breadcrumbs.scss";
-@import "scss/pagination.scss";
-@import "scss/labels.scss";
-@import "scss/badges.scss";
-@import "scss/thumbnails.scss";
-@import "scss/alerts.scss";
-@import "scss/progress-bars.scss";
-@import "scss/list-groups.scss";
-@import "scss/panels.scss";
-@import "scss/wells.scss";
-@import "scss/modals.scss";
-@import "scss/tooltips.scss";
-@import "scss/popovers.scss";
-@import "scss/calendar.scss";
-@import "scss/hero.scss";
-@import "scss/profile.scss";
-@import "scss/flex-video.scss";
-@import "scss/footer.scss";
-@import "scss/mega-menu.scss";
-@import "scss/alterna-tabs.scss";
-@import "scss/campus-visit.scss";
-@import "scss/animations.scss";
+@import 'scss/navs';
+@import 'scss/breadcrumbs';
+@import 'scss/pagination';
+@import 'scss/labels';
+@import 'scss/badges';
+@import 'scss/thumbnails';
+@import 'scss/alerts';
+@import 'scss/progress-bars';
+@import 'scss/list-groups';
+@import 'scss/panels';
+@import 'scss/wells';
+@import 'scss/modals';
+@import 'scss/tooltips';
+@import 'scss/popovers';
+@import 'scss/calendar';
+@import 'scss/hero';
+@import 'scss/profile';
+@import 'scss/flex-video';
+@import 'scss/footer';
+@import 'scss/mega-menu';
+@import 'scss/alterna-tabs';
+@import 'scss/campus-visit';
+@import 'scss/animations';
 
 //== FontAwesome
-@import "scss/font_awesome/font-awesome";
+@import 'scss/font_awesome/font-awesome';
 
 //== Custom
 // Uncomment this line if you plan on hosting the Roboto font yourself
-// @import "scss/fonts.scss";
+// @import 'scss/fonts';
