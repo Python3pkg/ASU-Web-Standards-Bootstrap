@@ -42,7 +42,13 @@ module.exports = function (grunt) {
         scsslint: {
             allFiles: [
                 'scss/*.scss',
+                'scss/mixins/*.scss',
+                'scss/theme/*.scss'
+                // Not font_awesome
             ],
+            options: {
+              config: 'scss/.scss-lint.yml'
+          }
         },
         // SASS Compile
         // ============
