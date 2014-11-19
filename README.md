@@ -1,6 +1,6 @@
 # ASU Bootstrap Addon
 
-[![Build Status](https://travis-ci.org/gios-asu/ASU-Bootstrap-Addon.svg)](https://travis-ci.org/gios-asu/ASU-Bootstrap-Addon) [![Code Climate](https://codeclimate.com/github/gios-asu/ASU-Bootstrap-Addon/badges/gpa.svg)](https://codeclimate.com/github/gios-asu/ASU-Bootstrap-Addon) [![Test Coverage](https://codeclimate.com/github/gios-asu/ASU-Bootstrap-Addon/badges/coverage.svg)](https://codeclimate.com/github/gios-asu/ASU-Bootstrap-Addon)
+[![Build Status](https://travis-ci.org/gios-asu/ASU-Web-Standards-Bootstrap.svg?branch=master)](https://travis-ci.org/gios-asu/ASU-Web-Standards-Bootstrap) [![Code Climate](https://codeclimate.com/github/gios-asu/ASU-Bootstrap-Addon/badges/gpa.svg)](https://codeclimate.com/github/gios-asu/ASU-Bootstrap-Addon) [![Test Coverage](https://codeclimate.com/github/gios-asu/ASU-Bootstrap-Addon/badges/coverage.svg)](https://codeclimate.com/github/gios-asu/ASU-Bootstrap-Addon)
 
 This ASU Bootstrap Addon provides stylesheets to be consistent with the new ASU Web Standards that are being rolled out to the schools at ASU.  The theme is based off of the work done by 29thDrive and is consistent with their initial work.
 
