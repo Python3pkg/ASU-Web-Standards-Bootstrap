@@ -1,26 +1,27 @@
+//== Input Groups
 .input-group-addon {
-  padding: $asu-padding-base-vertical $asu-padding-base-horizontal;
-  font-size: $asu-font-size-medium;
-  color: $asu-gray-dark;
   border: 1px solid $asu-gray;
+  color: $asu-gray-dark;
+  font-size: $asu-font-size-medium;
+  padding: $asu-padding-base-vertical $asu-padding-base-horizontal;
 }
 
-// TODO probably a better way to write this
-.input-group-addon.input-sm, .form-horizontal .form-group-sm .input-group-addon.form-control,
+.input-group-addon.input-sm,
+.form-horizontal .form-group-sm .input-group-addon.form-control,
 .input-group-sm > .input-group-addon, 
-.input-group-sm > .input-group-btn > .input-group-addon.btn { 
-  padding: $asu-padding-small-vertical $asu-padding-small-horizontal;
-  font-size: $asu-font-size-small;
+.input-group-sm > .input-group-btn > .input-group-addon.btn {
   border-radius: $asu-border-radius-base;
+  font-size: $asu-font-size-small;
+  padding: $asu-padding-small-vertical $asu-padding-small-horizontal;
 }
 
-// TODO probably a better way to write this
-.input-group-addon.input-lg, .form-horizontal .form-group-lg .input-group-addon.form-control, 
+.input-group-addon.input-lg,
+.form-horizontal .form-group-lg .input-group-addon.form-control, 
 .input-group-lg > .input-group-addon, 
-.input-group-lg > .input-group-btn > .input-group-addon.btn { 
-  padding: $asu-padding-large-vertical $asu-padding-large-horizontal;
-  font-size: $asu-font-size-large;
+.input-group-lg > .input-group-btn > .input-group-addon.btn {
   border-radius: $asu-border-radius-base;
+  font-size: $asu-font-size-large;
+  padding: $asu-padding-large-vertical $asu-padding-large-horizontal;
 }
 
 .input-group-btn > .btn { 

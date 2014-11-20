@@ -1,7 +1,10 @@
-.hero {
-  padding: 30px 0 60px 0;
+//== Hero
 
-  h2, .h2 {
+.hero {
+  padding: 30px 0 60px;
+
+  h2,
+  .h2 {
     font-size: 38px;
     letter-spacing: -1px;
     word-wrap: break-word;
@@ -12,45 +15,47 @@
   }
 }
 
+//== Hero Images
+
 .hero-bg-img {
   background-position: center center;
-  -webkit-background-size: cover;
+  background-repeat: no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
+  -webkit-background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat;
   min-height: 350px;
 
   h2, 
   .h2 {
-    margin-bottom: 10px;
     color: white;
     font-size: 50px;
-    line-height: 1;
     font-weight: 900;
+    line-height: 1;
+    margin-bottom: 10px;
     text-shadow: 0 0 5px rgba(0, 0, 0, .5);
   }
 
   p {
-    max-width: 900px;
     color: white;
     font-size: 24px;
     font-weight: 900;
+    max-width: 900px;
     text-shadow: 0 0 5px rgba(0, 0, 0, .5); 
   }
 
   .cite {
-    margin-bottom: 1.3em;
     color: white;
     font-weight: bold;
+    margin-bottom: 1.3em;
   }
 
   &.hero-programs,
   &.hero-action-call,
   &.hero-degrees {
-    background-image: url(../img/hero-background-1.jpg);
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/hero-background-1.jpg', sizingMethod='scale');
+    background-image: url('../img/hero-background-1.jpg');
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/hero-background-1.jpg', sizingMethod='scale')";
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/hero-background-1.jpg', sizingMethod='scale');
   }
 }
 
@@ -59,8 +64,8 @@
 
   p {
     display: block;
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -81,21 +86,23 @@
   .hero {
     padding-top: 90px;
 
-    h2, .h2 {
+    h2,
+    .h2 {
       font-size: 48px;
     }
   }
 
   .hero-bg-img {
-    h2, .h2 {
+    h2,
+    .h2 {
       font-size: 60px;
     }
   }
 }
 
 .hero-video {
-  padding: 0;
   overflow: hidden;
+  padding: 0;
   position: relative;
 
   @media (min-width: 768px) {
@@ -103,24 +110,23 @@
   }
 
   video {
+    height: inherit !important;
     max-width: 100%;
     width: 100% !important;
-    height: inherit !important;
 
     @media (min-width: 768px) {
+      overflow: hidden;
       position: absolute;
       top: 0;
-      overflow: hidden;
       z-index: 1;
     }
   }
 
   > .container {
     @media (min-width: 768px) {
-      z-index: 12;
-      position: absolute;
       bottom: 10px;
+      position: absolute;
+      z-index: 12;
     }
   }
 }
-

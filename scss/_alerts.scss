@@ -10,18 +10,21 @@
     $asu-alert-success-border, 
     $asu-alert-success-text);
 }
+
 .alert-info {
   @include alert-variant(
     $asu-alert-info-bg, 
     $asu-alert-info-border, 
     $asu-alert-info-text);
 }
+
 .alert-warning {
   @include alert-variant(
     $asu-alert-warning-bg, 
     $asu-alert-warning-border, 
     $asu-alert-warning-text);
 }
+
 .alert-danger {
   @include alert-variant(
     $asu-alert-danger-bg, 

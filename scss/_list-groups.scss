@@ -1,26 +1,28 @@
 //== List groups
+
 .list-group-item {
-  padding: 10px 5px;
-  font-weight: normal;
   border: 0;
   border-top: 1px solid #d7d7d7;
+  font-weight: normal;
+  padding: 10px 5px;
 
   &:first-child {
-    border-top-right-radius: 0;
     border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
+  
   &:last-child {
-    border-top-top-radius: 0;
-    border-top-bottom-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   &.active {
     &, 
     &:hover, 
     &:focus {
-      color: $asu-brand-primary;
       background-color: white;
       border-color: #d7d7d7;
+      color: $asu-brand-primary;
       font-weight: bold;
 
       .list-group-item-text {
@@ -31,14 +33,15 @@
 }
 
 a.list-group-item {
-  color: $asu-brand-primary;
   border-bottom: 0;
+  color: $asu-brand-primary;
 
   .list-group-item-heading {
     color: $asu-brand-primary;
   }
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $asu-brand-primary;
     font-weight: bold;
   }
@@ -59,22 +62,24 @@ a.list-group-item {
 
 
 .inline-link-list {
-  padding-left: 0;
   list-style: none;
+  padding-left: 0;
 
-  &:before, &:after {
-    content: " ";
+  &:before,
+  &:after {
+    content: ' ';
     display: table;
   }
 
   &:after {
     clear: both;
   }
+
   li {
     float: left;
 
     &:after {
-      content: "|";
+      content: '|';
       font-weight: normal;
       margin: 0 5px;
     }

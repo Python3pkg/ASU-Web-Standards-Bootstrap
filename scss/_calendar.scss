@@ -3,7 +3,7 @@
 .calendar-group {
   &:before,
   &:after {
-    content: " ";
+    content: ' ';
     display: table;
   }
 
@@ -13,23 +13,24 @@
 }
 
 .calendar-date {
-  width: 125px;
-  display: block;
-  float: left;
-  padding: 10px;
-  margin: 0 30px 24px 0;
-  text-transform: uppercase;
-  text-align: center;
   border-radius: 4px;
   cursor: default;
+  display: block;
+  float: left;
+  margin: 0 30px 24px 0;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 125px;
 
-  &:before, &:after {
-    content: " ";
+  &:before,
+  &:after {
+    content: ' ';
     display: table;
   }
 
   &:after {
-    clear:both;
+    clear: both;
   }
 
   &.last {
@@ -41,26 +42,26 @@
   }
 
   .weekday {
+    border-radius: 4px;
     float: left;
-    padding: 3px 7px;
-    margin-bottom: 5px;
     font-size: 11px;
     line-height: 1;
-    border-radius: 4px;
+    margin-bottom: 5px;
+    padding: 3px 7px;
   }
 
   .month {
     float: left;
-    padding: 3px 7px;
     font-size: 13px;
     line-height: 1;
+    padding: 3px 7px;
   }
 
   .date {
-    width: 60px;
     float: right;
     font-size: 50px;
-    line-height: .9;
     font-weight: 200;
+    line-height: .9;
+    width: 60px;
   }
 }

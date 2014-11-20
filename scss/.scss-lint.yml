@@ -19,7 +19,8 @@ linters:
     enabled: true
 
   DuplicateProperty:
-    enabled: true
+    enabled: false
+    # false because we have IE fallbacks
 
   EmptyLineBetweenBlocks:
     enabled: true

@@ -1,9 +1,13 @@
-.nav  {
+//== Navigation
+.nav {
   > li > a { 
     border-bottom: 0;
   }
+
   .open > a {
-    &, &:hover, &:focus { 
+    &,
+    &:hover,
+    &:focus { 
       border-color: $asu-brand-primary;
     }
   }
@@ -17,15 +21,16 @@
   border-top: 5px solid transparent;
 
   > a {
-    margin-right: 0;
-    color: #a7a7a7;
-    line-height: $asu-line-height-base;
     border: 1px solid #d7d7d7;
     border-bottom-color: transparent;
     border-radius: 0;
+    color: #a7a7a7;
+    line-height: $asu-line-height-base;
+    margin-right: 0;
   }
 
-  &:hover, &.active {
+  &:hover,
+  &.active {
     border-top: 5px solid $asu-brand-primary;
 
     > a {
@@ -34,41 +39,51 @@
   }
 
   &.active > a {
-    &, &:hover, &:focus {
+    &,
+    &:hover,
+    &:focus {
       color: $asu-brand-primary;
     }
   }
 }
 
 .nav-pills > li.active > a {
-  &, &:hover, &:focus {
+  &,
+  &:hover,
+  &:focus {
     background-color: $asu-brand-primary;
   }
 }
 
-.nav-justified, .nav-tabs.nav-justified, .alterna-tabs.nav-justified { 
+.nav-justified,
+.nav-tabs.nav-justified,
+.alterna-tabs.nav-justified { 
   width: 100%; 
 
   > li {
     float: none;
 
     > a {
-      text-align: center;
       margin-bottom: 5px;
+      text-align: center;
     }
   }
 }
 
-.nav-tabs-justified, .nav-tabs.nav-justified, .alterna-tabs.nav-justified {  
+.nav-tabs-justified,
+.nav-tabs.nav-justified,
+.alterna-tabs.nav-justified {  
   border-bottom: 0;
 
   > li > a {
-    margin-right: 0;
     border-radius: 4px;
+    margin-right: 0;
   }
 
   > .active > a {
-    &, :hover, &:focus {
+    &,
+    :hover,
+    &:focus {
       border: 1px solid #ddd;
     }
   }
@@ -80,7 +95,9 @@
     }
 
     > .active > a {
-      &, :hover, &:focus {
+      &,
+      :hover,
+      &:focus {
         border-bottom-color: white;
       }
     }
