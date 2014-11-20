@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/gios-asu/ASU-Web-Standards-Bootstrap.svg?branch=master)](https://travis-ci.org/gios-asu/ASU-Web-Standards-Bootstrap) [![Code Climate](https://codeclimate.com/github/gios-asu/ASU-Bootstrap-Addon/badges/gpa.svg)](https://codeclimate.com/github/gios-asu/ASU-Bootstrap-Addon) [![Test Coverage](https://codeclimate.com/github/gios-asu/ASU-Bootstrap-Addon/badges/coverage.svg)](https://codeclimate.com/github/gios-asu/ASU-Bootstrap-Addon)
 
-This ASU Bootstrap Addon provides stylesheets to be consistent with the new ASU Web Standards that are being rolled out to the schools at ASU.  The theme is based off of the work done by 29thDrive and is consistent with their initial work.
+This ASU Bootstrap Addon provides stylesheets and javascript that are consistent with the new ASU Web Standards being rolled out to the school websites at ASU. The intent of this Bootstrap Addon is to provide a universal source for the ASU web standards that can be applied to any website, reguardless of what technology used to build a site. This addon is based off of the work done by [29thDrive](http://asu-ws.29thdrive.com/) and is consistent with their initial work. This Bootstrap Addon is maintained by the Julie Ann Wrigley Global Institute of Sustainability.
 
 For additional documentation, checkout our [GitHub pages](https://gios-asu.github.io/).
 
@@ -67,3 +67,10 @@ This project is being heavily used by:
 
 - [ASU-Wordpress-Web-Standards-Theme](https://github.com/gios-asu/ASU-Wordpress-Web-Standards-Theme)
 - [gios-asu.github.io](https://github.com/gios-asu/gios-asu.github.io)
+
+
+# Other Implementations of the ASU Web Standards
+
+- [ASU Webspark](https://drupal.asu.edu/fserver/webspark) - Drupal 7 Distribution
+- [ASU slimspark](https://drupal.asu.edu/fserver/asu_slimspark) - Drupal 7 Stand alone Theme
+
