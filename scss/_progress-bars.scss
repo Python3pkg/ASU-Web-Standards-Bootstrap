@@ -5,23 +5,23 @@
 }
 
 .progress-bar {
+  background-color: $asu-brand-primary;
   font-size: $asu-font-size-small;
   line-height: $asu-line-height-computed;
-  background-color: $asu-brand-primary;
 }
 
 .progress-bar-success {
   background-color: $asu-state-success-text;
 }
 
-.progress-bar-info  {
+.progress-bar-info {
   background-color: $asu-state-info-text;
 }
 
-.progress-bar-warning  {
+.progress-bar-warning {
   background-color: $asu-state-warning-text;
 }
 
-.progress-bar-danger  {
+.progress-bar-danger {
   background-color: $asu-state-danger-text;
 }

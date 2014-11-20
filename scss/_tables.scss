@@ -9,8 +9,8 @@
       > tr > {
         th,
         td {
-          line-height: $asu-line-height-base;
           border-top: 1px solid $asu-gray-lighter;
+          line-height: $asu-line-height-base;
         }
       }
     }
@@ -43,7 +43,8 @@
 }
 
 .table-striped > tbody > tr:nth-child(odd) > {
-  td, th {
+  td,
+  th {
     background-color: $asu-gray-lightest;
   }
 }
@@ -55,8 +56,8 @@
 
 .table-responsive {
   @media screen and (max-width: 767px) {
-    margin-bottom: 18px;
     border: 1px solid $asu-gray-lighter;
+    margin-bottom: 18px;
   }
 }
 
@@ -76,14 +77,14 @@
         > tr > {
           th,
           td {
-            display: block;
-            width: 100%;
-            float: left;
-            clear: left;
-            padding: 10px 15px;
-            border-top: 0;
             border-bottom: 0;
+            border-top: 0;
+            clear: left;
+            display: block;
+            float: left;
+            padding: 10px 15px;
             padding-top: 0;
+            width: 100%;
 
             &:first-child {
               padding-top: 15px;

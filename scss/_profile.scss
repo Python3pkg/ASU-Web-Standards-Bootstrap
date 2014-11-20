@@ -4,7 +4,7 @@
   margin-bottom: 24px;
 
   .profile-heading {
-    padding: 40px 40px 14px 40px;
+    padding: 40px 40px 14px;
   }
 
   .profile-pic {
@@ -12,14 +12,14 @@
   }
 
   .profile-actions {
-    padding-left: 0;
-    list-style: none;
     font-size: 14px;
     line-height: 24px;
+    list-style: none;
+    padding-left: 0;
   }
 
   .tab-content {
-    padding: 40px 40px 14px 40px;
+    padding: 40px 40px 14px;
   }
 
   .nav-tabs {

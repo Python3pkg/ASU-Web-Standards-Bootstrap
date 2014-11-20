@@ -1,44 +1,51 @@
+//== Pagination
 .pagination {
   margin: $asu-padding-xlarge-vertical 0;
 
   > li > {
-    a, span {
-      padding: 6px 19px;
-      line-height: $asu-line-height-base;
+    a,
+    span {
       color: $asu-brand-primary;
+      line-height: $asu-line-height-base;
+      padding: 6px 19px;
 
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         color: $asu-link-hover-color;
       }
     }
   }
 
   > .active > a {
-    &, &:hover, &:focus {
+    &,
+    &:hover,
+    &:focus {
       background-color: $asu-brand-primary;
       border-color: $asu-brand-primary;
     }
   }
 }
 
-
 .pagincation-lg {
   > {
     li {
-      a, span {
-        padding: $asu-padding-large-vertical $asu-padding-large-horizontal;
+      a,
+      span {
         font-size: $asu-font-size-large;
+        padding: $asu-padding-large-vertical $asu-padding-large-horizontal;
       }
 
       &:first-child > {
-        a, span {
+        a,
+        span {
           border-bottom-left-radius: $asu-border-radius-base; 
           border-top-left-radius: $asu-border-radius-base; 
         }
       }
 
       &:last-child > {
-        a, span {
+        a,
+        span {
           border-bottom-left-radius: $asu-border-radius-base; 
           border-top-left-radius: $asu-border-radius-base; 
         }
@@ -50,20 +57,23 @@
 .pagination-sm {
   > {
     li {
-      a, span {
+      a,
+      span {
+        font-size: $asu-font-size-small;
         padding: 5px $asu-padding-small-horizontal;
-        font-size: $asu-font-size-small; 
       }
 
-       &:first-child > {
-        a, span {
+      &:first-child > {
+        a,
+        span {
           border-bottom-left-radius: $asu-border-radius-base; 
           border-top-left-radius: $asu-border-radius-base; 
         }
       }
 
       &:last-child > {
-        a, span {
+        a,
+        span {
           border-bottom-left-radius: $asu-border-radius-base; 
           border-top-left-radius: $asu-border-radius-base; 
         }
@@ -71,7 +81,6 @@
     }
   }
 }
-
 
 .pager {
   margin: $asu-padding-xlarge-vertical 0;

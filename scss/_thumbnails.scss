@@ -1,14 +1,17 @@
 //== Thumbnails
 .thumbnail {
-  margin-bottom: $asu-padding-xlarge-vertical;
   line-height: $asu-line-height-base;
+  margin-bottom: $asu-padding-xlarge-vertical;
 
   .captions {
     color: $asu-gray-darker;
   }
 }
- a.thumbnail {
-  &:hover, &:focus, &.active {
+
+a.thumbnail {
+  &:hover,
+  &:focus,
+  &.active {
     border-color: $asu-brand-primary;
   }
 }
