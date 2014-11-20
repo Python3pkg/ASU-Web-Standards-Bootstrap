@@ -4,10 +4,6 @@
  * Copyright 2014 ASU
  * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
  * ======================================================================== */
-/**
- * This file only contains colors that are related to the look of the 
- * website!
- */
 .navbar-ws {
   background-color: #353535;
 }
@@ -100,7 +96,7 @@
 }
 
 #site-name-desktop h1 a {
-  color: #4F5557;
+  color: #4f5557;
 }
 #site-name-desktop h1 a:first-child {
   color: #000000;

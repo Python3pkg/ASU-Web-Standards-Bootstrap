@@ -1,9 +1,10 @@
 .gray-back {
-    background-color: $ws-gray-back;
+  background-color: $ws-gray-back;
 }
 
 //== Header
 //   As per the web standards, the top of the page is to always be white.
-#masthead, body {
+#masthead,
+body {
   background-color: $ws-header-bg;
 }

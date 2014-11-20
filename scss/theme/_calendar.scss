@@ -1,9 +1,10 @@
 //== Calendar Colors
 
 .calendar-date {
-  color: $ws-calendar-date-text;
   background-color: $ws-calendar-date-bg;
   border: 1px solid $ws-calendar-date-border;
+  color: $ws-calendar-date-text;
+  
 
   &:hover {
     border: 1px solid $ws-calendar-date-hover-border;

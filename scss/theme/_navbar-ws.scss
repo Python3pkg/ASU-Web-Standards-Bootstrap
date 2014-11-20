@@ -6,23 +6,37 @@
     li > a {
       color: $ws-navbar-text;
 
-      &:hover, &:focus {
-        color: $ws-navbar-focus-text;
+      &:hover,
+      &:focus {
         background-color: $ws-navbar-focus-bg;
+        color: $ws-navbar-focus-text;
       }
     }
 
     .active > a {
-      &, &:hover, &:focus {
-        color: $ws-navbar-text;
+      &,
+      &:hover,
+      &:focus {
         background-color: $ws-navbar-active-bg;
+        color: $ws-navbar-text;
       }
     }
 
-     .disabled > a {
-      &, &:hover, &:focus {
-        color: $ws-navbar-disabled-text;
+    .disabled > a {
+      &,
+      &:hover,
+      &:focus {
         background-color: $ws-navbar-disabled-bg;
+        color: $ws-navbar-disabled-text;
+      }
+    }
+
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: $ws-navbar-nav-focus-bg;
+        color: $ws-navbar-nav-focus-text;
       }
     }
   }
@@ -30,7 +44,8 @@
   .navbar-brand {
     color: $ws-navbar-brand-text;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: $ws-navbar-brand-hover-text;
     }
 
@@ -40,7 +55,8 @@
   }
 
   .navbar-toggle {
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       background-color: $ws-navbar-toggle-focus-bg;
 
       .icon-bar {
@@ -58,13 +74,6 @@
     border-color: $ws-navbar-form-border;
   }
 
-  .navbar-nav > .open > a {
-    &, &:hover, &:focus {
-      background-color: $ws-navbar-nav-focus-bg;
-      color: $ws-navbar-nav-focus-text;
-    }
-  }
-
   .navbar-link {
     color: $ws-navbar-link-text;
 
@@ -76,7 +85,8 @@
   .btn-link {
     color: $ws-navbar-btn-link-text;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: $ws-navbar-btn-link-focus-text;
     }
 
@@ -100,16 +110,19 @@
     > li > a {
       color: $ws-navbar-dropdown-menu-link-text;
 
-      &:hover, :focus {
-        color: $ws-navbar-dropdown-menu-link-focus-text;
+      &:hover,
+      &:focus {
         background-color: $ws-navbar-dropdown-menu-link-focus-bg;
+        color: $ws-navbar-dropdown-menu-link-focus-text;
       }
     }
 
     > .active > a {
-      &, &:hover, &:focus {
-        color: $ws-navbar-dropdown-menu-link-focus-text;
+      &,
+      &:hover,
+      &:focus {
         background-color: $ws-navbar-dropdown-menu-link-focus-bg;
+        color: $ws-navbar-dropdown-menu-link-focus-text;
       }
     }
   }
@@ -124,9 +137,9 @@
   border-top-color: $ws-sidebar-nav-border-top;
 
   &:before {
-    border-right-color: $ws-sidebar-nav-border-other;
-    border-left-color: $ws-sidebar-nav-border-other;
     border-bottom-color: $ws-sidebar-nav-border-other;
+    border-left-color: $ws-sidebar-nav-border-other;
+    border-right-color: $ws-sidebar-nav-border-other;
   }
 }
 

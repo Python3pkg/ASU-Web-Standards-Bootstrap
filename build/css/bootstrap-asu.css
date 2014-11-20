@@ -649,12 +649,14 @@ input[type="month"].input-lg {
   line-height: 53px;
 }
 
-.radio, .checkbox {
+.radio,
+.checkbox {
   min-height: 24px;
   margin-top: 6px;
   margin-bottom: 6px;
 }
-.radio .inline, .checkbox .inline {
+.radio .inline,
+.checkbox .inline {
   display: inline-block;
   margin-right: 20px;
 }
@@ -835,7 +837,8 @@ select[multiple].input-lg {
   font-size: 16px;
   font-weight: 200;
 }
-.radio .fa-circle, .radio .fa-check,
+.radio .fa-circle,
+.radio .fa-check,
 .checkbox .fa-circle,
 .checkbox .fa-check {
   position: absolute;
@@ -843,7 +846,8 @@ select[multiple].input-lg {
   color: white;
 }
 @media (min-width: 1200px) {
-  .radio .fa-circle, .radio .fa-check,
+  .radio .fa-circle,
+  .radio .fa-check,
   .checkbox .fa-circle,
   .checkbox .fa-check {
     top: 4px;
@@ -1239,7 +1243,7 @@ input[type="button"].btn-block {
 }
 
 .nav > li > a {
-  border-bottom: 0px;
+  border-bottom: 0;
 }
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
   border-color: #a30046;
@@ -1253,9 +1257,6 @@ input[type="button"].btn-block {
 }
 .nav-tabs > li > a {
   margin-right: 0;
-  line-height: inherit;
-  border: none;
-  border-radius: 0;
   color: #a7a7a7;
   line-height: 1.44;
   border: 1px solid #d7d7d7;
@@ -1802,7 +1803,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 .list-group-item {
   padding: 10px 5px;
   font-weight: normal;
-  border: none;
+  border: 0;
   border-top: 1px solid #d7d7d7;
 }
 .list-group-item:first-child {
@@ -2179,7 +2180,8 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   background-repeat: no-repeat;
   min-height: 350px;
 }
-.hero-bg-img h2, .hero-bg-img .h2 {
+.hero-bg-img h2,
+.hero-bg-img .h2 {
   margin-bottom: 10px;
   color: white;
   font-size: 50px;
@@ -2237,7 +2239,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   }
 }
 .hero-video {
-  padding: 0px;
+  padding: 0;
   overflow: hidden;
   position: relative;
 }
@@ -2521,9 +2523,9 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   -webkit-perspective: 100;
   -moz-perspective: 100;
   perspective: 100;
-  -webkit-transition: all 0.25s ease-out;
-  -o-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: all .25s ease-out;
+  -o-transition: all .25s ease-out;
+  transition: all .25s ease-out;
 }
 .navbar-ws .open > .dropdown-menu {
   -webkit-transform: translate3d(0, 0, 0);
@@ -2532,16 +2534,16 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 
 a,
 button {
-  -webkit-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
 }
 
 .fade {
   opacity: 0;
-  -webkit-transition: opacity 0.15s linear;
-  -o-transition: opacity 0.15s linear;
-  transition: opacity 0.15s linear;
+  -webkit-transition: opacity .15s linear;
+  -o-transition: opacity .15s linear;
+  transition: opacity .15s linear;
 }
 .fade.in {
   opacity: 1;
@@ -2567,9 +2569,9 @@ tbody.collapse.in {
   position: relative;
   height: 0;
   overflow: hidden;
-  -webkit-transition: height 0.35s ease;
-  -o-transition: height 0.35s ease;
-  transition: height 0.35s ease;
+  -webkit-transition: height .35s ease;
+  -o-transition: height .35s ease;
+  transition: height .35s ease;
 }
 
 /*!

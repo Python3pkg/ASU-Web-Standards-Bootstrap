@@ -6,14 +6,17 @@
       > li > a {
         color: $ws-mega-menu-drop-link-text;
 
-        &:hover, &:focus {
-          color: $ws-mega-menu-drop-link-focus-text;
+        &:hover,
+        &:focus {
           background-color: $ws-mega-menu-drop-link-focus-bg;
+          color: $ws-mega-menu-drop-link-focus-text;
         }
       }
 
       > .active > a {
-        &, &:hover,  &:focus {
+        &,
+        &:hover,
+        &:focus {
           background-color: $ws-mega-menu-drop-link-active-focus-bg;
           color: $ws-mega-menu-drop-link-active-focus-text;
         }

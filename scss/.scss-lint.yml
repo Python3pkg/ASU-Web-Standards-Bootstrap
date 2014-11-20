@@ -62,6 +62,9 @@ linters:
     enabled: true
     convention: hyphenated_lowercase # or 'BEM', or a regex pattern
 
+  NestingDepth:
+    enabled: false
+
   PlaceholderInExtend:
     enabled: true
 
@@ -72,9 +75,11 @@ linters:
     enabled: true
     extra_properties: []
 
+  QualifyingElement:
+    enabled: false
+
   SelectorDepth:
-    enabled: true
-    max_depth: 4
+    enabled: false
 
   Shorthand:
     enabled: true
@@ -114,6 +119,9 @@ linters:
 
   UrlQuotes:
     enabled: true
+
+  VendorPrefixes:
+    enabled: false
 
   ZeroUnit:
     enabled: true
