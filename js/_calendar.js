@@ -12,7 +12,7 @@
   // ===============================
 
   var CalendarPopover = function (element, options) {
-    this.init('popover', element, options)
+    this.init('calendarPopover', element, options)
   }
 
   if (! $.fn.popover) throw new Error('Calendar Popover requires popover')

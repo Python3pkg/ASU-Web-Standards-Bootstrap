@@ -29,5 +29,16 @@ $(function () {
     strictEqual($popover[0], $el[0], 'collection contains element')
   })
 
-  // TODO
+  test('should render popover element', function () {
+    // Need to set animation false! Otherwise, this test will fail!
+    var $popover = $('<a href="#" title="idmontie" data-content="https://twitter.com/idmontie">@idmontie</a>')
+      .appendTo('#qunit-fixture')
+      .wsCalendarPopover({ animation: false })
+      .wsCalendarPopover('show')
+
+    notEqual($('.popover').length, 0, 'popover was inserted')
+    $popover.wsCalendarPopover('hide')
+    equal($('.popover').length, 0, 'popover removed')
+  })
+
 })
