@@ -16,7 +16,7 @@ For Web Standards documentation, checkout [The Hub](http://hub.asu.edu).
 - [Details](#details)
 - [Tools](#tools)
 - [Related Projects](#related-projects)
-- [Other Implementations of the ASU Web Standards](other-implementations-of-the-asu-web-standards)
+- [Other Implementations of the ASU Web Standards](#other-implementations-of-the-asu-web-standards)
 
 # Dependencies
 
