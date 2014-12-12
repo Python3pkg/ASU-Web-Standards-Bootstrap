@@ -6,7 +6,9 @@
  * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
  * ======================================================================== */
 /**
- * Variables
+ * ASU Web Standards Variables
+ *
+ * @see https://hub.asu.edu/brand-hq/brand-standards/color-palette
  */
 html {
   -webkit-font-smoothing: antialiased;
@@ -252,11 +254,11 @@ a.text-yellow:hover {
 }
 
 .text-green {
-  color: #006838;
+  color: #568e14;
 }
 
 a.text-green:hover {
-  color: #00351d;
+  color: #3b610e;
 }
 
 .text-primary {
@@ -1084,46 +1086,46 @@ select[multiple].input-lg {
 
 .btn-blue {
   color: white;
-  background-color: #038dd5;
-  border-color: #038dd5;
+  background-color: #008ed6;
+  border-color: #008ed6;
 }
 .btn-blue:hover, .btn-blue:focus, .btn-blue:active, .btn-blue.active, .open > .btn-blue.dropdown-toggle {
-  background-color: #026ca3;
-  border-color: #026599;
+  background-color: #006ca3;
+  border-color: #006599;
   color: white;
 }
 .btn-blue:active, .btn-blue.active, .open > .btn-blue.dropdown-toggle {
   background-image: none;
 }
 .btn-blue.disabled, .btn-blue.disabled:hover, .btn-blue.disabled:focus, .btn-blue.disabled:active, .btn-blue.disabled.active, .btn-blue[disabled], .btn-blue[disabled]:hover, .btn-blue[disabled]:focus, .btn-blue[disabled]:active, .btn-blue[disabled].active, fieldset[disabled] .btn-blue, fieldset[disabled] .btn-blue:hover, fieldset[disabled] .btn-blue:focus, fieldset[disabled] .btn-blue:active, fieldset[disabled] .btn-blue.active {
-  background-color: #038dd5;
-  border-color: #038dd5;
+  background-color: #008ed6;
+  border-color: #008ed6;
 }
 .btn-blue .badge {
   background-color: white;
-  color: #038dd5;
+  color: #008ed6;
 }
 
 .btn-success {
   color: white;
-  background-color: #148e4b;
-  border-color: #148e4b;
+  background-color: #568e14;
+  border-color: #568e14;
 }
 .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
-  background-color: #0e6133;
-  border-color: #0c582f;
+  background-color: #3b610e;
+  border-color: #36580c;
   color: white;
 }
 .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
   background-image: none;
 }
 .btn-success.disabled, .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled:active, .btn-success.disabled.active, .btn-success[disabled], .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled]:active, .btn-success[disabled].active, fieldset[disabled] .btn-success, fieldset[disabled] .btn-success:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success:active, fieldset[disabled] .btn-success.active {
-  background-color: #148e4b;
-  border-color: #148e4b;
+  background-color: #568e14;
+  border-color: #568e14;
 }
 .btn-success .badge {
   background-color: white;
-  color: #148e4b;
+  color: #568e14;
 }
 
 .btn-info {
@@ -1172,11 +1174,11 @@ select[multiple].input-lg {
 
 .btn-danger {
   color: white;
-  background-color: #db3a15;
+  background-color: #f47c00;
   border-color: #751f0b;
 }
 .btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle {
-  background-color: #ac2e11;
+  background-color: #c16200;
   border-color: #3d1006;
   color: white;
 }
@@ -1184,12 +1186,12 @@ select[multiple].input-lg {
   background-image: none;
 }
 .btn-danger.disabled, .btn-danger.disabled:hover, .btn-danger.disabled:focus, .btn-danger.disabled:active, .btn-danger.disabled.active, .btn-danger[disabled], .btn-danger[disabled]:hover, .btn-danger[disabled]:focus, .btn-danger[disabled]:active, .btn-danger[disabled].active, fieldset[disabled] .btn-danger, fieldset[disabled] .btn-danger:hover, fieldset[disabled] .btn-danger:focus, fieldset[disabled] .btn-danger:active, fieldset[disabled] .btn-danger.active {
-  background-color: #db3a15;
+  background-color: #f47c00;
   border-color: #751f0b;
 }
 .btn-danger .badge {
   background-color: white;
-  color: #db3a15;
+  color: #f47c00;
 }
 
 .btn-link {

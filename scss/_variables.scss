@@ -1,20 +1,30 @@
 /**
- * Variables
+ * ASU Web Standards Variables
+ *
+ * @see https://hub.asu.edu/brand-hq/brand-standards/color-palette
  */
 
-//== Web Standards Approved
+// Typography
+// ==========
 
-//=== Typography
-//    You can download this font directly from 
-//    the Android developers site:
-//    http://developer.android.com/design/downloads/index.html
-//    
-//    It is also available as a Google Font:
-//    http://www.google.com/fonts/specimen/Roboto
+// You can download this font directly from 
+// the Android developers site:
+// http://developer.android.com/design/downloads/index.html
+// 
+// It is also available as a Google Font:
+// http://www.google.com/fonts/specimen/Roboto
 $ws-font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-//== Standard Header
-$ws-header-bg: #fff;
+// ASU Header
+// ==========
+$ws-header-bg:                  #fff;
+
+// ASU Colors
+// ==========
+$asu-maroon:                    #903;
+$asu-blue:                      #008ed6;
+$asu-green:                     #568e14;
+$asu-orange:                    #f47c00;
 
 //== 29th Drive Vars
 $asu-gray-darker:               #2a2a2a !default;
@@ -24,10 +34,6 @@ $asu-gray-lighter:              #b7b7b7 !default;
 $asu-gray-lightest:             #fafafa !default;
 
 $asu-yellow:                    #ffc425 !default;
-$asu-green:                     #006838 !default;
-
-// @see https://hub.asu.edu/brand-hq/brand-standards/color-palette
-$asu-maroon:                    #903 !default;
 
 $asu-link-hover-color:          #d23153 !default;
 
@@ -106,12 +112,12 @@ $asu-btn-gold-bg:               #ffb310 !default;
 $asu-btn-gold-border:           #ffb310 !default;
 
 $asu-btn-blue-color:            white !default;
-$asu-btn-blue-bg:               #038dd5 !default;
-$asu-btn-blue-border:           #038dd5 !default;
+$asu-btn-blue-bg:               $asu-blue !default;
+$asu-btn-blue-border:           $asu-blue !default;
 
 $asu-btn-success-color:         white !default;
-$asu-btn-success-bg:            #148e4b !default;
-$asu-btn-success-border:        #148e4b !default;
+$asu-btn-success-bg:            $asu-green !default;
+$asu-btn-success-border:        $asu-green !default;
 
 $asu-btn-info-color:            white !default;
 $asu-btn-info-bg:               #008ed6 !default;
@@ -122,7 +128,7 @@ $asu-btn-warning-bg:            #98b514 !default;
 $asu-btn-warning-border:        #435009 !default;
 
 $asu-btn-danger-color:          white !default;
-$asu-btn-danger-bg:             #db3a15 !default;
+$asu-btn-danger-bg:             $asu-orange !default;
 $asu-btn-danger-border:         #751f0b !default;
 
 //== Media
