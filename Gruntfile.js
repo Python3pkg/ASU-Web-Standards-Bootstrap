@@ -65,6 +65,13 @@ module.exports = function (grunt) {
                     'build/css/bootstrap-asu.css' : 'scss/bootstrap-asu.scss',
                     'build/css/bootstrap-asu-theme-base.css' : 'scss/bootstrap-asu-theme-base.scss'
                 }
+            },
+            fortesting: {
+                files: {
+                    'test/vendor/css/bootstrap-asu.css' : 'scss/bootstrap-asu.scss',
+                    'test/vendor/css/bootstrap-asu-theme-base.css' : 'scss/bootstrap-asu-theme-base.scss'
+                }
+
             }
         },
         // JS Compile
@@ -114,12 +121,21 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
 
     // Default task
+    grunt.registerTask('test',  [
+        'jshint', 
+        'jscs',
+        'scsslint',
+        'sass:fortesting',
+        'qunit',
+        ]);
+
     grunt.registerTask('default', [
         'jshint', 
         'jscs',
         'scsslint',
+        'sass:fortesting',
         'qunit',
-        'sass',
+        'sass:dist',
         'concat',
         'uglify']);
 };

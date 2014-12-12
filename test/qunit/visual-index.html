@@ -26,18 +26,74 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto:900,400,300,700,500' rel='stylesheet' type='text/css'>
 
   <!-- The main app css file -->
-  <link href="../vendor/css/bootstrap.css" rel="stylesheet">
-  <link href="./css/bootstrap-asu.css" rel="stylesheet">
-  <link href="./css/bootstrap-asu-theme-base.css" rel="stylesheet">
+  <link href="../vendor/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/css/bootstrap-asu.css" rel="stylesheet">
+  <link href="../vendor/css/bootstrap-asu-theme-base.css" rel="stylesheet">
 
+  <!-- QUnit -->
+  <script src="http://code.jquery.com/qunit/qunit-1.15.0.js"></script>
+  <!-- jQuery -->
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <!-- Modernizr -->
+  <script src="../vendor/js/modernizr-2.8.3.custom.js"></script>
+  <!-- Smoothscroll -->
+  <script src="../vendor/js/smoothscroll.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../vendor/js/bootstrap.min.js"></script>
 
-  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-  <![endif]-->
-  <!-- modernizr to help with some feature detection -->
-  <script src="./js/modernizr-2.8.3.custom.js"></script>
+  <!-- QUnit -->
+    <style>
+      #qunit-tests > li.pass {
+        display: none;/* Make it easier to see failing tests is Sauce screencasts */
+      }
+    </style>
+    <script>
+      // See https://github.com/axemclion/grunt-saucelabs#test-result-details-with-qunit
+      var log = []
+      QUnit.done(function (testResults) {
+        var tests = []
+        for (var i = 0, len = log.length; i < len; i++) {
+          var details = log[i]
+          tests.push({
+            name: details.name,
+            result: details.result,
+            expected: details.expected,
+            actual: details.actual,
+            source: details.source
+          })
+        }
+        testResults.tests = tests
+
+        window.global_test_results = testResults
+      })
+
+      QUnit.testStart(function (testDetails) {
+        QUnit.log = function (details) {
+          if (!details.result) {
+            details.name = testDetails.name
+            log.push(details)
+          }
+        }
+      })
+
+      // Cleanup
+      QUnit.testDone(function () {
+        $('#qunit-fixture').empty()
+        $('#modal-test, .modal-backdrop').remove()
+      })
+    </script>
+
+    <!-- Plugin sources -->
+    <script>$.support.transition = false</script>
+    <script src="../../js/_modernizr.js"></script>
+    <script src="../../js/_smoothscroll.js"></script>
+    <script src="../../js/_debounce.js"></script>
+    <script src="../../js/_calendar.js"></script>
+    <script src="../../js/_sidebar.js"></script>
+    <script src="../../js/_collapse-footer.js"></script>
+
+    <!-- Unit tests -->
+    <script src="./visual/colors-test.js"></script>
 </head>
 <body>
 
@@ -50,12 +106,18 @@
       <div id="asu_hdr" class="asu_hdr_white chrome">
        <div id="asu_mobile_hdr">
          <div id="asu_logo">
-           <a target="_top" href="//www.asu.edu/" title="Arizona State University">
-             <img src="//www.asu.edu/asuthemes/4.0-rsp.1/images/logos/asu_logo_white.png" alt="Arizona State University" height="32" width="203" style="margin-top:11px" title="Arizona State University">
+           <a target="_top" href="http://www.asu.edu/" title="Arizona State University">
+             <img src="http://www.asu.edu/asuthemes/4.0-rsp.1/images/logos/asu_logo_white.png" alt="Arizona State University" height="32" width="203" style="margin-top:11px" title="Arizona State University">
            </a>
          </div><!-- /#asu_logo  -->
-         <img src="//www.asu.edu/asuthemes/4.0-rsp.1/images/logos/asu_logo_white.png" alt="Arizona State University" height="32" width="203" id="asu_print_logo">
-         <div id="asu_school_name">School of Mathematical &amp; Statistical Sciences</div>
+         <img src="http://www.asu.edu/asuthemes/4.0-rsp.1/images/logos/asu_logo_white.png" alt="Arizona State University" height="32" width="203" id="asu_print_logo">
+         <div class="section" id="site-name-desktop">
+          <div class="container">
+            <h1 class="site-title" id="asu_school_name">
+              <span class="first-word"><a href="School of Sustainability">Julie Ann Wrigley Global Institute of Sustainability</a></span>&nbsp;|&nbsp;              <a href="http://localhost/wordpress">Test Wordpress</a>
+            </h1>
+          </div>
+        </div>
          <div id="asu_mobile_button" class="asushow"><a href="javascript:toggleASU();">Menu</a></div>
         </div><!-- /#asu_mobile_hdr  -->
         <div id="asu_mobile_menu" class="asutoggle_off">
@@ -70,46 +132,46 @@
               <h2 class="hidden">Menu</h2>
               <div id="asu_universal_nav">
                 <ul>
-                  <li><a target="_top" href="//www.asu.edu/">ASU Home</a></li>
+                  <li><a target="_top" href="http://www.asu.edu/">ASU Home</a></li>
                   <li><a target="_top" href="https://my.asu.edu/">My ASU</a></li>
-                  <li class="parent"><a target="_top" href="//www.asu.edu/colleges/">Colleges &amp; Schools</a>
+                  <li class="parent"><a target="_top" href="http://www.asu.edu/colleges/">Colleges &amp; Schools</a>
                     <ul>
-                      <li><a target="_top" class="first" href="//artsandsciences.asu.edu/" title="Arts and Sciences website">Arts and Sciences</a></li>
-                      <li><a target="_top" href="//wpcarey.asu.edu/" title="W. P. Carey School of Business Web  and Morrison School of Agribusiness website">Business</a></li>
-                      <li><a target="_top" href="//herbergerinstitute.asu.edu" title="Herberger Institute for Design and the Arts website">Design and the Arts</a></li>
-                      <li><a target="_top" href="//education.asu.edu/" title="Mary Lou Fulton Teachers College website">Education </a></li>
-                      <li><a target="_top" href="//engineer.asu.edu/" title="Engineering website">Engineering</a></li>
-                      <li><a target="_top" href="//graduate.asu.edu" title="Graduate College website">Graduate</a></li>
+                      <li><a target="_top" class="first" href="http://artsandsciences.asu.edu/" title="Arts and Sciences website">Arts and Sciences</a></li>
+                      <li><a target="_top" href="http://wpcarey.asu.edu/" title="W. P. Carey School of Business Web  and Morrison School of Agribusiness website">Business</a></li>
+                      <li><a target="_top" href="http://herbergerinstitute.asu.edu" title="Herberger Institute for Design and the Arts website">Design and the Arts</a></li>
+                      <li><a target="_top" href="http://education.asu.edu/" title="Mary Lou Fulton Teachers College website">Education </a></li>
+                      <li><a target="_top" href="http://engineer.asu.edu/" title="Engineering website">Engineering</a></li>
+                      <li><a target="_top" href="http://graduate.asu.edu" title="Graduate College website">Graduate</a></li>
                       <li><a target="_top" href="https://chs.asu.edu/" title="Health Solutions website">Health Solutions</a></li>
-                      <li><a target="_top" href="//honors.asu.edu/" title="Barrett, The Honors College website">Honors</a></li>
-                      <li><a target="_top" href="//cronkite.asu.edu" title="Walter Cronkite School of Journalism and Mass Communication website">Journalism</a></li>
-                      <li><a target="_top" href="//www.law.asu.edu/" title="Sandra Day O' Connor College of Law website">Law</a></li>
-                      <li><a target="_top" href="//nursingandhealth.asu.edu/" title="College of Nursing and Health Innovation website">Nursing and Health Innovation</a></li>
-                      <!-- li><a href="//nursingandhealth.asu.edu/nutrition" title="School of Nutrition and Health Promotion website">Nutrition and Health Promotion</a></li -->
-                      <li><a target="_top" href="//copp.asu.edu" title="College of Public Programs website">Public Programs</a></li>
-                      <li><a target="_top" href="//schoolofsustainability.asu.edu" title="School of Sustainability website">Sustainability</a></li>
-                      <li><a target="_top" href="//technology.poly.asu.edu/" title="College of Technology and Innovation website">Technology and Innovation</a></li>
-                      <li><a target="_top" href="//uc.asu.edu/" title="University College website">University College</a></li>
+                      <li><a target="_top" href="http://honors.asu.edu/" title="Barrett, The Honors College website">Honors</a></li>
+                      <li><a target="_top" href="http://cronkite.asu.edu" title="Walter Cronkite School of Journalism and Mass Communication website">Journalism</a></li>
+                      <li><a target="_top" href="http://www.law.asu.edu/" title="Sandra Day O' Connor College of Law website">Law</a></li>
+                      <li><a target="_top" href="http://nursingandhealth.asu.edu/" title="College of Nursing and Health Innovation website">Nursing and Health Innovation</a></li>
+                      <!-- li><a href="http://nursingandhealth.asu.edu/nutrition" title="School of Nutrition and Health Promotion website">Nutrition and Health Promotion</a></li -->
+                      <li><a target="_top" href="http://copp.asu.edu" title="College of Public Programs website">Public Programs</a></li>
+                      <li><a target="_top" href="http://schoolofsustainability.asu.edu" title="School of Sustainability website">Sustainability</a></li>
+                      <li><a target="_top" href="http://technology.poly.asu.edu/" title="College of Technology and Innovation website">Technology and Innovation</a></li>
+                      <li><a target="_top" href="http://uc.asu.edu/" title="University College website">University College</a></li>
                     </ul>
                   </li>
-                  <li class="parent"><a target="_top" href="//www.asu.edu/map/">Map &amp; Locations</a>
+                  <li class="parent"><a target="_top" href="http://www.asu.edu/map/">Map &amp; Locations</a>
                     <ul>
-                      <li><a target="_top" class="border first" href="//www.asu.edu/map/">Map</a></li>
-                      <li><a target="_top" href="//campus.asu.edu/tempe/" title="Tempe campus">Tempe</a></li>
-                      <li><a target="_top" href="//campus.asu.edu/west/" title="West campus">West</a></li>
-                      <li><a target="_top" href="//campus.asu.edu/polytechnic/" title="Polytechnic campus">Polytechnic</a></li>
-                      <li><a target="_top" href="//campus.asu.edu/downtown/" title="Downtown Phoenix campus">Downtown Phoenix</a></li>
-                      <li><a target="_top" href="//asuonline.asu.edu/" title="Online and Extended campus">Online and Extended</a></li>
-                      <li><a target="_top" class="border" href="//havasu.asu.edu/">Lake Havasu</a></li>
-                      <li><a target="_top" href="//skysong.asu.edu/">Skysong</a></li>
-                      <li><a target="_top" href="//asuresearchpark.com/">Research Park</a></li>
-                      <li><a target="_top" href="//washingtoncenter.asu.edu/">Washington D.C.</a></li>
-                      <li><a target="_top" href="//wpcarey.asu.edu/mba/china-program/english/">China</a></li>
+                      <li><a target="_top" class="border first" href="http://www.asu.edu/map/">Map</a></li>
+                      <li><a target="_top" href="http://campus.asu.edu/tempe/" title="Tempe campus">Tempe</a></li>
+                      <li><a target="_top" href="http://campus.asu.edu/west/" title="West campus">West</a></li>
+                      <li><a target="_top" href="http://campus.asu.edu/polytechnic/" title="Polytechnic campus">Polytechnic</a></li>
+                      <li><a target="_top" href="http://campus.asu.edu/downtown/" title="Downtown Phoenix campus">Downtown Phoenix</a></li>
+                      <li><a target="_top" href="http://asuonline.asu.edu/" title="Online and Extended campus">Online and Extended</a></li>
+                      <li><a target="_top" class="border" href="http://havasu.asu.edu/">Lake Havasu</a></li>
+                      <li><a target="_top" href="http://skysong.asu.edu/">Skysong</a></li>
+                      <li><a target="_top" href="http://asuresearchpark.com/">Research Park</a></li>
+                      <li><a target="_top" href="http://washingtoncenter.asu.edu/">Washington D.C.</a></li>
+                      <li><a target="_top" href="http://wpcarey.asu.edu/mba/china-program/english/">China</a></li>
                     </ul>
                   </li>
-                  <li><a target="_top" href="//www.asu.edu/contactasu/" title="Directory, Index and other info">Directory</a></li>
+                  <li><a target="_top" href="http://www.asu.edu/contactasu/" title="Directory, Index and other info">Directory</a></li>
                 </ul>
-                <img class="asu_touch" src="//www.asu.edu/asuthemes/4.0-rsp.1/images/ipad_close.gif" alt="">
+                <img class="asu_touch" src="http://www.asu.edu/asuthemes/4.0-rsp.1/images/ipad_close.gif" alt="">
               </div><!-- /#asu_universal_nav -->
             </div><!-- /#asu_nav_menu -->
           </div><!-- /#asu_nav_wrapper -->
@@ -149,7 +211,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">School of Mathematical &amp; Statistical Sciences</a>
+      <a class="navbar-brand" href="#">School of Testing</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -274,8 +336,11 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-7 col-lg-8">
-        <h2>Welcome to the School of Mathematical and Statistical Sciences</h2>
-        <p>Our mission is to create and disseminate research and to provide outstanding instruction at the undergraduate and graduate levels in mathematics and statistics. Our distinguished faculty is involved in research in many areas within applied mathematics, theoretical mathematics, mathematics education, and statistics.</p>
+        <h2>Welcome to the Web Standards Tests</h2>
+        <div id="qunit-container">
+          <div id="qunit"></div>
+          <div id="qunit-fixture"></div>
+        </div>
       </div>
       <div class="col-sm-6 col-md-5 col-lg-4">
         <div class="panel explore-programs">
@@ -485,107 +550,8 @@
 
 <!-- JS Only -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="./js/jquery-1.11.1.min.js"></script>
-<script src="./js/smoothscroll.min.js"></script>
-<script src="./js/bootstrap.js"></script><!-- bootstrap files can also be loaded separately -->
-<script>
-  Modernizr.load({
-    test: Modernizr.touch,
-    yep : '/js/lightningtouch.js'
-  });
-
-  // Document Loaded
-  $(document).ready(function() {
-
-    // Smooth scrolling
-    smoothScroll.init();
-
-    // Prevent default behavior on hash links
-    $('a[href="#"]').click(function(e) {
-      e.preventDefault();
-    });
-
-    
-
-    // Init popover for calendar dates
-    $('.calendarPopover').popover({
-      animation: true,
-      html: true,
-      placement: 'bottom',
-      trigger: 'click',
-      content: function () {
-        return '<a href="#">Add this event to your calendar</a>';
-      }
-    });
-
-    // Init tooltip for date of birth on forms
-    $('.dobTooltip').popover({
-      placement: 'top',
-      trigger: 'hover focus',
-      content: 'Your birthday is important. Not only will we send you a birthday message, it helps us keep your information secure and serves as a unique identifier for your online submission.'
-    });
-
-    // Throttle window resize event for performance and smoothness
-    (function($,sr) {
-      // Debounce function
-      // by John Hann
-      // //unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
-      var debounce = function (func, threshold, execAsap) {
-          var timeout;
-
-          return function debounced () {
-              var obj = this, args = arguments;
-              function delayed () {
-                  if (!execAsap)
-                      func.apply(obj, args);
-                  timeout = null;
-              };
-
-              if (timeout)
-                  clearTimeout(timeout);
-              else if (execAsap)
-                  func.apply(obj, args);
-
-              timeout = setTimeout(delayed, threshold || 500);
-          };
-      }
-      // Smart Resize function
-      // by Paul Irish
-      // //www.paulirish.com/2009/throttled-smartresize-jquery-event-handler/
-      jQuery.fn[sr] = function(fn) { return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
-
-    })(jQuery,'smartresize');
-
-    // Keep all window resize scripts within the throttling function
-    $(window).smartresize(function() {
-
-      // Adjust footer classes so the are only collapsed on mobile
-      if ($(window).innerWidth() >= 768) {
-        // Add collapse open class
-        $('.big-foot-nav').not('.in').addClass('in');
-      }
-      else {
-        // Remove collapse open class
-        $('.big-foot-nav').removeClass('in');
-      }
-    });
-    // Check window size on loading to remove collapsable footer nav class on large screens
-    if ($(window).innerWidth() >= 768) {
-      $('.big-foot-nav').not('.in').addClass('in');
-    }
-
-    // iframes with content like google maps will take control of mouse scrolling
-    // and cause unwanted interaction when scrolling through a page.
-    // There is an invisible div over the visit our campus map to stop this behavior.
-    // This script will disable the overlay div and allow map interaction after a click.
-    $('.iframe-overlay').on('click', function() {
-      $(this).css('pointerEvents','none');
-    });
-
-    
-  }); // End document ready function
-</script>
-
+<script src="../vendor/js/smoothscroll.min.js"></script>
+<script src="../vendor/js/bootstrap.min.js"></script><!-- bootstrap files can also be loaded separately -->
 
   </body>
 </html>
