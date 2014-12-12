@@ -47,4 +47,34 @@ $(function () {
 
     equal( bg_color, "rgb(255, 179, 16)" , "primary buttons are #990033")
   })
+
+  test('blue buttons should be #008ED6', function () {
+    var bg_color = $($('.btn-blue')[0]).css('background-color')
+
+    equal( bg_color, "rgb(0, 142, 214)" , "primary buttons are #008ED6")
+  })
+
+  test('success buttons should be #568E14', function () {
+    var bg_color = $($('.btn-success')[0]).css('background-color')
+
+    equal( bg_color, "rgb(86, 142, 20)" , "primary buttons are #568E14")
+  })
+
+  test('success labels should be #568E14', function () {
+    var color = $($('.form-group.has-success label')[0]).css('color')
+
+    equal( color, "rgb(86, 142, 20)" , "success labels are #568E14")
+  })
+
+  test('danger buttons should be #F47C00', function () {
+    var bg_color = $($('.btn-danger')[0]).css('background-color')
+
+    equal( bg_color, "rgb(244, 124, 0)" , "primary buttons are #F47C00")
+  })
+
+  test('error labels should be #F47C00', function () {
+    var color = $($('.form-group.has-error label')[0]).css('color')
+
+    equal( color, "rgb(244, 124, 0)" , "error labels are #F47C00")
+  })
 })

@@ -1,20 +1,30 @@
 /**
- * Variables
+ * ASU Web Standards Variables
+ *
+ * @see https://hub.asu.edu/brand-hq/brand-standards/color-palette
  */
 
-//== Web Standards Approved
+// Typography
+// ==========
 
-//=== Typography
-//    You can download this font directly from 
-//    the Android developers site:
-//    http://developer.android.com/design/downloads/index.html
-//    
-//    It is also available as a Google Font:
-//    http://www.google.com/fonts/specimen/Roboto
+// You can download this font directly from 
+// the Android developers site:
+// http://developer.android.com/design/downloads/index.html
+// 
+// It is also available as a Google Font:
+// http://www.google.com/fonts/specimen/Roboto
 $ws-font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-//== Standard Header
-$ws-header-bg: #fff;
+// ASU Header
+// ==========
+$ws-header-bg:                  #fff;
+
+// ASU Colors
+// ==========
+$asu-maroon:                    #903;
+$asu-blue:                      #008ed6;
+$asu-green:                     #568e14;
+$asu-orange:                    #f47c00;
 
 //== 29th Drive Vars
 $asu-gray-darker:               #2a2a2a !default;
@@ -24,16 +34,12 @@ $asu-gray-lighter:              #b7b7b7 !default;
 $asu-gray-lightest:             #fafafa !default;
 
 $asu-yellow:                    #ffc425 !default;
-$asu-green:                     #006838 !default;
-
-// @see https://hub.asu.edu/brand-hq/brand-standards/color-palette
-$asu-maroon:                    #903 !default;
 
 $asu-link-hover-color:          #d23153 !default;
 
 //== Form states and alerts
 
-$asu-state-success-text:        #148e4b !default;
+$asu-state-success-text:        $asu-green !default;
 $asu-state-success-bg:          #1dd16e !default;
 $asu-state-success-border:      #0b4b28 !default;
 
@@ -41,11 +47,11 @@ $asu-state-info-text:           #008ed6 !default;
 $asu-state-info-bg:             #23b5ff !default;
 $asu-state-info-border:         #005b8a !default;
 
-$asu-state-warning-text:        #bfe319 !default;
+$asu-state-warning-text:        $asu-orange !default;
 $asu-state-warning-bg:          #d3ed5c !default;
 $asu-state-warning-border:      #859e11 !default;
 
-$asu-state-danger-text:         #ec5937 !default;
+$asu-state-danger-text:         $asu-orange !default;
 $asu-state-danger-bg:           #f3937d !default;
 $asu-state-danger-border:       #c43413 !default;
 
@@ -106,12 +112,12 @@ $asu-btn-gold-bg:               #ffb310 !default;
 $asu-btn-gold-border:           #ffb310 !default;
 
 $asu-btn-blue-color:            white !default;
-$asu-btn-blue-bg:               #038dd5 !default;
-$asu-btn-blue-border:           #038dd5 !default;
+$asu-btn-blue-bg:               $asu-blue !default;
+$asu-btn-blue-border:           $asu-blue !default;
 
 $asu-btn-success-color:         white !default;
-$asu-btn-success-bg:            #148e4b !default;
-$asu-btn-success-border:        #148e4b !default;
+$asu-btn-success-bg:            $asu-green !default;
+$asu-btn-success-border:        $asu-green !default;
 
 $asu-btn-info-color:            white !default;
 $asu-btn-info-bg:               #008ed6 !default;
@@ -122,7 +128,7 @@ $asu-btn-warning-bg:            #98b514 !default;
 $asu-btn-warning-border:        #435009 !default;
 
 $asu-btn-danger-color:          white !default;
-$asu-btn-danger-bg:             #db3a15 !default;
+$asu-btn-danger-bg:             $asu-orange !default;
 $asu-btn-danger-border:         #751f0b !default;
 
 //== Media
@@ -131,10 +137,10 @@ $asu-screen-md:                 992px !default;
 
 //== Labels
 $asu-label-primary-bg:          $asu-maroon !default;
-$asu-label-success-bg:          $asu-state-success-text !default;
+$asu-label-success-bg:          $asu-green !default;
 $asu-label-info-bg:             $asu-state-info-text !default;
-$asu-label-warning-bg:          $asu-state-warning-text !default;
-$asu-label-danger-bg:           $asu-state-danger-text !default;
+$asu-label-warning-bg:          $asu-orange !default;
+$asu-label-danger-bg:           $asu-orange !default;
 
 //== Alerts
 $asu-alert-success-bg:          $asu-state-success-text !default; 
