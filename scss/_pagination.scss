@@ -5,7 +5,7 @@
   > li > {
     a,
     span {
-      color: $asu-brand-primary;
+      color: $asu-maroon;
       line-height: $asu-line-height-base;
       padding: 6px 19px;
 
@@ -20,8 +20,8 @@
     &,
     &:hover,
     &:focus {
-      background-color: $asu-brand-primary;
-      border-color: $asu-brand-primary;
+      background-color: $asu-maroon;
+      border-color: $asu-maroon;
     }
   }
 }

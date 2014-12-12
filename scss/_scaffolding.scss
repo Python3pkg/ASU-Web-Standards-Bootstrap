@@ -15,8 +15,8 @@ body {
 }
 
 a {
-  border-bottom: 1px dotted $asu-brand-primary;
-  color: $asu-brand-primary;
+  border-bottom: 1px dotted $asu-maroon;
+  color: $asu-maroon;
   font-weight: normal;
 
   &:hover,
@@ -203,7 +203,7 @@ mark,
 
 @include text-emphasis-variant('.text-green', $asu-green);
 
-@include text-emphasis-variant('.text-primary', $asu-brand-primary);
+@include text-emphasis-variant('.text-primary', $asu-maroon);
 
 @include text-emphasis-variant('.text-success', $asu-state-success-text);
 
@@ -213,7 +213,7 @@ mark,
 
 @include text-emphasis-variant('.text-danger', $asu-state-danger-text);
 
-@include bg-variant('.bg-primary', $asu-brand-primary);
+@include bg-variant('.bg-primary', $asu-maroon);
 
 @include bg-variant('.bg-success', $asu-state-success-bg);
 

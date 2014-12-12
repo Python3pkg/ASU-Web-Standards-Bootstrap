@@ -41,4 +41,11 @@ $(function () {
     equal($('.popover').length, 0, 'popover removed')
   })
 
+  test('should store popover instance in popover data object', function () {
+    var $popover = $('<a href="#" title="idmontie" data-content="https://twitter.com/idmontie">@idmontie</a>').wsCalendarPopover()
+
+    ok($popover.data('bs.calendarPopover'), 'calendar popover isntance exists')
+  })
+
+  // TODO tests for ICS data
 })

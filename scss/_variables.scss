@@ -26,7 +26,8 @@ $asu-gray-lightest:             #fafafa !default;
 $asu-yellow:                    #ffc425 !default;
 $asu-green:                     #006838 !default;
 
-$asu-brand-primary:             #a30046 !default;
+// @see https://hub.asu.edu/brand-hq/brand-standards/color-palette
+$asu-maroon:                    #903 !default;
 
 $asu-link-hover-color:          #d23153 !default;
 
@@ -84,7 +85,7 @@ $asu-border-radius-small:       4px !default;
 $asu-border-radius-large:       4px !default;
 
 //== Buttons
-$asu-link-color:                $asu-brand-primary !default;
+$asu-link-color:                $asu-maroon !default;
 $asu-link-hover-color:          #d23153 !default;
 $asu-btn-link-disabled-color:   #777 !default;
 
@@ -93,16 +94,16 @@ $asu-btn-default-bg:            whitesmoke !default;
 $asu-btn-default-border:        #b0b0b0 !default;
 
 $asu-btn-primary-color:         white !default;
-$asu-btn-primary-bg:            #a30046 !default;
-$asu-btn-primary-border:        #a30046 !default;
+$asu-btn-primary-bg:            $asu-maroon !default;
+$asu-btn-primary-border:        $asu-maroon !default;
 
 $asu-btn-secondary-color:       $asu-gray-darker !default;
 $asu-btn-secondary-bg:          #dbdbdb !default;
 $asu-btn-secondary-border:      #dbdbdb !default;
 
 $asu-btn-gold-color:            $asu-gray-darker !default;
-$asu-btn-gold-bg:               #ffc425 !default;
-$asu-btn-gold-border:           #ffc425 !default;
+$asu-btn-gold-bg:               #ffb310 !default;
+$asu-btn-gold-border:           #ffb310 !default;
 
 $asu-btn-blue-color:            white !default;
 $asu-btn-blue-bg:               #038dd5 !default;
@@ -129,7 +130,7 @@ $asu-screen-sm:                 768px !default;
 $asu-screen-md:                 992px !default;
 
 //== Labels
-$asu-label-primary-bg:          $asu-brand-primary !default;
+$asu-label-primary-bg:          $asu-maroon !default;
 $asu-label-success-bg:          $asu-state-success-text !default;
 $asu-label-info-bg:             $asu-state-info-text !default;
 $asu-label-warning-bg:          $asu-state-warning-text !default;
@@ -153,9 +154,9 @@ $asu-alert-danger-border:       $asu-state-danger-border !default;
 $asu-alert-danger-text:         white !default;
 
 //== Panels
-$asu-panel-primary-border:      $asu-brand-primary !default;
+$asu-panel-primary-border:      $asu-maroon !default;
 $asu-panel-primary-text:        white !default;
-$asu-panel-primary-heading-bg:  $asu-brand-primary !default;
+$asu-panel-primary-heading-bg:  $asu-maroon !default;
 
 $asu-panel-success-border:      $asu-state-success-border !default;
 $asu-panel-success-text:        white !default;
