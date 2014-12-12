@@ -1,6 +1,8 @@
 $(function () {
   'use strict';
 
+  // TODO develop a qunit plugin for color checking
+
   module('color visual test')
 
   test('header should be white', function () {
@@ -31,12 +33,13 @@ $(function () {
   test('primary buttons should be maroon', function () {
     var bg_color = $($('.btn-primary')[0]).css('background-color')
 
-    equal( bg_color, "rgba(153, 0, 51)" , "primary buttons are #990033")
+    equal( bg_color, "rgb(153, 0, 51)" , "primary buttons are #990033")
   })
 
   test('links should be maroon', function() {
     var color = $($('a')[0]).css('color')
 
-    equal( color, "rgba(153, 0, 51)" , "links are #990033")
+    equal( color, "rgb(153, 0, 51)" , "links are #990033")
   })
+
 })

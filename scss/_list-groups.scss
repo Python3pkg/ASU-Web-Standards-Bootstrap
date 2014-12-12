@@ -22,7 +22,7 @@
     &:focus {
       background-color: white;
       border-color: #d7d7d7;
-      color: $asu-brand-primary;
+      color: $asu-maroon;
       font-weight: bold;
 
       .list-group-item-text {
@@ -34,15 +34,15 @@
 
 a.list-group-item {
   border-bottom: 0;
-  color: $asu-brand-primary;
+  color: $asu-maroon;
 
   .list-group-item-heading {
-    color: $asu-brand-primary;
+    color: $asu-maroon;
   }
 
   &:hover,
   &:focus {
-    color: $asu-brand-primary;
+    color: $asu-maroon;
     font-weight: bold;
   }
 }

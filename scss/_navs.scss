@@ -8,7 +8,7 @@
     &,
     &:hover,
     &:focus { 
-      border-color: $asu-brand-primary;
+      border-color: $asu-maroon;
     }
   }
 
@@ -31,7 +31,7 @@
 
   &:hover,
   &.active {
-    border-top: 5px solid $asu-brand-primary;
+    border-top: 5px solid $asu-maroon;
 
     > a {
       border-top-color: transparent;
@@ -42,7 +42,7 @@
     &,
     &:hover,
     &:focus {
-      color: $asu-brand-primary;
+      color: $asu-maroon;
     }
   }
 }
@@ -51,7 +51,7 @@
   &,
   &:hover,
   &:focus {
-    background-color: $asu-brand-primary;
+    background-color: $asu-maroon;
   }
 }
 
