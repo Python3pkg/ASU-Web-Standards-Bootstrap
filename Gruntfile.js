@@ -35,7 +35,10 @@ module.exports = function (grunt) {
             options: {
                 inject: 'test/qunit/phantom.js'
             },
-            files: ['test/qunit/index.html']
+            files: [
+                'test/qunit/index.html',
+                'test/qunit/visual-index.html'
+            ]
         },
         // SCSS Lint
         // =========
