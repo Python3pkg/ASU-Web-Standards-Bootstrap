@@ -39,7 +39,7 @@ $asu-link-hover-color:          #d23153 !default;
 
 //== Form states and alerts
 
-$asu-state-success-text:        #148e4b !default;
+$asu-state-success-text:        $asu-green !default;
 $asu-state-success-bg:          #1dd16e !default;
 $asu-state-success-border:      #0b4b28 !default;
 
@@ -47,11 +47,11 @@ $asu-state-info-text:           #008ed6 !default;
 $asu-state-info-bg:             #23b5ff !default;
 $asu-state-info-border:         #005b8a !default;
 
-$asu-state-warning-text:        #bfe319 !default;
+$asu-state-warning-text:        $asu-orange !default;
 $asu-state-warning-bg:          #d3ed5c !default;
 $asu-state-warning-border:      #859e11 !default;
 
-$asu-state-danger-text:         #ec5937 !default;
+$asu-state-danger-text:         $asu-orange !default;
 $asu-state-danger-bg:           #f3937d !default;
 $asu-state-danger-border:       #c43413 !default;
 
@@ -137,10 +137,10 @@ $asu-screen-md:                 992px !default;
 
 //== Labels
 $asu-label-primary-bg:          $asu-maroon !default;
-$asu-label-success-bg:          $asu-state-success-text !default;
+$asu-label-success-bg:          $asu-green !default;
 $asu-label-info-bg:             $asu-state-info-text !default;
-$asu-label-warning-bg:          $asu-state-warning-text !default;
-$asu-label-danger-bg:           $asu-state-danger-text !default;
+$asu-label-warning-bg:          $asu-orange !default;
+$asu-label-danger-bg:           $asu-orange !default;
 
 //== Alerts
 $asu-alert-success-bg:          $asu-state-success-text !default; 
