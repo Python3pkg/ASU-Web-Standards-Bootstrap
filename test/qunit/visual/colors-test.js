@@ -42,4 +42,9 @@ $(function () {
     equal( color, "rgb(153, 0, 51)" , "links are #990033")
   })
 
+  test('gold buttons should be #FFB310', function () {
+    var bg_color = $($('.btn-gold')[0]).css('background-color')
+
+    equal( bg_color, "rgb(255, 179, 16)" , "primary buttons are #990033")
+  })
 })

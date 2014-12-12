@@ -1062,24 +1062,24 @@ select[multiple].input-lg {
 
 .btn-gold {
   color: #2a2a2a;
-  background-color: #ffc425;
-  border-color: #ffc425;
+  background-color: #ffb310;
+  border-color: #ffb310;
 }
 .btn-gold:hover, .btn-gold:focus, .btn-gold:active, .btn-gold.active, .open > .btn-gold.dropdown-toggle {
-  background-color: #f1b000;
-  border-color: #e7a800;
+  background-color: #dc9600;
+  border-color: #d28f00;
   color: #2a2a2a;
 }
 .btn-gold:active, .btn-gold.active, .open > .btn-gold.dropdown-toggle {
   background-image: none;
 }
 .btn-gold.disabled, .btn-gold.disabled:hover, .btn-gold.disabled:focus, .btn-gold.disabled:active, .btn-gold.disabled.active, .btn-gold[disabled], .btn-gold[disabled]:hover, .btn-gold[disabled]:focus, .btn-gold[disabled]:active, .btn-gold[disabled].active, fieldset[disabled] .btn-gold, fieldset[disabled] .btn-gold:hover, fieldset[disabled] .btn-gold:focus, fieldset[disabled] .btn-gold:active, fieldset[disabled] .btn-gold.active {
-  background-color: #ffc425;
-  border-color: #ffc425;
+  background-color: #ffb310;
+  border-color: #ffb310;
 }
 .btn-gold .badge {
   background-color: #2a2a2a;
-  color: #ffc425;
+  color: #ffb310;
 }
 
 .btn-blue {
