@@ -13,6 +13,11 @@
       }
     }
 
+    li.open > a {
+      background-color: $ws-navbar-focus-bg;
+      color: $ws-navbar-focus-text;
+    }
+
     .active > a {
       &,
       &:hover,
