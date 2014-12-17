@@ -33,7 +33,13 @@ module.exports = function (grunt) {
         // =====
         qunit: {
             options: {
-                inject: 'test/qunit/phantom.js'
+                inject: 'test/qunit/phantom.js',
+                // size the viewport for mobile
+                page : {
+                    viewportSize : {
+                        width : 766
+                    }
+                }
             },
             files: [
                 'test/qunit/index.html',

@@ -70,6 +70,7 @@
     <!-- Unit tests -->
     <script src="./unit/nav-test.js"></script>
     <script src="./unit/calendar-test.js"></script>
+    <script src="./unit/collapse-footer-test.js"></script>
 
   </head>
   <body>
@@ -77,5 +78,29 @@
       <div id="qunit"></div>
       <div id="qunit-fixture"></div>
     </div>
+
+    <!-- Begin Footer -->
+
+    <div class="footer">
+
+      <div class="big-foot">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2 col-sm-3 space-bot-md">
+              <h2 data-toggle="collapse" data-target="#academics-menu">Academics</h2>
+              <ul class="big-foot-nav collapse" id="academics-menu">
+                <li><a class="" href="#">Departments</a></li>
+                <li><a class="" href="#">Executive Education</a></li>
+                <li><a class="" href="#">MBA Degrees</a></li>
+                <li><a class="" href="#">Master's Degrees</a></li>
+                <li><a class="" href="#">Ph.D. Programs</a></li>
+              </ul>
+            </div>
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </div><!-- /.big-foot -->
+    </div><!-- /.footer -->
+
+    <!-- End Footer -->
   </body>
 </html>
