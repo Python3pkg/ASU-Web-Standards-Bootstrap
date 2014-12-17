@@ -87,6 +87,12 @@ We use Travis-CI to make sure that the SCSS files and JS files are written corre
 
 [Checkout our Travis CI Page](https://travis-ci.org/gios-asu/ASU-Bootstrap-Addon/builds)
 
+## Blanket JS
+
+If you want to check the code coverage of the project, boot up a server (any server since the files are just HTML, but it is recommended to use Apache) and deploy `/test/*` to it.
+
+Go to `/test/qunit/index.html` in the browser, and click the checkbox next to `Enable coverageModule: ...`. This will show you a code coverage report in the browser.
+
 ## Koala
 
 Koala is no longer the standard way to compile these files.  It is still supported, but it will yield different results than grunt.

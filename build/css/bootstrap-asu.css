@@ -2554,10 +2554,14 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
     cursor: pointer;
   }
 }
+.mega-menu.open > .dropdown-menu {
+  border-width: 1px;
+}
 .mega-menu.dropdown {
   position: static;
 }
 .mega-menu .dropdown-menu {
+  border-width: 0;
   margin-top: -1px;
   position: static;
   width: 100%;
