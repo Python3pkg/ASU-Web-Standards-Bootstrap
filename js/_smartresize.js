@@ -20,7 +20,7 @@
     this._bounce = []
   }
 
-  Smartresize.VERSION = '0.0.1'
+  Smartresize.VERSION = '0.0.2'
 
   Smartresize.prototype = {}
 
@@ -61,6 +61,13 @@
     return outer
   }
 
+  /**
+   * Unbinds specific handlers or if handler is null or undefined, will
+   * unbind ALL handlers
+   * 
+   * @param  {function} handler the callback
+   * @return {$}         returns the element for chainability
+   */
   Smartresize.prototype.unbind = function (handler) {
     for (var i = 0; i < this._bounce.length; i++ ) {
       if (handler == null || handler == this._bounce[i].callback) {
