@@ -8,10 +8,8 @@
 +function () {
   'use strict';
 
-  if ( typeof smoothScroll !== 'undefined' ) {
-    smoothScroll.init()
-  } else {
-    throw new Error( 'SmoothScroll is required!' )
-  }
+  if ( typeof smoothScroll == 'undefined' ) throw new Error( 'SmoothScroll is required!' )
+
+  smoothScroll.init()
 
 } ();

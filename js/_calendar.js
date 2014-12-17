@@ -1,5 +1,5 @@
 /* ========================================================================
- * Web Standards: calendar.js v0.0.1
+ * Web Standards: calendar.js v0.0.2
  * ========================================================================
  * Copyright 2014 ASU
  * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
@@ -89,7 +89,7 @@
 
   var old = $.fn.calendarPopover
 
-  $.fn.calendarPopover            = Plugin
+  $.fn.calendarPopover             = Plugin
   $.fn.calendarPopover.Constructor = CalendarPopover
 
   // CALENDAR POPOVER NO CONFLICT

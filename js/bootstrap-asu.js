@@ -8,7 +8,7 @@
 // Base
 // @koala-prepend "js/_modernizr.js"
 // @koala-prepend "js/_smoothscroll.js"
-// @koala-prepend "js/_debounce.js"
+// @koala-prepend "js/_smartresize.js"
 
 // Components
 // @koala-prepend "js/_calendar.js"

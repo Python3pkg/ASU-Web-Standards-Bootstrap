@@ -5,11 +5,14 @@
  * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
  * ======================================================================== */
 
-if ( typeof Modernizr !== 'undefined' ) {
++function () {
+  'use strict';
+
+  if ( typeof Modernizr == 'undefined' ) throw new Error( 'Modernizr is required!' )
+
   Modernizr.load( {
     text: Modernizr.touch,
     yep : '/js/lightningtouch.js'
   } )
-} else {
-  throw new Error( 'Modernizr is required!' )
-}
+
+} ();

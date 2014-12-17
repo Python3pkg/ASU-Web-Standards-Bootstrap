@@ -87,7 +87,7 @@ module.exports = function (grunt) {
                 src: [
                     'js/_modernizr.js',
                     'js/_smoothscroll.js',
-                    'js/_debounce.js',
+                    'js/_smartresize.js',
                     'js/_calendar.js',
                     'js/_sidebar.js',
                     'js/_collapse-footer.js'
