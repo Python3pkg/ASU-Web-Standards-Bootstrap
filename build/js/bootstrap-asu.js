@@ -5,14 +5,17 @@
  * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
  * ======================================================================== */
 
-if ( typeof Modernizr !== 'undefined' ) {
++function () {
+  'use strict';
+
+  if ( typeof Modernizr == 'undefined' ) throw new Error( 'Modernizr is required!' )
+
   Modernizr.load( {
     text: Modernizr.touch,
     yep : '/js/lightningtouch.js'
   } )
-} else {
-  throw new Error( 'Modernizr is required!' )
-}
+
+} ();
 
 /* ========================================================================
  * Web Standards: smoothscroll.js v0.0.1
@@ -24,16 +27,14 @@ if ( typeof Modernizr !== 'undefined' ) {
 +function () {
   'use strict';
 
-  if ( typeof smoothScroll !== 'undefined' ) {
-    smoothScroll.init()
-  } else {
-    throw new Error( 'SmoothScroll is required!' )
-  }
+  if ( typeof smoothScroll == 'undefined' ) throw new Error( 'SmoothScroll is required!' )
+
+  smoothScroll.init()
 
 } ();
 
 /* ========================================================================
- * Web Standards: debounce.js v0.0.1
+ * Web Standards: smartresize.js v0.0.2
  * ========================================================================
  * Copyright 2014 ASU
  * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
@@ -84,7 +85,7 @@ if ( typeof Modernizr !== 'undefined' ) {
 } (jQuery, 'smartresize')
 
 /* ========================================================================
- * Web Standards: calendar.js v0.0.1
+ * Web Standards: calendar.js v0.0.2
  * ========================================================================
  * Copyright 2014 ASU
  * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
