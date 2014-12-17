@@ -2,10 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap ASU Addon Plugin Test Suite</title>>
+    <title>Bootstrap ASU Addon Plugin Test Suite</title>
 
     <!-- QUnit -->
     <script src="http://code.jquery.com/qunit/qunit-1.15.0.js"></script>
+    <!-- Blanket (Code Coverage) -->
+    <script src="../vendor/js/blanket.min.js"></script>
     <!-- jQuery -->
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <!-- Modernizr -->
@@ -60,12 +62,12 @@
 
     <!-- Plugin sources -->
     <script>$.support.transition = false</script>
-    <script src="../../js/_modernizr.js"></script>
-    <script src="../../js/_smoothscroll.js"></script>
-    <script src="../../js/_debounce.js"></script>
-    <script src="../../js/_calendar.js"></script>
-    <script src="../../js/_sidebar.js"></script>
-    <script src="../../js/_collapse-footer.js"></script>
+    <script src="../../js/_modernizr.js" data-cover></script>
+    <script src="../../js/_smoothscroll.js" data-cover></script>
+    <script src="../../js/_debounce.js" data-cover></script>
+    <script src="../../js/_calendar.js" data-cover></script>
+    <script src="../../js/_sidebar.js" data-cover></script>
+    <script src="../../js/_collapse-footer.js" data-cover></script>
 
     <!-- Unit tests -->
     <script src="./unit/nav-test.js"></script>
