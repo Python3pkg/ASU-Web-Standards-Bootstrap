@@ -64,7 +64,7 @@
   /**
    * Unbinds specific handlers or if handler is null or undefined, will
    * unbind ALL handlers
-   * 
+   *
    * @param  {function} handler the callback
    * @return {$}         returns the element for chainability
    */
