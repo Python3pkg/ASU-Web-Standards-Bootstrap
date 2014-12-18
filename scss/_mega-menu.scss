@@ -29,7 +29,9 @@
     }
 
     .row {
-      display: table-row;
+      /* Firefox bug requires `table`, not `table-row`; and `width:100%` */
+      display: table;
+      width: 100%;
 
       .column {
         display: table-cell;

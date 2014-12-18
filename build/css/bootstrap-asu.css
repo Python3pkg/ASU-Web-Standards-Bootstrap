@@ -2581,7 +2581,9 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   }
 }
 .mega-menu .dropdown-menu .row {
-  display: table-row;
+  /* Firefox bug requires `table`, not `table-row`; and `width:100%` */
+  display: table;
+  width: 100%;
 }
 .mega-menu .dropdown-menu .row .column {
   display: table-cell;
