@@ -36,6 +36,11 @@
       .column {
         display: table-cell;
         float: none;
+
+        @media (max-width: 991px) {
+          display: block !important;
+          width: 100%;
+        }
       }
     }
 

@@ -365,6 +365,11 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
     max-height: 2000px;
     padding: 10px 0;
+
+    @media (max-width: 991px) {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
   }
 }
 

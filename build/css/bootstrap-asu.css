@@ -1656,6 +1656,12 @@ input[type="button"].btn-block {
   max-height: 2000px;
   padding: 10px 0;
 }
+@media (max-width: 991px) {
+  .navbar-ws .open > .dropdown-menu {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
 
 .sidebar-nav {
   border-top: 8px solid;
@@ -2588,6 +2594,12 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .mega-menu .dropdown-menu .row .column {
   display: table-cell;
   float: none;
+}
+@media (max-width: 991px) {
+  .mega-menu .dropdown-menu .row .column {
+    display: block !important;
+    width: 100%;
+  }
 }
 .mega-menu .dropdown-menu > .row > .column > li > a {
   border-bottom: 0;
