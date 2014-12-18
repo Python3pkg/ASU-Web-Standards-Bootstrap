@@ -1,7 +1,12 @@
 ASU Web Standards Bootstrap
 ===========================
 
-[![Build Status](https://travis-ci.org/gios-asu/ASU-Web-Standards-Bootstrap.svg?branch=master)](https://travis-ci.org/gios-asu/ASU-Web-Standards-Bootstrap) [![Code Climate](https://codeclimate.com/github/gios-asu/ASU-Web-Standards-Bootstrap/badges/gpa.svg)](https://codeclimate.com/github/gios-asu/ASU-Web-Standards-Bootstrap) [![Stories in Ready](https://badge.waffle.io/gios-asu/asu-web-standards-bootstrap.svg)](http://waffle.io/gios-asu/asu-web-standards-bootstrap)
+[![Travis](http://img.shields.io/travis/gios-asu/ASU-Web-Standards-Bootstrap.svg?style=flat)](https://travis-ci.org/gios-asu/ASU-Web-Standards-Bootstrap)
+[![Code Climate](http://img.shields.io/codeclimate/github/gios-asu/ASU-Web-Standards-Bootstrap.svg?style=flat)](https://codeclimate.com/github/gios-asu/ASU-Web-Standards-Bootstrap) 
+[![Stories in Ready](https://badge.waffle.io/gios-asu/asu-web-standards-bootstrap.svg)](http://waffle.io/gios-asu/asu-web-standards-bootstrap)
+
+[![Github release](https://img.shields.io/github/release/gios-asu/ASU-Web-Standards-Bootstrap.svg)](https://github.com/gios-asu/ASU-Web-Standards-Bootstrap/releases)
+[![Github issues](https://img.shields.io/github/issues/gios-asu/ASU-Web-Standards-Bootstrap.svg)](https://github.com/gios-asu/ASU-Web-Standards-Bootstrap/issues)
 
 This ASU Bootstrap Addon provides stylesheets and JavaScript that are consistent with the new [ASU Web Standards](http://hub.asu.edu) being rolled out to the school websites at ASU. The intent of this *Bootstrap Addon* is to provide a universal source for the ASU Web Standards that can be applied to any website, regardless of what technology used to build a site. This addon is based off of the work done by [29thDrive](http://asu-ws.29thdrive.com/) and is consistent with their initial work. This ASU Web Standards Bootstrap repository is maintained by the [Julie Ann Wrigley Global Institute of Sustainability](http://sustainability.asu.edu).
 
