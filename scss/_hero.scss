@@ -3,7 +3,9 @@
 .hero {
   padding: 30px 0 60px;
 
+  h1,
   h2,
+  .h1,
   .h2 {
     font-size: 38px;
     letter-spacing: -1px;
@@ -26,7 +28,9 @@
   background-size: cover;
   min-height: 350px;
 
-  h2, 
+  h1,
+  h2,
+  .h1, 
   .h2 {
     color: white;
     font-size: 50px;
@@ -72,6 +76,7 @@
 .hero-text-only-dark {
   text-align: center;
 
+  h1,
   h2 {
     color: white;
   }
@@ -86,14 +91,18 @@
   .hero {
     padding-top: 90px;
 
+    h1,
     h2,
+    .h1,
     .h2 {
       font-size: 48px;
     }
   }
 
   .hero-bg-img {
+    h1,
     h2,
+    .h1
     .h2 {
       font-size: 60px;
     }
