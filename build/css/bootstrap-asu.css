@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* ========================================================================
- * Web Standards: bootstrap-asu.css v0.0.4
+ * Web Standards: bootstrap-asu.css v0.0.5
  * ========================================================================
  * Copyright 2014 ASU
  * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
@@ -1656,6 +1656,12 @@ input[type="button"].btn-block {
   max-height: 2000px;
   padding: 10px 0;
 }
+@media (max-width: 991px) {
+  .navbar-ws .open > .dropdown-menu {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
 
 .sidebar-nav {
   border-top: 8px solid;
@@ -2294,7 +2300,9 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .hero {
   padding: 30px 0 60px;
 }
+.hero h1,
 .hero h2,
+.hero .h1,
 .hero .h2 {
   font-size: 38px;
   letter-spacing: -1px;
@@ -2313,7 +2321,9 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   background-size: cover;
   min-height: 350px;
 }
+.hero-bg-img h1,
 .hero-bg-img h2,
+.hero-bg-img .h1,
 .hero-bg-img .h2 {
   color: white;
   font-size: 50px;
@@ -2352,6 +2362,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .hero-text-only-dark {
   text-align: center;
 }
+.hero-text-only-dark h1,
 .hero-text-only-dark h2 {
   color: white;
 }
@@ -2363,13 +2374,17 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   .hero {
     padding-top: 90px;
   }
+  .hero h1,
   .hero h2,
+  .hero .h1,
   .hero .h2 {
     font-size: 48px;
   }
 
+  .hero-bg-img h1,
   .hero-bg-img h2,
-  .hero-bg-img .h2 {
+  .hero-bg-img .h1
+  .h2 {
     font-size: 60px;
   }
 }
@@ -2581,11 +2596,19 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   }
 }
 .mega-menu .dropdown-menu .row {
-  display: table-row;
+  /* Firefox bug requires `table`, not `table-row`; and `width:100%` */
+  display: table;
+  width: 100%;
 }
 .mega-menu .dropdown-menu .row .column {
   display: table-cell;
   float: none;
+}
+@media (max-width: 991px) {
+  .mega-menu .dropdown-menu .row .column {
+    display: block !important;
+    width: 100%;
+  }
 }
 .mega-menu .dropdown-menu > .row > .column > li > a {
   border-bottom: 0;

@@ -29,11 +29,18 @@
     }
 
     .row {
-      display: table-row;
+      /* Firefox bug requires `table`, not `table-row`; and `width:100%` */
+      display: table;
+      width: 100%;
 
       .column {
         display: table-cell;
         float: none;
+
+        @media (max-width: 991px) {
+          display: block !important;
+          width: 100%;
+        }
       }
     }
 
