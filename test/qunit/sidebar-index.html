@@ -69,42 +69,43 @@
     <script src="../../js/_sidebar.js" data-cover></script>
     <script src="../../js/_collapse-footer.js" data-cover></script>
 
-    <!-- Unit tests -->
-    <script src="./unit/nav-test.js"></script>
-    <script src="./unit/calendar-test.js"></script>
-    <script src="./unit/collapse-footer-test.js"></script>
-    <script src="./unit/smartresize-test.js"></script>
-    <script src="./unit/sidebar-test.js"></script>
-
   </head>
   <body>
-    <div id="qunit-container">
-      <div id="qunit"></div>
-      <div id="qunit-fixture"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div id="qunit-container">
+            <div id="qunit"></div>
+            <div id="qunit-fixture"></div>
+          </div>
+        </div>
+        <!-- Sidebar -->
+        <div class="col-md-6 col-md-push-1">
+          <div id="sidebarNav" class="sidebar-nav">
+            <h4>Navigate this Doc</h4>
+            <!-- List Group, linked items -->
+            <div class="list-group">
+              <a class="list-group-item" data-scroll href="#headings">Headings</a>
+              <a class="list-group-item" data-scroll href="#content-formatting">Content Formatting</a>
+              <a class="list-group-item" data-scroll href="#calendar-dates">Desktop Calendar Dates</a>
+              <a class="list-group-item" data-scroll href="#buttons">Buttons</a>
+              <a class="list-group-item" data-scroll href="#profile">Profile</a>
+              <a class="list-group-item" data-scroll href="#campus-visits">Campus Visits</a>
+              <a class="list-group-item" data-scroll href="#tables">Tables</a>
+              <a class="list-group-item" data-scroll href="#forms">Forms</a>
+              <a class="list-group-item" data-scroll href="#input-groups">Input Groups</a>
+              <a class="list-group-item" data-scroll href="#panels-list-groups">Panels &amp; List Groups</a>
+              <a class="list-group-item" data-scroll href="#images">Images</a>
+              <a class="list-group-item" data-scroll href="#carousel">Carousel</a>
+              <a class="list-group-item" data-scroll href="#labels-badges">Labels &amp; Badges</a>
+              <a class="list-group-item" data-scroll href="#alerts">Alerts</a>
+              <a class="list-group-item" data-scroll href="#resp-video">Responsive Video</a>
+            </div>
+          </div>
+        </div>
+        <!-- End Sidebar -->
+      </div>
     </div>
 
-    <!-- Begin Footer -->
-
-    <div class="footer">
-
-      <div class="big-foot">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-2 col-sm-3 space-bot-md">
-              <h2 data-toggle="collapse" data-target="#academics-menu">Academics <span class="caret"></span></h2>
-              <ul class="big-foot-nav collapse" id="academics-menu">
-                <li><a class="" href="#">Departments</a></li>
-                <li><a class="" href="#">Executive Education</a></li>
-                <li><a class="" href="#">MBA Degrees</a></li>
-                <li><a class="" href="#">Master's Degrees</a></li>
-                <li><a class="" href="#">Ph.D. Programs</a></li>
-              </ul>
-            </div>
-          </div><!-- /.row -->
-        </div><!-- /.container -->
-      </div><!-- /.big-foot -->
-    </div><!-- /.footer -->
-
-    <!-- End Footer -->
   </body>
 </html>

@@ -4,6 +4,25 @@
   img {
     border-color: $ws-hero-img-border;
   }
+
+  h1,
+  h2,
+  p {
+    &.pop {
+      background-color: rgba(0, 0, 0, .8);
+      /* 
+       * table is a little trick to have an inline-block look, but
+       * still break after each block
+       */
+      display: table;
+      padding: 10px;
+
+      &:after {
+        clear: both;
+        content: ' ';
+      }
+    }
+  }
 }
 
 .hero-text-only-dark {
