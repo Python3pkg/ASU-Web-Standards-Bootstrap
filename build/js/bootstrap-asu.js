@@ -169,7 +169,8 @@
   // ===============================
 
   var CalendarPopover = function (element, options) {
-    this.init('calendarPopover', element, options)
+    this.options = $.extend({}, CalendarPopover.DEFAULTS, options)
+    this.init('calendarPopover', element, this.options)
   }
 
   if (! $.fn.popover) throw new Error('Calendar Popover requires popover')
@@ -290,9 +291,6 @@
 
       if (typeof option == 'string')
         data[option]()
-      else
-        data.$element.popover(option)
-
     })
   }
 

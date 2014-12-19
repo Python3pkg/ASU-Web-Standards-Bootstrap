@@ -12,7 +12,8 @@
   // ===============================
 
   var CalendarPopover = function (element, options) {
-    this.init('calendarPopover', element, options)
+    this.options = $.extend({}, CalendarPopover.DEFAULTS, options)
+    this.init('calendarPopover', element, this.options)
   }
 
   if (! $.fn.popover) throw new Error('Calendar Popover requires popover')
@@ -114,18 +115,12 @@
       var $this    = $(this)
       var data     = $this.data('bs.calendarPopover')
       var options  = typeof option == 'object' && option
-      var selector = options && options.selector
 
       if (! data && option == 'destroy')
         return
-      if (selector) {
-        if (! data)
-          $this.data('bs.calendarPopover', (data = {}))
-        if (! data[selector])
-          data[selector] = new CalendarPopover(this, options)
-      } else {
+      else {
         if (! option)
-          option = CalendarPopover.DEFAULTS
+          option = CalendarPopover.prototype.getDefault()
 
         if (! data)
           $this.data('bs.calendarPopover', (data = new CalendarPopover(this, options)))
@@ -133,9 +128,6 @@
 
       if (typeof option == 'string')
         data[option]()
-      else
-        data.$element.popover(option)
-
     })
   }
 
