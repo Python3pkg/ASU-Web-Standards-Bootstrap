@@ -56,36 +56,36 @@
       affixed.on('affix.bs.affix', function () {
         explicitlySetAffixPosition()
       })
-
-      /*
-       * Remove left position when affix-top class is applied
-       */
-      affixed.on('affix-top.bs.affix', function () {
-        affixed.css('left', 'auto')
-      })
-
-      /**
-       * On resize, un-affix the affixed widget to measure where it
-       * should be located, then set the left CSS accordingly, re-affix
-       * it
-       */
-      $(window).smartresize(function () {
-        if ( affixed.hasClass('affix') ) {
-          affixed.removeClass('affix')
-          affixed.css('left','auto')
-          explicitlySetAffixPosition()
-          affixed.addClass('affix')
-        }
-      })
-
-      /**
-       * Now we have to remove the left positioning of get affix-bottom
-       * to work properly
-       */
-      affixed.on('affix-bottom.bs.affix', function () {
-        affixed.css('left','auto')
-      })
     }
+
+    /*
+     * Remove left position when affix-top class is applied
+     */
+    affixed.on('affix-top.bs.affix', function () {
+      affixed.css('left', 'auto')
+    })
+
+    /**
+     * On resize, un-affix the affixed widget to measure where it
+     * should be located, then set the left CSS accordingly, re-affix
+     * it
+     */
+    $(window).smartresize(function () {
+      if ( affixed.hasClass('affix') ) {
+        affixed.removeClass('affix')
+        affixed.css('left','auto')
+        explicitlySetAffixPosition()
+        affixed.addClass('affix')
+      }
+    })
+
+    /**
+     * Now we have to remove the left positioning of get affix-bottom
+     * to work properly
+     */
+    affixed.on('affix-bottom.bs.affix', function () {
+      affixed.css('left','auto')
+    })
   })
 
 } (jQuery);

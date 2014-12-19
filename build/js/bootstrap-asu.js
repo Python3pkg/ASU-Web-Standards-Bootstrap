@@ -169,7 +169,8 @@
   // ===============================
 
   var CalendarPopover = function (element, options) {
-    this.init('calendarPopover', element, options)
+    this.options = $.extend({}, CalendarPopover.DEFAULTS, options)
+    this.init('calendarPopover', element, this.options)
   }
 
   if (! $.fn.popover) throw new Error('Calendar Popover requires popover')
@@ -184,21 +185,73 @@
     content: function () {
 
       // Grab the datetime from the content
-      var dateTime = $(this).find('time').attr('datetime') || ''
-      var eventName = $(this).attr('title') || ''
-      var timeZone = $(this).find('time').attr('data-timezone') || ''
-      var filename = $(this).attr('data-filename') || 'invite.ics'
+      var dateStart   = $(this).find('time').attr('datetime') || ''
+      var dateEnd     = $(this).find('time').attr('datetime') || ''
+      var eventName   = $(this).attr('title') || ''
+      var timeZone    = $(this).find('time').attr('data-timezone') || 'Z'
+      var filename    = $(this).attr('data-filename') || 'invite.ics'
+      var subject     = $(this).attr('data-subject') || ''
+      var description = $(this).attr('data-description') || ''
+      var location    = $(this).attr('data-location') || ''
+      var mailto      = $(this).attr('data-mailto') || 'me@email.com'
 
       // TODO test
-      var ics = this.generateICS( {
-        dateTime : dateTime,
-        eventName : eventName,
-        timeZone : timeZone
+      var ics = CalendarPopover.ICS( {
+        timeZone : timeZone,
+        message : description,
+        mailto : mailto,
+        dateStart : dateStart,
+        dateEnd : dateEnd,
+        location : location,
+        summary : eventName + ( subject === '' ? '' : ' : ' + subject )
       } )
 
       return '<a download="' + filename + '" href="' + 'data:text/plain;charset=utf-8,' + encodeURIComponent(ics) + '">Add this event to your calendar<\/a>';
     }
   })
+
+  CalendarPopover.ICS = function ( data ) {
+    var dateStamp = Date.now()
+    var uid       = CalendarPopover.UID()
+    var company   = 'ASU'
+
+    var timeZone  = data.timeZone
+    var message   = data.message
+    var mailto    = data.mailto
+    var dateStart = data.dateStart
+    var dateEnd   = data.dateEnd
+    var location  = data.location
+    var summary   = data.summary
+
+    var icsMessage = 'BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//'
+    icsMessage += company
+    icsMessage += '//NONSGML v1.0//EN\nBEGIN:VEVENT\nUID:'
+    icsMessage += uid
+    icsMessage += '\nDTSTAMP:'
+    icsMessage += dateStamp + timeZone
+    icsMessage += '\nATTENDEE;CN='
+    icsMessage += message + ' '
+    icsMessage += ';RSVP=TRUE:MAILTO:'
+    icsMessage += mailto
+    icsMessage += '\nORGANIZER;CN=Me:MAILTO::'
+    icsMessage += mailto
+    icsMessage += '\nDTSTART:'
+    icsMessage += dateStart
+    icsMessage += '\nDTEND:'
+    icsMessage += dateEnd
+    icsMessage += '\nLOCATION:'
+    icsMessage += location
+    icsMessage += '\nSUMMARY:'
+    icsMessage += summary
+    icsMessage += '\nEND:VEVENT\nEND:VCALENDAR';
+
+    return icsMessage
+  }
+
+  CalendarPopover.UID = function () {
+    // Quick, short uid
+    return ('0000' + (Math.random() * Math.pow(36,4) << 0).toString(36)).slice(-4)
+  }
 
   // NOTE: POPOVER EXTENDS popover.js
   // ================================
@@ -211,12 +264,6 @@
     return CalendarPopover.DEFAULTS
   }
 
-  CalendarPopover.prototype.generateICS = function ( data ) {
-    // TODO issue #9
-    return '' + data
-  }
-
-
   // CALENDAR POPOVER PLUGIN DEFINITION
   // ==================================
 
@@ -225,16 +272,13 @@
       var $this    = $(this)
       var data     = $this.data('bs.calendarPopover')
       var options  = typeof option == 'object' && option
-      var selector = options && options.selector
 
       if (! data && option == 'destroy')
         return
-      if (selector) {
-        if (! data)
-          $this.data('bs.calendarPopover', (data = {}))
-        if (! data[selector])
-          data[selector] = new CalendarPopover(this, options)
-      } else {
+      else {
+        if (! option)
+          option = CalendarPopover.prototype.getDefault()
+
         if (! data)
           $this.data('bs.calendarPopover', (data = new CalendarPopover(this, options)))
       }
@@ -323,36 +367,36 @@
       affixed.on('affix.bs.affix', function () {
         explicitlySetAffixPosition()
       })
-
-      /*
-       * Remove left position when affix-top class is applied
-       */
-      affixed.on('affix-top.bs.affix', function () {
-        affixed.css('left', 'auto')
-      })
-
-      /**
-       * On resize, un-affix the affixed widget to measure where it
-       * should be located, then set the left CSS accordingly, re-affix
-       * it
-       */
-      $(window).smartresize(function () {
-        if ( affixed.hasClass('affix') ) {
-          affixed.removeClass('affix')
-          affixed.css('left','auto')
-          explicitlySetAffixPosition()
-          affixed.addClass('affix')
-        }
-      })
-
-      /**
-       * Now we have to remove the left positioning of get affix-bottom
-       * to work properly
-       */
-      affixed.on('affix-bottom.bs.affix', function () {
-        affixed.css('left','auto')
-      })
     }
+
+    /*
+     * Remove left position when affix-top class is applied
+     */
+    affixed.on('affix-top.bs.affix', function () {
+      affixed.css('left', 'auto')
+    })
+
+    /**
+     * On resize, un-affix the affixed widget to measure where it
+     * should be located, then set the left CSS accordingly, re-affix
+     * it
+     */
+    $(window).smartresize(function () {
+      if ( affixed.hasClass('affix') ) {
+        affixed.removeClass('affix')
+        affixed.css('left','auto')
+        explicitlySetAffixPosition()
+        affixed.addClass('affix')
+      }
+    })
+
+    /**
+     * Now we have to remove the left positioning of get affix-bottom
+     * to work properly
+     */
+    affixed.on('affix-bottom.bs.affix', function () {
+      affixed.css('left','auto')
+    })
   })
 
 } (jQuery);

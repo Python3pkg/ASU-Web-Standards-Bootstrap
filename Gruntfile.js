@@ -42,7 +42,7 @@ module.exports = function (grunt) {
                 }
             },
             files: [
-                'test/qunit/index.html',
+                'test/qunit/mobile-index.html',
                 'test/qunit/visual-index.html'
             ]
         },
