@@ -26,10 +26,11 @@ For Web Standards documentation, checkout [The Hub](http://hub.asu.edu).
 
 # Dependencies
 
+- [Twitter Bootstrap](http://getbootstrap.com/)
 - [jQuery](http://jquery.com/)
 - [Lightning Touch](https://github.com/ucsf-ckm/LightningTouch)
 - [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-- [Twitter Bootstrap](http://getbootstrap.com/)
+- [Moment JS](http://momentjs.com/) - Used for calendar ICS files.
 - [ASU Header](https://drupal.asu.edu/build/asu-header-footer-version-40)
 
 # Quick Start

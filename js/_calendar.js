@@ -8,6 +8,8 @@
 +function ($) {
   'use strict';
 
+  if ( typeof moment == 'undefined' ) throw new Error( 'Moment is required!' )
+
   // POPOVER PUBLIC CLASS DEFINITION
   // ===============================
 
@@ -54,6 +56,16 @@
   })
 
   CalendarPopover.ICS = function ( data ) {
+    if ( typeof data.dateStart == 'string' ) {
+      var temp = new Date( data.dateStart )
+      data.dateStart =  temp.format( 'Ymd\THis' )
+    }
+
+    if ( typeof data.dateEnd == 'string' ) {
+      var temp = new Date( data.dateEnd )
+      data.dateEnd =  temp.format( 'Ymd\THis' )
+    }
+  
     var icsMessage = 'BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//'
     icsMessage += 'ASU'
     icsMessage += '//NONSGML v1.0//EN\nBEGIN:VEVENT\nUID:'
