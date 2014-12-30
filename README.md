@@ -9,18 +9,21 @@ ASU Web Standards Bootstrap
 [![Github issues](https://img.shields.io/github/issues/gios-asu/ASU-Web-Standards-Bootstrap.svg?style=flat)](https://github.com/gios-asu/ASU-Web-Standards-Bootstrap/issues)
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat)](https://github.com/gios-asu/ASU-Web-Standards-Bootstrap/blob/master/LICENSE.md)
 
-This ASU Bootstrap Addon provides stylesheets and JavaScript that are consistent with the new [ASU Web Standards](http://hub.asu.edu) being rolled out to the school websites at ASU. The intent of this *Bootstrap Addon* is to provide a universal source for the ASU Web Standards that can be applied to any website, regardless of what technology used to build a site. This addon is based off of the work done by [29thDrive](http://asu-ws.29thdrive.com/) and is consistent with their initial work. This ASU Web Standards Bootstrap repository is maintained by the [Julie Ann Wrigley Global Institute of Sustainability](http://sustainability.asu.edu).
+This ASU Bootstrap Addon provides stylesheets and JavaScript that are consistent with the new [ASU Web Standards](http://hub.asu.edu) being rolled out to the school websites at ASU. The intent of this *Bootstrap Addon* is to provide a universal source for the ASU Web Standards that can be applied to any website, regardless of what technology is used to build a site. This project is based off of the work done by [29thDrive](http://asu-ws.29thdrive.com/) and is consistent with their initial work. This ASU Web Standards Bootstrap repository is maintained by the [Julie Ann Wrigley Global Institute of Sustainability](http://sustainability.asu.edu).
+
+This project does not replace Bootstrap, but rather adds files that extend Bootstrap.  You still need to include the latest Bootstrap files in your website.
 
 For additional documentation, checkout our [GitHub pages](https://gios-asu.github.io/).
 
 For Web Standards documentation, checkout [The Hub](http://hub.asu.edu).
 
-# Table of contents
+# Table of Contents
 
 - [Dependencies](#dependencies)
 - [Quick start](#quick-start)
 - [Details](#details)
 - [Tools](#tools)
+- [Workflow](#workflow)
 - [Related Projects](#related-projects)
 - [Other Implementations of the ASU Web Standards](#other-implementations-of-the-asu-web-standards)
 
@@ -40,7 +43,26 @@ You can use one of the following ways to use this repo:
 - [Download the latest release](https://github.com/gios-asu/ASU-Web-Standards-Bootstrap/releases).
 - Clone the repo: `git clone https://github.com/gios-asu/ASU-Web-Standards-Bootstrap.git`.
 
-Please remember to include all of the [dependencies](#dependencies).
+The files that you should include in your website are the ones in `/build`.
+
+Add the following to your head (after your stylesheets for bootstrap):
+
+```html
+<!-- ASU Bootstrap Standards -->
+<link href="/css/bootstrap-asu.css" rel="stylesheet">
+<link href="/css/bootstrap-asu-theme-base.css" rel="stylesheet">
+```
+
+Add the following to the end of your `<body>` before the closing `</body>` tag, but after your other script tags:
+
+```html
+<!-- ASU Bootstrap Standards -->
+<script src="./js/bootstrap-asu.min.js"></script>
+```
+
+Please remember to include all of the [dependencies](#dependencies).  Include all 3rd party stylesheets and scripts BEFORE including the stylesheets and scripts provided in this repo.
+
+For developers or when debugging, consider using the non-minified JavaScript files and adding the `*.map` files to where your `*.css` files are.
 
 # Details
 
@@ -53,12 +75,14 @@ For more information concerning all of the new components and CSS styles that ar
 
 # Tools
 
+For developers, the following details what tools we use and how we use them.
+
 ## Grunt
 
 This repository uses grunt to:
 
 - Check common JavaScript problems using JS Hint.
-- Check JavaScript coding standards.
+- Check JavaScript Coding Standards.
 - Run QUnit Unit Tests.
 - Check common SCSS problems.
 - Compile SCSS into CSS.
@@ -94,6 +118,16 @@ We use Travis-CI to make sure that the SCSS files and JS files are written corre
 
 [Checkout our Travis CI Page](https://travis-ci.org/gios-asu/ASU-Bootstrap-Addon/builds)
 
+## PhantomJS
+
+Our tests are run on [PhantomJS](http://phantomjs.org/).  PhantomJS is a headless WebKit scriptable with a JavaScript API. It has fast and native support for various web standards: DOM handling, CSS selector, JSON, Canvas, and SVG.
+
+Note that PhantomJS can timeout during the visual tests if one of the page dependencies (like [Placeholdit](http://placehold.it/)) times out.
+
+## Qunit
+
+Our tests are written using [Qunit](http://api.qunitjs.com/).  It is a powerful, easy-to-use JavaScrupt unit test suite.
+
 ## Blanket JS
 
 If you want to check the code coverage of the project, boot up a server (any server since the files are just HTML, but it is recommended to use Apache) and deploy `/test/*` to it.
@@ -102,13 +136,35 @@ Go to `/test/qunit/index.html` in the browser, and click the checkbox next to `E
 
 ## Koala
 
-Koala is no longer the standard way to compile these files.  It is still supported, but it will yield different results than grunt.
+Koala is no longer the standard way to compile these files; please use Grunt instead.  It is still supported, but it will yield different results than grunt.
 
 Point Koala at:
 
 - js/bootstrap-asu.js => build/js/bootstrap-asu.js
 - scss/bootstrap-asu.scss => build/css/bootstrap-asu.css
 - scss/bootstrap-asu-theme-base.scss => build/css/bootstrap-asu-theme-base.css
+
+# Workflow
+
+1. Work and commit locally as normal.
+2. Run `grunt test`.
+3. Fix any problems that grunt displayed.
+4. Commit locally, noting what fixes were made.
+5. Run `grunt`.
+6. Grunt should finish without any errors.
+7. If grunt succeeded, make a commit with the message "grunt".
+8. Push upstream
+
+If you are releasing a new version, make sure to:
+
+1. Upversion any JavaScript files you changed.
+2. Upversion `js/bootstrap-asu.js`
+3. Upversion `scss/bootstrap-asu.scss`
+4. Upversion `scss/bootstrap-asu-theme-base.scss`
+5. Run `grunt`.
+6. If grunt succeeded, make a commit with the message "grunt, upversioned".
+7. Push upstream
+8. Make a new release in Github.
 
 
 # Related Projects

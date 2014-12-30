@@ -1,3 +1,8 @@
+/**
+ * You can manually test generated ICS files using
+ * this website: http://icalvalid.cloudapp.net/ .
+ */
+
 $(function () {
   'use strict';
 
