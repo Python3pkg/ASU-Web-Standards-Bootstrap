@@ -5,8 +5,12 @@
  * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
  * ======================================================================== */
 
+/* global moment */
+
 +function ($) {
   'use strict';
+
+  if ( typeof moment == 'undefined' ) throw new Error( 'Moment is required!' )
 
   // POPOVER PUBLIC CLASS DEFINITION
   // ===============================
@@ -29,9 +33,9 @@
 
       // Grab the datetime from the content
       var dateStart   = $(this).find('time').attr('datetime') || ''
-      var dateEnd     = $(this).find('time').attr('datetime') || ''
-      var eventName   = $(this).attr('title') || ''
       var timeZone    = $(this).find('time').attr('data-timezone') || 'Z'
+      var dateEnd     = $(this).attr('data-date-end') || ''
+      var eventName   = $(this).attr('title') || ''
       var filename    = $(this).attr('data-filename') || 'invite.ics'
       var subject     = $(this).attr('data-subject') || ''
       var description = $(this).attr('data-description') || ''
@@ -54,38 +58,43 @@
   })
 
   CalendarPopover.ICS = function ( data ) {
-    var dateStamp = Date.now()
-    var uid       = CalendarPopover.UID()
-    var company   = 'ASU'
+    var calendarDateFormat = 'YYYYMMDD\\THHmmss'
+    var calendarApprovedFormat = 'YYYY-MM-DD HH:mm a'
 
-    var timeZone  = data.timeZone
-    var message   = data.message
-    var mailto    = data.mailto
-    var dateStart = data.dateStart
-    var dateEnd   = data.dateEnd
-    var location  = data.location
-    var summary   = data.summary
+    // dateEnd first so that we can add 1 hour to dateStart
+    // if necessary
+    if ( typeof data.dateEnd == 'string' ) {
+      if ( data.dateEnd === '' ) {
+        data.dateEnd = moment( data.dateStart, calendarApprovedFormat ).add( 1, 'hour' ).format( calendarDateFormat )
+      } else {
+        data.dateEnd = moment( data.dateEnd, calendarApprovedFormat ).format( calendarDateFormat )
+      }
+    }
+
+    if ( typeof data.dateStart == 'string' ) {
+      data.dateStart = moment( data.dateStart, calendarApprovedFormat ).format( calendarDateFormat )
+    }
 
     var icsMessage = 'BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//'
-    icsMessage += company
+    icsMessage += 'ASU'
     icsMessage += '//NONSGML v1.0//EN\nBEGIN:VEVENT\nUID:'
-    icsMessage += uid
+    icsMessage += CalendarPopover.UID()
     icsMessage += '\nDTSTAMP:'
-    icsMessage += dateStamp + timeZone
+    icsMessage += Date.now() + data.timeZone
     icsMessage += '\nATTENDEE;CN='
-    icsMessage += message + ' '
+    icsMessage += data.message + ' '
     icsMessage += ';RSVP=TRUE:MAILTO:'
-    icsMessage += mailto
+    icsMessage += data.mailto
     icsMessage += '\nORGANIZER;CN=Me:MAILTO::'
-    icsMessage += mailto
+    icsMessage += data.mailto
     icsMessage += '\nDTSTART:'
-    icsMessage += dateStart
+    icsMessage += data.dateStart
     icsMessage += '\nDTEND:'
-    icsMessage += dateEnd
+    icsMessage += data.dateEnd
     icsMessage += '\nLOCATION:'
-    icsMessage += location
+    icsMessage += data.location
     icsMessage += '\nSUMMARY:'
-    icsMessage += summary
+    icsMessage += data.summary
     icsMessage += '\nEND:VEVENT\nEND:VCALENDAR';
 
     return icsMessage

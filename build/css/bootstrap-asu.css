@@ -2097,6 +2097,12 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .panel-body + .table-responsive {
   border-top: 1px solid #b7b7b7;
 }
+.panel h1,
+.panel h2,
+.panel h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 .panel-body {
   padding: 30px 20px;
@@ -2104,6 +2110,8 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 
 .panel-title {
   font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .panel-group {
