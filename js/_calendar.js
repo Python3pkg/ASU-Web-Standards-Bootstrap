@@ -5,6 +5,8 @@
  * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
  * ======================================================================== */
 
+/* global moment */
+
 +function ($) {
   'use strict';
 
@@ -56,16 +58,23 @@
   })
 
   CalendarPopover.ICS = function ( data ) {
-    if ( typeof data.dateStart == 'string' ) {
-      var temp = new Date( data.dateStart )
-      data.dateStart =  temp.format( 'Ymd\THis' )
+    var calendarDateFormat = 'YYYYMMDD\\THHmmss'
+    var calendarApprovedFormat = 'YYYY-MM-DD HH:mm a'
+
+    // dateEnd first so that we can add 1 hour to dateStart
+    // if necessary
+    if ( typeof data.dateEnd == 'string' ) {
+      if ( data.dateEnd === '' ) {
+        data.dateEnd = moment( data.dateStart, calendarApprovedFormat ).add( 1, 'hour' ).format( calendarDateFormat )
+      } else {
+        data.dateEnd = moment( data.dateEnd, calendarApprovedFormat ).format( calendarDateFormat )
+      }
     }
 
-    if ( typeof data.dateEnd == 'string' ) {
-      var temp = new Date( data.dateEnd )
-      data.dateEnd =  temp.format( 'Ymd\THis' )
+    if ( typeof data.dateStart == 'string' ) {
+      data.dateStart = moment( data.dateStart, calendarApprovedFormat ).format( calendarDateFormat )
     }
-  
+
     var icsMessage = 'BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//'
     icsMessage += 'ASU'
     icsMessage += '//NONSGML v1.0//EN\nBEGIN:VEVENT\nUID:'

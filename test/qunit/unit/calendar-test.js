@@ -94,10 +94,46 @@ $(function () {
     ok( $pop.is('.in') && $pop.is(':visible'), 'The popup is displayed' )
 
     // Clean up
-    $popover.click()
+    $pop.remove()
     $popover.remove()
   })
 
 
-  // TODO test validity of calendar data
+  test('should have valid download link', function () {
+    var fixture = '<div class="calendar-date calendarPopover" '
+    fixture    += 'data-timezone="Z" '
+    fixture    += 'data-description="This is a message" '
+    fixture    += 'data-mailto="idmontie@asu.edu" '
+    fixture    += 'data-date-end="2014-01-01 1:00 pm" '
+    fixture    += 'data-location="ASU" '
+    fixture    += 'data-summary="Just Testing" '
+    fixture    += 'data-original-title="" title="">'
+    fixture    += '<time datetime="2014-01-01 12:00 pm">'
+    fixture    += '<span class="weekday">Sun</span>'
+    fixture    += '<span class="date">1</span>'
+    fixture    += '<span class="month">Jan</span>'
+    fixture    += '</time>'
+    fixture    += '</div>'
+
+    var expectedEncoded = 'ATTENDEE%3BCN%3DThis%20is%20a%20message%20%3BRSVP%3DTRUE%3AMAILTO%3Aidmontie%40asu.edu%0AORGANIZER%3BCN%3DMe%3AMAILTO%3A%3Aidmontie%40asu.edu%0ADTSTART%3A20140101T120000%0ADTEND%3A20140101T130000%0ALOCATION%3AASU%0ASUMMARY%3A%0AEND%3AVEVENT%0AEND%3AVCALENDAR'
+  
+    var $fixture = $(fixture)
+    $fixture.appendTo('body')
+
+    var $popover = $fixture.wsCalendarPopover({
+      animation: false
+    })
+
+    $popover.click()
+    
+    var $pop = $('.popover.bottom')
+    var href = $pop.find('a').attr('href')
+
+    notEqual( href.indexOf( expectedEncoded ), -1, 'The popup has the encoded ics' )
+
+    // Clean up
+    $pop.remove()
+    $popover.remove()
+
+  })
 })
