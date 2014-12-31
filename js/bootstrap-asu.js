@@ -1,5 +1,5 @@
 /* ========================================================================
- * Web Standards: bootstrap-asu.js v0.0.4
+ * Web Standards: bootstrap-asu.js v0.0.6
  * ========================================================================
  * Copyright 2014 ASU
  * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
