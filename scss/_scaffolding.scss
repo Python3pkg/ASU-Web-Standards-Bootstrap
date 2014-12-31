@@ -1,3 +1,4 @@
+//== Scaffolding
 html {
   -webkit-font-smoothing: antialiased; 
 }
@@ -33,6 +34,17 @@ a {
     &:focus {
       border-bottom: 0;
     }
+  }
+
+  //=== External Links
+  li.external-link &:before {
+    color: inherit;
+    content: '\f08e';
+    display: inline-block;
+    float: right;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    width: 10px;
   }
 }
 

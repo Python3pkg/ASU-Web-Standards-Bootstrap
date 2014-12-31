@@ -1,5 +1,5 @@
 /* ========================================================================
- * Web Standards: bootstrap-asu.css v0.0.5
+ * Web Standards: bootstrap-asu.css v0.0.6
  * ========================================================================
  * Copyright 2014 ASU
  * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
@@ -11,6 +11,7 @@
 
 //== Base elements
 @import 'scss/scaffolding';
+@import 'scss/asu-scaffolding';
 
 //== Scaffolding
 @import 'scss/tables';

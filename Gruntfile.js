@@ -90,7 +90,8 @@ module.exports = function (grunt) {
                     'js/_smartresize.js',
                     'js/_calendar.js',
                     'js/_sidebar.js',
-                    'js/_collapse-footer.js'
+                    'js/_collapse-footer.js',
+                    'js/_mobile-menu.js'
                 ],
                  dest: 'build/js/bootstrap-asu.js'
             }

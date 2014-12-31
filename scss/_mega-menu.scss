@@ -10,7 +10,6 @@
   }
 
   .dropdown-menu {
-
     border-width: 0;
     margin-top: -1px;
     position: static;
@@ -38,6 +37,7 @@
         float: none;
 
         @media (max-width: 991px) {
+          border-right: 0;
           display: block !important;
           width: 100%;
         }
