@@ -14,6 +14,6 @@
 // @koala-prepend "js/_calendar.js"
 // @koala-prepend "js/_sidebar.js"
 
-
 // Default Functionality
 // @koala-prepend "js/_collapse-footer.js"
+// @koala-prepend "js/_mobile-menu.js"

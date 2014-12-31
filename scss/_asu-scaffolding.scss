@@ -1,0 +1,141 @@
+//== ASU Scaffolding
+
+//=== Masthead
+
+#masthead {
+  border: 0;
+
+  > .container {
+    @media (max-width: 991px) {
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+    }
+  }
+}
+
+//=== ASU Mobile Header
+
+#asu_mobile_hdr {
+  height: auto !important;
+
+  @media (max-width: 991px) {
+    float: left;
+    padding: 0 12px;
+    width: 100%;
+  }
+}
+
+//=== ASU Mobile Menu
+
+#asu_mobile_menu {
+  @media (max-width: 991px) {
+    margin-top: 0 !important;
+  }
+}
+
+//=== ASU Logo
+
+#asu_logo {
+  padding: 12px 0;
+
+  @media (max-width: 991px) {
+    min-width: 100px !important;
+
+    a img {
+      margin-top: 0px !important;
+    }
+  }
+}
+
+//=== Search and Mobile Menu Buttons
+
+#asu_mobile_search_button,
+#asu_mobile_menu_button {
+  color: #999;
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  font-size: 22px;
+  height: 61px;
+  margin: 0;
+  padding: 21px 5px;
+  text-align: center;
+  width: 35px;
+
+  &:hover {
+    color: #000;
+  }
+}
+
+#asu_mobile_search_button.clicked,
+#asu_mobile_menu_button:focus {
+  background-color: #E7E7E7;
+}
+
+#asu_mobile_menu_button a {
+  display: none;
+}
+
+//=== Search Form
+
+.main-search {
+  /*
+   * do not use display:none;
+   * it does not react to animations
+   * TODO test on IE, we may need to use visibility:0
+   */
+  height: 0;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  max-height: 0;
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  -moz-transition-duration: .3s;
+  -o-transition-duration: .3s;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+
+  -moz-transition-timing-function: cubic-bezier(0,1,.5,1);
+  -o-transition-timing-function: cubic-bezier(0,1,.5,1);
+  -webkit-transition-timing-function: cubic-bezier(0,1,.5,1);
+  transition-timing-function: cubic-bezier(0,1,.5,1);
+
+  &.opened {
+    display: block;
+    height: auto;
+    max-height: 1000px;
+    overflow: hidden;
+
+    -moz-transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    transition-duration: .3s;
+
+    -moz-transition-timing-function: ease-in;
+    -webkit-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+  }
+
+  .asu_search_box {
+    -webkit-appearance: none;
+    border: none;
+    border-radius: 0;
+    background-color: #E7E7E7;
+    color: #505558;
+    font-size: 16px;
+    outline: 0;
+    padding: 10px 12px;
+    position: relative;
+    width: 100%;
+    z-index: 500;
+  }
+
+  .asu_search_button {
+    display: none;
+  }
+}
