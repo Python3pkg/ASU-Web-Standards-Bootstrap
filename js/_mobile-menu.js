@@ -10,7 +10,6 @@
   // TODO close down should just run once on start up and show stuff instead
   function collapseHeader () {
     if ( $(window).innerWidth() >= mobileWidth ) {
-      console.log( 'open up' )
       // ==========
       // Navigation
       // ==========
@@ -30,7 +29,6 @@
       $( '#asu_mobile_search_button' ).remove()
 
     } else {
-      console.log( 'close down' )
       if ( $( '#main-search' ).length > 0 ) {
         return
       }
@@ -40,7 +38,7 @@
       // ==========
       var $menuHiddenButton = $( '.navbar-ws .navbar-toggle' )
       $menuHiddenButton.hide()
-      
+
       // add asu menu items
       $( '#asu_universal_nav>ul>li' ).each( function ( i, e ) {
         var $clone = $( e ).clone().addClass( 'asu_mobile_nav_item' )
@@ -56,14 +54,14 @@
             .addClass( 'dropdown-menu' )
             .attr( 'role', 'menu' )
             .find( 'li' )
-              .addClass( 'external_link' )
+              .addClass( 'external-link' )
         } else {
           // Add extrenal link
-          $clone.addClass( 'external_link' )
+          $clone.addClass( 'external-link' )
         }
 
         $clone.appendTo( '.navbar-ws .nav.navbar-nav' )
-      } )      
+      } )
 
 
       // ======
@@ -78,7 +76,7 @@
       searchMarkUp += '  <form target="_top" action="https://search.asu.edu/search" method="get" name="gs">'
       searchMarkUp += '    <input class="asu_search_box" name="q" id="asu_search_box" placeholder="Search" autocomplete="off" type="text">'
       searchMarkUp += '    <input class="asu_search_button" type="submit" value="Search">'
-      searchMarkUp += '    <input name="site" value="default_collection" type="hidden">'      
+      searchMarkUp += '    <input name="site" value="default_collection" type="hidden">'
       searchMarkUp += '    <input name="sort" value="date:D:L:d1" type="hidden">'
       searchMarkUp += '    <input name="output" value="xml_no_dtd" type="hidden">'
       searchMarkUp += '    <input name="ie" value="UTF-8" type="hidden">'
@@ -104,19 +102,18 @@
       var searchMenuMarkup = '<div class="fa fa-search" id="asu_mobile_search_button"></div>'
 
       // TODO We should be appending to .asu_mobile_hdr_wrapper but
-      // our markup does not have a .asu_mobile_hdr_wrapper nested in 
+      // our markup does not have a .asu_mobile_hdr_wrapper nested in
       // the #asu_mobile_hdr like webspark does.
       // For now, we will append to #asu_mobile_hdr, but we should look into
       // this again in the future.
       var $mobileMenuButton = $( mobileMenuMarkup ).appendTo( '#asu_mobile_hdr' )
       var $searchButton = $( searchMenuMarkup ).appendTo( '#asu_mobile_hdr' )
-      
 
       // ===========
       // Icon Events
       // ===========
 
-      $( '#asu_mobile_search_button' ).click( function ( e ) {
+      $searchButton.click( function ( e ) {
         e.preventDefault();
 
         if ( $( this ).is( '.clicked' ) ) {
@@ -132,7 +129,7 @@
         }
       } )
 
-      $( '#asu_mobile_menu_button' ).click( function ( e ) {
+      $mobileMenuButton.click( function ( e ) {
         e.preventDefault();
         // TODO $menuHiddenButton.click() is an animation event
         // that we need to wait for

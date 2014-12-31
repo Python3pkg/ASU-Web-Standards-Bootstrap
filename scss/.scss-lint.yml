@@ -82,6 +82,11 @@ linters:
   QualifyingElement:
     enabled: false
 
+  SelectorFormat:
+    enabled: true
+    ignored_types : ['id']
+    ignored_names : ['asu_search_box', 'asu_search_button']
+
   SelectorDepth:
     enabled: false
 

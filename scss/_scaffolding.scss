@@ -37,13 +37,13 @@ a {
   }
 
   //=== External Links
-  li.external_link &:before {
+  li.external-link &:before {
     color: inherit;
-    content: "\f08e";
+    content: '\f08e';
     display: inline-block;
+    float: right;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
-    float: right;
     width: 10px;
   }
 }

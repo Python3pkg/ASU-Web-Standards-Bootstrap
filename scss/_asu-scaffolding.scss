@@ -43,7 +43,7 @@
     min-width: 100px !important;
 
     a img {
-      margin-top: 0px !important;
+      margin-top: 0 !important;
     }
   }
 }
@@ -68,9 +68,10 @@
   }
 }
 
-#asu_mobile_search_button.clicked,
-#asu_mobile_menu_button:focus {
-  background-color: #E7E7E7;
+#asu_mobile_search_button {
+  &.clicked {
+    background-color: #e7e7e7;
+  }
 }
 
 #asu_mobile_menu_button a {
@@ -78,7 +79,6 @@
 }
 
 //=== Search Form
-
 .main-search {
   /*
    * do not use display:none;
@@ -86,23 +86,22 @@
    * TODO test on IE, we may need to use visibility:0
    */
   height: 0;
-
-  margin-top: 0;
   margin-bottom: 0;
+  margin-top: 0;
   max-height: 0;
   overflow: hidden;
-  padding-top: 0;
   padding-bottom: 0;
+  padding-top: 0;
 
   -moz-transition-duration: .3s;
   -o-transition-duration: .3s;
   -webkit-transition-duration: .3s;
   transition-duration: .3s;
 
-  -moz-transition-timing-function: cubic-bezier(0,1,.5,1);
-  -o-transition-timing-function: cubic-bezier(0,1,.5,1);
-  -webkit-transition-timing-function: cubic-bezier(0,1,.5,1);
-  transition-timing-function: cubic-bezier(0,1,.5,1);
+  -moz-transition-timing-function: cubic-bezier(0, 1, .5, 1);
+  -o-transition-timing-function: cubic-bezier(0, 1, .5, 1);
+  -webkit-transition-timing-function: cubic-bezier(0, 1, .5, 1);
+  transition-timing-function: cubic-bezier(0, 1, .5, 1);
 
   &.opened {
     display: block;
@@ -111,21 +110,21 @@
     overflow: hidden;
 
     -moz-transition-duration: .3s;
-    -webkit-transition-duration: .3s;
     -o-transition-duration: .3s;
+    -webkit-transition-duration: .3s;
     transition-duration: .3s;
 
     -moz-transition-timing-function: ease-in;
-    -webkit-transition-timing-function: ease-in;
     -o-transition-timing-function: ease-in;
+    -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
   }
 
   .asu_search_box {
     -webkit-appearance: none;
-    border: none;
+    background-color: #e7e7e7;
+    border: 0;
     border-radius: 0;
-    background-color: #E7E7E7;
     color: #505558;
     font-size: 16px;
     outline: 0;
@@ -139,3 +138,5 @@
     display: none;
   }
 }
+
+
