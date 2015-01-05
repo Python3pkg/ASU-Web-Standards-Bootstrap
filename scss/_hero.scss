@@ -57,9 +57,10 @@
   &.hero-programs,
   &.hero-action-call,
   &.hero-degrees {
-    background-image: url('../img/hero-background-1.jpg');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/hero-background-1.jpg', sizingMethod='scale')";
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/hero-background-1.jpg', sizingMethod='scale');
+    // Example:
+    // background-image: url('../img/hero-background-1.jpg');
+    // -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/hero-background-1.jpg', sizingMethod='scale')";
+    // filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/hero-background-1.jpg', sizingMethod='scale');
   }
 }
 

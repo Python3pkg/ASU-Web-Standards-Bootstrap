@@ -442,41 +442,38 @@
   });
 } (jQuery);
 
+/* ========================================================================
+ * Web Standards: mobile_menu.js v0.0.1
+ * ========================================================================
+ * Copyright 2014 ASU
+ * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
+ * ======================================================================== */
 
-
-// TODO tests
 +function ($) {
   'use strict';
 
+  // TODO refactor this constant
   var mobileWidth = 975
 
-  // TODO open up should just stuff
-  // TODO close down should just run once on start up and show stuff instead
-  function collapseHeader () {
-    if ( $(window).innerWidth() >= mobileWidth ) {
-      // ==========
-      // Navigation
-      // ==========
-      $( '.navbar-ws .navbar-toggle' ).show()
-      // hide asu menu items
-      $( '.asu_mobile_nav_item' ).remove()
+  var desktopElements = [
+    '.navbar-ws .navbar-toggle'
+  ].join( ',' )
+  var mobileElements = [
+    '.asu_mobile_nav_item',
+    '#main-search',
+    '#asu_mobile_menu_button',
+    '#asu_mobile_search_button'
+  ].join( ',' )
 
-      // ======
-      // Search
-      // ======
-      $( '#main-search' ).remove()
 
-      // =====
-      // Icons
-      // =====
-      $( '#asu_mobile_menu_button' ).remove()
-      $( '#asu_mobile_search_button' ).remove()
-
-    } else {
-      if ( $( '#main-search' ).length > 0 ) {
-        return
-      }
-
+  /**
+   * Create nagivation, search, and icons
+   * if they do not already exist
+   *
+   * Don't use #main-search id for anything else!
+   */
+  function generateMarkup() {
+    if ( $( '#main-search' ).length === 0 ) {
       // ==========
       // Navigation
       // ==========
@@ -575,19 +572,21 @@
 
       $mobileMenuButton.click( function ( e ) {
         e.preventDefault();
-        // TODO $menuHiddenButton.click() is an animation event
-        // that we need to wait for
-        // TODO mobile -> click icon -> non-mobile -> mobile == wrong state
-        if ( $( this ).is( '.fa-close' ) ) {
+        var $self = $( this )
+        if ( $self.is( '.fa-close' ) ) {
           // Close the menu
-          $( this ).removeClass( 'fa-close' )
-          $( this ).addClass( 'fa-navicon' )
+          $( '.navbar-ws .navbar-collapse' ).waitFor( ':not(.in)', function () {
+            $self.removeClass( 'fa-close' )
+            $self.addClass( 'fa-navicon' )
+          } )
 
           $menuHiddenButton.click()
         } else {
           // Open the menu
-          $( this ).addClass( 'fa-close' )
-          $( this ).removeClass( 'fa-navicon' )
+          $( '.navbar-ws .navbar-collapse' ).waitFor( '.in', function () {
+            $self.addClass( 'fa-close' )
+            $self.removeClass( 'fa-navicon' )
+          } )
 
           $menuHiddenButton.click()
         }
@@ -595,11 +594,28 @@
     }
   }
 
+  /**
+   * Hide and show elements depending on viewport size.
+   */
+  function collapseHeader () {
+    if ( $( window ).innerWidth() >= mobileWidth ) {
+      $( desktopElements ).show()
+      $( mobileElements ).hide()
+    } else {
+      $( desktopElements ).hide()
+      $( mobileElements ).show()
+    }
+  }
+
+  /**
+   * Bootstrap the markup.
+   */
   $(document).ready(function () {
-    // Keep all window resize scripts within the throttling function
+    // Re-check viewport size on resize
     $(window).resize( collapseHeader )
 
     // Run collapse header right off the bat
+    generateMarkup()
     collapseHeader()
-  });
+  } );
 } (jQuery);

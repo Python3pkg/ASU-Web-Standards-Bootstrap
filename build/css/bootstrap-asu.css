@@ -2480,11 +2480,6 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   font-weight: bold;
   margin-bottom: 1.3em;
 }
-.hero-bg-img.hero-programs, .hero-bg-img.hero-action-call, .hero-bg-img.hero-degrees {
-  background-image: url("../img/hero-background-1.jpg");
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/hero-background-1.jpg', sizingMethod='scale')";
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/hero-background-1.jpg', sizingMethod='scale');
-}
 
 .hero-text-only {
   text-align: center;
