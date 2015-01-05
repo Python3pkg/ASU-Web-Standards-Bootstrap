@@ -29,7 +29,8 @@
    * Don't use #main-search id for anything else!
    */
   function generateMarkup() {
-    if ( $( '#main-search' ).length === 0 ) {
+    var mainSearch = document.getElementById( 'main-search' )
+    if ( mainSearch === null ) {
       // ==========
       // Navigation
       // ==========
