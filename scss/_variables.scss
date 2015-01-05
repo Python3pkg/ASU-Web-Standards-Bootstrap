@@ -133,11 +133,9 @@ $asu-btn-danger-color:          white !default;
 $asu-btn-danger-bg:             $asu-orange !default;
 $asu-btn-danger-border:         #751f0b !default;
 
-//== Media
-$asu-screen-sm:                 768px !default;
-$asu-screen-md:                 992px !default;
-
-//== Labels
+// ======
+// Labels
+// ======
 $asu-label-primary-bg:          $asu-maroon !default;
 $asu-label-success-bg:          $asu-green !default;
 $asu-label-info-bg:             $asu-state-info-text !default;
@@ -161,7 +159,9 @@ $asu-alert-danger-bg:           $asu-state-danger-text !default;
 $asu-alert-danger-border:       $asu-state-danger-border !default;
 $asu-alert-danger-text:         white !default;
 
-//== Panels
+// ======
+// Panels
+// ======
 $asu-panel-primary-border:      $asu-maroon !default;
 $asu-panel-primary-text:        white !default;
 $asu-panel-primary-heading-bg:  $asu-maroon !default;
@@ -181,3 +181,11 @@ $asu-panel-warning-heading-bg:  $asu-state-warning-text !default;
 $asu-panel-danger-border:       $asu-state-danger-border !default;
 $asu-panel-danger-text:         white !default;
 $asu-panel-danger-heading-bg:   $asu-state-danger-text !default;
+
+// ======
+// Media
+// Mobile
+// ======
+$asu-screen-sm:                 768px !default;
+$asu-screen-md:                 991px !default;
+$asu-screen-md-min:             $asu-screen-md + 1 !default;
