@@ -23,7 +23,7 @@
  *
  * ```js
  * {
- *   "rate" : Number
+ *   "rate" : Number [200]
  * }
  * ```
  *

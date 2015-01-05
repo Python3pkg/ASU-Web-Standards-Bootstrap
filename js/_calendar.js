@@ -7,6 +7,57 @@
 
 /* global moment */
 
+/*
+ * Calendar Documentation
+ *
+ * Allows you to add calendar popups and downloads
+ * to elements.  Calendar dropdowns will get
+ * automatically added to `.calendarPopover` elements
+ * on page ready.
+ *
+ * If you do not override the content option, the plugin
+ * will automatically generate a data-uri for your calendar
+ * markup as an ICS file.  The examples demonstrate the
+ * proper markup for a calendar icon.
+ *
+ * Definition:
+ *
+ * $( selector ).calendarPopover( [options] )
+ *
+ * Options:
+ *
+ * ```js
+ * {
+ *   "animation": Boolean [true],
+ *   "html": Boolean [true],
+ *   "placement": ("bottom", "top", "left", "right") ["bottom"],
+ *   "trigger": String ["click"],
+ *   "content": Function [Add To Calendar Function]
+ * }
+ * ```
+ *
+ * Example:
+ *
+ * Calendar invite for the School of Sustainability at 1:00pm on
+ * December 1st of 2016.
+ *
+ * ```html
+ * <div class="calendar-date calendarPopover"
+ *     data-timezone="Z"
+ *     data-description="Example"
+ *     data-mailto="user-email@asu.edu"
+ *     data-date-end="2016-12-01 2:00 pm"
+ *     data-location="School of Sustainability"
+ *     data-summary="Just an Example" title="">
+ * <time datetime="2016-12-01 1:00 pm">
+ * <span class="weekday">Thr</span>
+ * <span class="date">1</span>
+ * <span class="month">Dec</span>
+ * </time>
+ * </div>
+ * ```
+ */
+
 +function ($) {
   'use strict';
 
