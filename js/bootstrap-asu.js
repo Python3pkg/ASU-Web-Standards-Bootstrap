@@ -5,10 +5,15 @@
  * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
  * ======================================================================== */
 
+
+// License
+// @koala-prepend "js/_license.js"
+
 // Base
 // @koala-prepend "js/_modernizr.js"
 // @koala-prepend "js/_smoothscroll.js"
 // @koala-prepend "js/_smartresize.js"
+// @koala-prepend "js/_wait-for.js"
 
 // Components
 // @koala-prepend "js/_calendar.js"

@@ -1,5 +1,5 @@
 /* ========================================================================
- * Web Standards: calendar.js v0.0.2
+ * Web Standards: calendar.js v0.0.3
  * ========================================================================
  * Copyright 2014 ASU
  * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
@@ -81,17 +81,19 @@
     placement: 'bottom',
     trigger: 'click',
     content: function () {
+      var $this = $( this )
+      var $time = $this.find( 'time' )
 
       // Grab the datetime from the content
-      var dateStart   = $(this).find('time').attr('datetime') || ''
-      var timeZone    = $(this).find('time').attr('data-timezone') || 'Z'
-      var dateEnd     = $(this).attr('data-date-end') || ''
-      var eventName   = $(this).attr('title') || ''
-      var filename    = $(this).attr('data-filename') || 'invite.ics'
-      var subject     = $(this).attr('data-subject') || ''
-      var description = $(this).attr('data-description') || ''
-      var location    = $(this).attr('data-location') || ''
-      var mailto      = $(this).attr('data-mailto') || 'me@email.com'
+      var dateStart   = $time.attr('datetime') || ''
+      var timeZone    = $time.attr('data-timezone') || 'Z'
+      var dateEnd     = $this.attr('data-date-end') || ''
+      var eventName   = $this.attr('title') || ''
+      var filename    = $this.attr('data-filename') || 'invite.ics'
+      var subject     = $this.attr('data-subject') || ''
+      var description = $this.attr('data-description') || ''
+      var location    = $this.attr('data-location') || ''
+      var mailto      = $this.attr('data-mailto') || 'me@email.com'
 
       // TODO test
       var ics = CalendarPopover.ICS( {
@@ -109,21 +111,21 @@
   })
 
   CalendarPopover.ICS = function ( data ) {
-    var calendarDateFormat = 'YYYYMMDD\\THHmmss'
-    var calendarApprovedFormat = 'YYYY-MM-DD HH:mm a'
+    var outputFormat = 'YYYYMMDD\\THHmmss'
+    var inputFormat = 'YYYY-MM-DD HH:mm a'
 
     // dateEnd first so that we can add 1 hour to dateStart
     // if necessary
     if ( typeof data.dateEnd == 'string' ) {
       if ( data.dateEnd === '' ) {
-        data.dateEnd = moment( data.dateStart, calendarApprovedFormat ).add( 1, 'hour' ).format( calendarDateFormat )
+        data.dateEnd = moment( data.dateStart, inputFormat ).add( 1, 'hour' ).format( outputFormat )
       } else {
-        data.dateEnd = moment( data.dateEnd, calendarApprovedFormat ).format( calendarDateFormat )
+        data.dateEnd = moment( data.dateEnd, inputFormat ).format( outputFormat )
       }
     }
 
     if ( typeof data.dateStart == 'string' ) {
-      data.dateStart = moment( data.dateStart, calendarApprovedFormat ).format( calendarDateFormat )
+      data.dateStart = moment( data.dateStart, inputFormat ).format( outputFormat )
     }
 
     var icsMessage = 'BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//'

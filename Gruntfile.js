@@ -85,12 +85,15 @@ module.exports = function (grunt) {
         concat: {
             bootstrapAsu: {
                 src: [
+                    'js/_license.js',
                     'js/_modernizr.js',
+                    'js/_iframe-overlay.js',
                     'js/_smoothscroll.js',
                     'js/_smartresize.js',
                     'js/_calendar.js',
                     'js/_sidebar.js',
                     'js/_collapse-footer.js',
+                    'js/_wait-for.js',
                     'js/_mobile-menu.js'
                 ],
                  dest: 'build/js/bootstrap-asu.js'
@@ -100,7 +103,8 @@ module.exports = function (grunt) {
         // =========
         uglify: {
           options: {
-            preserveComments: 'some'
+            preserveComments: 'some',
+            sourceMap: true
           },
           core: {
             src: 'build/js/bootstrap-asu.js',
