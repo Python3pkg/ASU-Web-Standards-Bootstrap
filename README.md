@@ -13,7 +13,7 @@ This ASU Bootstrap Addon provides stylesheets and JavaScript that are consistent
 
 This project does not replace Bootstrap, but rather adds files that extend Bootstrap.  You still need to include the latest Bootstrap files in your website.
 
-For additional documentation, checkout our [GitHub pages](https://gios-asu.github.io/).
+For our complete documentation, checkout our [GitHub pages](https://gios-asu.github.io/).
 
 For Web Standards documentation, checkout [The Hub](http://hub.asu.edu).
 
