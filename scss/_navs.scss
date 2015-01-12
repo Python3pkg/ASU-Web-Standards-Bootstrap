@@ -286,7 +286,7 @@
       line-height: 1;
       padding: 20px;
 
-      @media (min-width: $asu-screen-lg-min) {
+      @media (max-width: $asu-screen-lg-min) {
         font-size: .9em;
         padding-left: 10px;
         padding-right: 10px;
