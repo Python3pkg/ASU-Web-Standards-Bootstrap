@@ -299,6 +299,11 @@ pre {
   padding: 11.5px;
 }
 
+/* order matters! Gray back before spacing rules! */
+.gray-back {
+  padding: 48px 0;
+}
+
 .space-top-0 {
   margin-top: 0;
 }
@@ -389,8 +394,4 @@ pre {
 
 .pad-zero {
   padding: 0 !important;
-}
-
-.gray-back {
-  padding: 48px 0;
 }
