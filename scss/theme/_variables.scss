@@ -4,18 +4,24 @@
 // website!
 //
 
-//== Web Standards
+// =============
+// Web Standards
+// =============
 
-//=== Header
+// ======
+// Header
+// ======
+// The standard header [is] displayed on a white background (#fff).
 $ws-header-bg:              #fff;
+// Secondary unit (such as academic department or sub-unit name): font color gray #4F5557
 $ws-site-name-color:        #4f5557;
-// TODO verify
+// Primary unit (such as college or school name): font color black #000000
 $ws-site-name-first-color:  #000; 
 
-//== 29th Drive Standards
-
-//== ASU colors
-$asu-maroon:                #903 !default;
+// ==========
+// ASU Colors
+// ==========
+$asu-maroon: #903 !default;
 
 
 //== Grays
@@ -88,9 +94,11 @@ $ws-hero-dark-bg:                            #353535 !default;
 //== Profile
 $ws-profile-border:                          #d7d7d7 !default;
 
-//== Footer 
+//== Footer
+// Icons in the footer, such as social links, are  gray (#a9a9a9)
 $ws-footer-social-link-text:                 #a9a9a9 !default;
-$ws-footer-social-link-focus-text:           #e9e9e9 !default;
+// Should have a hover white (#fff)
+$ws-footer-social-link-focus-text:           #fff !default;
 
 $ws-big-foot-bg:                             #1e1e1e !default;
 $ws-big-foot-nav-link-text:                  $ws-light-gray !default;

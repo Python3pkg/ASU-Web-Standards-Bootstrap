@@ -7,6 +7,9 @@
 // Typography
 // ==========
 
+// Font as designated by the University Standards.  Do not use
+// Roboto Condensed.
+//
 // You can download this font directly from 
 // the Android developers site:
 // http://developer.android.com/design/downloads/index.html
@@ -56,6 +59,13 @@ $asu-state-warning-border:      #859e11 !default;
 $asu-state-danger-text:         $asu-orange !default;
 $asu-state-danger-bg:           #f3937d !default;
 $asu-state-danger-border:       #c43413 !default;
+
+// ========
+// ASU Logo
+// ========
+// The ASU logo dimensions are 203px wide x 32px tall.
+$asu-logo-height: 32px;
+$asu-logo-width: 203px;
 
 //== Vertical Margin and Padding
 $asu-padding-base-vertical:     6px !default;
