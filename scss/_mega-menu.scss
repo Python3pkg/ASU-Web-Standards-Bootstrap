@@ -44,28 +44,37 @@
       }
     }
 
-    > .row > .column {
-      > li > a {
-        border-bottom: 0;
-        clear: both;
-        display: block;
-        font-size: 15px;
-        font-weight: normal;
-        line-height: 1.4;
-        padding: 9px 10px 10px;
-
-        &:hover,
-        &:focus {
-          text-decoration: none;
-        }
+    > .row > .column,
+    > .li-row-container > .row > .column {
+      ul {
+        padding-left: 0;
       }
 
-      > .active > a {
-        &,
-        &:hover,
-        &:focus {
-          outline: 0;
-          text-decoration: none;
+      li {
+        list-style: none;
+
+        a {
+          border-bottom: 0;
+          clear: both;
+          display: block;
+          font-size: 15px;
+          font-weight: normal;
+          line-height: 1.4;
+          padding: 9px 10px 10px;
+
+          &:hover,
+          &:focus {
+            text-decoration: none;
+          }
+        }
+
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            outline: 0;
+            text-decoration: none;
+          }
         }
       }
     }

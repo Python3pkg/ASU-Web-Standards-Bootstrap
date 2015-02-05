@@ -1,4 +1,14 @@
 .footer {
+  .contact-link {
+    border-bottom-color: $ws-footer-social-link-text;
+    color: $ws-footer-social-link-text;
+
+    &:hover,
+    &:focus {
+      color: $ws-footer-social-link-focus-text;
+    }
+  }
+
   .social-media {
     > li > a {
       color: $ws-footer-social-link-text;

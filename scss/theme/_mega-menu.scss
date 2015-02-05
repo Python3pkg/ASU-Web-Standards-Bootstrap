@@ -1,9 +1,10 @@
 //== Mega Menu
 .mega-menu {
   .dropdown-menu {
-    > .row > .column {
+    > .row > .column,
+    > .li-row-container > .row > .column {
 
-      > li > a {
+      li a {
         color: $ws-mega-menu-drop-link-text;
 
         &:hover,
@@ -13,7 +14,7 @@
         }
       }
 
-      > .active > a {
+      .active a {
         &,
         &:hover,
         &:focus {
