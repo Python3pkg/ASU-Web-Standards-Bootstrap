@@ -35,6 +35,7 @@ For Web Standards documentation, checkout [The Hub](http://hub.asu.edu).
 - [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
 - [Moment JS](http://momentjs.com/) - Used for calendar ICS files.
 - [ASU Header](https://drupal.asu.edu/build/asu-header-footer-version-40)
+- [RespondJS](https://github.com/scottjehl/Respond) - to make media queries work on IE 6-8
 
 # Quick Start
 
