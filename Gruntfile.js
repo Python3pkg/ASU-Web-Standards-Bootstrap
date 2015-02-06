@@ -118,6 +118,19 @@ module.exports = function (grunt) {
                 files: '<%= jshint.core.src %>',
                 tasks: ['jshint:core', 'qunit']
             }
+        },
+        // CSS Minify
+        // ==========
+        cssmin: {
+            target: {
+                files: [{
+                    expand: true,
+                    cwd: 'build/css',
+                    src: ['*.css', '!*.min.css'],
+                    dest: 'build/css',
+                    ext: '.min.css'
+                }]
+            }
         }
     });
 
@@ -130,10 +143,11 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     // Default task
     grunt.registerTask('test',  [
-        'jshint', 
+        'jshint',
         'jscs',
         'scsslint',
         'sass:fortesting',
@@ -141,13 +155,15 @@ module.exports = function (grunt) {
         ]);
 
     grunt.registerTask('default', [
-        'jshint', 
+        'jshint',
         'jscs',
         'scsslint',
         'sass:fortesting',
         'qunit',
         'sass:dist',
         'concat',
-        'uglify']);
+        'uglify',
+        'cssmin',
+        ]);
 };
 
