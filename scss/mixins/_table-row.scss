@@ -26,3 +26,12 @@
     }
   }
 }
+
+@mixin table-col-right($n) {
+  .table-col-#{$n}-right {
+    tr td:nth-child(#{$n}),
+    tr th:nth-child(#{$n}) {
+      text-align: right;
+    }
+  }
+}
