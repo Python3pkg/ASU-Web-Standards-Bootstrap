@@ -120,9 +120,12 @@
   }
 
   .asu_search_box {
+    -moz-appearance: none;
     -webkit-appearance: none;
+    appearance: none;
     background-color: #e7e7e7;
     border: 0;
+    -webkit-border-radius: 0;
     border-radius: 0;
     color: #505558;
     font-size: 16px;

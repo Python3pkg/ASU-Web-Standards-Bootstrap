@@ -73,6 +73,7 @@
 // supported browsers that have box shadow capabilities now support it.
 
 @mixin box-shadow($shadow...) {
+  -moz-box-shadow: $shadow;
   -webkit-box-shadow: $shadow; // iOS <4.3 & Android <4.1
   box-shadow: $shadow;
 }
@@ -180,8 +181,9 @@
 // Transitions
 
 @mixin transition($transition...) {
-  -webkit-transition: $transition;
+  -moz-transition: $transition;
   -o-transition: $transition;
+  -webkit-transition: $transition;
   transition: $transition;
 }
 
