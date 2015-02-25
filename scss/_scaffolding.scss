@@ -45,6 +45,10 @@ a {
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
     width: 10px;
+
+    .navbar & {
+      margin-top: 4px;
+    }
   }
 }
 
@@ -289,6 +293,7 @@ address {
 }
 
 kbd {
+  -webkit-border-radius: $asu-border-radius-base;
   border-radius: $asu-border-radius-base;
 }
 

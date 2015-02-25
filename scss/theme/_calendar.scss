@@ -7,9 +7,8 @@
   
 
   &:hover {
+    @include box-shadow(0 0 10px $ws-calendar-date-hover-box-shadow);
     border: 1px solid $ws-calendar-date-hover-border;
-    -webkit-box-shadow: 0 0 10px $ws-calendar-date-hover-box-shadow;
-    box-shadow: 0 0 10px $ws-calendar-date-hover-box-shadow;
   }
 
   .weekday {
