@@ -1,4 +1,6 @@
-//== Scaffolding
+// ===========
+// Scaffolding
+// ===========
 html {
   -webkit-font-smoothing: antialiased; 
   // To force hardware rendering, otherwise during animations the browser may briefly switch to hardware rendering 
@@ -6,6 +8,7 @@ html {
 }
 
 body {
+  background-color: $ws-header-bg;
   color: $asu-gray-darker;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -308,6 +311,7 @@ pre {
 
 /* order matters! Gray back before spacing rules! */
 .gray-back {
+  background-color: $ws-gray-back;
   padding: 48px 0;
 }
 

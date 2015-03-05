@@ -1,28 +1,11 @@
-//== Badges
-
+// ======
+// Badges
+// ======
 .badge {
-  font-size: $asu-font-size-small;
+  font-size: $ws-badges-font-size;
 
   a.list-group-item.active > &, 
   .nav-pills > .active > a > & {
-    color: $asu-maroon;
-  }
-}
-
-//== Jumbotron
-.jumbotron {
-  p {
-    font-size: $asu-font-size-small;
-  }
-
-  .container & {
-    border-radius: $asu-border-radius-base;
-  }
-
-  @media screen and (min-width: 768px) {
-    h1,
-    .h1 {
-      font-size: $asu-font-size-h1;
-    }
+    color: $ws-badges-color;
   }
 }

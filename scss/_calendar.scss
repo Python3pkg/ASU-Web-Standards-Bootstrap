@@ -1,5 +1,6 @@
-//== Calendar
-
+// ========
+// Calendar
+// ========
 .calendar-group {
   &:before,
   &:after {
@@ -13,7 +14,10 @@
 }
 
 .calendar-date {
+  background-color: $ws-calendar-date-bg;
+  border: 1px solid $ws-calendar-date-border;
   border-radius: 4px;
+  color: $ws-calendar-date-text;
   cursor: default;
   display: block;
   float: left;
@@ -22,6 +26,11 @@
   text-align: center;
   text-transform: uppercase;
   width: 125px;
+
+  &:hover {
+    @include box-shadow(0 0 10px $ws-calendar-date-hover-box-shadow);
+    border: 1px solid $ws-calendar-date-hover-border;
+  }
 
   &:before,
   &:after {
@@ -42,6 +51,8 @@
   }
 
   .weekday {
+    background-color: $ws-calendar-date-weekday-bg;
+    border: 1px solid $ws-calendar-date-weekday-border;
     border-radius: 4px;
     float: left;
     font-size: 11px;

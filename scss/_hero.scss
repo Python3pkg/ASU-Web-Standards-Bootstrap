@@ -1,7 +1,13 @@
-//== Hero
-
+// ====
+// Hero
+// ====
 .hero {
+  background-color: $ws-hero-bg;
   padding: 30px 0 60px;
+
+  @media (min-width: $asu-screen-sm-min) {
+    padding-top: 90px;
+  }
 
   h1,
   h2,
@@ -10,15 +16,39 @@
     font-size: 38px;
     letter-spacing: -1px;
     word-wrap: break-word;
+
+    @media (min-width: $asu-screen-sm-min) {
+      font-size: 48px;
+    }
+  }
+
+  h1,
+  h2,
+  p {
+    &.pop {
+      background-color: rgba(0, 0, 0, .8);
+      /* 
+       * table is a little trick to have an inline-block look, but
+       * still break after each block
+       */
+      display: table;
+      padding: 10px;
+
+      &:after {
+        clear: both;
+        content: ' ';
+      }
+    }
   }
 
   img {
-    border: 1px solid;
+    border: 1px solid $ws-hero-img-border;
   }
 }
 
-//== Hero Images
-
+// ===========
+// Hero Images
+// ===========
 .hero-bg-img {
   background-position: center center;
   background-repeat: no-repeat;
@@ -32,16 +62,20 @@
   h2,
   .h1, 
   .h2 {
-    color: white;
+    color: $ws-hero-font-color;
     font-size: 50px;
     font-weight: 900;
     line-height: 1;
     margin-bottom: 10px;
     text-shadow: 0 0 5px rgba(0, 0, 0, .5);
+
+    @media (min-width: $asu-screen-sm-min) {
+      font-size: 60px;
+    }
   }
 
   p {
-    color: white;
+    color: $ws-hero-font-color;
     font-size: 24px;
     font-weight: 900;
     max-width: 900px;
@@ -49,7 +83,7 @@
   }
 
   .cite {
-    color: white;
+    color: $ws-hero-font-color;
     font-weight: bold;
     margin-bottom: 1.3em;
   }
@@ -64,6 +98,9 @@
   }
 }
 
+// ==============
+// Text Only Hero
+// ==============
 .hero-text-only {
   text-align: center;
 
@@ -74,48 +111,32 @@
   }
 }
 
+// ===================
+// Dark Text Only Hero
+// ===================
 .hero-text-only-dark {
+  background-color: $ws-hero-dark-bg;
   text-align: center;
 
   h1,
   h2 {
-    color: white;
+    color: $ws-hero-font-color;
   }
 
   p {
-    color: white;
+    color: $ws-hero-font-color;
   }
 }
 
-@media (min-width: 768px) {
-
-  .hero {
-    padding-top: 90px;
-
-    h1,
-    h2,
-    .h1,
-    .h2 {
-      font-size: 48px;
-    }
-  }
-
-  .hero-bg-img {
-    h1,
-    h2,
-    .h1
-    .h2 {
-      font-size: 60px;
-    }
-  }
-}
-
+// ==========
+// Video Hero
+// ==========
 .hero-video {
   overflow: hidden;
   padding: 0;
   position: relative;
 
-  @media (min-width: 768px) {
+  @media (min-width: $asu-screen-sm-min) {
     min-height: 500px;
   }
 
@@ -124,7 +145,7 @@
     max-width: 100%;
     width: 100% !important;
 
-    @media (min-width: 768px) {
+    @media (min-width: $asu-screen-sm-min) {
       overflow: hidden;
       position: absolute;
       top: 0;
@@ -133,7 +154,7 @@
   }
 
   > .container {
-    @media (min-width: 768px) {
+    @media (min-width: $asu-screen-sm-min) {
       bottom: 10px;
       position: absolute;
       z-index: 12;

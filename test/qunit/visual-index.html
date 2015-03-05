@@ -28,7 +28,6 @@
   <!-- The main app css file -->
   <link href="../vendor/css/bootstrap.min.css" rel="stylesheet">
   <link href="../vendor/css/bootstrap-asu.css" rel="stylesheet">
-  <link href="../vendor/css/bootstrap-asu-theme-base.css" rel="stylesheet">
 
   <!-- QUnit -->
   <script src="http://code.jquery.com/qunit/qunit-1.15.0.js"></script>
@@ -502,12 +501,29 @@
         <h6>This is an h6 heading</h6>
 
         <hr>
+        <ul class="nav nav-tabs alterna-tabs">
+          <li class="active"><a href="#record1" data-toggle="tab">Record 1</a></li>
+          <li class=""><a href="#record2" data-toggle="tab">Record 2</a></li>
+          <li class=""><a href="#record3" data-toggle="tab">Record 3</a></li>
+        </ul>
+        <hr>
 
         <h2 id="content-formatting">Content Formatting</h2>
 
         <p class="lead">This is a lead paragraph.</p>
 
         <p>This is an <b>ordinary paragraph</b> that is <i>long enough</i> to wrap to <u>multiple lines</u> so that you can see how the line spacing looks. Lorem ipsum dolor sit amet, et vis purto tibique inimicus, euismod assueverit at mei, mea odio decore adipisci no. Pro ei inermis fierent, ut eam quodsi iriure. Volutpat maluisset id mea, mea eu omittam voluptua inciderint. Eum ut accusamus molestiae dissentiet, mei ex ponderum inimicus corrumpit, dicit fierent ut sea.</p>
+
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="https://unsplash.imgix.net/photo-1423592707957-3b212afa6733?q=75&fm=jpg&s=a3d57be3c4a2260270db50f162d2f0fe">
+              <div class="caption">
+                <p>Example descriptive information about the image.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <p class="text-danger">Danger color paragraph.</p>
 
