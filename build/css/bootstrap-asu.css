@@ -12,6 +12,7 @@
  */
 html {
   -webkit-font-smoothing: antialiased;
+  -webkit-transform: translateZ(0);
 }
 
 body {

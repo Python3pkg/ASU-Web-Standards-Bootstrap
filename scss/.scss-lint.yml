@@ -137,3 +137,9 @@ linters:
 
   Compass::*:
     enabled: false
+
+  ColorVariable:
+    enabled: false
+
+  ImportantRule:
+    enabled: false
