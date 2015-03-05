@@ -22,3 +22,4 @@
 // Default Functionality
 // @koala-prepend "js/_collapse-footer.js"
 // @koala-prepend "js/_mobile-menu.js"
+// @koala-prepend "js/_sticky-nav.js"

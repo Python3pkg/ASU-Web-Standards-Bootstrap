@@ -2,9 +2,7 @@
 // Scaffolding
 // ===========
 html {
-  -webkit-font-smoothing: antialiased; 
-  // To force hardware rendering, otherwise during animations the browser may briefly switch to hardware rendering 
-  -webkit-transform: translateZ(0);
+  -webkit-font-smoothing: antialiased;
 }
 
 body {

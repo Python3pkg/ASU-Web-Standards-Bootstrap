@@ -1,0 +1,7 @@
+// ========
+// Carousel
+// ========
+.carousel * {
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+}

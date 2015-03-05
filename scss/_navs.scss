@@ -282,6 +282,12 @@
     }
   }
 
+  &.affix {
+    top: 0;
+    width: 100%;
+    z-index: 1000000;
+  }
+
   .navbar-nav > {
     li > a {
       color: $ws-navbar-text;
