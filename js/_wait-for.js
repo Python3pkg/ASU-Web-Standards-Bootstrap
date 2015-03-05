@@ -73,18 +73,29 @@
   // =========================
 
   function Plugin( selector, callback, option ) {
-    var $self   = $( this )
-    var options = typeof option == 'object' && option
+    return this.each(function () {
+      var $self    = $(this)
+      var options  = typeof option == 'object' && option
+      var interval = -1;
+      var checker  = function () {
+        if ( $self.is( selector ) ) {
+          clearInterval( interval )
 
-    options = $.extend( WaitFor.DEFAULTS, options )
+          callback.call( $self )
 
-    var interval = setInterval( function () {
-      if ( $self.is( selector ) ) {
-        clearInterval( interval )
+          return true
+        }
 
-        callback.call( $self )
+        return false
       }
-    }, options.rate )
+
+      options = $.extend( WaitFor.DEFAULTS, options )
+
+      var success = checker();
+      if ( ! success ) {
+        interval = setInterval( checker, options.rate )
+      }
+    })
   }
 
   var old = $.fn.WaitFor
