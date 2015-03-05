@@ -3,10 +3,11 @@
 //=== Masthead
 
 #masthead {
+  background-color: $ws-header-bg;
   border: 0;
 
   > .container {
-    @media (max-width: $asu-screen-md) {
+    @media (max-width: $asu-screen-sm-max) {
       padding-left: 0;
       padding-right: 0;
       width: 100%;
@@ -19,7 +20,7 @@
 #asu_mobile_hdr {
   height: auto !important;
 
-  @media (max-width: $asu-screen-md) {
+  @media (max-width: $asu-screen-sm-max) {
     float: left;
     padding: 0 12px;
     width: 100%;
@@ -29,7 +30,7 @@
 //=== ASU Mobile Menu
 
 #asu_mobile_menu {
-  @media (max-width: $asu-screen-md) {
+  @media (max-width: $asu-screen-sm-max) {
     margin-top: 0 !important;
   }
 }
@@ -39,7 +40,7 @@
 #asu_logo {
   padding: 12px 0;
 
-  @media (max-width: $asu-screen-md) {
+  @media (max-width: $asu-screen-sm-max) {
     min-width: 100px !important;
 
     a img {

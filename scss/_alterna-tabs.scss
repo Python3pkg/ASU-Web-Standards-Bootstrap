@@ -1,6 +1,9 @@
+// ================
+// Alternative Tabs
+// ================
 .alterna-tabs {
   > li {
-    border-bottom: 5px solid transparent;
+    border-bottom: $ws-alterna-tabs-border-size solid transparent;
     border-top: 0;
     margin-right: 20px;
 
@@ -10,13 +13,11 @@
 
     &:hover,
     &.active {
-      border-bottom: 5px solid $asu-maroon;
+      border-bottom: $ws-alterna-tabs-border-size solid $ws-alterna-tabs-active-color;
       border-top: 0;
-      color: $asu-gray-darker;
+      color: $ws-alterna-tabs-active-font-color;
 
       a {
-        border-bottom-color: transparent;
-
         &:hover,
         &:focus,
         &:hover,
@@ -31,7 +32,7 @@
       border-bottom-color: transparent;
       border-radius: 0;
       color: $asu-gray-darker;
-      line-height: 1.44;
+      line-height: $ws-alterna-tabs-line-height;
       padding-left: 0;
       padding-right: 0;
 
