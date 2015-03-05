@@ -7,7 +7,7 @@ ASU Web Standards Bootstrap
 
 [![Github release](https://img.shields.io/github/release/gios-asu/ASU-Web-Standards-Bootstrap.svg?style=flat)](https://github.com/gios-asu/ASU-Web-Standards-Bootstrap/releases)
 [![Github issues](https://img.shields.io/github/issues/gios-asu/ASU-Web-Standards-Bootstrap.svg?style=flat)](https://github.com/gios-asu/ASU-Web-Standards-Bootstrap/issues)
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat)](https://github.com/gios-asu/ASU-Web-Standards-Bootstrap/blob/master/LICENSE.md)
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat)](https://github.com/gios-asu/ASU-Web-Standards-Bootstrap/blob/master/LICENSE.md) [![Analytics](https://ga-beacon.appspot.com/UA-561868-49/gios-asu/ASU-Web-Standards-Bootsrap?flat)](https://github.com/igrigorik/ga-beacon)
 
 This ASU Bootstrap Addon provides stylesheets and JavaScript that are consistent with the new [ASU Web Standards](http://hub.asu.edu) being rolled out to the school websites at ASU. The intent of this *Bootstrap Addon* is to provide a universal source for the ASU Web Standards that can be applied to any website, regardless of what technology is used to build a site. This project is based off of the work done by [29thDrive](http://asu-ws.29thdrive.com/) and is consistent with their initial work. This ASU Web Standards Bootstrap repository is maintained by the [Julie Ann Wrigley Global Institute of Sustainability](http://sustainability.asu.edu).
 
