@@ -12,7 +12,6 @@
  */
 html {
   -webkit-font-smoothing: antialiased;
-  -webkit-transform: translateZ(0);
 }
 
 body {
@@ -1801,6 +1800,11 @@ input[type="button"].btn-block {
   padding-left: 0;
   padding-right: 0;
 }
+.navbar-ws.affix {
+  top: 0;
+  width: 100%;
+  z-index: 1000000;
+}
 .navbar-ws .navbar-nav > li > a {
   color: #ededed;
   font-size: 16px;
@@ -1970,7 +1974,7 @@ input[type="button"].btn-block {
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: -1;
+  z-index: 1;
 }
 .sidebar-nav :last-child {
   margin-bottom: 0;
@@ -3127,6 +3131,11 @@ tbody.collapse.in {
   height: 0;
   overflow: hidden;
   position: relative;
+}
+
+.carousel * {
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
 }
 
 /*!

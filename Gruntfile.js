@@ -17,7 +17,10 @@ module.exports = function (grunt) {
         jshintrc: 'js/.jshintrc'
       },
       core: {
-        src: 'js/*.js'
+        src: [
+          'js/*.js',
+          '!js/_vendor.js'
+        ]
       }
     },
     // ===============
@@ -85,6 +88,7 @@ module.exports = function (grunt) {
       bootstrapAsu: {
         src: [
           'js/_license.js',
+          'js/_vendor.js',
           'js/_modernizr.js',
           'js/_iframe-overlay.js',
           'js/_smoothscroll.js',
@@ -93,7 +97,8 @@ module.exports = function (grunt) {
           'js/_sidebar.js',
           'js/_collapse-footer.js',
           'js/_wait-for.js',
-          'js/_mobile-menu.js'
+          'js/_mobile-menu.js',
+          'js/_sticky-nav.js'
         ],
         dest: 'build/js/bootstrap-asu.js'
       }
