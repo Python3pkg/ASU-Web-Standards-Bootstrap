@@ -1806,6 +1806,7 @@ input[type="button"].btn-block {
   z-index: 1000000;
 }
 .navbar-ws .navbar-nav > li > a {
+  background-color: transparent;
   color: #ededed;
   font-size: 16px;
   font-weight: bold;
