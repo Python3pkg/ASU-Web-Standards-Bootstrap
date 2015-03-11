@@ -43,7 +43,7 @@ module.exports = function (grunt) {
         }
       },
       //continuous integration mode: run tests once in PhantomJS browser.
-      continuous: {
+      continuousMobile: {
         frameworks: ['qunit'],
         plugins: ['karma-qunit', 'karma-phantomjs-launcher'],
         files: [
@@ -199,7 +199,7 @@ module.exports = function (grunt) {
     'jscs',
     'scsslint',
     'sass:fortesting',
-    'karma:continuous',
+    'karma:continuousMobile',
     'qunit',
     'sass:dist',
     'concat',
