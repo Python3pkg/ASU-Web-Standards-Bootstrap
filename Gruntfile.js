@@ -34,6 +34,41 @@ module.exports = function (grunt) {
         src: '<%= jshint.core.src %>'
       }
     },
+    // Karma
+    // =====
+    karma: {
+      unit: {
+        options: {
+          files: ['test/qunit/unit/*.js']
+        }
+      },
+      //continuous integration mode: run tests once in PhantomJS browser.
+      continuousMobile: {
+        frameworks: ['qunit'],
+        plugins: ['karma-qunit', 'karma-phantomjs-launcher'],
+        files: [
+          { src : ['test/vendor/js/jquery-1.11.2.min.js'], served: true },
+          { src : ['test/vendor/js/bootstrap.min.js'], served: true },
+          { src : ['test/qunit/unit/_qunit-fixture.js'], served: true },
+          { src : ['<%= concat.bootstrapAsu.src %>'], served: true },
+          { src : ['test/qunit/unit/*-test.js'] }
+        ],
+        singleRun: true,
+        browsers: ['PhantomJS_Mobile'],
+        customLaunchers: {
+          'PhantomJS_Mobile': {
+            base: 'PhantomJS',
+            options: {
+              windowName: 'ASU Bootstrap Tests',
+              viewportSize : {
+                width : 765,
+                height: 1000
+              }
+            }
+          }
+        }
+      }
+    },
     // QUnit
     // =====
     qunit: {
@@ -47,7 +82,6 @@ module.exports = function (grunt) {
         }
       },
       files: [
-        'test/qunit/mobile-index.html',
         'test/qunit/visual-index.html'
       ]
     },
@@ -142,6 +176,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-jscs');
+  grunt.loadNpmTasks('grunt-karma');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-scss-lint');
   grunt.loadNpmTasks('grunt-contrib-sass');
@@ -155,6 +190,7 @@ module.exports = function (grunt) {
     'jscs',
     'scsslint',
     'sass:fortesting',
+    'karma',
     'qunit'
   ]);
 
@@ -163,6 +199,7 @@ module.exports = function (grunt) {
     'jscs',
     'scsslint',
     'sass:fortesting',
+    'karma:continuousMobile',
     'qunit',
     'sass:dist',
     'concat',
