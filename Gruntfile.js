@@ -150,14 +150,6 @@ module.exports = function (grunt) {
         dest: 'build/js/bootstrap-asu.min.js'
       }
     },
-    // Watch
-    // =====
-    watch: {
-      core: {
-        files: '<%= jshint.core.src %>',
-        tasks: ['jshint:core', 'qunit']
-      }
-    },
     // CSS Minify
     // ==========
     cssmin: {
@@ -170,31 +162,67 @@ module.exports = function (grunt) {
           ext: '.min.css'
         }]
       }
+    },
+    // Browser Sync
+    // ============
+    browserSync: {
+      bsFiles: {
+        src : [
+          '<%= watch.core.files %>',
+          './test/vendor/css/*.css'
+        ]
+      },
+      options: {
+        watchTask: true,
+        server: {
+          baseDir: "./test/",
+          index: "qunit/visual-index.html"
+        }
+      }
+    },
+    // Watch
+    // =====
+    watch: {
+      core: {
+        files: ['scss/*.scss','js/*.js'],
+        tasks: [
+          'test'
+        ]
+      }
     }
   });
+
 
   // These plugins provide necessary tasks
   grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-jscs');
   grunt.loadNpmTasks('grunt-karma');
-  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-scss-lint');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-  // Default task
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-browser-sync');
+
+  // Develop
+  grunt.registerTask('develop', [
+    'browserSync',
+    'watch:core'
+  ]);
+
+  // Just Test
   grunt.registerTask('test',  [
+    'sass:fortesting',
     'jshint',
     'jscs',
     'scsslint',
-    'sass:fortesting',
-    'karma',
-    'qunit'
+    'karma:continuousMobile'
   ]);
 
+  // Default task
   grunt.registerTask('default', [
     'jshint',
     'jscs',
