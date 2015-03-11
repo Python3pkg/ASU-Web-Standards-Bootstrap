@@ -285,7 +285,8 @@
   &.affix {
     top: 0;
     width: 100%;
-    z-index: 1000000;
+    // admin bars usually have a z-index of 999999 and we want them to overlay on top of this affixed top menu
+    z-index: 999998;
   }
 
   .navbar-nav > {
