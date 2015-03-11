@@ -8,6 +8,7 @@
 +function ($) {
   'use strict';
 
+  // TODO refactor this constant
   var mobileWidth = 768
 
   function collapseFooter () {

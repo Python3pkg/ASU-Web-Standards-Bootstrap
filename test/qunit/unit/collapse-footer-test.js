@@ -37,8 +37,6 @@ $(function () {
 
     navs = $( '.big-foot-nav.collapse.in' ).length
 
-    console.log($(window).innerWidth());
-
     equal( navs == 0, true, 'footer dropdowns are not NOT collapsed')
   })
 
