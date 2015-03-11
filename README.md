@@ -29,13 +29,21 @@ For Web Standards documentation, checkout [The Hub](http://hub.asu.edu).
 
 # Dependencies
 
-- [Twitter Bootstrap](http://getbootstrap.com/)
-- [jQuery](http://jquery.com/)
-- [Lightning Touch](https://github.com/ucsf-ckm/LightningTouch)
+The following must be added to your website in order to use the ASU Web Standards Bootstrap files:
+
+- [Twitter Bootstrap](http://getbootstrap.com/) - Required
+- [jQuery](http://jquery.com/) - Required
+- [ASU Header](https://drupal.asu.edu/build/asu-header-footer-version-40) - Recommended for University Websites
+- [RespondJS](https://github.com/scottjehl/Respond) - to make media queries work on 
+IE 6-8 - Optional
+- [Lightning Touch](https://github.com/ucsf-ckm/LightningTouch) - makes links responsive without the several hundred millisecond delay typical in a hendheld touchscreen browser - Optional
+
+The following are bundled into the ASU Web Standards Bootstrap files for your convenience:
+
+- [Modernizr](http://modernizr.com/)
 - [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
 - [Moment JS](http://momentjs.com/) - Used for calendar ICS files.
-- [ASU Header](https://drupal.asu.edu/build/asu-header-footer-version-40)
-- [RespondJS](https://github.com/scottjehl/Respond) - to make media queries work on IE 6-8
+
 
 # Quick Start
 
@@ -135,16 +143,6 @@ If you want to check the code coverage of the project, boot up a server (any ser
 
 Go to `/test/qunit/index.html` in the browser, and click the checkbox next to `Enable coverageModule: ...`. This will show you a code coverage report in the browser.
 
-## Koala
-
-Koala is no longer the standard way to compile these files; please use Grunt instead.  It is still supported, but it will yield different results than grunt.
-
-Point Koala at:
-
-- js/bootstrap-asu.js => build/js/bootstrap-asu.js
-- scss/bootstrap-asu.scss => build/css/bootstrap-asu.css
-- scss/bootstrap-asu-theme-base.scss => build/css/bootstrap-asu-theme-base.css
-
 # Workflow
 
 1. Work and commit locally as normal.
@@ -166,7 +164,6 @@ If you are releasing a new version, make sure to:
 6. If grunt succeeded, make a commit with the message "grunt, upversioned".
 7. Push upstream
 8. Make a new release in Github.
-
 
 # Related Projects
 
