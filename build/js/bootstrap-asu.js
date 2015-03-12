@@ -859,6 +859,9 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
 +function ($) {
   'use strict';
 
+  // TODO refactor this constant
+  var mobileWidth = 992
+
   $(function () {
     $('.navbar.navbar-ws').affix({
       offset: {
@@ -867,7 +870,9 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
     }).each(function (i, e) {
       $(e).on('affix.bs.affix', function () {
         // Add the height of the navbar to the margin of the body
-        $('body').css('margin-top', $(e).outerHeight() + 'px');
+        if ( $( window ).width() >= mobileWidth ) {
+          $('body').css('margin-top', $(e).outerHeight() + 'px');
+        }
       }).on('affixed-top.bs.affix', function () {
         // Remove the height of the navbar to the margin of the body
         $('body').css('margin-top', '0px');

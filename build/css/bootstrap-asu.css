@@ -1796,6 +1796,11 @@ input[type="button"].btn-block {
   border: 0;
   border-radius: 0;
 }
+@media (max-width: 991px) {
+  .navbar-ws.affix {
+    position: static !important;
+  }
+}
 .navbar-ws .container {
   padding-left: 0;
   padding-right: 0;

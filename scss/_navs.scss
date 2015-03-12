@@ -272,6 +272,12 @@
   border: 0;
   border-radius: 0;
 
+  @media (max-width: $asu-screen-sm-max) {
+    &.affix {
+      position: static !important;
+    }
+  }
+
   .container {
     padding-left: 0;
     padding-right: 0;
