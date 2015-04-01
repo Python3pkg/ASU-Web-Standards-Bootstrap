@@ -132,6 +132,9 @@ linters:
   VendorPrefixes:
     enabled: false
 
+  VendorPrefix:
+    enabled: false
+
   ZeroUnit:
     enabled: true
 

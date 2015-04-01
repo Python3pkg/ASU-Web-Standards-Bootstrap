@@ -496,13 +496,13 @@
 
 //== Sidebar nav
 .sidebar-nav {
-  background-color: #fff;
   border-top: 8px solid $ws-sidebar-nav-border-top;
   margin-bottom: 24px;
   padding: 30px;
   position: relative;
 
   &:before {
+    background-color: #fff;
     border-bottom: 1px solid $ws-sidebar-nav-border-other;
     border-left: 1px solid $ws-sidebar-nav-border-other;
     border-right: 1px solid $ws-sidebar-nav-border-other;
@@ -513,7 +513,7 @@
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: 0;
+    z-index: -1;
   }
 
   :last-child {
@@ -527,10 +527,12 @@
     @media (min-width: 992px) {
       position: fixed;
       top: 24px;
+      // TODO this should not be a constant
       width: 293px;
     }
 
     @media (min-width: 1200px) {
+      // TODO this should not be a constant
       width: 360px;
     }
   }
