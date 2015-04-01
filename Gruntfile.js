@@ -45,7 +45,15 @@ module.exports = function (grunt) {
       //continuous integration mode: run tests once in PhantomJS browser.
       continuousMobile: {
         frameworks: ['qunit'],
-        plugins: ['karma-qunit', 'karma-phantomjs-launcher'],
+        reporters: ['coverage'],
+        preprocessors: {
+            "**/lib/*js": "coverage"
+        },
+        coverageReporter: {
+            type: "lcov",
+            dir: "coverage/"
+        },
+        plugins: ['karma-qunit', 'karma-phantomjs-launcher', 'karma-coverage'],
         files: [
           { src : ['test/vendor/js/jquery-1.11.2.min.js'], served: true },
           { src : ['test/vendor/js/bootstrap.min.js'], served: true },
@@ -203,7 +211,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-
+  grunt.loadNpmTasks('grunt-karma-coveralls');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
 
