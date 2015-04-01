@@ -130,7 +130,7 @@ linters:
     enabled: true
 
   VendorPrefixes:
-    enabled: false
+    enabled: true
 
   ZeroUnit:
     enabled: true
