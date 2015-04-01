@@ -681,7 +681,7 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
   'use strict';
 
   // TODO refactor this constant
-  var mobileWidth = 975
+  var mobileWidth = 992
 
   var desktopElements = [
     '.navbar-ws .navbar-toggle'
@@ -892,7 +892,8 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
   'use strict';
 
   // TODO refactor this constant
-  var mobileWidth = 768
+  // Nav goes to mobile for medium size devices
+  var mobileWidth = 991;
 
   /*
    * The hover functions will trigger even on mobile devices. When
@@ -920,7 +921,7 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
       } else {
         self.addClass( 'open' )
       }
-    } ).hover( function () {
+    }).hover( function () {
       // Don't worry about mobile devices
       if ( $( window ).width() < mobileWidth ) {
         return

@@ -9,7 +9,8 @@
   'use strict';
 
   // TODO refactor this constant
-  var mobileWidth = 768
+  // Nav goes to mobile for medium size devices
+  var mobileWidth = 991;
 
   /*
    * The hover functions will trigger even on mobile devices. When
@@ -37,7 +38,7 @@
       } else {
         self.addClass( 'open' )
       }
-    } ).hover( function () {
+    }).hover( function () {
       // Don't worry about mobile devices
       if ( $( window ).width() < mobileWidth ) {
         return

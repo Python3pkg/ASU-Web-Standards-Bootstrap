@@ -9,7 +9,7 @@
   'use strict';
 
   // TODO refactor this constant
-  var mobileWidth = 975
+  var mobileWidth = 992
 
   var desktopElements = [
     '.navbar-ws .navbar-toggle'
