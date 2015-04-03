@@ -909,7 +909,7 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
    * - if hovered over, open (no matter the previous state)
    * - if hover left, close (no matter the previous state)
    */
-  $(document).ready(function () {
+  $.setupNavigation = function () {
     $('.navbar-ws ul.nav>li.dropdown').click(function (e) {
       e.stopPropagation()
 
@@ -944,12 +944,17 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
 
       $( this ).removeClass( 'open' )
     })
+
+    $('ul.dropdown-menu').click(function (e) {
+      if ( ( $( e.target ).is( ':not(a)' ) && $( e.target ).is( ':not(li)' ) ) || $( e.target ).is( '.dropdown-title') ) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+    })
+  }
+
+  $(document).ready(function () {
+    $.setupNavigation();
   })
 
-  $('ul.dropdown-menu').click(function (e) {
-    if ( ( $( e.target ).is( ':not(a)' ) && $( e.target ).is( ':not(li)' ) ) || $( e.target ).is( '.dropdown-title') ) {
-      e.preventDefault();
-      e.stopPropagation();
-    }
-  })
 }( jQuery );
