@@ -42,18 +42,43 @@ module.exports = function (grunt) {
           files: ['test/qunit/unit/*.js']
         }
       },
-      //continuous integration mode: run tests once in PhantomJS browser.
-      continuousMobile: {
+      coverageMobile: {
         frameworks: ['qunit'],
         reporters: ['coverage'],
         preprocessors: {
-            "**/lib/*js": "coverage"
+            "js/*.js": "coverage"
         },
         coverageReporter: {
             type: "lcov",
             dir: "coverage/"
         },
         plugins: ['karma-qunit', 'karma-phantomjs-launcher', 'karma-coverage'],
+        files: [
+          { src : ['test/vendor/js/jquery-1.11.2.min.js'], served: true },
+          { src : ['test/vendor/js/bootstrap.min.js'], served: true },
+          { src : ['test/qunit/unit/_qunit-fixture.js'], served: true },
+          { src : ['<%= concat.bootstrapAsu.src %>'], served: true },
+          { src : ['test/qunit/unit/*-test.js'] }
+        ],
+        singleRun: true,
+        browsers: ['PhantomJS_Mobile'],
+        customLaunchers: {
+          'PhantomJS_Mobile': {
+            base: 'PhantomJS',
+            options: {
+              windowName: 'ASU Bootstrap Tests',
+              viewportSize : {
+                width : 765,
+                height: 1000
+              }
+            }
+          }
+        }
+      },
+      //continuous integration mode: run tests once in PhantomJS browser.
+      continuousMobile: {
+        frameworks: ['qunit'],
+        plugins: ['karma-qunit', 'karma-phantomjs-launcher'],
         files: [
           { src : ['test/vendor/js/jquery-1.11.2.min.js'], served: true },
           { src : ['test/vendor/js/bootstrap.min.js'], served: true },
@@ -211,7 +236,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-karma-coveralls');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
 
@@ -227,7 +251,8 @@ module.exports = function (grunt) {
     'jshint',
     'jscs',
     'scsslint',
-    'karma:continuousMobile'
+    'karma:continuousMobile',
+    'karma:coverageMobile'
   ]);
 
   // Default task
