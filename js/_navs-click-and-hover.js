@@ -36,6 +36,11 @@
       if ( self.hasClass( 'open' ) && ! self.data( 'sos-click' ) ) {
         self.removeClass( 'open' )
       } else {
+        // No other li can be open
+        $('.navbar-ws ul.nav>li.dropdown').each(function (i, e) {
+          $(e).removeClass( 'open' )
+        })
+
         self.addClass( 'open' )
       }
     }).hover( function () {
