@@ -299,16 +299,18 @@
     li > a {
       background-color: transparent;
       color: $ws-navbar-text;
-      font-size: 16px;
+      font-size: 18px;
       font-weight: bold;
       line-height: 1;
-      padding: 20px;
+      padding: 20px 25px;
+
+      &:first-child {
+        padding: 20px 25px !important;
+      }
 
       @media (max-width: $asu-screen-lg-min) {
-        font-size: .9em;
         padding-left: 10px;
         padding-right: 10px;
-        padding-top: 21px;
       }
 
       &:hover,

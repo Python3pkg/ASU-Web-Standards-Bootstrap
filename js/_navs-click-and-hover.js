@@ -45,7 +45,10 @@
       }
     }).hover( function () {
       // Don't worry about mobile devices
-      if ( $( window ).width() < mobileWidth ) {
+      if ( ( window.matchMedia &&
+             window.matchMedia('(max-width: ' + mobileWidth + 'px)').matches ) ||
+          ( typeof window.matchMedia === 'undefined' &&
+            $( window ).width() < mobileWidth ) ) {
         return
       }
 
@@ -58,7 +61,10 @@
       }, 5 )
     }, function (e) {
       // Don't worry about mobile devices
-      if ( $( window ).width() < mobileWidth ) {
+      if ( ( window.matchMedia &&
+             window.matchMedia('(max-width: ' + mobileWidth + 'px)').matches ) ||
+          ( typeof window.matchMedia === 'undefined' &&
+            $( window ).width() < mobileWidth ) ) {
         e.preventDefault()
         e.stopPropagation()
         return
