@@ -104,4 +104,13 @@ $(function () {
 
     equal( color, "rgb(244, 124, 0)" , "error labels are #F47C00")
   })
+
+  // Footer icon colors
+  // ==================
+  
+  test('footer icons should be gray', function () {
+    var bg_color = $($('.footer .social-media li a i')[0]).css('color')
+
+    equal( bg_color, "rgb(169, 169, 169)" , "primary buttons are #a9a9a9")
+  })
 })
