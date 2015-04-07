@@ -28,6 +28,4 @@ $(function () {
     equal( computedStyles['padding-top'], '20px', 'The icon should have 20px top' )
     equal( computedStyles['padding-left'], '25px', 'The icon should have 25px left' )
   })
-
-
 })

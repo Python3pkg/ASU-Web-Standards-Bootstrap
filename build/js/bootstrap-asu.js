@@ -681,7 +681,7 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
   'use strict';
 
   // TODO refactor this constant
-  var mobileWidth = 992
+  var mobileWidth = 991
 
   var desktopElements = [
     '.navbar-ws .navbar-toggle'
@@ -827,7 +827,10 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
    * Hide and show elements depending on viewport size.
    */
   function collapseHeader () {
-    if ( $( window ).innerWidth() >= mobileWidth ) {
+    if ( ( window.matchMedia &&
+             window.matchMedia('(min-width: ' + mobileWidth + 'px)').matches ) ||
+          ( typeof window.matchMedia === 'undefined' &&
+            $( window ).width() > mobileWidth ) ) {
       $( desktopElements ).show()
       $( mobileElements ).hide()
     } else {
@@ -928,7 +931,10 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
       }
     }).hover( function () {
       // Don't worry about mobile devices
-      if ( $( window ).width() < mobileWidth ) {
+      if ( ( window.matchMedia &&
+             window.matchMedia('(max-width: ' + mobileWidth + 'px)').matches ) ||
+          ( typeof window.matchMedia === 'undefined' &&
+            $( window ).width() < mobileWidth ) ) {
         return
       }
 
@@ -941,7 +947,10 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
       }, 5 )
     }, function (e) {
       // Don't worry about mobile devices
-      if ( $( window ).width() < mobileWidth ) {
+      if ( ( window.matchMedia &&
+             window.matchMedia('(max-width: ' + mobileWidth + 'px)').matches ) ||
+          ( typeof window.matchMedia === 'undefined' &&
+            $( window ).width() < mobileWidth ) ) {
         e.preventDefault()
         e.stopPropagation()
         return

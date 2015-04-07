@@ -551,7 +551,7 @@ pre {
 }
 
 #asu_logo {
-  padding: 12px 0;
+  padding: 12px;
 }
 @media (max-width: 991px) {
   #asu_logo {
