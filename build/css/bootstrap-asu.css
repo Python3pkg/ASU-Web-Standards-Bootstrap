@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* ========================================================================
- * Web Standards: bootstrap-asu.css v0.1.4
+ * Web Standards: bootstrap-asu.css v0.1.5
  * ========================================================================
  * Copyright 2014 ASU
  * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
@@ -1810,6 +1810,9 @@ input[type="button"].btn-block {
   width: 100%;
   z-index: 999998;
 }
+.navbar-ws .navbar-nav > li:first-child > a:first-child {
+  padding: 20px 25px !important;
+}
 .navbar-ws .navbar-nav > li > a {
   background-color: transparent;
   color: #ededed;
@@ -1817,9 +1820,6 @@ input[type="button"].btn-block {
   font-weight: bold;
   line-height: 1;
   padding: 20px 25px;
-}
-.navbar-ws .navbar-nav > li > a:first-child {
-  padding: 20px 25px !important;
 }
 @media (max-width: 1200px) {
   .navbar-ws .navbar-nav > li > a {
