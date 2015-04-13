@@ -296,6 +296,12 @@
   }
 
   .navbar-nav > {
+    li:first-child > a {
+      &:first-child {
+        padding: 20px 25px !important;
+      }
+    }
+
     li > a {
       background-color: transparent;
       color: $ws-navbar-text;
@@ -303,10 +309,6 @@
       font-weight: bold;
       line-height: 1;
       padding: 20px 25px;
-
-      &:first-child {
-        padding: 20px 25px !important;
-      }
 
       @media (max-width: $asu-screen-lg-min) {
         padding-left: 10px;
