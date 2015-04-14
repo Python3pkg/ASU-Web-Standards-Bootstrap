@@ -17,10 +17,11 @@
     margin-bottom: 16px;
   }
 
-  a,
+  a:not(.btn),
   address,
   .phone-link {
-    color: $ws-footer-font-color;
+    border-bottom-color: $ws-footer-link-color;
+    color: $ws-footer-link-color;
     margin-bottom: 0;
   }
 

@@ -250,20 +250,21 @@ $ws-hero-dark-bg:               #353535 !default;
 // ======
 // Footer
 // ======
-$ws-footer-font-color:          $ws-white !default;
-$ws-footer-font-size:           16px !default;
+$ws-footer-font-color:             $ws-white !default;
+$ws-footer-font-size:              16px !default;
 // Icons in the footer, such as social links, are  gray (#a9a9a9)
-$ws-footer-social-link-text:                 #a9a9a9 !default;
+$ws-footer-social-link-text:       #a9a9a9 !default;
 // Should have a hover white (#fff)
 $ws-footer-social-link-focus-text: $ws-white !default;
+$ws-footer-link-color:             $ws-light-gray !default;
 
-$ws-big-foot-bg:                             #1e1e1e !default;
-$ws-big-foot-nav-link-text:                  $ws-light-gray !default;
-$ws-big-foot-nav-link-border:                $ws-light-gray !default;
-$ws-big-foot-nav-link-focus-text:            white !default;
+$ws-big-foot-bg:                   #1e1e1e !default;
+$ws-big-foot-nav-link-text:        $ws-light-gray !default;
+$ws-big-foot-nav-link-border:      $ws-light-gray !default;
+$ws-big-foot-nav-link-focus-text:  white !default;
 
-$ws-little-foot-bg:                          #e5e5e5 !default;
-$ws-little-foot-focus-text:                  #595959 !default;
+$ws-little-foot-bg:                #e5e5e5 !default;
+$ws-little-foot-focus-text:        #595959 !default;
 
 // ======
 // Navbar
