@@ -1,5 +1,5 @@
 /**========================================================================
- * Web Standards: bootstrap-asu.js v0.1.5
+ * Web Standards: bootstrap-asu.js v0.1.6
  * ========================================================================
  * Copyright 2014 ASU
  * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
@@ -671,7 +671,7 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
 } (jQuery);
 
 /* ========================================================================
- * Web Standards: mobile_menu.js v0.0.2
+ * Web Standards: mobile_menu.js v0.0.3
  * ========================================================================
  * Copyright 2014 ASU
  * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
@@ -828,7 +828,7 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
    */
   function collapseHeader () {
     if ( ( window.matchMedia &&
-             window.matchMedia('(min-width: ' + mobileWidth + 'px)').matches ) ||
+             window.matchMedia('(min-width: ' + (mobileWidth + 1) + 'px)').matches ) ||
           ( typeof window.matchMedia === 'undefined' &&
             $( window ).width() > mobileWidth ) ) {
       $( desktopElements ).show()
