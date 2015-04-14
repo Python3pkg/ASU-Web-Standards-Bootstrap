@@ -1,5 +1,5 @@
 /* ========================================================================
- * Web Standards: mobile_menu.js v0.0.2
+ * Web Standards: mobile_menu.js v0.0.3
  * ========================================================================
  * Copyright 2014 ASU
  * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
@@ -156,7 +156,7 @@
    */
   function collapseHeader () {
     if ( ( window.matchMedia &&
-             window.matchMedia('(min-width: ' + mobileWidth + 'px)').matches ) ||
+             window.matchMedia('(min-width: ' + (mobileWidth + 1) + 'px)').matches ) ||
           ( typeof window.matchMedia === 'undefined' &&
             $( window ).width() > mobileWidth ) ) {
       $( desktopElements ).show()

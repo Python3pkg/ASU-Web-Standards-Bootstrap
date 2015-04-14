@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* ========================================================================
- * Web Standards: bootstrap-asu.css v0.1.5
+ * Web Standards: bootstrap-asu.css v0.1.6
  * ========================================================================
  * Copyright 2014 ASU
  * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
@@ -2831,10 +2831,11 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   font-weight: normal;
   margin-bottom: 16px;
 }
-.footer a,
+.footer a:not(.btn),
 .footer address,
 .footer .phone-link {
-  color: #fff;
+  border-bottom-color: #ccc;
+  color: #ccc;
   margin-bottom: 0;
 }
 .footer .contact-link {
