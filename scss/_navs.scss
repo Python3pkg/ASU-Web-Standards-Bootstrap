@@ -315,6 +315,10 @@
         padding-right: 10px;
       }
 
+      @media (max-width: $asu-screen-md-max) {
+        padding-left: 25px;
+      }
+
       &:hover,
       &:focus {
         background-color: $ws-navbar-focus-bg;
