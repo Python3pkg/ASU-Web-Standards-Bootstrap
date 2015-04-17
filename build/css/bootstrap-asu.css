@@ -3147,6 +3147,20 @@ tbody.collapse.in {
   -webkit-perspective: 1000;
 }
 
+.related-articles {
+  background-color: #fafafa;
+  border-top: 1px solid #1f1f1f;
+  margin-top: 12px;
+  padding-bottom: 24px;
+  padding-top: 0;
+}
+.related-articles li {
+  margin-right: 12px;
+}
+.related-articles li a {
+  background-color: #fff;
+}
+
 /*!
  *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)

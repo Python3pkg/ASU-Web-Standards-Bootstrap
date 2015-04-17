@@ -1,0 +1,15 @@
+.related-articles {
+  background-color: $asu-gray-lightest;
+  border-top: 1px solid $ws-darker-gray-2;
+  margin-top: $asu-padding-large-vertical;
+  padding-bottom: $asu-padding-xlarge-vertical;
+  padding-top: 0;
+
+  li {
+    margin-right: $asu-padding-small-horizontal;
+
+    a {
+      background-color: $ws-white;
+    }
+  }
+}
