@@ -3159,6 +3159,10 @@ tbody.collapse.in {
 }
 .related-articles li a {
   background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 5px 12px;
 }
 
 /*!

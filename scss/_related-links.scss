@@ -10,6 +10,10 @@
 
     a {
       background-color: $ws-white;
+      border: 1px solid $ws-light-gray;
+      border-radius: $asu-border-radius-base;
+      display: inline-block;
+      padding: $asu-padding-xs-horizontal $asu-padding-large-vertical;
     }
   }
 }
