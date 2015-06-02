@@ -2,6 +2,10 @@
 // Footer
 // ======
 .footer {
+  p {
+    color: $ws-footer-font-color;
+  }
+
   h1 {
     color: $ws-footer-font-color;
     font-size: $ws-footer-font-size;
