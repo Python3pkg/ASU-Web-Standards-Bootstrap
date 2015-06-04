@@ -298,26 +298,25 @@
   .navbar-nav > {
     li:first-child > a {
       &:first-child {
-        padding: 20px 25px !important;
+        @media (min-width: $asu-screen-md-min) {
+          padding: 21px 25px !important;
+        }
       }
     }
 
     li > a {
       background-color: transparent;
       color: $ws-navbar-text;
-      font-size: 18px;
+      font-size: 15px;
       font-weight: bold;
       line-height: 1;
-      padding: 20px 25px;
+      padding: 21px 16px;
 
       @media (max-width: $asu-screen-lg-min) {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 14px;
+        padding-right: 14px;
       }
 
-      @media (max-width: $asu-screen-md-max) {
-        padding-left: 25px;
-      }
 
       &:hover,
       &:focus {
@@ -553,14 +552,14 @@
     padding: 4px 6px 8px;
 
     &.site-title {
-      font-size: $asu-font-size-large;
+      font-size: 24px;
       margin: 0;
-      padding: 5px 13px 5px 7px;
+      padding: 0 13px 13px 0;
 
       a {
         border-bottom-color: transparent;
         color: $ws-site-name-color;
-        font-weight: bold;
+        font-weight: normal;
         text-decoration: none;
 
         &:first-child {

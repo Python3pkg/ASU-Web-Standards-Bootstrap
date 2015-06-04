@@ -200,7 +200,6 @@ p {
   font-weight: 200;
   line-height: 24px;
   margin: 0 0 24px;
-  max-width: 800px;
 
   &.text-center {
     margin-left: auto;
@@ -311,6 +310,10 @@ pre {
 .gray-back {
   background-color: $ws-gray-back;
   padding: 48px 0;
+}
+
+.gold-back {
+  background-color: $asu-gold;
 }
 
 .space-top-0 {
