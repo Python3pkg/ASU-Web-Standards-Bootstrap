@@ -2257,6 +2257,8 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   border: 0;
   border-top: 1px solid #d7d7d7;
   font-weight: normal;
+  /* Override the margin-bottom: -1px; that bootstrap provides */
+  margin-bottom: 0;
   padding: 10px 5px;
 }
 .list-group-item:first-child {
