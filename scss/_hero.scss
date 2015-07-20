@@ -355,3 +355,33 @@ body.home {
 }
 
 // scss-lint:enable QualifyingElement
+
+// =========
+// Tall hero
+// =========
+
+.hero-tall {
+  min-height: 50%;
+  min-height: 50vh;
+
+  p,
+  h1.pane-title {
+    text-align: center;
+    text-shadow: 0 0 5px rgb(48, 42, 42);
+  }
+
+  h1.pane-title {
+    font-size: 120px;
+  }
+
+  form {
+    margin: auto;
+    min-width: 400px;
+    text-align: center;
+    width: 50%;
+  }
+
+  &.hero-bg-img p {
+    max-width: none;
+  }
+}

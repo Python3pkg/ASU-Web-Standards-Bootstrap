@@ -2942,6 +2942,28 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   }
 }
 
+.hero-tall {
+  min-height: 50%;
+  min-height: 50vh;
+}
+.hero-tall p,
+.hero-tall h1.pane-title {
+  text-align: center;
+  text-shadow: 0 0 5px #302a2a;
+}
+.hero-tall h1.pane-title {
+  font-size: 120px;
+}
+.hero-tall form {
+  margin: auto;
+  min-width: 400px;
+  text-align: center;
+  width: 50%;
+}
+.hero-tall.hero-bg-img p {
+  max-width: none;
+}
+
 .profile {
   border: 1px solid #d7d7d7;
   margin-bottom: 24px;
