@@ -1,12 +1,12 @@
 //== Pagination
 .pagination {
-  margin: $asu-padding-xlarge-vertical 0;
+  margin: $space-xxlarge 0;
 
   > li > {
     a,
     span {
-      color: $asu-maroon;
-      line-height: $asu-line-height-base;
+      color: $color-maroon;
+      line-height: $line-height-base;
       padding: 6px 19px;
 
       &:hover,
@@ -20,8 +20,8 @@
     &,
     &:hover,
     &:focus {
-      background-color: $asu-maroon;
-      border-color: $asu-maroon;
+      background-color: $color-maroon;
+      border-color: $color-maroon;
     }
   }
 }
@@ -31,8 +31,8 @@
     li {
       a,
       span {
-        font-size: $asu-font-size-large;
-        padding: $asu-padding-large-vertical $asu-padding-large-horizontal;
+        font-size: $font-size-large;
+        padding: $space-large $space-xxlarge;
       }
 
       &:first-child > {
@@ -59,8 +59,8 @@
     li {
       a,
       span {
-        font-size: $asu-font-size-small;
-        padding: 5px $asu-padding-small-horizontal;
+        font-size: $font-size-small;
+        padding: 5px $space-large;
       }
 
       &:first-child > {
@@ -83,5 +83,5 @@
 }
 
 .pager {
-  margin: $asu-padding-xlarge-vertical 0;
+  margin: $space-xxlarge 0;
 }

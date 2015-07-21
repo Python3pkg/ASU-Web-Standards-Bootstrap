@@ -2,7 +2,7 @@
 .panel {
   background-color: #fbfbfb;
   border: 1px solid #d7d7d7;
-  margin-bottom: $asu-padding-xlarge-vertical;
+  margin-bottom: $space-xxlarge;
 
   &.explore-programs h3 {
     font-size: 30px;
@@ -13,14 +13,14 @@
   }
 
   &.explore-programs p {
-    font-size: $asu-font-size-small;
+    font-size: $font-size-small;
     line-height: 20px;
   }
 
   > .panel-body + {
     .table,
     .table-responsive {
-      border-top: 1px solid $asu-gray-lighter;
+      border-top: 1px solid $color-nobel;
     }
   }
 
@@ -43,7 +43,7 @@
 }
 
 .panel-group {
-  margin-bottom: $asu-padding-xlarge-vertical;
+  margin-bottom: $space-xxlarge;
 }
 
 // Contextual variations

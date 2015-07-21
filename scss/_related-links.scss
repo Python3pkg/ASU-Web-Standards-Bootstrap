@@ -1,19 +1,19 @@
 .related-articles {
-  background-color: $asu-gray-lightest;
-  border-top: 1px solid $ws-darker-gray-2;
-  margin-top: $asu-padding-large-vertical;
-  padding-bottom: $asu-padding-xlarge-vertical;
+  background-color: $color-alabaster;
+  border-top: 1px solid darken($color-mine-shaft, 8);
+  margin-top: $space-large;
+  padding-bottom: $space-xxlarge;
   padding-top: 0;
 
   li {
-    margin-right: $asu-padding-small-horizontal;
+    margin-right: $space-large;
 
     a {
-      background-color: $ws-white;
-      border: 1px solid $ws-light-gray;
+      background-color: $color-white;
+      border: 1px solid $color-silver;
       border-radius: $asu-border-radius-base;
       display: inline-block;
-      padding: $asu-padding-xs-horizontal $asu-padding-large-vertical;
+      padding: $space-base $space-large;
     }
   }
 }

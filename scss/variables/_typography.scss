@@ -1,0 +1,36 @@
+// ==============================
+// Typography
+// ==============================
+// 
+// Font as designated by the University Standards.  Do not use
+// Roboto Condensed.
+//
+// You can download this font directly from 
+// the Android developers site:
+// http://developer.android.com/design/downloads/index.html
+// 
+// It is also available as a Google Font:
+// http://www.google.com/fonts/specimen/Roboto
+$font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+// ============
+// Line Heights
+// ============
+//
+// These line heights are NOT mixed up. When the text size increases,
+// the line height decreases.
+$line-height-base:     1.44 !default;
+$line-height-small:    1.5  !default;
+$line-height-large:    1.33 !default;
+$line-height-computed: 24px !default;
+
+// ==========
+// Font Sizes
+// ==========
+$font-size-small:   14px !default;
+$font-size-medium:  16px !default;
+$font-size-large:   18px !default;
+$font-size-xlarge:  20px !default;
+$font-size-h1:      72px !default;
+

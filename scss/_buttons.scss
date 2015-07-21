@@ -8,10 +8,10 @@
 
 .btn {
   @include button-size(
-    $asu-padding-base-vertical, 
-    $asu-padding-base-horizontal, 
-    $asu-font-size-base, 
-    $asu-line-height-base, 
+    $space-base, 
+    $space-xlarge, 
+    $font-size-medium, 
+    $line-height-base, 
     $asu-border-radius-base);
 
   &,
@@ -171,29 +171,29 @@
 .btn-lg {
   // line-height: ensure even-numbered height of button next to large input
   @include button-size(
-    $asu-padding-large-vertical,
-    $asu-padding-large-horizontal, 
-    $asu-font-size-large, 
-    $asu-line-height-large, 
+    $space-large,
+    $space-xxlarge, 
+    $font-size-large, 
+    $line-height-large, 
     $asu-border-radius-large);
 }
 
 .btn-sm {
   // line-height: ensure proper height of button next to small input
   @include button-size(
-    $asu-padding-small-vertical, 
-    $asu-padding-small-horizontal, 
-    $asu-font-size-small, 
-    $asu-line-height-small, 
+    $space-base, 
+    $space-large, 
+    $font-size-small, 
+    $line-height-small, 
     $asu-border-radius-small);
 }
 
 .btn-xs {
   @include button-size(
-    $asu-padding-xs-vertical, 
-    $asu-padding-xs-horizontal, 
-    $asu-font-size-small, 
-    $asu-line-height-small, 
+    $space-xs, 
+    $space-base, 
+    $font-size-small, 
+    $line-height-small, 
     $asu-border-radius-small);
 }
 

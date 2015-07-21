@@ -31,7 +31,7 @@
       border: 0;
       border-bottom-color: transparent;
       border-radius: 0;
-      color: $asu-gray-darker;
+      color: darken($color-mine-shaft, 3.5);
       line-height: $ws-alterna-tabs-line-height;
       padding-left: 0;
       padding-right: 0;
@@ -47,7 +47,7 @@
       background: none;
       border: 0;
       border-bottom-color: transparent;
-      color: $asu-gray-darker;
+      color: darken($color-mine-shaft, 3.5);
       cursor: default;
     }
   }

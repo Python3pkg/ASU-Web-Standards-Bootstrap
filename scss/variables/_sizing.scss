@@ -1,0 +1,12 @@
+// ==============================
+// Sizing
+// ==============================
+
+
+$base-sizing-unit: 5px !default;
+
+$space-xs:      1px               !default;
+$space-base:    $base-sizing-unit !default;
+$space-large:   2 * $base-sizing-unit !default;
+$space-xlarge:  4 * $base-sizing-unit !default;
+$space-xxlarge: 5 * $base-sizing-unit !default;

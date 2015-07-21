@@ -5,11 +5,6 @@
  * Copyright 2014 ASU
  * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
  * ======================================================================== */
-/**
- * ASU Web Standards Variables
- *
- * @see https://hub.asu.edu/brand-hq/brand-standards/color-palette
- */
 html {
   -webkit-font-smoothing: antialiased;
 }
@@ -438,19 +433,19 @@ pre {
 }
 
 .space-top-sm {
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 .space-top-md {
-  margin-top: 24px;
+  margin-top: 20px;
 }
 
 .space-top-lg {
-  margin-top: 36px;
+  margin-top: 30px;
 }
 
 .space-top-xl {
-  margin-top: 48px;
+  margin-top: 40px;
 }
 
 .space-bot-0 {
@@ -458,19 +453,19 @@ pre {
 }
 
 .space-bot-sm {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .space-bot-md {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .space-bot-lg {
-  margin-bottom: 36px;
+  margin-bottom: 30px;
 }
 
 .space-bot-xl {
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 }
 
 .space-bot-form {
@@ -953,7 +948,7 @@ input[type="month"].input-lg {
   font-size: 14px;
   height: 33px;
   line-height: 1.5;
-  padding: 5px 12px;
+  padding: 5px 10px;
 }
 
 select.input-sm {
@@ -969,10 +964,10 @@ select[multiple].input-sm {
 .input-lg {
   -webkit-border-radius: 4px;
   border-radius: 4px;
-  font-size: 20px;
+  font-size: 18px;
   height: 53px;
   line-height: 1.33;
-  padding: 12px 24px;
+  padding: 10px 25px;
 }
 
 select.input-lg {
@@ -1191,7 +1186,7 @@ select[multiple].input-lg {
   border-radius: 4px;
   font-size: 16px;
   line-height: 1.44;
-  padding: 6px 19px;
+  padding: 5px 20px;
 }
 .btn:focus, .btn:active:focus, .btn.active:focus {
   outline: 0;
@@ -1443,16 +1438,16 @@ select[multiple].input-lg {
 
 .btn-lg {
   border-radius: 4px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.33;
-  padding: 12px 24px;
+  padding: 10px 25px;
 }
 
 .btn-sm {
   border-radius: 4px;
   font-size: 14px;
   line-height: 1.5;
-  padding: 5px 12px;
+  padding: 5px 10px;
 }
 
 .btn-xs {
@@ -1517,7 +1512,7 @@ input[type="button"].btn-block {
   border: 1px solid #b0b0b0;
   color: #505050;
   font-size: 16px;
-  padding: 6px 19px;
+  padding: 5px 20px;
 }
 
 .input-group-addon.input-sm,
@@ -1526,7 +1521,7 @@ input[type="button"].btn-block {
 .input-group-sm > .input-group-btn > .input-group-addon.btn {
   border-radius: 4px;
   font-size: 14px;
-  padding: 5px 12px;
+  padding: 5px 10px;
 }
 
 .input-group-addon.input-lg,
@@ -1534,8 +1529,8 @@ input[type="button"].btn-block {
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .input-group-addon.btn {
   border-radius: 4px;
-  font-size: 20px;
-  padding: 12px 24px;
+  font-size: 18px;
+  padding: 10px 25px;
 }
 
 .input-group-btn > .btn {
@@ -1708,8 +1703,8 @@ input[type="button"].btn-block {
 
 .navbar-brand {
   border-bottom: 0;
-  font-size: 20px;
-  padding: 13px 15px;
+  font-size: 18px;
+  padding: 11px 15px;
 }
 .navbar-brand:focus, .navbar-brand:hover {
   border-bottom: 0;
@@ -1777,13 +1772,13 @@ input[type="button"].btn-block {
 }
 
 .navbar-form {
-  margin-bottom: 6px;
-  margin-top: 6px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .navbar-btn {
-  margin-bottom: 6px;
-  margin-top: 6px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 .navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn {
   margin-bottom: 8.5px;
@@ -2039,8 +2034,8 @@ input[type="button"].btn-block {
 .breadcrumb {
   background-color: transparent;
   font-size: 14px;
-  margin-bottom: 48px;
-  margin-top: 24px;
+  margin-bottom: 50px;
+  margin-top: 25px;
   padding: 0;
 }
 .breadcrumb > li + li:before {
@@ -2054,7 +2049,7 @@ input[type="button"].btn-block {
 }
 
 .pagination {
-  margin: 24px 0;
+  margin: 25px 0;
 }
 .pagination > li > a,
 .pagination > li > span {
@@ -2074,8 +2069,8 @@ input[type="button"].btn-block {
 
 .pagincation-lg > li a,
 .pagincation-lg > li span {
-  font-size: 20px;
-  padding: 12px 24px;
+  font-size: 18px;
+  padding: 10px 25px;
 }
 .pagincation-lg > li:first-child > a,
 .pagincation-lg > li:first-child > span {
@@ -2091,7 +2086,7 @@ input[type="button"].btn-block {
 .pagination-sm > li a,
 .pagination-sm > li span {
   font-size: 14px;
-  padding: 5px 12px;
+  padding: 5px 10px;
 }
 .pagination-sm > li:first-child > a,
 .pagination-sm > li:first-child > span {
@@ -2105,7 +2100,7 @@ input[type="button"].btn-block {
 }
 
 .pager {
-  margin: 24px 0;
+  margin: 25px 0;
 }
 
 .label-primary {
@@ -2165,7 +2160,7 @@ a.list-group-item.active > .badge, .nav-pills > .active > a > .badge {
 
 .thumbnail {
   line-height: 1.44;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 .thumbnail .captions {
   color: #2a2a2a;
@@ -2176,19 +2171,19 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 }
 
 .alert {
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 
 .alert-success {
   background-color: #568e14;
   border-color: #0b4b28;
-  color: #fff;
+  color: #000;
 }
 .alert-success hr {
   border-top-color: #08351c;
 }
 .alert-success .alert-link {
-  color: #e6e6e6;
+  color: black;
 }
 
 .alert-info {
@@ -2212,7 +2207,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   border-top-color: #72870f;
 }
 .alert-warning .alert-link {
-  color: #101010;
+  color: #111111;
 }
 
 .alert-danger {
@@ -2228,8 +2223,8 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 }
 
 .progress {
-  height: 24px;
-  margin-bottom: 24px;
+  height: 25px;
+  margin-bottom: 25px;
 }
 
 .progress-bar {
@@ -2402,7 +2397,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel {
   background-color: #fbfbfb;
   border: 1px solid #d7d7d7;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 .panel.explore-programs h3 {
   font-size: 30px;
@@ -2438,7 +2433,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 
 .panel-group {
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 
 .panel-primary {
@@ -3350,19 +3345,19 @@ tbody.collapse.in {
 .related-articles {
   background-color: #fafafa;
   border-top: 1px solid #1f1f1f;
-  margin-top: 12px;
-  padding-bottom: 24px;
+  margin-top: 10px;
+  padding-bottom: 25px;
   padding-top: 0;
 }
 .related-articles li {
-  margin-right: 12px;
+  margin-right: 10px;
 }
 .related-articles li a {
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 4px;
   display: inline-block;
-  padding: 5px 12px;
+  padding: 5px 10px;
 }
 
 /*!

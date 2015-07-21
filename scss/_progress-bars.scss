@@ -1,13 +1,13 @@
 //== Progress Bars
 .progress {
-  height: $asu-padding-xlarge-vertical;
-  margin-bottom: $asu-padding-xlarge-vertical;
+  height: $space-xxlarge;
+  margin-bottom: $space-xxlarge;
 }
 
 .progress-bar {
-  background-color: $asu-maroon;
-  font-size: $asu-font-size-small;
-  line-height: $asu-line-height-computed;
+  background-color: $color-maroon;
+  font-size: $font-size-small;
+  line-height: $line-height-computed;
 }
 
 .progress-bar-success {

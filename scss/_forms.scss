@@ -21,8 +21,8 @@
 }
 
 legend {
-  font-size: $asu-line-height-computed;
-  margin-bottom: $asu-line-height-computed;
+  font-size: $line-height-computed;
+  margin-bottom: $line-height-computed;
 }
 
 label {
@@ -31,20 +31,20 @@ label {
 }
 
 output {
-  color: $asu-gray-dark;
+  color: $color-emperor;
   font-size: 16px;
-  line-height: $asu-line-height-base;
+  line-height: $line-height-base;
 }
 
 .form-control {
   @include box-shadow(inset 1px 2px 9px rgba(213, 213, 213, .5));
 
-  border: 1px solid $asu-gray;
-  color: $asu-gray-dark;
+  border: 1px solid $color-silver-chalice;
+  color: $color-emperor;
   font-size: 16px;
   font-weight: 200;
   height: 38px;
-  line-height: $asu-line-height-base; 
+  line-height: $line-height-base; 
 }
 
 .form-control:focus {
@@ -58,7 +58,7 @@ input[type="datetime-local"],
 input[type="month"] {
   line-height: 38px; 
   // IE8+ misaligns the text within date inputs, so we reset
-  line-height: $asu-line-height-base #{\0};
+  line-height: $line-height-base #{\0};
 
   &.input-sm {
     line-height: $asu-input-height-small;
@@ -89,19 +89,19 @@ input[type="month"] {
 @include input-size(
   '.input-sm', 
   $asu-input-height-small, 
-  $asu-padding-small-vertical, 
-  $asu-padding-small-horizontal, 
-  $asu-font-size-small, 
-  $asu-line-height-small, 
+  $space-base, 
+  $space-large, 
+  $font-size-small, 
+  $line-height-small, 
   $asu-border-radius-small);
 
 @include input-size(
   '.input-lg', 
   $asu-input-height-large, 
-  $asu-padding-large-vertical, 
-  $asu-padding-large-horizontal, 
-  $asu-font-size-large, 
-  $asu-line-height-large, 
+  $space-large, 
+  $space-xxlarge, 
+  $font-size-large, 
+  $line-height-large, 
   $asu-border-radius-large);
 
 .has-feedback {

@@ -1,9 +1,9 @@
 // == breadcrumb
 .breadcrumb {
   background-color: transparent;
-  font-size: $asu-font-size-small;
-  margin-bottom: (2 * $asu-padding-xlarge-vertical);
-  margin-top: $asu-padding-xlarge-vertical;
+  font-size: $font-size-small;
+  margin-bottom: (2 * $space-xxlarge);
+  margin-top: $space-xxlarge;
   padding: 0;
 
   > li + li:before {
