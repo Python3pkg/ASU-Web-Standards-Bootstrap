@@ -55,8 +55,9 @@ a {
   }
 }
 
-.img-bordered {
-  border: 1px solid $asu-gray;
+.img-bordered,
+.img-border {
+  border: 1px solid $ws-image-border-color;
 }
 
 .img-rounded {
