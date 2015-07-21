@@ -1,0 +1,275 @@
+// Web Standards Navbar
+// 
+// Just like in Bootstrap, but styled differently, uses `navbar`
+// 
+// <nav class="navbar navbar-ws affix-top" role="navigation">
+//     <div class="container-fluid">
+//         <div class="navbar-header">
+//             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ws-navbar-collapse-1" style="display: inline-block;">
+//                 <span class="sr-only">Toggle navigation</span>
+//                 <span class="icon-bar"></span>
+//                 <span class="icon-bar"></span>
+//                 <span class="icon-bar"></span>
+//             </button>
+//             <a class="navbar-brand" href="#">Global Sustainability</a>
+//         </div>
+//         <div id="ws-navbar-collapse-1" class="collapse navbar-collapse">
+//             <ul id="menu-header-menu" class="nav navbar-nav">
+//                 <li><a href="#" id="home-icon-main-nav"><span class="fa fa-home hidden-xs hidden-sm" aria-hidden="true"></span><span class="hidden-md hidden-lg">Home</span></a>
+//                 </li>
+//                 <li id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19"><a title="Outreach" href="#" id="nav-item_outreach">Outreach</a>
+//                 </li>
+//                 <li id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18"><a title="Research" href="#" id="nav-item_research">Research</a>
+//                 </li>
+//                 <li id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20"><a title="Solutions" href="#" id="nav-item_solutions">Solutions</a>
+//                 </li>
+//                 <li id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21"><a title="Operations" href="#" id="nav-item_operations">Operations</a>
+//                 </li>
+//             </ul>
+//         </div>
+//     </div>
+//     <!-- /.navbar-collapse -->
+// </nav>
+// 
+// Styleguide 2.6
+.navbar-ws {
+  background-color: $color-mine-shaft;
+  border: 0;
+  border-radius: 0;
+
+  @media (max-width: $asu-screen-sm-max) {
+    &.affix {
+      position: static !important;
+    }
+  }
+
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+
+    @media (max-width: $asu-screen-sm-max) {
+      // Not being used by official standards yet.
+      //width: 100%;
+    }
+  }
+
+  &.affix {
+    top: 0;
+    width: 100%;
+    // admin bars usually have a z-index of 999999 and we want them to overlay on top of this affixed top menu
+    z-index: 999998;
+  }
+
+  .navbar-nav > {
+    li:first-child > a {
+      &:first-child {
+        @media (min-width: $asu-screen-md-min) {
+          padding: 21px 25px !important;
+        }
+      }
+    }
+
+    li > a {
+      background-color: transparent;
+      color: $color-gallery;
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 1;
+      padding: 21px 16px;
+
+      @media (max-width: $asu-screen-lg-min) {
+        padding-left: 14px;
+        padding-right: 14px;
+      }
+
+      // TODO carots should be $color-dove-gray (#666)
+
+      &:hover,
+      &:focus {
+        background-color: $color-black;
+        color: $color-sun;
+
+        // TODO carots should be #eee
+      }
+    }
+
+    li.open > a {
+      background-color: $color-dark-cave;
+      color: $color-sun;
+    }
+
+    .active > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: $color-dark-cave;
+        color: $color-white;
+      }
+    }
+
+    .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: transparent;
+        color: $color-silver;
+      }
+    }
+
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: $color-dark-cave;
+        color: $color-sun;
+      }
+    }
+  }
+
+  .navbar-brand {
+    color: $color-gallery;
+    font-size: 16px;
+    height: auto;
+    overflow: hidden;
+    padding-right: 0;
+    width: calc(100% - 60px);
+
+    &:hover,
+    &:focus {
+      color: $color-gallery;
+    }
+
+    .navbar-text {
+      color: $color-boulder;
+    }
+  }
+
+  .navbar-toggle {
+    border: 0;
+
+    @media (min-width: $asu-screen-sm-min) {
+      display: block;
+    }
+
+    @media (min-width: $asu-screen-md-min) {
+      display: none;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $color-black;
+
+      .icon-bar {
+        background-color: $color-sun;
+      }
+    }
+
+    .icon-bar {
+      background-color: $color-gallery;
+    }
+  }
+
+  // TODO -------------------------------------------------------------------------
+  // TODO -------------------------------------------------------------------------
+  // TODO -------------------------------------------------------------------------
+  // TODO -------------------------------------------------------------------------
+
+  .navbar-collapse,
+  .navbar-form {
+    border-color: $ws-navbar-form-border;
+  }
+
+  .navbar-link {
+    color: $ws-navbar-link-text;
+
+    &:hover {
+      color: $ws-navbar-link-hover-text;
+    }
+  }
+
+  .btn-link {
+    color: $ws-navbar-btn-link-text;
+
+    &:hover,
+    &:focus {
+      color: $ws-navbar-btn-link-focus-text;
+    }
+
+    &[disabled]:hover,
+    &[disabled]:focus,
+    fieldset[disabled] &:hover,
+    fieldset[disabled] &:focus {
+      color: $ws-navbar-btn-link-disabled-text;
+    }
+  }
+
+  .dropdown-menu {
+    background-color: $ws-navbar-dropdown-menu-bg;
+    border: 1px solid $ws-navbar-dropdown-menu-border;
+    border-color: transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    display: block;
+    margin: 0;
+    max-height: 0;
+    min-width: 160px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    
+
+    @media (min-width: 991px) {
+      position: absolute;
+      width: auto;
+    }
+
+    .divider {
+      background-color: $ws-navbar-dropdown-divider-bg;
+      height: 1px;
+      margin: 9px 0;
+      overflow: hidden;
+    }
+
+    > li > a {
+      color: $ws-navbar-dropdown-menu-link-text;
+      font-size: 15px;
+      font-weight: normal;
+      line-height: 1;
+      padding: 9px 25px 10px;
+
+      &:hover,
+      &:focus {
+        background-color: $ws-navbar-dropdown-menu-link-focus-bg;
+        border: 0;
+        color: $ws-navbar-dropdown-menu-link-focus-text;
+        text-decoration: none;
+      }
+    }
+
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: $ws-navbar-dropdown-menu-link-focus-bg;
+        color: $ws-navbar-dropdown-menu-link-focus-text;
+        outline: 0;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .open > .dropdown-menu {
+    border-color: $ws-navbar-dropdown-open-border;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    max-height: 2000px;
+    padding: 10px 0;
+
+    @media (max-width: 991px) {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+  }
+}

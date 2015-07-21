@@ -12,6 +12,7 @@ $color-green:    #568e14 !default;
 $color-orange:   #f47c00 !default;
 $color-gold:     #f0ad4e !default;
 $color-yellow:   #ffc425 !default;
+$color-sun:      #ffb310 !default;
 
 // Variants
 $color-green-darkened:    desaturate(adjust_hue(darken($color-green, 14), 42), 1);
@@ -20,13 +21,15 @@ $color-yellow-darkened:   desaturate(darken($color-yellow, 18), 4);
 $color-orange-darkened:   desaturate(darken($color-orange, 18), 4);
 
 // Grays
-$color-black:          #000 !default;
-$color-mine-shaft:     #333    !default;
+$color-black:          #000    !default;
+$color-dark-cave:      #1f1f1f !default;
+$color-mine-shaft:     #353535 !default;
 $color-emperor:        #505050 !default;
+$color-dove-gray:      #666    !default;
 $color-boulder:        #777    !default;
 $color-silver-chalice: #b0b0b0 !default;
 $color-nobel:          #b7b7b7 !default;
 $color-silver:         #ccc    !default;
 $color-gallery:        #ededed !default;
 $color-alabaster:      #fafafa !default;
-$color-white:          #fff !default;
+$color-white:          #fff    !default;

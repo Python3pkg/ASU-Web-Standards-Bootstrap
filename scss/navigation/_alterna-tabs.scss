@@ -3,12 +3,12 @@
 // Used in conjunction with `.nav` and `.nav-tabs`
 // 
 // <ul class="nav nav-tabs alterna-tabs">
-//    <li class="active">Record A</li>
-//    <li>Record B</li>
-//    <li>Record C</li>
+//    <li class="active"><a href="#">Record A</a></li>
+//    <li><a href="#">Record B</a></li>
+//    <li><a href="#">Record C</a></li>
 // </ul>
 // 
-// Styleguide 2.1.
+// Styleguide 2.2.
 .alterna-tabs {
   > li {
     border-bottom: $space-base solid transparent;

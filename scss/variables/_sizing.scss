@@ -2,11 +2,15 @@
 // Sizing
 // ==============================
 
-
 $base-sizing-unit: 5px !default;
 
-$space-xs:      1px               !default;     //  1px
+$space-xsmall:  1px               !default;     //  1px
 $space-base:    $base-sizing-unit !default;     //  5px
 $space-large:   2 * $base-sizing-unit !default; // 10px
 $space-xlarge:  4 * $base-sizing-unit !default; // 20px
 $space-xxlarge: 5 * $base-sizing-unit !default; // 25px
+
+$border-radius: 4px !default;
+
+$nav-bar-height:   57px;
+$nav-item-padding: ($nav-bar-height - $line-height-computed) / 2;

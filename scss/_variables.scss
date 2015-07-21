@@ -4,8 +4,9 @@
 
 @import 'variables/base-colors';
 @import 'variables/media-sizes';
-@import 'variables/sizing';
 @import 'variables/typography';
+
+@import 'variables/sizing';
 
 
 // ===========
@@ -182,8 +183,6 @@ $ws-little-foot-focus-text:        #595959 !default;
 // ======
 // Navbar
 // ======
-$ws-navbar-bg:              #353535 !default;
-$ws-navbar-text:            $color-gallery !default;
 $ws-navbar-focus-bg:        black   !default;
 $ws-navbar-focus-text:      #ffb310 !default;
 $ws-navbar-active-bg:       #1e1e1e !default;

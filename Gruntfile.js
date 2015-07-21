@@ -125,6 +125,7 @@ module.exports = function (grunt) {
         'scss/*.scss',
         'scss/mixins/*.scss',
         'scss/theme/*.scss',
+        'scss/navigation/*.scss',
         'scss/variables/*.scss',
         // Not font_awesome
       ],
@@ -238,6 +239,7 @@ module.exports = function (grunt) {
         css: [
           'all.css'
         ],
+        template: 'template'
       },
       dist: {
         files: {
