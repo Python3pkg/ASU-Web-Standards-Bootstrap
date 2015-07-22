@@ -1541,7 +1541,7 @@ input[type="button"].btn-block {
 }
 
 .input-group-addon {
-  border: 5px solid #b0b0b0;
+  border: 1px solid #b0b0b0;
   color: #505050;
   font-size: 16px;
   padding: 5px 20px;
