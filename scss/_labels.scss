@@ -1,5 +1,15 @@
-//== Labels
-
+// Labels
+// 
+// Add any of the below mentioned modifier classes to change the appearance of a label.
+//
+// <span class="label label-default">Default</span>
+// <span class="label label-primary">Primary</span>
+// <span class="label label-success">Success</span>
+// <span class="label label-info">Info</span>
+// <span class="label label-warning">Warning</span>
+// <span class="label label-danger">Danger</span>
+// 
+// Styleguide 10
 .label-primary {
   @include label-variant($color-maroon);
 }

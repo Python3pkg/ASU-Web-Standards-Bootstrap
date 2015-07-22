@@ -1,12 +1,14 @@
-// =======
 // Profile
-// =======
+// 
+// TODO document
+// 
+// Styleguide 16
 .profile {
-  border: 1px solid $color-alto;
+  border: $space-base solid $color-alto;
   margin-bottom: 24px;
 
   .profile-heading {
-    padding: 40px 40px 14px;
+    padding: (2 * $space-xlarge) (2 * $space-xlarge) 14px;
   }
 
   .profile-pic {
@@ -21,10 +23,10 @@
   }
 
   .tab-content {
-    padding: 40px 40px 14px;
+    padding: (2 * $space-xlarge) (2 * $space-xlarge) $font-size-small;
   }
 
   .nav-tabs {
-    padding-left: 40px;
+    padding-left: (2 * $space-xlarge);
   }
 }

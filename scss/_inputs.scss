@@ -1,6 +1,6 @@
-//== Input Groups
+// Input Groups
 .input-group-addon {
-  border: 1px solid $color-silver-chalice;
+  border: $space-base solid $color-silver-chalice;
   color: $color-emperor;
   font-size: $font-size-medium;
   padding: $space-base $space-xlarge;
@@ -25,5 +25,5 @@
 }
 
 .input-group-btn > .btn { 
-  height: 38px;
+  height: $form-control-height;
 }

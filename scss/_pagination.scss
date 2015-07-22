@@ -1,4 +1,27 @@
-//== Pagination
+// Pagination
+// 
+// 
+// <nav>
+//   <ul class="pagination">
+//     <li>
+//       <a href="#" aria-label="Previous">
+//         <span aria-hidden="true">&laquo;</span>
+//       </a>
+//     </li>
+//     <li><a href="#">1</a></li>
+//     <li><a href="#">2</a></li>
+//     <li><a href="#">3</a></li>
+//     <li><a href="#">4</a></li>
+//     <li><a href="#">5</a></li>
+//     <li>
+//       <a href="#" aria-label="Next">
+//         <span aria-hidden="true">&raquo;</span>
+//       </a>
+//     </li>
+//   </ul>
+// </nav>
+// 
+// Styleguide 14
 .pagination {
   margin: $space-xxlarge 0;
 
@@ -7,7 +30,7 @@
     span {
       color: $color-maroon;
       line-height: $line-height-base;
-      padding: 6px 19px;
+      padding: $space-base $space-xlarge;
 
       &:hover,
       &:focus {
@@ -26,7 +49,7 @@
   }
 }
 
-.pagincation-lg {
+.pagination-lg {
   > {
     li {
       a,
@@ -60,7 +83,7 @@
       a,
       span {
         font-size: $font-size-small;
-        padding: 5px $space-large;
+        padding: $space-base $space-large;
       }
 
       &:first-child > {
