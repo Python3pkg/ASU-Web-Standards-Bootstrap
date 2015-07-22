@@ -23,7 +23,7 @@
     &.active {
       border-bottom: $space-base solid $color-maroon;
       border-top: 0;
-      color: darken($color-mine-shaft, 3.5);
+      color: darken($color-mine-shaft, 4);
 
       a {
         &:hover,
@@ -39,7 +39,7 @@
       border: 0;
       border-bottom-color: transparent;
       border-radius: 0;
-      color: darken($color-mine-shaft, 3.5);
+      color: darken($color-mine-shaft, 4);
       line-height: $line-height-base;
       padding-left: 0;
       padding-right: 0;
@@ -55,7 +55,7 @@
       background: none;
       border: 0;
       border-bottom-color: transparent;
-      color: darken($color-mine-shaft, 3.5);
+      color: darken($color-mine-shaft, 4);
       cursor: default;
     }
   }

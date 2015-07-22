@@ -92,7 +92,7 @@
 
 .btn-gold {
   @include button-variant(
-    darken($color-mine-shaft, 3.5), 
+    darken($color-mine-shaft, 4), 
     $color-sun, 
     $color-sun);
 }
