@@ -408,3 +408,11 @@ pre {
 .pad-zero {
   padding: 0 !important;
 }
+
+.notransition {
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  -webkit-transition: none !important;
+  transition: none !important;
+}

@@ -12,5 +12,7 @@ $space-xxlarge: 5 * $base-sizing-unit !default; // 25px
 
 $border-radius: 4px !default;
 
-$nav-bar-height:   57px;
-$nav-item-padding: ($nav-bar-height - $line-height-computed) / 2;
+$nav-bar-height:        57px;
+$nav-item-padding:      ($nav-bar-height - $line-height-computed) / 2;
+$nav-bar-dropdown-width: 160px;
+$nav-bar-dropdown-max-height: 2000px;

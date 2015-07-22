@@ -180,46 +180,6 @@ $ws-big-foot-nav-link-focus-text:  white !default;
 $ws-little-foot-bg:                #e5e5e5 !default;
 $ws-little-foot-focus-text:        #595959 !default;
 
-// ======
-// Navbar
-// ======
-$ws-navbar-focus-bg:        black   !default;
-$ws-navbar-focus-text:      #ffb310 !default;
-$ws-navbar-active-bg:       #1e1e1e !default;
-$ws-navbar-active-text:     $color-gallery !default;
-$ws-navbar-disabled-bg:     transparent !default;
-$ws-navbar-disabled-text:   $color-silver !default;
-
-$ws-navbar-brand-text:                     $color-gallery !default;
-$ws-navbar-brand-hover-text:               $color-gallery !default;
-$ws-navbar-brand-text-text:                $color-boulder !default;
-
-$ws-navbar-toggle-focus-bg:                black !default;
-$ws-navbar-toggle-focus-icon-bg:           $ws-navbar-focus-text !default; // #ffb310
-$ws-navbar-toggle-icon-bg:                 $color-gallery !default; // #ededed
-
-$ws-navbar-form-border:                    black !default;
-
-$ws-navbar-nav-focus-bg:                   black !default;
-$ws-navbar-nav-focus-text:                 $ws-navbar-focus-text !default;
-
-$ws-navbar-link-text:                      $color-boulder !default;
-$ws-navbar-link-hover-text:                $color-mine-shaft !default;
-
-$ws-navbar-btn-link-text:                  $color-boulder !default;
-$ws-navbar-btn-link-focus-text:            $color-mine-shaft !default;
-$ws-navbar-btn-link-disabled-text:         $color-silver !default;
-
-$ws-navbar-dropdown-menu-bg:               darken($color-mine-shaft, 8) !default;
-$ws-navbar-dropdown-menu-border:           black !default;
-
-$ws-navbar-dropdown-menu-link-text:        $color-gallery !default;
-$ws-navbar-dropdown-menu-link-focus-text:  $color-gallery !default;
-$ws-navbar-dropdown-menu-link-focus-bg:    black !default;
-
-$ws-navbar-dropdown-divider-bg:            black !default;
-$ws-navbar-dropdown-open-border:           black !default;
-
 // ==================
 // Sidebar Navigation
 // ==================

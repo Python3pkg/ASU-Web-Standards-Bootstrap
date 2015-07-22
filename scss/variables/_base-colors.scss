@@ -5,14 +5,15 @@
 // ==============================
 
 // Colors
-$color-maroon:   #903    !default;
-$color-blue:     #008ed6 !default;
-$color-cerulean: #008ed6 !default;
-$color-green:    #568e14 !default;
-$color-orange:   #f47c00 !default;
-$color-gold:     #f0ad4e !default;
-$color-yellow:   #ffc425 !default;
-$color-sun:      #ffb310 !default;
+$color-maroon:           #903    !default;
+$color-blue:             #008ed6 !default;
+$color-cerulean:         #008ed6 !default;
+$color-green:            #568e14 !default;
+$color-orange:           #f47c00 !default;
+$color-gold:             #f0ad4e !default;
+$color-yellow:           #ffc425 !default;
+$color-sun:              #ffb310 !default;
+$color-selective-yellow: #ffb204 !default;
 
 // Variants
 $color-green-darkened:    desaturate(adjust_hue(darken($color-green, 14), 42), 1);
