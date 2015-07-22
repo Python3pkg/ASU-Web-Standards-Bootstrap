@@ -2,7 +2,7 @@
 // Variables
 // ==============================
 
-@import 'variables/base-colors';
+@import 'variables/colors';
 @import 'variables/media-sizes';
 @import 'variables/typography';
 @import 'variables/sizing';
@@ -215,9 +215,3 @@ $ws-vertical-border-right-border:            #414141 !default;
 // Responsive Table
 // ================ 
 $ws-responsive-table-border:                 $color-nobel !default;
-
-// ======
-// Badges
-// ======
-$ws-badges-color:     $color-maroon !default;
-$ws-badges-font-size: $font-size-small !default;

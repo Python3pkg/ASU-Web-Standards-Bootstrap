@@ -57,30 +57,30 @@
 #asu_mobile_search_button,
 #asu_mobile_menu_button {
   box-sizing: initial !important;
-  color: #999;
+  color: $color-dusty-gray;
   cursor: pointer;
   display: inline-block;
   float: right;
-  font-size: 16px;
+  font-size: $font-size-medium;
   margin: 0;
-  padding: 21px 5px;
+  padding: $asu-mobile-buttons-padding $space-base;
   text-align: center;
-  width: 35px;
+  width: $asu-mobile-buttons-width;
 
   &:hover {
-    color: #000;
+    color: $color-black;
   }
 }
 
 #asu_mobile_search_button {
   &.clicked {
-    background-color: #e7e7e7;
+    background-color: darken($color-gallery, 1.5);
   }
 }
 
 #asu_mobile_menu_button {
-  font-size: 22px;
-  padding: 18px 5px;  
+  font-size: $font-size-mobile-menu;
+  padding: $asu-mobile-buttons-small-padding $space-base;  
 
   a {
     display: none;
@@ -132,12 +132,12 @@
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-    background-color: #e7e7e7;
+    background-color: darken($color-gallery, 1.5);
     border: 0;
     -webkit-border-radius: 0;
     border-radius: 0;
     color: #505558;
-    font-size: 16px;
+    font-size: $font-size-medium;
     outline: 0;
     padding: 10px 12px;
     position: relative;

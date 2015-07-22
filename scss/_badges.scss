@@ -1,11 +1,23 @@
-// ======
 // Badges
-// ======
+// 
+// Badges are available just like in Bootstrap
+// 
+// <span class="badge">+ 1</span>
+// 
+// Badges can also be used in nav pills:
+// 
+// <ul class="nav nav-pills" role="tablist">
+//   <li role="presentation" class="active"><a href="#">Home <span class="badge">42</span></a></li>
+//   <li role="presentation"><a href="#">Profile</a></li>
+//   <li role="presentation"><a href="#">Messages <span class="badge">3</span></a></li>
+// </ul>
+// 
+// Styleguide 3
 .badge {
-  font-size: $ws-badges-font-size;
+  font-size: $font-size-small;
 
   a.list-group-item.active > &, 
   .nav-pills > .active > a > & {
-    color: $ws-badges-color;
+    color: $color-maroon;
   }
 }
