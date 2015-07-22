@@ -12,7 +12,14 @@ $space-xxlarge: 5 * $base-sizing-unit !default; // 25px
 
 $border-radius: 4px !default;
 
-$nav-bar-height:        57px;
-$nav-item-padding:      ($nav-bar-height - $line-height-computed) / 2;
-$nav-bar-dropdown-width: 160px;
+// ===
+// Nav
+// ===
+$nav-bar-height:              57px;
+$nav-item-padding:            ($nav-bar-height - $line-height-computed) / 2;
+$nav-bar-dropdown-width:      160px;
 $nav-bar-dropdown-max-height: 2000px;
+$sidebar-border-top:          8px;
+$sidebar-offset-top:          24px;
+$sidebar-medium-width:        293px;
+$sidebar-large-width:         360px;
