@@ -1,11 +1,15 @@
-//
 // Buttons
-// --------------------------------------------------
-
-
-// Base styles
-// --------------------------------------------------
-
+// 
+// Use the button classes on `<a>`, `<button>`, or `<input>`.
+// 
+// <div>
+//  <a class="btn btn-default" href="#" role="button">Link</a>
+//  <button class="btn btn-default" type="submit">Button</button>
+//  <input class="btn btn-default" type="button" value="Input">
+//  <input class="btn btn-default" type="submit" value="Submit">
+// </div>
+//
+// Styleguide 5
 .btn {
   @include button-size(
     $space-base, 
@@ -25,7 +29,7 @@
 
   &:hover,
   &:focus {
-    color: $asu-btn-default-color;
+    color: $color-emperor;
     text-decoration: none;
   }
 
@@ -50,84 +54,92 @@
 }
 
 
-// Alternate buttons
-// --------------------------------------------------
-
+// Alternative Buttons
+// 
+// Use any of the available button classes to quickly create a styled button.
+// <button type="button" class="btn btn-default">Default</button>
+// <button type="button" class="btn btn-primary">Primary</button>
+// <button type="button" class="btn btn-secondary">Secondary</button>
+// <button type="button" class="btn btn-gold">Gold</button>
+// <button type="button" class="btn btn-blue">Blue</button>
+// <button type="button" class="btn btn-success">Success</button>
+// <button type="button" class="btn btn-info">Info</button>
+// <button type="button" class="btn btn-warning">Warning</button>
+// <button type="button" class="btn btn-danger">Danger</button>
+// <button type="button" class="btn btn-link">Link</button>
+//
+// Styleguide 5.1
 .btn-default {
   @include button-variant(
-    $asu-btn-default-color, 
-    $asu-btn-default-bg, 
-    $asu-btn-default-border);
+    $color-emperor,
+    $color-wild-sand,
+    $color-silver-chalice);
 }
 
 .btn-primary {
   @include button-variant(
-    $asu-btn-primary-color, 
-    $asu-btn-primary-bg, 
-    $asu-btn-primary-border);
+    $color-white,
+    $color-maroon,
+    $color-maroon);
 }
 
 .btn-secondary {
   @include button-variant(
-    $asu-btn-secondary-color, 
-    $asu-btn-secondary-bg, 
-    $asu-btn-secondary-border);
+    $color-black,
+    $color-alto,
+    $color-alto);
 }
 
 .btn-gold {
   @include button-variant(
-    $asu-btn-gold-color, 
-    $asu-btn-gold-bg, 
-    $asu-btn-gold-border);
+    darken($color-mine-shaft, 3.5), 
+    $color-sun, 
+    $color-sun);
 }
 
 .btn-blue {
   @include button-variant(
-    $asu-btn-blue-color, 
-    $asu-btn-blue-bg, 
-    $asu-btn-blue-border);
+    $color-white,
+    $color-blue,
+    $color-blue);
 }
 
 // Success appears as green
 .btn-success {
   @include button-variant(
-    $asu-btn-success-color, 
-    $asu-btn-success-bg, 
-    $asu-btn-success-border);
+    $color-white,
+    $color-green,
+    $color-green-darkened);
 }
 
 // Info appears as blue-green
 .btn-info {
   @include button-variant(
-    $asu-btn-info-color, 
-    $asu-btn-info-bg, 
-    $asu-btn-info-border);
+    $color-white, 
+    $color-cerulean, 
+   $color-cerulean-darkened);
 }
 
 // Warning appears as orange
 .btn-warning {
   @include button-variant(
-    $asu-btn-warning-color, 
-    $asu-btn-warning-bg, 
-    $asu-btn-warning-border);
+    $color-black, 
+    $color-yellow, 
+    $color-yellow-darkened);
 }
 
 // Danger and error appear as red
 .btn-danger {
   @include button-variant(
-    $asu-btn-danger-color, 
-    $asu-btn-danger-bg, 
-    $asu-btn-danger-border);
+    $color-white, 
+    $color-orange, 
+    $color-orange-darkened);
 }
-
-
-// Link buttons
-// -------------------------
 
 // Make a button look and behave like a link
 .btn-link {
   border-radius: 0;
-  color: $asu-link-color;
+  color: $color-maroon;
   cursor: pointer;
   font-weight: normal;
 
@@ -150,7 +162,7 @@
   &:hover,
   &:focus {
     background-color: transparent;
-    color: $asu-link-hover-color;
+    color: $color-brick-red;
     text-decoration: underline;
   }
 
@@ -158,16 +170,37 @@
   fieldset[disabled] & {
     &:hover,
     &:focus {
-      color: $asu-btn-link-disabled-color;
+      color: $color-boulder;
       text-decoration: none;
     }
   }
 }
 
-
 // Button Sizes
-// --------------------------------------------------
-
+// 
+// Fancy larger or smaller buttons? Add `.btn-lg`, `.btn-sm`, or `.btn-xs` for additional sizes.
+// <p>
+//   <button type="button" class="btn btn-primary btn-lg">Large button</button>
+//   <button type="button" class="btn btn-default btn-lg">Large button</button>
+// </p>
+// <p>
+//   <button type="button" class="btn btn-primary">Default button</button>
+//   <button type="button" class="btn btn-default">Default button</button>
+// </p>
+// <p>
+//   <button type="button" class="btn btn-primary btn-sm">Small button</button>
+//   <button type="button" class="btn btn-default btn-sm">Small button</button>
+// </p>
+// <p>
+//   <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
+//   <button type="button" class="btn btn-default btn-xs">Extra small button</button>
+// </p>
+// 
+// Create block level buttons—those that span the full width of a parent— by adding `.btn-block`.
+// 
+// <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+// 
+// Styleguide 5.2
 .btn-lg {
   // line-height: ensure even-numbered height of button next to large input
   @include button-size(
@@ -197,17 +230,13 @@
     $asu-border-radius-small);
 }
 
-
-// Block button
-// --------------------------------------------------
-
 .btn-block {
   display: block;
   width: 100%;
 
   // Vertically space out multiple block buttons
   + .btn-block {
-    margin-top: 15px;
+    margin-top: ($space-large + $space-base);
   }
 }
 

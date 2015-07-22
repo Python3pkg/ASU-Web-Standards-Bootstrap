@@ -1,4 +1,15 @@
-// == breadcrumb
+// Breadcrumbs
+// 
+// Breadcrumbs are supported, but when using WordPress, do not generate
+// them by hand.
+// 
+// <ol class="breadcrumb">
+//   <li><a href="#">Home</a></li>
+//   <li><a href="#">Library</a></li>
+//   <li class="active">Data</li>
+// </ol>
+//
+// Styleguide 4
 .breadcrumb {
   background-color: transparent;
   font-size: $font-size-small;
@@ -7,7 +18,7 @@
   padding: 0;
 
   > li + li:before {
-    color: #828282;
+    color: $color-gray;
   }  
 
   > li > a {
@@ -15,6 +26,6 @@
   }
 
   > .active {
-    color: #828282;
+    color: $color-gray;
   }
 }
