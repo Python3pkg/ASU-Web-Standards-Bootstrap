@@ -1,9 +1,11 @@
-//== ASU Scaffolding
-
-//=== Masthead
+// ASU Specific Scaffolding
+// 
+// Will style markup that is out of our control. Most of the
+// time this markup will have to be styled with IDs since 
+// classes are not provided.
 
 #masthead {
-  background-color: $ws-header-bg;
+  background-color: $color-white;
   border: 0;
 
   > .container {
@@ -38,11 +40,12 @@
 //=== ASU Logo
 
 #asu_logo {
-  padding: 12px;
+  padding: $asu-logo-padding 0 !important;
 
   @media (max-width: $asu-screen-sm-max) {
     min-width: 100px !important;
 
+    a,
     a img {
       margin-top: 0 !important;
     }
@@ -53,12 +56,12 @@
 
 #asu_mobile_search_button,
 #asu_mobile_menu_button {
+  box-sizing: initial !important;
   color: #999;
   cursor: pointer;
   display: inline-block;
   float: right;
-  font-size: 22px;
-  height: 61px;
+  font-size: 16px;
   margin: 0;
   padding: 21px 5px;
   text-align: center;
@@ -75,8 +78,13 @@
   }
 }
 
-#asu_mobile_menu_button a {
-  display: none;
+#asu_mobile_menu_button {
+  font-size: 22px;
+  padding: 18px 5px;  
+
+  a {
+    display: none;
+  }
 }
 
 //=== Search Form
@@ -143,3 +151,40 @@
 }
 
 
+//== Site Name Desktop
+#site-name-desktop {
+  h1 {
+    line-height: ($line-height-computed + 4);
+    padding: 4px 6px 8px;
+
+    &.site-title {
+      font-size: 24px;
+      margin: 0;
+      padding: 0 13px 13px 0;
+
+      a {
+        border-bottom-color: transparent;
+        color: $ws-site-name-color;
+        font-weight: normal;
+        text-decoration: none;
+
+        &:first-child {
+          color: $ws-site-name-first-color;
+        }
+
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+// ========
+// ASU Logo
+// ========
+#asu_hdr img {
+  height: $asu-logo-height;
+  width: $asu-logo-width;
+}

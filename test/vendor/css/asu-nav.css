@@ -194,11 +194,11 @@
   text-decoration: underline;
 }
 #asu_universal_nav > ul > li.parent > a {
-  background: transparent url(//www.asu.edu/asuthemes/4.0-rsp.1/images/asu_arrow_closed.gif) 100% 55% no-repeat;
+  background: transparent url(https://www.asu.edu/asuthemes/4.0-rsp.1/images/asu_arrow_closed.gif) 100% 55% no-repeat;
   padding-right: 23px;
 }
 #asu_universal_nav > ul > li.parent:hover > a {
-  background: #ffffff url(//www.asu.edu/asuthemes/4.0-rsp.1/images/asu_arrow_open.gif) 100% 55% no-repeat;
+  background: #ffffff url(https://www.asu.edu/asuthemes/4.0-rsp.1/images/asu_arrow_open.gif) 100% 55% no-repeat;
   -moz-box-shadow: 3px 0px 3px -3px #999999, -3px 0px 3px -3px #999999;
   -webkit-box-shadow: 3px 0px 3px -3px #999999, -3px 0px 3px -3px #999999;
   box-shadow: 3px 0px 3px -3px #999999, -3px 0px 3px -3px #999999;
@@ -286,7 +286,7 @@
   position: absolute;
   top: 5px;
   right: 6px;
-  background: transparent url(//www.asu.edu/asuthemes/4.0-rsp.1/images/asu_search_btn.png) 0 0 no-repeat;
+  background: transparent url(https://www.asu.edu/asuthemes/4.0-rsp.1/images/asu_search_btn.png) 0 0 no-repeat;
   border: 0 none;
   border-radius: 0 0 0 0;
   width: 12px;
@@ -301,7 +301,7 @@
 }
 #asu_search_module input.asu_search_button:hover,
 #asu_search_module input[type="submit"]:hover {
-  background: transparent url(//www.asu.edu/asuthemes/4.0-rsp.1/images/asu_srch_btn.gif) 0 0 no-repeat;
+  background: transparent url(https://www.asu.edu/asuthemes/4.0-rsp.1/images/asu_srch_btn.gif) 0 0 no-repeat;
 }
 #asu_search_module .asu_search_selection {
   background-color: transparent;
@@ -404,7 +404,7 @@
 /* myasu tabs */
 #myasu_bar {
   height: 25px;
-  background-image: url(//www.asu.edu/asuthemes/4.0-rsp.1/images/tab_gradient.jpg);
+  background-image: url(https://www.asu.edu/asuthemes/4.0-rsp.1/images/tab_gradient.jpg);
   padding-right: 20px;
   border-top: 2px solid #9A2537;
 }
@@ -601,10 +601,10 @@
   color: #000;
 }
 .asu_hdr_maroon #asu_universal_nav > ul > li.parent > a {
-  background-image: url(//www.asu.edu/asuthemes/4.0-rsp.1/images/asu_white_arrow_closed.gif);
+  background-image: url(https://www.asu.edu/asuthemes/4.0-rsp.1/images/asu_white_arrow_closed.gif);
 }
 .asu_hdr_maroon #asu_universal_nav > ul > li.parent:hover > a {
-  background-image: url(//www.asu.edu/asuthemes/4.0-rsp.1/images/asu_arrow_open.gif);
+  background-image: url(https://www.asu.edu/asuthemes/4.0-rsp.1/images/asu_arrow_open.gif);
 }
 /** Black **/
 #asu_hdr.asu_hdr_black {
@@ -646,10 +646,10 @@
   color: #000;
 }
 .asu_hdr_black #asu_universal_nav > ul > li.parent > a {
-  background-image: url(//www.asu.edu/asuthemes/4.0-rsp.1/images/asu_white_arrow_closed.gif);
+  background-image: url(https://www.asu.edu/asuthemes/4.0-rsp.1/images/asu_white_arrow_closed.gif);
 }
 .asu_hdr_black #asu_universal_nav > ul > li.parent:hover > a {
-  background-image: url(//www.asu.edu/asuthemes/4.0-rsp.1/images/asu_arrow_open.gif);
+  background-image: url(https://www.asu.edu/asuthemes/4.0-rsp.1/images/asu_arrow_open.gif);
 }
 /* Universal Print Styles */
 @media print {
@@ -704,7 +704,7 @@
   /* Mobile menu dropdown container */
   #asu_mobile_menu {
     clear: both;
-    background: #303030 url(//www.asu.edu/asuthemes/4.0-rsp.1/images/asu_mobile_menu_bg.png) 0 0 repeat-x;
+    background: #303030 url(https://www.asu.edu/asuthemes/4.0-rsp.1/images/asu_mobile_menu_bg.png) 0 0 repeat-x;
     width: 100%;
   }
   #asu_mobile_menu.asutoggle_off {
@@ -726,7 +726,7 @@
   /* Menu button */
   #asu_mobile_button {
     display: block;
-    background: transparent url(//www.asu.edu/asuthemes/4.0-rsp.1/images/asu_mobile_menu_bttn.png) no-repeat 0 0;
+    background: transparent url(https://www.asu.edu/asuthemes/4.0-rsp.1/images/asu_mobile_menu_bttn.png) no-repeat 0 0;
     position: absolute;
     top: 20px;
     right: 21px;
@@ -734,7 +734,7 @@
     height: 19px;
   }
   #asu_mobile_button:hover {
-    background: transparent url(//www.asu.edu/asuthemes/4.0-rsp.1/images/asu_mobile_menu_bttn.png) no-repeat 0 -16px;
+    background: transparent url(https://www.asu.edu/asuthemes/4.0-rsp.1/images/asu_mobile_menu_bttn.png) no-repeat 0 -16px;
   }
   #asu_mobile_button a {
     display: block;
@@ -769,7 +769,7 @@
   }
   #asu_login_module li a {
     display: block;
-    background: #323232 url(//www.asu.edu/asuthemes/4.0-rsp.1/images/asu_mobile_signin.png) 7px 9px no-repeat;
+    background: #323232 url(https://www.asu.edu/asuthemes/4.0-rsp.1/images/asu_mobile_signin.png) 7px 9px no-repeat;
     border: 1px solid #5a5959;
     padding: 10px 8px 9px 27px;
     margin: 0;
@@ -807,7 +807,7 @@
     color: #b0b5b7;
   }
   #asu_search_module input.asu_search_box {
-    background: #323232 url(//www.asu.edu/asuthemes/4.0-rsp.1/images/asu_mobile_search.png) 7px 9px no-repeat;
+    background: #323232 url(https://www.asu.edu/asuthemes/4.0-rsp.1/images/asu_mobile_search.png) 7px 9px no-repeat;
     border-color: #5a5959;
     color: #b0b5b7;
     font-weight: normal;
@@ -868,7 +868,7 @@
     background-position: 97% 50%;
     background-repeat: no-repeat;
     background-color: #323232;
-    background-image: url(//www.asu.edu/asuthemes/4.0-rsp.1/images/asu_mobile_menu_arrw.png);
+    background-image: url(https://www.asu.edu/asuthemes/4.0-rsp.1/images/asu_mobile_menu_arrw.png);
     color: #b0b5b7;
   }
   #asu_universal_nav ul li a:link,
@@ -880,7 +880,7 @@
   #asu_universal_nav > ul > li.parent:hover > a {
     background-position: 95% 50%;
     background-repeat: no-repeat;
-    background-image: url(//www.asu.edu/asuthemes/4.0-rsp.1/images/asu_mobile_menu_arrw.png);
+    background-image: url(https://www.asu.edu/asuthemes/4.0-rsp.1/images/asu_mobile_menu_arrw.png);
     background-color: #2e2e2e;
     color: #b0b5b7;
     text-decoration: none;
@@ -931,10 +931,10 @@
     text-decoration: none;
   }
   .asu_hdr_maroon #asu_mobile_button {
-    background: transparent url(//www.asu.edu/asuthemes/4.0-rsp.1/images/asu_mobile_menu_bttn_wht.png) no-repeat 0 0;
+    background: transparent url(https://www.asu.edu/asuthemes/4.0-rsp.1/images/asu_mobile_menu_bttn_wht.png) no-repeat 0 0;
   }
   .asu_hdr_maroon #asu_mobile_button:hover {
-    background: transparent url(//www.asu.edu/asuthemes/4.0-rsp.1/images/asu_mobile_menu_bttn_wht.png) no-repeat 0 -16px;
+    background: transparent url(https://www.asu.edu/asuthemes/4.0-rsp.1/images/asu_mobile_menu_bttn_wht.png) no-repeat 0 -16px;
   }
   /** White **/
   #asu_hdr.asu_hdr_white {
@@ -972,10 +972,10 @@
     text-decoration: none;
   }
   .asu_hdr_black #asu_mobile_button {
-    background: transparent url(//www.asu.edu/asuthemes/4.0-rsp.1/images/asu_mobile_menu_bttn_wht.png) no-repeat 0 0;
+    background: transparent url(https://www.asu.edu/asuthemes/4.0-rsp.1/images/asu_mobile_menu_bttn_wht.png) no-repeat 0 0;
   }
   .asu_hdr_black #asu_mobile_button:hover {
-    background: transparent url(//www.asu.edu/asuthemes/4.0-rsp.1/images/asu_mobile_menu_bttn_wht.png) no-repeat 0 -16px;
+    background: transparent url(https://www.asu.edu/asuthemes/4.0-rsp.1/images/asu_mobile_menu_bttn_wht.png) no-repeat 0 -16px;
   }
 }
 /* ----------- 768px ----------- */
@@ -995,20 +995,20 @@
     background-color: transparent;
     background-position: left top;
     background-repeat: no-repeat;
-    background-image: url(//www.asu.edu/asuthemes/4.0-rsp.1/images/logos/asu_logo_mobile_gold.png);
+    background-image: url(https://www.asu.edu/asuthemes/4.0-rsp.1/images/logos/asu_logo_mobile_gold.png);
     display: block;
     width: 77px;
     height: 32px;
     margin-top: 5px;
   }
   #asu_hdr.asu_hdr_white #asu_logo a {
-    background-image: url(//www.asu.edu/asuthemes/4.0-rsp.1/images/logos/asu_logo_mobile_white.png);
+    background-image: url(https://www.asu.edu/asuthemes/4.0-rsp.1/images/logos/asu_logo_mobile_white.png);
   }
   #asu_hdr.asu_hdr_maroon #asu_logo a {
-    background-image: url(//www.asu.edu/asuthemes/4.0-rsp.1/images/logos/asu_logo_maroon.png);
+    background-image: url(https://www.asu.edu/asuthemes/4.0-rsp.1/images/logos/asu_logo_maroon.png);
   }
   #asu_hdr.asu_hdr_black #asu_logo a {
-    background-image: url(//www.asu.edu/asuthemes/4.0-rsp.1/images/logos/asu_logo_black.png);
+    background-image: url(https://www.asu.edu/asuthemes/4.0-rsp.1/images/logos/asu_logo_black.png);
   }
   /* Move menu utton and search box up */
   #asu_mobile_button {
