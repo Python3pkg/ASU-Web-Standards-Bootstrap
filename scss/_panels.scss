@@ -49,40 +49,40 @@
 // Contextual variations
 .panel-primary {
   @include panel-variant(
-    $asu-panel-primary-border, 
-    $asu-panel-primary-text, 
-    $asu-panel-primary-heading-bg, 
-    $asu-panel-primary-border);
+    $color-maroon, 
+    $color-white, 
+    $color-maroon, 
+    $color-maroon);
 }
 
 .panel-success {
   @include panel-variant(
-    $asu-panel-success-border, 
-    $asu-panel-success-text, 
-    $asu-panel-success-heading-bg, 
-    $asu-panel-success-border);
+    $color-green-darkened, 
+    $color-white, 
+    $color-green, 
+    $color-green-darkened);
 }
 
 .panel-info {
   @include panel-variant(
-    $asu-panel-info-border, 
-    $asu-panel-info-text, 
-    $asu-panel-info-heading-bg, 
-    $asu-panel-info-border);
+    $color-blue-darkened, 
+    $color-white, 
+    $color-blue, 
+    $color-blue-darkened);
 }
 
 .panel-warning {
   @include panel-variant(
-    $asu-panel-warning-border, 
-    $asu-panel-warning-text,
-    $asu-panel-warning-heading-bg, 
-    $asu-panel-warning-border);
+    $color-yellow-darkened, 
+    $color-white,
+    $color-yellow, 
+    $color-yellow-darkened);
 }
 
 .panel-danger {
   @include panel-variant(
-    $asu-panel-danger-border, 
-    $asu-panel-danger-text, 
-    $asu-panel-danger-heading-bg, 
-    $asu-panel-danger-border);
+    $color-orange-darkened, 
+    $color-white, 
+    $color-orange, 
+    $color-orange-darkened);
 }

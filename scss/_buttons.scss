@@ -16,7 +16,7 @@
     $space-xlarge, 
     $font-size-medium, 
     $line-height-base, 
-    $asu-border-radius-base);
+    $border-radius);
 
   &,
   &:active,
@@ -116,8 +116,8 @@
 .btn-info {
   @include button-variant(
     $color-white, 
-    $color-cerulean, 
-   $color-cerulean-darkened);
+    $color-blue, 
+   $color-blue-darkened);
 }
 
 // Warning appears as orange
@@ -208,7 +208,7 @@
     $space-xxlarge, 
     $font-size-large, 
     $line-height-large, 
-    $asu-border-radius-large);
+    $border-radius);
 }
 
 .btn-sm {
@@ -218,7 +218,7 @@
     $space-large, 
     $font-size-small, 
     $line-height-small, 
-    $asu-border-radius-small);
+    $border-radius);
 }
 
 .btn-xs {
@@ -227,7 +227,7 @@
     $space-base, 
     $font-size-small, 
     $line-height-small, 
-    $asu-border-radius-small);
+    $border-radius);
 }
 
 .btn-block {

@@ -57,7 +57,7 @@
         a {
           border-bottom: 0;
           clear: both;
-          color: $ws-mega-menu-drop-link-text;
+          color: $color-gallery;
           display: block;
           font-size: 15px;
           font-weight: normal;
@@ -66,8 +66,8 @@
 
           &:hover,
           &:focus {
-            background-color: $ws-mega-menu-drop-link-focus-bg;
-            color: $ws-mega-menu-drop-link-focus-text;
+            background-color: $color-black;
+            color: $color-gallery;
             text-decoration: none;
           }
         }
@@ -76,8 +76,8 @@
           &,
           &:hover,
           &:focus {
-            background-color: $ws-mega-menu-drop-link-active-focus-bg;
-            color: $ws-mega-menu-drop-link-active-focus-text;
+            background-color: $color-black;
+            color: $color-gallery;
             outline: 0;
             text-decoration: none;
           }
@@ -89,7 +89,7 @@
   .dropdown-title {
     border-bottom: 0;
     clear: both;
-    color: $ws-dropdown-title-color;
+    color: $color-gallery;
     display: block;
     font-size: 16px;
     font-weight: bold;
@@ -103,6 +103,6 @@
   }
 
   .vertical-border-right {
-    border-right: 1px solid $ws-vertical-border-right-border;
+    border-right: 1px solid $color-tundora;
   }
 }

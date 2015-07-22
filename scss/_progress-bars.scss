@@ -11,17 +11,17 @@
 }
 
 .progress-bar-success {
-  background-color: $asu-state-success-text;
+  background-color: $color-green;
 }
 
 .progress-bar-info {
-  background-color: $asu-state-info-text;
+  background-color: $color-blue;
 }
 
 .progress-bar-warning {
-  background-color: $asu-state-warning-text;
+  background-color: $color-yellow;
 }
 
 .progress-bar-danger {
-  background-color: $asu-state-danger-text;
+  background-color: $color-orange;
 }

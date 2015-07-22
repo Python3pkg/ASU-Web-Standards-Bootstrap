@@ -24,8 +24,8 @@
 
 .alert-info {
   @include alert-variant(
-    $color-cerulean, 
-    $color-cerulean-darkened, 
+    $color-blue, 
+    $color-blue-darkened, 
     $color-white);
 }
 

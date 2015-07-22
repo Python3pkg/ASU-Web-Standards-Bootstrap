@@ -51,10 +51,10 @@
   }
 }
 
-@include table-row-variant('success', $asu-state-success-bg);
-@include table-row-variant('info', $asu-state-info-bg);
-@include table-row-variant('warning', $asu-state-warning-bg);
-@include table-row-variant('danger', $asu-state-danger-bg);
+@include table-row-variant('success', $color-green);
+@include table-row-variant('info', $color-blue);
+@include table-row-variant('warning', $color-yellow);
+@include table-row-variant('danger', $color-orange);
 
 .table-responsive {
   @media screen and (max-width: 767px) {
@@ -103,7 +103,7 @@
       tbody,
       tfoot {
         > tr > td:first-child {
-          border-top: 1px solid $ws-responsive-table-border;
+          border-top: 1px solid $color-nobel;
         }
 
         > tr:first-child > td:first-child {
@@ -112,7 +112,7 @@
       }
 
       thead > tr > th:last-child {
-        border-bottom: 2px solid $ws-responsive-table-border;
+        border-bottom: 2px solid $color-nobel;
       }
     }
   }

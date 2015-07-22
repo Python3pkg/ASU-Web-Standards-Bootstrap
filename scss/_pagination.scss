@@ -11,7 +11,7 @@
 
       &:hover,
       &:focus {
-        color: $asu-link-hover-color;
+        color: $color-brick-red;
       }
     }
   }
@@ -38,16 +38,16 @@
       &:first-child > {
         a,
         span {
-          border-bottom-left-radius: $asu-border-radius-base; 
-          border-top-left-radius: $asu-border-radius-base; 
+          border-bottom-left-radius: $border-radius; 
+          border-top-left-radius: $border-radius; 
         }
       }
 
       &:last-child > {
         a,
         span {
-          border-bottom-left-radius: $asu-border-radius-base; 
-          border-top-left-radius: $asu-border-radius-base; 
+          border-bottom-left-radius: $border-radius; 
+          border-top-left-radius: $border-radius; 
         }
       }
     }
@@ -66,16 +66,16 @@
       &:first-child > {
         a,
         span {
-          border-bottom-left-radius: $asu-border-radius-base; 
-          border-top-left-radius: $asu-border-radius-base; 
+          border-bottom-left-radius: $border-radius; 
+          border-top-left-radius: $border-radius; 
         }
       }
 
       &:last-child > {
         a,
         span {
-          border-bottom-left-radius: $asu-border-radius-base; 
-          border-top-left-radius: $asu-border-radius-base; 
+          border-bottom-left-radius: $border-radius; 
+          border-top-left-radius: $border-radius; 
         }
       }
     }

@@ -164,12 +164,12 @@
 
       a {
         border-bottom-color: transparent;
-        color: $ws-site-name-color;
+        color: $color-abbey;
         font-weight: normal;
         text-decoration: none;
 
         &:first-child {
-          color: $ws-site-name-first-color;
+          color: $color-black;
         }
 
         &:hover,
