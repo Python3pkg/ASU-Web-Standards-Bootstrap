@@ -68,7 +68,7 @@
 // <button type="button" class="btn btn-danger">Danger</button>
 // <button type="button" class="btn btn-link">Link</button>
 //
-// Styleguide 5.1
+// Styleguide 4.1
 .btn-default {
   @include button-variant(
     $color-emperor,
@@ -92,7 +92,7 @@
 
 .btn-gold {
   @include button-variant(
-    darken($color-mine-shaft, 4), 
+    $color-dark-mine, 
     $color-sun, 
     $color-sun);
 }
@@ -200,7 +200,7 @@
 // 
 // <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
 // 
-// Styleguide 5.2
+// Styleguide 4.2
 .btn-lg {
   // line-height: ensure even-numbered height of button next to large input
   @include button-size(

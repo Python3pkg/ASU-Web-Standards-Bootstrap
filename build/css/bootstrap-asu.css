@@ -11,7 +11,7 @@ html {
 
 body {
   background-color: #fff;
-  color: #2b2b2b;
+  color: #2a2a2a;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: 200;
@@ -1312,14 +1312,14 @@ select[multiple].input-lg {
 }
 
 .btn-gold {
-  color: #2b2b2b;
+  color: #2a2a2a;
   background-color: #ffb310;
   border-color: #ffb310;
 }
 .btn-gold:hover, .btn-gold:focus, .btn-gold:active, .btn-gold.active, .open > .btn-gold.dropdown-toggle {
   background-color: #dc9600;
   border-color: #d28f00;
-  color: #2b2b2b;
+  color: #2a2a2a;
 }
 .btn-gold:active, .btn-gold.active, .open > .btn-gold.dropdown-toggle {
   background-image: none;
@@ -1329,7 +1329,7 @@ select[multiple].input-lg {
   border-color: #ffb310;
 }
 .btn-gold .badge {
-  background-color: #2b2b2b;
+  background-color: #2a2a2a;
   color: #ffb310;
 }
 
@@ -1616,7 +1616,7 @@ input[type="button"].btn-block {
 .alterna-tabs > li:hover, .alterna-tabs > li.active {
   border-bottom: 5px solid #903;
   border-top: 0;
-  color: #2b2b2b;
+  color: #2a2a2a;
 }
 .alterna-tabs > li:hover a:hover, .alterna-tabs > li:hover a:focus, .alterna-tabs > li:hover a:hover, .alterna-tabs > li:hover a:focus, .alterna-tabs > li.active a:hover, .alterna-tabs > li.active a:focus, .alterna-tabs > li.active a:hover, .alterna-tabs > li.active a:focus {
   background: none;
@@ -1625,7 +1625,7 @@ input[type="button"].btn-block {
   border: 0;
   border-bottom-color: transparent;
   border-radius: 0;
-  color: #2b2b2b;
+  color: #2a2a2a;
   line-height: 1.44;
   padding-left: 0;
   padding-right: 0;
@@ -1637,7 +1637,7 @@ input[type="button"].btn-block {
   background: none;
   border: 0;
   border-bottom-color: transparent;
-  color: #2b2b2b;
+  color: #2a2a2a;
   cursor: default;
 }
 
@@ -2213,7 +2213,7 @@ a.list-group-item.active > .badge, .nav-pills > .active > a > .badge {
   margin-bottom: 25px;
 }
 .thumbnail .captions {
-  color: #2b2b2b;
+  color: #2a2a2a;
 }
 
 a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
