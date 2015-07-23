@@ -1,10 +1,14 @@
-//== Thumbnails
+// Thumbnails
+// 
+// TODO document
+// 
+// Styleguide 20
 .thumbnail {
-  line-height: $asu-line-height-base;
-  margin-bottom: $asu-padding-xlarge-vertical;
+  line-height: $line-height-base;
+  margin-bottom: $space-xxlarge;
 
   .captions {
-    color: $asu-gray-darker;
+    color: $color-dark-mine;
   }
 }
 
@@ -12,6 +16,6 @@ a.thumbnail {
   &:hover,
   &:focus,
   &.active {
-    border-color: $asu-maroon;
+    border-color: $color-maroon;
   }
 }

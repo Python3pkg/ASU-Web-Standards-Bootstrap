@@ -1,9 +1,24 @@
-//== List groups
+// List groups
+// 
+// List groups are a flexible and powerful component for displaying not only simple
+// lists of elements, but complex ones with custom content.
+// 
+// <ul class="list-group">
+//   <li class="list-group-item">Cras justo odio</li>
+//   <li class="list-group-item">Dapibus ac facilisis in</li>
+//   <li class="list-group-item">Morbi leo risus</li>
+//   <li class="list-group-item">Porta ac consectetur ac</li>
+//   <li class="list-group-item">Vestibulum at eros</li>
+// </ul>
+// 
+// Styleguide 11
 
 .list-group-item {
   border: 0;
-  border-top: 1px solid #d7d7d7;
+  border-top: 1px solid $color-alto;
   font-weight: normal;
+  /* Override the margin-bottom: -1px; that bootstrap provides */
+  margin-bottom: 0;
   padding: 10px 5px;
 
   &:first-child {
@@ -20,13 +35,13 @@
     &, 
     &:hover, 
     &:focus {
-      background-color: white;
-      border-color: #d7d7d7;
-      color: $asu-maroon;
+      background-color: $color-white;
+      border-color: $color-alto;
+      color: $color-maroon;
       font-weight: bold;
 
       .list-group-item-text {
-        color: white;
+        color: $color-white;
       }
     }
   }
@@ -34,31 +49,31 @@
 
 a.list-group-item {
   border-bottom: 0;
-  color: $asu-maroon;
+  color: $color-maroon;
 
   .list-group-item-heading {
-    color: $asu-maroon;
+    color: $color-maroon;
   }
 
   &:hover,
   &:focus {
-    color: $asu-maroon;
+    color: $color-maroon;
     font-weight: bold;
   }
 }
 
 @include list-group-item-variant(success, 
-  $asu-state-success-bg, 
-  $asu-state-success-text);
+  $color-green, 
+  $color-white);
 @include list-group-item-variant(info, 
-  $asu-state-info-bg, 
-  $asu-state-info-text);
+  $color-blue, 
+  $color-white);
 @include list-group-item-variant(warning, 
-  $asu-state-warning-bg, 
-  $asu-state-warning-text);
+  $color-yellow, 
+  $color-black);
 @include list-group-item-variant(danger, 
-  $asu-state-danger-bg, 
-  $asu-state-danger-text);
+  $color-orange, 
+  $color-white);
 
 
 .inline-link-list {

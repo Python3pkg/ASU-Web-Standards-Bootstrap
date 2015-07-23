@@ -124,7 +124,9 @@ module.exports = function (grunt) {
       allFiles: [
         'scss/*.scss',
         'scss/mixins/*.scss',
-        'scss/theme/*.scss'
+        'scss/theme/*.scss',
+        'scss/navigation/*.scss',
+        'scss/variables/*.scss',
         // Not font_awesome
       ],
       options: {
@@ -169,6 +171,13 @@ module.exports = function (grunt) {
           'js/_navs-click-and-hover.js'
         ],
         dest: 'build/js/bootstrap-asu.js'
+      },
+      kss : {
+        src: [
+          'test/vendor/css/bootstrap.min.css',
+          'test/vendor/css/bootstrap-asu.css',
+        ],
+        dest: 'build/docs/all.css'
       }
     },
     // JS Uglify
@@ -222,6 +231,21 @@ module.exports = function (grunt) {
           'test'
         ]
       }
+    },
+    // KSS
+    // ===
+    kss : {
+      options: {
+        css: [
+          'all.css'
+        ],
+        template: 'template'
+      },
+      dist: {
+        files: {
+          'build/docs' : ['scss']
+        }
+      }
     }
   });
 
@@ -238,6 +262,34 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
+  grunt.loadNpmTasks('grunt-kss');
+
+  grunt.registerTask('validate', [
+    'jshint',
+    'jscs',
+    'scsslint',
+  ]);
+
+  grunt.registerTask('test-base', [
+    'sass:fortesting',
+    'karma:continuousMobile',
+    'qunit',
+  ]);
+
+  grunt.registerTask('build', [
+    'sass:dist',
+    'concat',
+    'uglify',
+    'cssmin',
+  ]);
+
+  // Documentation
+  grunt.registerTask('docs', [
+    'validate',
+    'sass:fortesting',
+    'concat:kss',
+    'kss'
+  ]);
 
   // Develop
   grunt.registerTask('develop', [
@@ -247,25 +299,16 @@ module.exports = function (grunt) {
 
   // Just Test
   grunt.registerTask('test',  [
-    'sass:fortesting',
-    'jshint',
-    'jscs',
-    'scsslint',
-    'karma:continuousMobile',
-    'karma:coverageMobile'
+    'validate',
+    'test-base',
+    'karma:coverageMobile',
   ]);
 
   // Default task
   grunt.registerTask('default', [
-    'jshint',
-    'jscs',
-    'scsslint',
-    'sass:fortesting',
-    'karma:continuousMobile',
-    'qunit',
-    'sass:dist',
-    'concat',
-    'uglify',
-    'cssmin'
+    'validate',
+    'test-base',
+    'build',
+    'docs',
   ]);
 };

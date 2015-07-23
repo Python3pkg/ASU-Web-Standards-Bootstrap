@@ -1,21 +1,31 @@
-//== Labels
-
+// Labels
+// 
+// Add any of the below mentioned modifier classes to change the appearance of a label.
+//
+// <span class="label label-default">Default</span>
+// <span class="label label-primary">Primary</span>
+// <span class="label label-success">Success</span>
+// <span class="label label-info">Info</span>
+// <span class="label label-warning">Warning</span>
+// <span class="label label-danger">Danger</span>
+// 
+// Styleguide 10
 .label-primary {
-  @include label-variant($asu-label-primary-bg);
+  @include label-variant($color-maroon);
 }
 
 .label-success {
-  @include label-variant($asu-label-success-bg);
+  @include label-variant($color-green);
 }
 
 .label-info {
-  @include label-variant($asu-label-info-bg);
+  @include label-variant($color-blue);
 }
 
 .label-warning {
-  @include label-variant($asu-label-warning-bg);
+  @include label-variant($color-yellow);
 }
 
 .label-danger {
-  @include label-variant($asu-label-danger-bg);
+  @include label-variant($color-orange);
 }

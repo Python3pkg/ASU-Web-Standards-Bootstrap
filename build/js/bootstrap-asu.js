@@ -441,12 +441,14 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
   'use strict';
 
   $(document).ready(function () {
+    var navbarHeight = $('.navbar-ws').outerHeight() + 20 /* padding */;
+
     var affixed = $('#sidebarNav').each(function () {
       var $this = $(this);
 
       $this.affix( {
         offset: {
-          top : $this.offset().top,
+          top : $this.offset().top - navbarHeight,
           bottom : function () {
             var fix = parseInt($this.css('margin-bottom'), 10)
             fix += parseInt($this.css('padding-top'), 10)
@@ -492,9 +494,22 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
 
     /*
      * Remove left position when affix-top class is applied
+     * Also, remove the top offset
      */
     affixed.on('affix-top.bs.affix', function () {
-      affixed.css('left', 'auto')
+      affixed.css({
+        left: 'auto',
+        top : 0
+      })
+    })
+
+    /*
+     * Add a top offset so that the sidebar is not behing the navbar
+     */
+    affixed.on('affix.bs.affix', function () {
+      affixed.css({
+        top : navbarHeight + 'px'
+      })
     })
 
     /**
