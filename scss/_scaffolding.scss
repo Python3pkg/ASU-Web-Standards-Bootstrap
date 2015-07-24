@@ -59,6 +59,7 @@ a {
 .img-bordered,
 .img-border {
   border: 1px solid $color-mercury;
+  padding: 4px;
 }
 
 .img-rounded {
@@ -71,6 +72,14 @@ a {
 
 .img-center {
   margin: 0 auto;
+}
+
+.img-100 {
+  width: 100%;
+}
+
+.column-feature-height-225 img {  
+  min-height: 225px;
 }
 
 hr {
@@ -110,7 +119,8 @@ h1,
   font-size: 48px;
   line-height: 1.2;
   margin-bottom: ($line-height-computed * 2);
-  margin-top: ($line-height-computed * 2);
+  // Used to be ($line-height-computed * 2), but changed to 0
+  margin-top: 0;
 
   @media(max-width: $asu-screen-xs-max) {
     font-size: 40px;
@@ -122,8 +132,8 @@ h3,
 .h2,
 .h3 {
   line-height: $line-height-base;
-  margin-bottom: ($line-height-computed);
-  margin-top: ($line-height-computed * 2);
+  margin-bottom: 10px;
+  margin-top: 24px;
 }
 
 h4,
@@ -131,8 +141,8 @@ h4,
   color: black;
   font-size: 21px;
   line-height: $line-height-base;
-  margin-bottom: ($line-height-computed);
-  margin-top: ($line-height-computed);
+  margin-bottom: 10px;
+  margin-top: 24px;
 }
 
 h5,
@@ -140,8 +150,8 @@ h5,
   font-size: 16px;
   font-weight: bold;
   line-height: ($line-height-computed);
-  margin-bottom: 0;
-  margin-top: ($line-height-computed);
+  margin-bottom: 10px;
+  margin-top: 24px;
 }
 
 h6,
@@ -150,8 +160,8 @@ h6,
   font-style: italic;
   font-weight: 200;
   line-height: ($line-height-computed);
-  margin-bottom: 0;
-  margin-top: ($line-height-computed);
+  margin-bottom: 10px;
+  margin-top: 24px;
 }
 
 h1,
@@ -326,7 +336,8 @@ pre {
   background-color: $color-gold;
 }
 
-.space-top-0 {
+.space-top-0,
+.margin-top-0 {
   margin-top: 0;
 }
 
@@ -466,3 +477,14 @@ pre {
     color: white;
   }
 }
+
+// scss-lint:disable PropertySortOrder
+code {
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+// scss-lint:enable PropertySortOrder

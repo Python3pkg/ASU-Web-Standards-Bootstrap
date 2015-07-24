@@ -1,6 +1,27 @@
 // =========
 // Mega Menu
 // =========
+
+// scss-lint:disable SelectorDepth, NestingDepth, QualifyingElement
+/* Menu and ASU mobile nav gone */
+
+li.dropdown-title {
+  color: $color-sun;
+  font-weight: normal;
+  padding: 3px 25px 7px;
+}
+
+.navbar-ws .navbar-nav > .current-menu-ancestor > a {
+  color: $color-sun;
+  
+  span {
+    color: $color-selective-yellow;
+  }
+}
+
+// scss-lint:enable SelectorDepth, NestingDepth, QualifyingElement
+
+
 .mega-menu {
   &.open > .dropdown-menu {
     border-width: 1px;
@@ -15,6 +36,20 @@
     margin-top: -1px;
     position: static;
     width: 100%;
+
+    > .row > .column {
+      > li > a:hover {
+        color: $color-sun;
+      }
+
+      > .active > a {
+        &,
+        &:hover,
+        &:focus {
+          color: $color-sun;
+        }
+      }
+    }
 
     @media (min-width: 992px) {
       left: 50%;
@@ -89,10 +124,10 @@
   .dropdown-title {
     border-bottom: 0;
     clear: both;
-    color: $color-gallery;
+    color: $color-sun;
     display: block;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 1.4;
     padding: 9px 10px 10px;
   }

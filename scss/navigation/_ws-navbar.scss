@@ -154,7 +154,9 @@
 
   .navbar-brand {
     color: $color-gallery;
+    font-size: $font-size-xlarge;
     height: auto;
+    line-height: 1;
     overflow: hidden;
     padding-right: 0;
     width: calc(100% - 60px);
