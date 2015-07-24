@@ -8,6 +8,7 @@
   background-color: $color-white;
   border: 0;
 
+
   > .container {
     @media (max-width: $asu-screen-sm-max) {
       padding-left: 0;
@@ -188,3 +189,4 @@
   height: $asu-logo-height;
   width: $asu-logo-width;
 }
+
