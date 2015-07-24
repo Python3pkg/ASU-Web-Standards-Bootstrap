@@ -1,34 +1,44 @@
-// ======
 // Alerts
-// ======
+// 
+// <div class="alert alert-success" role="alert">Success!</div>
+// <div class="alert alert-info" role="alert">Information</div>
+// <div class="alert alert-warning" role="alert">Warning!</div>
+// <div class="alert alert-danger" role="alert">Danger!</div>
+// 
+// .alert-success - Green, successful alert variant. Let the user know all is good!
+// .alert-info    - Blue, info alert variant. Let the user know some info.
+// .alert-warning - Orange, warning alert variant. Let the user know something is up!
+// .alert-danger  - Red, danger alert variant. Let the user know something bad happened!
+// 
+// Styleguide 1.
 .alert {
-  margin-bottom: $asu-padding-xlarge-vertical; 
+  margin-bottom: $space-xxlarge; 
 }
 
 .alert-success {
   @include alert-variant(
-    $asu-alert-success-bg, 
-    $asu-alert-success-border, 
-    $asu-alert-success-text);
+    $color-green, 
+    $color-green-darkened,
+    $color-white);
 }
 
 .alert-info {
   @include alert-variant(
-    $asu-alert-info-bg, 
-    $asu-alert-info-border, 
-    $asu-alert-info-text);
+    $color-blue, 
+    $color-blue-darkened, 
+    $color-white);
 }
 
 .alert-warning {
   @include alert-variant(
-    $asu-alert-warning-bg, 
-    $asu-alert-warning-border, 
-    $asu-alert-warning-text);
+    $color-yellow, 
+    $color-yellow-darkened, 
+    $color-black);
 }
 
 .alert-danger {
   @include alert-variant(
-    $asu-alert-danger-bg, 
-    $asu-alert-danger-border, 
-    $asu-alert-danger-text);
+    $color-orange, 
+    $color-orange-darkened, 
+    $color-white);
 }

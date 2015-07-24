@@ -1,10 +1,48 @@
-//== Panels
+// Panels
+// 
+// By default, all the `.panel` does is apply some basic border and padding to
+// contain some content.
+// 
+// <div class="panel panel-default">
+//   <div class="panel-body">
+//     Basic panel example
+//   </div>
+// </div>
+// 
+// <div class="panel panel-primary">
+//   <div class="panel-heading"><h3 class="panel-title">Panel title</h3></div>
+//   <div class="panel-body">Panel content</div>
+// </div>
+// <div class="panel panel-success">
+//   <div class="panel-heading"><h3 class="panel-title">Panel title</h3></div>
+//   <div class="panel-body">Panel content</div>
+// </div>
+// <div class="panel panel-info">
+//   <div class="panel-heading"><h3 class="panel-title">Panel title</h3></div>
+//   <div class="panel-body">Panel content</div>
+// </div>
+// <div class="panel panel-warning">
+//   <div class="panel-heading"><h3 class="panel-title">Panel title</h3></div>
+//   <div class="panel-body">Panel content</div>
+// </div>
+// <div class="panel panel-danger">
+//   <div class="panel-heading"><h3 class="panel-title">Panel title</h3></div>
+//   <div class="panel-body">Panel content</div>
+// </div>
+// 
+// .panel-primary -
+// .panel-success -
+// .panel-info    -
+// .panel-warning -
+// .panel-danger  -
+// 
+// Styleguide 15
 .panel {
-  background-color: #fbfbfb;
-  border: 1px solid #d7d7d7;
-  margin-bottom: $asu-padding-xlarge-vertical;
+  background-color: $color-alabaster;
+  border: $space-xsmall solid $color-alto;
+  margin-bottom: $space-xxlarge;
 
-  &.explore-programs h3 {
+  h3 {
     font-size: 30px;
 
     @media(max-width: $asu-screen-xs-max) {
@@ -12,15 +50,15 @@
     }
   }
 
-  &.explore-programs p {
-    font-size: $asu-font-size-small;
+  p {
+    font-size: $font-size-small;
     line-height: 20px;
   }
 
   > .panel-body + {
     .table,
     .table-responsive {
-      border-top: 1px solid $asu-gray-lighter;
+      border-top: 1px solid $color-nobel;
     }
   }
 
@@ -43,46 +81,46 @@
 }
 
 .panel-group {
-  margin-bottom: $asu-padding-xlarge-vertical;
+  margin-bottom: $space-xxlarge;
 }
 
 // Contextual variations
 .panel-primary {
   @include panel-variant(
-    $asu-panel-primary-border, 
-    $asu-panel-primary-text, 
-    $asu-panel-primary-heading-bg, 
-    $asu-panel-primary-border);
+    $color-maroon, 
+    $color-white, 
+    $color-maroon, 
+    $color-maroon);
 }
 
 .panel-success {
   @include panel-variant(
-    $asu-panel-success-border, 
-    $asu-panel-success-text, 
-    $asu-panel-success-heading-bg, 
-    $asu-panel-success-border);
+    $color-green-darkened, 
+    $color-white, 
+    $color-green, 
+    $color-green-darkened);
 }
 
 .panel-info {
   @include panel-variant(
-    $asu-panel-info-border, 
-    $asu-panel-info-text, 
-    $asu-panel-info-heading-bg, 
-    $asu-panel-info-border);
+    $color-blue-darkened, 
+    $color-white, 
+    $color-blue, 
+    $color-blue-darkened);
 }
 
 .panel-warning {
   @include panel-variant(
-    $asu-panel-warning-border, 
-    $asu-panel-warning-text,
-    $asu-panel-warning-heading-bg, 
-    $asu-panel-warning-border);
+    $color-yellow-darkened, 
+    $color-white,
+    $color-yellow, 
+    $color-yellow-darkened);
 }
 
 .panel-danger {
   @include panel-variant(
-    $asu-panel-danger-border, 
-    $asu-panel-danger-text, 
-    $asu-panel-danger-heading-bg, 
-    $asu-panel-danger-border);
+    $color-orange-darkened, 
+    $color-white, 
+    $color-orange, 
+    $color-orange-darkened);
 }

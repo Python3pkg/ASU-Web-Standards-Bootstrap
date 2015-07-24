@@ -9,7 +9,8 @@
   'use strict';
 
   // TODO refactor this constant
-  var mobileWidth = 768
+  // Nav goes to mobile for medium size devices
+  var mobileWidth = 991;
 
   /*
    * The hover functions will trigger even on mobile devices. When
@@ -25,7 +26,7 @@
    * - if hovered over, open (no matter the previous state)
    * - if hover left, close (no matter the previous state)
    */
-  $(document).ready(function () {
+  $.setupNavigation = function () {
     $('.navbar-ws ul.nav>li.dropdown').click(function (e) {
       e.stopPropagation()
 
@@ -35,11 +36,19 @@
       if ( self.hasClass( 'open' ) && ! self.data( 'sos-click' ) ) {
         self.removeClass( 'open' )
       } else {
+        // No other li can be open
+        $('.navbar-ws ul.nav>li.dropdown').each(function (i, e) {
+          $(e).removeClass( 'open' )
+        })
+
         self.addClass( 'open' )
       }
-    } ).hover( function () {
+    }).hover( function () {
       // Don't worry about mobile devices
-      if ( $( window ).width() < mobileWidth ) {
+      if ( ( window.matchMedia &&
+             window.matchMedia('(max-width: ' + mobileWidth + 'px)').matches ) ||
+          ( typeof window.matchMedia === 'undefined' &&
+            $( window ).width() < mobileWidth ) ) {
         return
       }
 
@@ -52,7 +61,10 @@
       }, 5 )
     }, function (e) {
       // Don't worry about mobile devices
-      if ( $( window ).width() < mobileWidth ) {
+      if ( ( window.matchMedia &&
+             window.matchMedia('(max-width: ' + mobileWidth + 'px)').matches ) ||
+          ( typeof window.matchMedia === 'undefined' &&
+            $( window ).width() < mobileWidth ) ) {
         e.preventDefault()
         e.stopPropagation()
         return
@@ -60,12 +72,17 @@
 
       $( this ).removeClass( 'open' )
     })
+
+    $('ul.dropdown-menu').click(function (e) {
+      if ( ( $( e.target ).is( ':not(a)' ) && $( e.target ).is( ':not(li)' ) ) || $( e.target ).is( '.dropdown-title') ) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+    })
+  }
+
+  $(document).ready(function () {
+    $.setupNavigation();
   })
 
-  $('ul.dropdown-menu').click(function (e) {
-    if ( ( $( e.target ).is( ':not(a)' ) && $( e.target ).is( ':not(li)' ) ) || $( e.target ).is( '.dropdown-title') ) {
-      e.preventDefault();
-      e.stopPropagation();
-    }
-  })
 }( jQuery );

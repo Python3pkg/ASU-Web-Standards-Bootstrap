@@ -200,7 +200,9 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar-example">
       <ul class="nav navbar-nav">
+        <li><a href="/example-site" title="Home"><span class="fa fa-home hidden-xs hidden-sm" aria-hidden="true"></span><span class="hidden-md hidden-lg">Home</span></a></li>
         <li class="active"><a href="/example-site" title="Home"><span class="fa fa-home hidden-xs hidden-sm" aria-hidden="true"></span><span class="hidden-md hidden-lg">Home</span></a></li>
+        <li class="hover"><a href="/example-site" title="Home"><span class="fa fa-home hidden-xs hidden-sm" aria-hidden="true"></span><span class="hidden-md hidden-lg">Home</span></a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Degree Programs <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
@@ -1402,23 +1404,19 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 col-sm-12 space-bot-md">
-          <h1>School of Mathematical and Statistical Sciences an academic unit of the College of Liberal Arts and Sciences</h1>
-          <address>
-            Physical Sciences, A-Wing<br>
-            P.O. Box 871804, Tempe, AZ 85287-1804<br>
-            Phone: <a class="phone-link" href="tel:480-965-7195">480-965-7195</a><br>
-            Fax: <a class="phone-link" href="tel:480-965-5569">480-965-5569</a>
-          </address>
-          <p><a class="contact-link" href="#">Contact Us</a></p>
-          <ul class="social-media">
-            <li><a href="#" title="Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-            <li><a href="#" title="Twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-            <li><a href="#" title="Google+"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
-            <li><a href="#" title="LinkedIn"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-            <li><a href="#" title="YouTube"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
-          </ul>
-          <button type="button" class="btn btn-primary">Contribute</button>
-        </div>
+
+            <address>
+                            a Unit of: <br>
+              <a href="https://sustainability.asu.edu">Julie Ann Wrigley Global Institute of Sustainability</a><br>
+              <br>
+              School of Sustainability, Arizona State University<br>
+              800 South Cady Mall <br>
+              Tempe, AZ 85281<br>
+              Phone: <a class="phone-link" href="tel:480-727-6963" id="phone-link-in-footer">480-727-6963</a><br>              Fax: 480-965-8087<br>            </address>
+            <p><a class="contact-link" href="mailto:schoolofsustainability@asu.edu?subject=SOS%20Contact%20Us" id="contact-us-link-in-footer">Contact Us</a></p>            <ul class="social-media">
+              <li><a href="https://www.facebook.com/ASUsustainability" title="Facebook" id="facebook-link-in-footer"><i class="fa fa-facebook-square"></i></a></li>              <li><a href="https://twitter.com/asugreen" title="Twitter" id="twitter-link-in-footer"><i class="fa fa-twitter-square"></i></a></li>              <li><a href="https://plus.google.com/+SchoolofSustainabilityTempe" title="Google+" id="google_plus-link-in-footer"><i class="fa fa-google-plus-square"></i></a></li><li><a href="https://sustainability.asu.edu/linkedin" title="LinkedIn" id="linkedin-link-in-footer"><i class="fa fa-linkedin-square"></i></a></li><li><a href="https://vimeo.com/sustainability" title="Vimeo" id="vimeo-link-in-footer"><i class="fa fa-vimeo-square"></i></a></li><li><a href="https://www.flickr.com/photos/asu-gios/" title="Flickr" id="flickr-link-in-footer"><i class="fa fa-flickr"></i></a></li>            </ul>
+            <a class="btn btn-primary" href="http://www.asufoundation.org/SchoolOfSustainability" id="contribute-button-in-footer">Contribute</a>            
+          </div>
         <div class="col-md-2 col-sm-3 space-bot-md">
           <h2 data-toggle="collapse" data-target="#academics-menu">Academics <span class="caret hidden-sm hidden-md hidden-lg"></span></h2>
           <ul class="big-foot-nav collapse" id="academics-menu">
@@ -1505,6 +1503,8 @@
 
   <!-- Unit tests -->
   <script src="./visual/colors-test.js"></script>
-
+  <script src="./visual/home-icon-test.js"></script>
+  <script src="./visual/title-test.js"></script>
+  <script src="./visual/logo-test.js"></script>
 </body>
 </html>

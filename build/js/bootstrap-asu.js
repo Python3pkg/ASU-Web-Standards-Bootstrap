@@ -1,5 +1,5 @@
 /**========================================================================
- * Web Standards: bootstrap-asu.js v0.1.3
+ * Web Standards: bootstrap-asu.js v0.1.8
  * ========================================================================
  * Copyright 2014 ASU
  * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
@@ -441,12 +441,14 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
   'use strict';
 
   $(document).ready(function () {
+    var navbarHeight = $('.navbar-ws').outerHeight() + 20 /* padding */;
+
     var affixed = $('#sidebarNav').each(function () {
       var $this = $(this);
 
       $this.affix( {
         offset: {
-          top : $this.offset().top,
+          top : $this.offset().top - navbarHeight,
           bottom : function () {
             var fix = parseInt($this.css('margin-bottom'), 10)
             fix += parseInt($this.css('padding-top'), 10)
@@ -492,9 +494,22 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
 
     /*
      * Remove left position when affix-top class is applied
+     * Also, remove the top offset
      */
     affixed.on('affix-top.bs.affix', function () {
-      affixed.css('left', 'auto')
+      affixed.css({
+        left: 'auto',
+        top : 0
+      })
+    })
+
+    /*
+     * Add a top offset so that the sidebar is not behing the navbar
+     */
+    affixed.on('affix.bs.affix', function () {
+      affixed.css({
+        top : navbarHeight + 'px'
+      })
     })
 
     /**
@@ -671,7 +686,7 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
 } (jQuery);
 
 /* ========================================================================
- * Web Standards: mobile_menu.js v0.0.2
+ * Web Standards: mobile_menu.js v0.0.3
  * ========================================================================
  * Copyright 2014 ASU
  * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
@@ -681,7 +696,7 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
   'use strict';
 
   // TODO refactor this constant
-  var mobileWidth = 975
+  var mobileWidth = 991
 
   var desktopElements = [
     '.navbar-ws .navbar-toggle'
@@ -827,7 +842,10 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
    * Hide and show elements depending on viewport size.
    */
   function collapseHeader () {
-    if ( $( window ).innerWidth() >= mobileWidth ) {
+    if ( ( window.matchMedia &&
+             window.matchMedia('(min-width: ' + (mobileWidth + 1) + 'px)').matches ) ||
+          ( typeof window.matchMedia === 'undefined' &&
+            $( window ).width() > mobileWidth ) ) {
       $( desktopElements ).show()
       $( mobileElements ).hide()
     } else {
@@ -859,6 +877,9 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
 +function ($) {
   'use strict';
 
+  // TODO refactor this constant
+  var mobileWidth = 992
+
   $(function () {
     $('.navbar.navbar-ws').affix({
       offset: {
@@ -867,7 +888,9 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
     }).each(function (i, e) {
       $(e).on('affix.bs.affix', function () {
         // Add the height of the navbar to the margin of the body
-        $('body').css('margin-top', $(e).outerHeight() + 'px');
+        if ( $( window ).width() >= mobileWidth ) {
+          $('body').css('margin-top', $(e).outerHeight() + 'px');
+        }
       }).on('affixed-top.bs.affix', function () {
         // Remove the height of the navbar to the margin of the body
         $('body').css('margin-top', '0px');
@@ -887,7 +910,8 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
   'use strict';
 
   // TODO refactor this constant
-  var mobileWidth = 768
+  // Nav goes to mobile for medium size devices
+  var mobileWidth = 991;
 
   /*
    * The hover functions will trigger even on mobile devices. When
@@ -903,7 +927,7 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
    * - if hovered over, open (no matter the previous state)
    * - if hover left, close (no matter the previous state)
    */
-  $(document).ready(function () {
+  $.setupNavigation = function () {
     $('.navbar-ws ul.nav>li.dropdown').click(function (e) {
       e.stopPropagation()
 
@@ -913,11 +937,19 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
       if ( self.hasClass( 'open' ) && ! self.data( 'sos-click' ) ) {
         self.removeClass( 'open' )
       } else {
+        // No other li can be open
+        $('.navbar-ws ul.nav>li.dropdown').each(function (i, e) {
+          $(e).removeClass( 'open' )
+        })
+
         self.addClass( 'open' )
       }
-    } ).hover( function () {
+    }).hover( function () {
       // Don't worry about mobile devices
-      if ( $( window ).width() < mobileWidth ) {
+      if ( ( window.matchMedia &&
+             window.matchMedia('(max-width: ' + mobileWidth + 'px)').matches ) ||
+          ( typeof window.matchMedia === 'undefined' &&
+            $( window ).width() < mobileWidth ) ) {
         return
       }
 
@@ -930,7 +962,10 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
       }, 5 )
     }, function (e) {
       // Don't worry about mobile devices
-      if ( $( window ).width() < mobileWidth ) {
+      if ( ( window.matchMedia &&
+             window.matchMedia('(max-width: ' + mobileWidth + 'px)').matches ) ||
+          ( typeof window.matchMedia === 'undefined' &&
+            $( window ).width() < mobileWidth ) ) {
         e.preventDefault()
         e.stopPropagation()
         return
@@ -938,12 +973,17 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
 
       $( this ).removeClass( 'open' )
     })
+
+    $('ul.dropdown-menu').click(function (e) {
+      if ( ( $( e.target ).is( ':not(a)' ) && $( e.target ).is( ':not(li)' ) ) || $( e.target ).is( '.dropdown-title') ) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+    })
+  }
+
+  $(document).ready(function () {
+    $.setupNavigation();
   })
 
-  $('ul.dropdown-menu').click(function (e) {
-    if ( ( $( e.target ).is( ':not(a)' ) && $( e.target ).is( ':not(li)' ) ) || $( e.target ).is( '.dropdown-title') ) {
-      e.preventDefault();
-      e.stopPropagation();
-    }
-  })
 }( jQuery );

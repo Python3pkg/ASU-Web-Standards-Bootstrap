@@ -1,55 +1,57 @@
 /* ========================================================================
- * Web Standards: bootstrap-asu.css v0.1.3
+ * Web Standards: bootstrap-asu.css v0.1.8
  * ========================================================================
  * Copyright 2014 ASU
  * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
  * ======================================================================== */
 
 //== Core variables and mixins
-@import 'scss/variables';
-@import 'scss/mixins';
+@import 'variables';
+@import 'mixins';
 
 //== Base elements
-@import 'scss/scaffolding';
-@import 'scss/asu-scaffolding';
+@import 'scaffolding';
+@import 'asu-scaffolding';
 
 //== Scaffolding
-@import 'scss/tables';
-@import 'scss/forms';
-@import 'scss/buttons';
-@import 'scss/dropdowns';
-@import 'scss/inputs';
+@import 'tables';
+@import 'forms';
+@import 'buttons';
+@import 'dropdowns';
+@import 'inputs';
 
 //== Components
-@import 'scss/navs';
-@import 'scss/breadcrumbs';
-@import 'scss/pagination';
-@import 'scss/labels';
-@import 'scss/badges';
-@import 'scss/jumbotron';
-@import 'scss/thumbnails';
-@import 'scss/alerts';
-@import 'scss/progress-bars';
-@import 'scss/list-groups';
-@import 'scss/panels';
-@import 'scss/wells';
-@import 'scss/modals';
-@import 'scss/tooltips';
-@import 'scss/popovers';
-@import 'scss/calendar';
-@import 'scss/hero';
-@import 'scss/profile';
-@import 'scss/flex-video';
-@import 'scss/footer';
-@import 'scss/mega-menu';
-@import 'scss/alterna-tabs';
-@import 'scss/campus-visit';
-@import 'scss/animations';
-@import 'scss/carousel';
+@import 'navs';
+@import 'breadcrumbs';
+@import 'pagination';
+@import 'labels';
+@import 'badges';
+@import 'jumbotron';
+@import 'thumbnails';
+@import 'alerts';
+@import 'progress-bars';
+@import 'list-groups';
+@import 'panels';
+@import 'wells';
+@import 'modals';
+@import 'tooltips';
+@import 'popovers';
+@import 'calendar';
+@import 'hero';
+@import 'profile';
+@import 'flex-video';
+@import 'footer';
+@import 'mega-menu';
+@import 'campus-visit';
+@import 'animations';
+@import 'carousel';
+@import 'related-links';
+@import 'articles';
+@import 'hover-effects';
 
 //== FontAwesome
-@import 'scss/font_awesome/font-awesome';
+@import 'font_awesome/font-awesome';
 
 //== Custom
 // Uncomment this line if you plan on hosting the Roboto font yourself
-// @import 'scss/fonts';
+// @import 'fonts';

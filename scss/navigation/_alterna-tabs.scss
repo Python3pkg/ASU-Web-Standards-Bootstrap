@@ -1,11 +1,19 @@
-// ================
 // Alternative Tabs
-// ================
+// 
+// Used in conjunction with `.nav` and `.nav-tabs`
+// 
+// <ul class="nav nav-tabs alterna-tabs">
+//    <li class="active"><a href="#">Record A</a></li>
+//    <li><a href="#">Record B</a></li>
+//    <li><a href="#">Record C</a></li>
+// </ul>
+// 
+// Styleguide 13.2.
 .alterna-tabs {
   > li {
-    border-bottom: $ws-alterna-tabs-border-size solid transparent;
+    border-bottom: $space-base solid transparent;
     border-top: 0;
-    margin-right: 20px;
+    margin-right: $space-xlarge;
 
     &:last-child {
       margin-right: 0;
@@ -13,9 +21,9 @@
 
     &:hover,
     &.active {
-      border-bottom: $ws-alterna-tabs-border-size solid $ws-alterna-tabs-active-color;
+      border-bottom: $space-base solid $color-maroon;
       border-top: 0;
-      color: $ws-alterna-tabs-active-font-color;
+      color: $color-dark-mine;
 
       a {
         &:hover,
@@ -31,8 +39,8 @@
       border: 0;
       border-bottom-color: transparent;
       border-radius: 0;
-      color: $asu-gray-darker;
-      line-height: $ws-alterna-tabs-line-height;
+      color: $color-dark-mine;
+      line-height: $line-height-base;
       padding-left: 0;
       padding-right: 0;
 
@@ -47,7 +55,7 @@
       background: none;
       border: 0;
       border-bottom-color: transparent;
-      color: $asu-gray-darker;
+      color: $color-dark-mine;
       cursor: default;
     }
   }

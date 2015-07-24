@@ -1,5 +1,5 @@
 /* ========================================================================
- * Web Standards: mobile_menu.js v0.0.2
+ * Web Standards: mobile_menu.js v0.0.3
  * ========================================================================
  * Copyright 2014 ASU
  * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
@@ -9,7 +9,7 @@
   'use strict';
 
   // TODO refactor this constant
-  var mobileWidth = 975
+  var mobileWidth = 991
 
   var desktopElements = [
     '.navbar-ws .navbar-toggle'
@@ -155,7 +155,10 @@
    * Hide and show elements depending on viewport size.
    */
   function collapseHeader () {
-    if ( $( window ).innerWidth() >= mobileWidth ) {
+    if ( ( window.matchMedia &&
+             window.matchMedia('(min-width: ' + (mobileWidth + 1) + 'px)').matches ) ||
+          ( typeof window.matchMedia === 'undefined' &&
+            $( window ).width() > mobileWidth ) ) {
       $( desktopElements ).show()
       $( mobileElements ).hide()
     } else {

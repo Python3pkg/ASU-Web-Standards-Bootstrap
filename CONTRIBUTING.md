@@ -1,12 +1,12 @@
-# Contributing to the ASU Bootstrap Addon
+# Contributing to the ASU Web Standards Bootstrap repo
 
-Looking for a way to contribute to the ASU Bootstrap Addon? **Here's how you can help.**
+Looking for a way to contribute to the ASU Web Standards Bootstrap repo? **Here's how you can help.**
 
 Please take a moment to review this document, as well as the web design standards set out by the [Hub](hub.asu.edu).
 
 ## Using the issue tracker
 
-The [issue tracker](https://github.com/gios-asu/ASU-Bootstrap-Addon/issues) is the preferred chabel for [bug reports](#bug-reports), [features requests](#feature-requests) and [submitting pull requests](#pull-requests), but please respect the following restrictions:
+The [issue tracker](https://github.com/gios-asu/ASU-Web-Standards-Bootstrap/issues) is the preferred chabel for [bug reports](#bug-reports), [features requests](#feature-requests) and [submitting pull requests](#pull-requests), but please respect the following restrictions:
 
 * Please **do not** use the issue tracker for personal support requests.  Please contact the team directly, the Hub, or the UTO department for personal support.
 

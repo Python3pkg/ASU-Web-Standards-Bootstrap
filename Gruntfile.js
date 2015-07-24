@@ -42,6 +42,39 @@ module.exports = function (grunt) {
           files: ['test/qunit/unit/*.js']
         }
       },
+      coverageMobile: {
+        frameworks: ['qunit'],
+        reporters: ['coverage'],
+        preprocessors: {
+            "js/*.js": "coverage"
+        },
+        coverageReporter: {
+            type: "lcov",
+            dir: "coverage/"
+        },
+        plugins: ['karma-qunit', 'karma-phantomjs-launcher', 'karma-coverage'],
+        files: [
+          { src : ['test/vendor/js/jquery-1.11.2.min.js'], served: true },
+          { src : ['test/vendor/js/bootstrap.min.js'], served: true },
+          { src : ['test/qunit/unit/_qunit-fixture.js'], served: true },
+          { src : ['<%= concat.bootstrapAsu.src %>'], served: true },
+          { src : ['test/qunit/unit/*-test.js'] }
+        ],
+        singleRun: true,
+        browsers: ['PhantomJS_Mobile'],
+        customLaunchers: {
+          'PhantomJS_Mobile': {
+            base: 'PhantomJS',
+            options: {
+              windowName: 'ASU Bootstrap Tests',
+              viewportSize : {
+                width : 765,
+                height: 1000
+              }
+            }
+          }
+        }
+      },
       //continuous integration mode: run tests once in PhantomJS browser.
       continuousMobile: {
         frameworks: ['qunit'],
@@ -91,7 +124,9 @@ module.exports = function (grunt) {
       allFiles: [
         'scss/*.scss',
         'scss/mixins/*.scss',
-        'scss/theme/*.scss'
+        'scss/theme/*.scss',
+        'scss/navigation/*.scss',
+        'scss/variables/*.scss',
         // Not font_awesome
       ],
       options: {
@@ -136,6 +171,13 @@ module.exports = function (grunt) {
           'js/_navs-click-and-hover.js'
         ],
         dest: 'build/js/bootstrap-asu.js'
+      },
+      kss : {
+        src: [
+          'test/vendor/css/bootstrap.min.css',
+          'test/vendor/css/bootstrap-asu.css',
+        ],
+        dest: 'build/docs/all.css'
       }
     },
     // JS Uglify
@@ -189,6 +231,21 @@ module.exports = function (grunt) {
           'test'
         ]
       }
+    },
+    // KSS
+    // ===
+    kss : {
+      options: {
+        css: [
+          'all.css'
+        ],
+        template: 'template'
+      },
+      dist: {
+        files: {
+          'build/docs' : ['scss']
+        }
+      }
     }
   });
 
@@ -203,9 +260,36 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
+  grunt.loadNpmTasks('grunt-kss');
+
+  grunt.registerTask('validate', [
+    'jshint',
+    'jscs',
+    'scsslint',
+  ]);
+
+  grunt.registerTask('test-base', [
+    'sass:fortesting',
+    'karma:continuousMobile',
+    'qunit',
+  ]);
+
+  grunt.registerTask('build', [
+    'sass:dist',
+    'concat',
+    'uglify',
+    'cssmin',
+  ]);
+
+  // Documentation
+  grunt.registerTask('docs', [
+    'validate',
+    'sass:fortesting',
+    'concat:kss',
+    'kss'
+  ]);
 
   // Develop
   grunt.registerTask('develop', [
@@ -215,24 +299,16 @@ module.exports = function (grunt) {
 
   // Just Test
   grunt.registerTask('test',  [
-    'sass:fortesting',
-    'jshint',
-    'jscs',
-    'scsslint',
-    'karma:continuousMobile'
+    'validate',
+    'test-base',
+    'karma:coverageMobile',
   ]);
 
   // Default task
   grunt.registerTask('default', [
-    'jshint',
-    'jscs',
-    'scsslint',
-    'sass:fortesting',
-    'karma:continuousMobile',
-    'qunit',
-    'sass:dist',
-    'concat',
-    'uglify',
-    'cssmin'
+    'validate',
+    'test-base',
+    'build',
+    'docs',
   ]);
 };

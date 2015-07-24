@@ -1,0 +1,67 @@
+// Sidebar
+// 
+// Can be used with `.affix`. If you do want the sidebar to be affixed, you need
+// to add `id="sidebarNav"` and `class="affix"`. You should also use the push
+// and pull variants of the `col-*-*` classes.
+// 
+// Here is an example of the columns, note that even though the sidebar
+// comes first in the markup, it will be on the *right* hand side of the
+// page:
+// 
+// ```
+// <div class="col-sm-4 col-sm-push-8">[sidebar goes here]</div>
+// <div class="col-sm-8 col-sm-pull-4">[content goes here]</div>
+// ```
+// 
+// Example sidebar:
+//
+// <div class="sidebar-nav">
+//   <h4>Sidebar Title</h4>
+//   <div class="list-group">
+//     <a class="list-group-item" data-scroll="" href="#">Link A</a>
+//     <a class="list-group-item" data-scroll="" href="#">Link B</a>
+//   </div>
+// </div>
+//
+// 
+// Styleguide 13.7
+.sidebar-nav {
+  border-top: $sidebar-border-top solid $color-maroon;
+  margin-bottom: $space-xxlarge;
+  padding: $space-xxlarge;
+  position: relative;
+
+  &:before {
+    background-color: $color-white;
+    border-bottom: $space-xsmall solid $color-gallery;
+    border-left: $space-xsmall solid $color-gallery;
+    border-right: $space-xsmall solid $color-gallery;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  :last-child {
+    margin-bottom: 0;
+  }
+
+  &.affix {
+    position: relative;
+    width: 100%;
+
+    @media (min-width: $asu-screen-md-min) {
+      position: fixed;
+      top: $sidebar-offset-top;
+      width: $sidebar-medium-width;
+    }
+
+    @media (min-width: $asu-screen-lg-min) {
+      width: $sidebar-large-width;
+    }
+  }
+}

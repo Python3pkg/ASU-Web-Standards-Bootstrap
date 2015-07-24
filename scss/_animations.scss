@@ -1,18 +1,21 @@
-//== Animations
-.navbar-ws {
-  .dropdown-menu {
-    @include perspective(100);
-    @include transition(all .25s ease-out);
-  }
+// Animations
+// 
+// Provide perspective, transition, and translation css
 
-  .open > .dropdown-menu {
-    @include translate3d(0, 0, 0);
-  }
-}
-
+// ===========
+// Scaffolding
+// ===========
 a,
 button {
   @include transition(all .25s ease-in-out);
+}
+
+tr.collapse.in {
+  display: table-row;
+}
+
+tbody.collapse.in {
+  display: table-row-group;
 }
 
 .fade {
@@ -33,17 +36,37 @@ button {
   }
 }
 
-tr.collapse.in {
-  display: table-row;
-}
-
-tbody.collapse.in {
-  display: table-row-group;
-}
-
 .collapsing {
   @include transition(height .35s ease);
   height: 0;
   overflow: hidden;
   position: relative;
 }
+
+.notransition {
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+// ==========
+// Navigation
+// ==========
+.navbar-ws {
+  .dropdown-menu {
+    @include perspective(100);
+    @include transition(all .25s ease-out);
+  }
+
+  .open > .dropdown-menu {
+    @include translate3d(0, 0, 0);
+  }
+}
+
+
+
+
+
+
