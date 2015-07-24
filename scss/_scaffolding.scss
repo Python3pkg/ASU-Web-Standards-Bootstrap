@@ -497,6 +497,10 @@ code {
     .gold-back .container {
       padding: 0;
     }
+
+    & + & {
+      padding-top: 0;
+    }
   }
 }
 
