@@ -1,21 +1,22 @@
-// ======
 // Footer
-// ======
+// 
+// TODO verify these paddings and margins when the HUB finalizing the
+// details
 .footer {
   p {
-    color: $ws-footer-font-color;
+    color: $color-white;
   }
 
   h1 {
-    color: $ws-footer-font-color;
-    font-size: $ws-footer-font-size;
+    color: $color-white;
+    font-size: $font-size-medium;
     font-weight: bold;
     line-height: 1.2;
     margin-bottom: 16px;
   }
 
   h2 {
-    color: $ws-footer-font-color;
+    color: $color-white;
     font-size: 21px;
     font-weight: normal;
     margin-bottom: 16px;
@@ -24,20 +25,20 @@
   a:not(.btn),
   address,
   .phone-link {
-    border-bottom-color: $ws-footer-link-color;
-    color: $ws-footer-link-color;
+    border-bottom-color: $color-silver;
+    color: $color-silver;
     margin-bottom: 0;
   }
 
   .contact-link {
-    border-bottom-color: $ws-footer-social-link-text;
+    border-bottom-color: $color-dull-chalice;
     border-bottom-style: dotted;
-    border-bottom-width: 1px;
-    color: $ws-footer-social-link-text;
+    border-bottom-width: $space-xsmall;
+    color: $color-dull-chalice;
 
     &:hover,
     &:focus {
-      color: $ws-footer-social-link-focus-text;
+      color: $color-white;
     }
   }
 
@@ -84,13 +85,13 @@
 
       > a {
         border-bottom: 0;
-        color: $ws-footer-social-link-text;
+        color: $color-dull-chalice;
         font-size: 38px;
         margin-right: 10px;
 
         &:hover,
         &:focus {
-          color: $ws-footer-social-link-focus-text;
+          color: $color-white;
         }
       }
     }
@@ -104,7 +105,7 @@
   // Big Footer
   // ==========
   .big-foot {
-    background-color: $ws-big-foot-bg;
+    background-color: $color-cod-gray;
     padding-bottom: 14px;
     padding-top: 40px;
 
@@ -119,20 +120,20 @@
 
       > a {
         border-bottom: 1px dotted;
-        border-bottom-color: $ws-big-foot-nav-link-border;
-        color: $ws-big-foot-nav-link-text;
+        border-bottom-color: $color-silver;
+        color: $color-silver;
         text-decoration: none;
 
         &:hover,
         &:focus {
-          color: $ws-big-foot-nav-link-focus-text;
+          color: $color-white;
         }
       }
     }
   }
 
   .little-foot {
-    background-color: $ws-little-foot-bg;
+    background-color: $color-mercury;
     padding-bottom: 40px;
     padding-top: 40px;
   }
@@ -149,7 +150,7 @@
 
         &:hover,
         &:focus {
-          color: $ws-little-foot-focus-text;
+          color: $color-white;
         }
       }
     }

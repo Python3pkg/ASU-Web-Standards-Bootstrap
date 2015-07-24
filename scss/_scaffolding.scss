@@ -1,32 +1,32 @@
-// ===========
 // Scaffolding
-// ===========
+// 
+// TODO refactor
 html {
   -webkit-font-smoothing: antialiased;
 }
 
 body {
-  background-color: $ws-header-bg;
-  color: $asu-gray-darker;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  background-color: $color-white;
+  color: $color-dark-mine;
+  font-family: $font-family;
+  font-size: $font-size-medium;
   font-weight: 200;
-  line-height: 1.44;
+  line-height: $line-height-base;
 
   @media (min-width: 1200px) {
-    font-size: 18px;
+    font-size: $font-size-large;
   }
 }
 
 a {
-  border-bottom: 1px dotted $asu-maroon;
-  color: $asu-maroon;
+  border-bottom: 1px dotted $color-maroon;
+  color: $color-maroon;
   font-weight: normal;
 
   &:hover,
   &:focus {
-    border-bottom: 1px dotted $asu-link-hover-color;
-    color: $asu-link-hover-color;
+    border-bottom: 1px dotted $color-brick-red;
+    color: $color-brick-red;
     text-decoration: none;
   }
 
@@ -57,21 +57,21 @@ a {
 
 .img-bordered,
 .img-border {
-  border: 1px solid $ws-image-border-color;
+  border: 1px solid $color-mercury;
 }
 
 .img-rounded {
-  border-radius: $asu-border-radius-base;
+  border-radius: $border-radius;
 }
 
 .img-thumbnail {
-  line-height: $asu-line-height-base;
+  line-height: $line-height-base;
 }
 
 hr {
-  border-top: 1px solid $asu-gray-lighter;
-  margin-bottom: $asu-line-height-computed;
-  margin-top: $asu-line-height-computed;
+  border-top: 1px solid $color-nobel;
+  margin-bottom: $line-height-computed;
+  margin-top: $line-height-computed;
 }
 
 h1,
@@ -104,8 +104,8 @@ h1,
 .h1 {
   font-size: 48px;
   line-height: 1.2;
-  margin-bottom: ($asu-line-height-computed * 2);
-  margin-top: ($asu-line-height-computed * 2);
+  margin-bottom: ($line-height-computed * 2);
+  margin-top: ($line-height-computed * 2);
 
   @media(max-width: $asu-screen-xs-max) {
     font-size: 40px;
@@ -116,27 +116,27 @@ h2,
 h3,
 .h2,
 .h3 {
-  line-height: $asu-line-height-base;
-  margin-bottom: ($asu-line-height-computed);
-  margin-top: ($asu-line-height-computed * 2);
+  line-height: $line-height-base;
+  margin-bottom: ($line-height-computed);
+  margin-top: ($line-height-computed * 2);
 }
 
 h4,
 .h4 {
   color: black;
   font-size: 21px;
-  line-height: $asu-line-height-base;
-  margin-bottom: ($asu-line-height-computed);
-  margin-top: ($asu-line-height-computed);
+  line-height: $line-height-base;
+  margin-bottom: ($line-height-computed);
+  margin-top: ($line-height-computed);
 }
 
 h5,
 .h5 {
   font-size: 16px;
   font-weight: bold;
-  line-height: ($asu-line-height-computed);
+  line-height: ($line-height-computed);
   margin-bottom: 0;
-  margin-top: ($asu-line-height-computed);
+  margin-top: ($line-height-computed);
 }
 
 h6,
@@ -144,9 +144,9 @@ h6,
   font-size: 16px;
   font-style: italic;
   font-weight: 200;
-  line-height: ($asu-line-height-computed);
+  line-height: ($line-height-computed);
   margin-bottom: 0;
-  margin-top: ($asu-line-height-computed);
+  margin-top: ($line-height-computed);
 }
 
 h1,
@@ -227,68 +227,68 @@ small,
 
 mark,
 .mark {
-  background-color: $asu-state-warning-bg;
+  background-color: $color-yellow;
 }
 
-@include text-emphasis-variant('.text-yellow', $asu-yellow);
+@include text-emphasis-variant('.text-yellow', $color-yellow);
 
-@include text-emphasis-variant('.text-green', $asu-green);
+@include text-emphasis-variant('.text-green', $color-green);
 
-@include text-emphasis-variant('.text-primary', $asu-maroon);
+@include text-emphasis-variant('.text-primary', $color-maroon);
 
-@include text-emphasis-variant('.text-success', $asu-state-success-text);
+@include text-emphasis-variant('.text-success', $color-green);
 
-@include text-emphasis-variant('.text-info', $asu-state-info-text);
+@include text-emphasis-variant('.text-info', $color-blue);
 
-@include text-emphasis-variant('.text-warning', $asu-state-warning-text);
+@include text-emphasis-variant('.text-warning', $color-yellow);
 
-@include text-emphasis-variant('.text-danger', $asu-state-danger-text);
+@include text-emphasis-variant('.text-danger', $color-orange);
 
-@include bg-variant('.bg-primary', $asu-maroon);
+@include bg-variant('.bg-primary', $color-maroon);
 
-@include bg-variant('.bg-success', $asu-state-success-bg);
+@include bg-variant('.bg-success', $color-green);
 
-@include bg-variant('.bg-info', $asu-state-info-bg);
+@include bg-variant('.bg-info', $color-blue);
 
-@include bg-variant('.bg-warning', $asu-state-warning-bg);
+@include bg-variant('.bg-warning', $color-yellow);
 
-@include bg-variant('.bg-danger', $asu-state-danger-bg);
+@include bg-variant('.bg-danger', $color-orange);
 
 .page-header {
-  margin: 0 0 ($asu-line-height-computed);
+  margin: 0 0 ($line-height-computed);
   padding-bottom: 11px;
 }
 
 ul,
 ol {
-  margin-bottom: ($asu-line-height-computed);
+  margin-bottom: ($line-height-computed);
 }
 
 dl {
-  margin-bottom: ($asu-line-height-computed);
+  margin-bottom: ($line-height-computed);
 }
 
 dt,
 dd {
-  line-height: ($asu-line-height-base);
+  line-height: ($line-height-base);
 }
 
 blockquote {
   font-size: 20px;
-  margin: 0 0 ($asu-line-height-computed);
-  padding: ($asu-line-height-computed / 2) ($asu-line-height-computed);
+  margin: 0 0 ($line-height-computed);
+  padding: ($line-height-computed / 2) ($line-height-computed);
 
   footer,
   small,
   .small {
-    line-height: $asu-line-height-base;
+    line-height: $line-height-base;
   }
 }
 
 address {
   font-weight: 200;
-  line-height: $asu-line-height-base;
-  margin-bottom: ($asu-line-height-computed);
+  line-height: $line-height-base;
+  margin-bottom: ($line-height-computed);
 
   strong {
     font-weight: normal;
@@ -296,25 +296,25 @@ address {
 }
 
 kbd {
-  -webkit-border-radius: $asu-border-radius-base;
-  border-radius: $asu-border-radius-base;
+  -webkit-border-radius: $border-radius;
+  border-radius: $border-radius;
 }
 
 pre {
   font-size: 15px;
-  line-height: $asu-line-height-base;
-  margin: 0 0 ($asu-line-height-computed / 2);
+  line-height: $line-height-base;
+  margin: 0 0 ($line-height-computed / 2);
   padding: 11.5px;
 }
 
 /* order matters! Gray back before spacing rules! */
 .gray-back {
-  background-color: $ws-gray-back;
+  background-color: $color-seashell;
   padding: 48px 0;
 }
 
 .gold-back {
-  background-color: $asu-gold;
+  background-color: $color-gold;
 }
 
 .space-top-0 {
@@ -322,19 +322,19 @@ pre {
 }
 
 .space-top-sm {
-  margin-top: $asu-padding-large-vertical;
+  margin-top: $space-large;
 }
 
 .space-top-md {
-  margin-top: ($asu-padding-large-vertical * 2);
+  margin-top: ($space-large * 2);
 }
 
 .space-top-lg {
-  margin-top: ($asu-padding-large-vertical * 3);
+  margin-top: ($space-large * 3);
 }
 
 .space-top-xl {
-  margin-top: ($asu-padding-large-vertical * 4);
+  margin-top: ($space-large * 4);
 }
 
 .space-bot-0 {
@@ -342,19 +342,19 @@ pre {
 }
 
 .space-bot-sm {
-  margin-bottom: $asu-padding-large-vertical;
+  margin-bottom: $space-large;
 }
 
 .space-bot-md {
-  margin-bottom: ($asu-padding-large-vertical * 2);
+  margin-bottom: ($space-large * 2);
 }
 
 .space-bot-lg {
-  margin-bottom: ($asu-padding-large-vertical * 3);
+  margin-bottom: ($space-large * 3);
 }
 
 .space-bot-xl {
-  margin-bottom: ($asu-padding-large-vertical * 4);
+  margin-bottom: ($space-large * 4);
 }
 
 .space-bot-form {
@@ -408,3 +408,4 @@ pre {
 .pad-zero {
   padding: 0 !important;
 }
+

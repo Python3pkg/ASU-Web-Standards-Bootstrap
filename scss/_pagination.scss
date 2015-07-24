@@ -1,17 +1,40 @@
-//== Pagination
+// Pagination
+// 
+// 
+// <nav>
+//   <ul class="pagination">
+//     <li>
+//       <a href="#" aria-label="Previous">
+//         <span aria-hidden="true">&laquo;</span>
+//       </a>
+//     </li>
+//     <li><a href="#">1</a></li>
+//     <li><a href="#">2</a></li>
+//     <li><a href="#">3</a></li>
+//     <li><a href="#">4</a></li>
+//     <li><a href="#">5</a></li>
+//     <li>
+//       <a href="#" aria-label="Next">
+//         <span aria-hidden="true">&raquo;</span>
+//       </a>
+//     </li>
+//   </ul>
+// </nav>
+// 
+// Styleguide 14
 .pagination {
-  margin: $asu-padding-xlarge-vertical 0;
+  margin: $space-xxlarge 0;
 
   > li > {
     a,
     span {
-      color: $asu-maroon;
-      line-height: $asu-line-height-base;
-      padding: 6px 19px;
+      color: $color-maroon;
+      line-height: $line-height-base;
+      padding: $space-base $space-xlarge;
 
       &:hover,
       &:focus {
-        color: $asu-link-hover-color;
+        color: $color-brick-red;
       }
     }
   }
@@ -20,34 +43,34 @@
     &,
     &:hover,
     &:focus {
-      background-color: $asu-maroon;
-      border-color: $asu-maroon;
+      background-color: $color-maroon;
+      border-color: $color-maroon;
     }
   }
 }
 
-.pagincation-lg {
+.pagination-lg {
   > {
     li {
       a,
       span {
-        font-size: $asu-font-size-large;
-        padding: $asu-padding-large-vertical $asu-padding-large-horizontal;
+        font-size: $font-size-large;
+        padding: $space-large $space-xxlarge;
       }
 
       &:first-child > {
         a,
         span {
-          border-bottom-left-radius: $asu-border-radius-base; 
-          border-top-left-radius: $asu-border-radius-base; 
+          border-bottom-left-radius: $border-radius; 
+          border-top-left-radius: $border-radius; 
         }
       }
 
       &:last-child > {
         a,
         span {
-          border-bottom-left-radius: $asu-border-radius-base; 
-          border-top-left-radius: $asu-border-radius-base; 
+          border-bottom-left-radius: $border-radius; 
+          border-top-left-radius: $border-radius; 
         }
       }
     }
@@ -59,23 +82,23 @@
     li {
       a,
       span {
-        font-size: $asu-font-size-small;
-        padding: 5px $asu-padding-small-horizontal;
+        font-size: $font-size-small;
+        padding: $space-base $space-large;
       }
 
       &:first-child > {
         a,
         span {
-          border-bottom-left-radius: $asu-border-radius-base; 
-          border-top-left-radius: $asu-border-radius-base; 
+          border-bottom-left-radius: $border-radius; 
+          border-top-left-radius: $border-radius; 
         }
       }
 
       &:last-child > {
         a,
         span {
-          border-bottom-left-radius: $asu-border-radius-base; 
-          border-top-left-radius: $asu-border-radius-base; 
+          border-bottom-left-radius: $border-radius; 
+          border-top-left-radius: $border-radius; 
         }
       }
     }
@@ -83,5 +106,5 @@
 }
 
 .pager {
-  margin: $asu-padding-xlarge-vertical 0;
+  margin: $space-xxlarge 0;
 }

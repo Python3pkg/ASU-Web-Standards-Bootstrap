@@ -1,19 +1,42 @@
+// Related Articles
+// 
+// Related articles and links should be displayed at the bottom
+// of the page they are on before the footer.
+// 
+// <div class="related-articles">
+//   <div class="container">
+//     <div class="row">
+//       <div class="col-xs-12">
+//         <div class="space-top-md"></div>
+//         <ul class="nav nav-pills">
+//           <li class="related-post">
+//   <a href="http://google.com">Google</a>
+// </li><li class="related-post">
+//   <a href="http://bing.com">Bing</a>
+// </li>
+//         </ul>
+//       </div>
+//     </div>
+//   </div>
+// </div>
+// 
+// Styleguide 18
 .related-articles {
-  background-color: $asu-gray-lightest;
-  border-top: 1px solid $ws-darker-gray-2;
-  margin-top: $asu-padding-large-vertical;
-  padding-bottom: $asu-padding-xlarge-vertical;
+  background-color: $color-alabaster;
+  border-top: $space-xsmall solid darken($color-mine-shaft, 8);
+  margin-top: $space-large;
+  padding-bottom: $space-xxlarge;
   padding-top: 0;
 
   li {
-    margin-right: $asu-padding-small-horizontal;
+    margin-right: $space-large;
 
     a {
-      background-color: $ws-white;
-      border: 1px solid $ws-light-gray;
-      border-radius: $asu-border-radius-base;
+      background-color: $color-white;
+      border: $space-xsmall solid $color-silver;
+      border-radius: $border-radius;
       display: inline-block;
-      padding: $asu-padding-xs-horizontal $asu-padding-large-vertical;
+      padding: $space-base $space-large;
     }
   }
 }
