@@ -603,6 +603,14 @@ code {
   word-wrap: break-word;
 }
 
+.site-content .container {
+  padding: 48px 0;
+}
+.site-content .container .gray-back .container,
+.site-content .container .gold-back .container {
+  padding: 0;
+}
+
 #masthead {
   background-color: #fff;
   border: 0;
