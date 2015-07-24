@@ -610,6 +610,9 @@ code {
 .site-content .container .gold-back .container {
   padding: 0;
 }
+.site-content .container + .site-content .container {
+  padding-top: 0;
+}
 
 #masthead {
   background-color: #fff;
@@ -1801,7 +1804,7 @@ input[type="button"].btn-block {
 }
 @media (max-width: 991px) {
   .navbar {
-    height: 36px;
+    height: auto;
     min-height: 36px;
   }
 }
@@ -2194,6 +2197,9 @@ input[type="button"].btn-block {
 .asu-breadcrumbs {
   background-color: #f5f5f5;
   border-bottom: 1px #fafafa solid;
+}
+.asu-breadcrumbs .container {
+  padding: 0;
 }
 .asu-breadcrumbs .breadcrumb {
   margin: 10px 0;
@@ -3185,7 +3191,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   }
 }
 .profile {
-  border: 5px solid #dbdbdb;
+  border: 1px solid #dbdbdb;
   margin-bottom: 24px;
 }
 .profile .profile-heading {
