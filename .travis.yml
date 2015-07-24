@@ -7,3 +7,4 @@ before_install:
   - gem install sass
   - gem install scss-lint
 install: npm install
+sudo: false
