@@ -70,6 +70,10 @@ li.external-link a:before {
   line-height: 1.44;
 }
 
+.img-center {
+  margin: 0 auto;
+}
+
 hr {
   border-top: 1px solid #b7b7b7;
   margin-bottom: 24px;
@@ -251,6 +255,10 @@ p {
 p.text-center {
   margin-left: auto;
   margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .lead {
@@ -523,6 +531,58 @@ pre {
 
 .pad-zero {
   padding: 0 !important;
+}
+
+.pad-md {
+  padding: 20px;
+}
+
+.listings {
+  list-style: none;
+  text-align: left;
+}
+
+.row-same-height {
+  display: table;
+}
+@media (min-width: 480px) {
+  .row-same-height [class*="col-xs-"] {
+    display: table-cell;
+    float: none;
+    vertical-align: top;
+  }
+}
+@media (min-width: 768px) {
+  .row-same-height [class*="col-sm-"] {
+    display: table-cell;
+    float: none;
+    vertical-align: top;
+  }
+}
+@media (min-width: 992px) {
+  .row-same-height [class*="col-md-"] {
+    display: table-cell;
+    float: none;
+    vertical-align: top;
+  }
+}
+@media (min-width: 1200px) {
+  .row-same-height [class*="col-lg-"] {
+    display: table-cell;
+    float: none;
+    vertical-align: top;
+  }
+}
+
+.color-maroon {
+  background-color: #903;
+}
+.color-maroon h1,
+.color-maroon h2,
+.color-maroon h3,
+.color-maroon h4,
+.color-maroon p {
+  color: white;
 }
 
 #masthead {
@@ -3073,6 +3133,13 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   max-width: none;
 }
 
+@media (max-width: 767px) {
+  .hero-ratio.hide-on-small,
+  .hero-slim.hide-on-small,
+  .hero.hide-on-small {
+    display: none;
+  }
+}
 .profile {
   border: 5px solid #dbdbdb;
   margin-bottom: 24px;

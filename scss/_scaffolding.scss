@@ -1,6 +1,7 @@
 // Scaffolding
 // 
 // TODO refactor
+// TODO document
 html {
   -webkit-font-smoothing: antialiased;
 }
@@ -66,6 +67,10 @@ a {
 
 .img-thumbnail {
   line-height: $line-height-base;
+}
+
+.img-center {
+  margin: 0 auto;
 }
 
 hr {
@@ -206,6 +211,10 @@ p {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.text-center {
+  text-align: center;
 }
 
 .lead {
@@ -409,3 +418,51 @@ pre {
   padding: 0 !important;
 }
 
+.pad-md {
+  padding: 20px;
+}
+
+.listings {
+  list-style: none;
+  text-align: left;
+}
+
+.row-same-height {
+  display: table;
+
+  [class*="col-xs-"] {
+    @media (min-width: $asu-screen-xs-min) {
+      @include same-height;
+    }
+  }
+
+  [class*="col-sm-"] {
+    @media (min-width: $asu-screen-sm-min) {
+      @include same-height;
+    }
+  }
+
+  [class*="col-md-"] {
+    @media (min-width: $asu-screen-md-min) {
+      @include same-height;
+    }
+  }
+
+  [class*="col-lg-"] {
+    @media (min-width: $asu-screen-lg-min) {
+      @include same-height;
+    }
+  }
+}
+
+.color-maroon {
+  background-color: $color-maroon;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    color: white;
+  }
+}

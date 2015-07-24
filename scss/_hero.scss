@@ -512,3 +512,13 @@ body.home,
     max-width: none;
   }
 }
+
+@media(max-width: $asu-screen-xs-max) {
+  .hero-ratio,
+  .hero-slim,
+  .hero {
+    &.hide-on-small {
+      display: none;
+    }
+  }
+}
