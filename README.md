@@ -9,6 +9,8 @@ ASU Web Standards Bootstrap
 [![Github issues](https://img.shields.io/github/issues/gios-asu/ASU-Web-Standards-Bootstrap.svg?style=flat)](https://github.com/gios-asu/ASU-Web-Standards-Bootstrap/issues)
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat)](https://github.com/gios-asu/ASU-Web-Standards-Bootstrap/blob/master/LICENSE.md) [![Analytics](https://ga-beacon.appspot.com/UA-561868-49/gios-asu/ASU-Web-Standards-Bootsrap?flat)](https://github.com/igrigorik/ga-beacon)
 
+[View the Visual Documentation](http://gios-asu.github.io/ASU-Web-Standards-Bootstrap)
+
 This ASU Web Standards Bootstrap repo provides stylesheets and JavaScript that are consistent with the new [ASU Web Standards](http://hub.asu.edu) being rolled out to the school websites at [ASU](https://asu.edu). The intent of this *Bootstrap add-on* is to provide a universal source for the ASU Web Standards that can be applied to any website, regardless of what technology is used to build a site. This project is based off of the work done by [29thDrive](http://asu-ws.29thdrive.com/) and is consistent with their initial work. This repository is maintained by the [Julie Ann Wrigley Global Institute of Sustainability](http://sustainability.asu.edu).
 
 This project does not replace Twitter Bootstrap, but rather adds files that extend Bootstrap.  You still need to include the latest Bootstrap files in your website.
