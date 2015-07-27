@@ -1,0 +1,47 @@
+// Text Variants
+// 
+// <p class="text-yellow">.text-yellow</p>
+// <p class="text-green">.text-green</p>
+// <p class="text-maroon">.text-maroon</p>
+// <p class="text-primary">.text-primary</p>
+// <p class="text-success">.text-success</p>
+// <p class="text-info">.text-info</p>
+// <p class="text-warning">.text-warning</p>
+// <p class="text-danger">.text-danger</p>
+// <p class="text-white bg-primary">.text-white (background
+// color not included)</p>
+// 
+// Note that all text variants can be used with links. When
+// used as a link, the text will automatically darken:
+// 
+// <a href="#" class="text-yellow">.text-yellow</a>
+// <a href="#" class="text-green">.text-green</a>
+// <a href="#" class="text-maroon">.text-maroon</a>
+// <a href="#" class="text-primary">.text-primary</a>
+// <a href="#" class="text-success">.text-success</a>
+// <a href="#" class="text-info">.text-info</a>
+// <a href="#" class="text-warning">.text-warning</a>
+// <a href="#" class="text-danger">.text-danger</a>
+// <a href="#" class="text-white bg-primary">.text-white (background
+// color not included)</a>
+// 
+// .text-yellow - Yellow Text
+// .text-green - Green Text
+// .text-primary - Maroon Text
+// .text-maroon - Alias of `text-primary`
+// .text-success - Green Text
+// .text-info - Blue Text
+// .text-warning - Yellow Text
+// .text-danger - Orange Text
+// .text-white - White Text
+// 
+// Styleguide 1.7
+@include text-emphasis-variant('.text-yellow', $color-yellow);
+@include text-emphasis-variant('.text-green', $color-green);
+@include text-emphasis-variant('.text-maroon', $color-maroon);
+@include text-emphasis-variant('.text-primary', $color-maroon);
+@include text-emphasis-variant('.text-success', $color-green);
+@include text-emphasis-variant('.text-info', $color-blue);
+@include text-emphasis-variant('.text-warning', $color-yellow);
+@include text-emphasis-variant('.text-danger', $color-orange);
+@include text-emphasis-variant('.text-white', $color-white);

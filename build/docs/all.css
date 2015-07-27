@@ -309,6 +309,14 @@ a.text-green:hover {
   color: #3b610e;
 }
 
+.text-maroon {
+  color: #903;
+}
+
+a.text-maroon:hover {
+  color: #660022;
+}
+
 .text-primary {
   color: #903;
 }
@@ -347,6 +355,14 @@ a.text-warning:hover {
 
 a.text-danger:hover {
   color: #c16200;
+}
+
+.text-white {
+  color: #fff;
+}
+
+a.text-white:hover {
+  color: #e6e6e6;
 }
 
 .bg-primary {
@@ -406,6 +422,11 @@ dl {
 dt,
 dd {
   line-height: 1.44;
+}
+
+.listings {
+  list-style: none;
+  text-align: left;
 }
 
 blockquote {
@@ -545,11 +566,6 @@ pre {
 
 .pad-md {
   padding: 20px;
-}
-
-.listings {
-  list-style: none;
-  text-align: left;
 }
 
 .row-same-height {
