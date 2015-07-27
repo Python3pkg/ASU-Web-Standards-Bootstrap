@@ -36,8 +36,16 @@ a:hover, a:focus {
 a.no-border {
   border-bottom: 0;
 }
-a.no-border:hover, a.no-border:focus {
+a.no-border:hover, a.no-border:focus, a.no-border:active {
   border-bottom: 0;
+}
+a.no-decorate {
+  border: 0;
+  color: inherit;
+}
+a.no-decorate:hover, a.no-decorate:focus, a.no-decorate:active {
+  border: 0;
+  color: inherit;
 }
 li.external-link a:before {
   color: inherit;
