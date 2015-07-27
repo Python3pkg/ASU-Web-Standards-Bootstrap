@@ -1,0 +1,10 @@
+// Horizontal Rulers
+// 
+// <hr>
+// 
+// Styleguide 1.4
+hr {
+  border-top: 1px solid $color-nobel;
+  margin-bottom: $line-height-computed;
+  margin-top: $line-height-computed;
+}

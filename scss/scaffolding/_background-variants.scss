@@ -1,0 +1,20 @@
+// Background variants
+//
+// <p class="bg-primary">.bg-primary</p>
+// <p class="bg-success">.bg-success</p>
+// <p class="bg-info">.bg-info</p>
+// <p class="bg-warning">.bg-warning</p>
+// <p class="bg-danger">.bg-danger</p>
+//
+// .bg-primary - Maroon background
+// .bg-success - Green background
+// .bg-info - Blue background
+// .bg-warning - Yellow background
+// .bg-danger - Orange background
+//
+// Styleguide 1.8
+@include bg-variant('.bg-primary', $color-maroon);
+@include bg-variant('.bg-success', $color-green);
+@include bg-variant('.bg-info', $color-blue);
+@include bg-variant('.bg-warning', $color-yellow);
+@include bg-variant('.bg-danger', $color-orange);

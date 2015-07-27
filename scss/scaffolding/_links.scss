@@ -1,0 +1,58 @@
+// Links
+// 
+// Use the `<a>` tag to link to pages, anchors, or external pages.
+// 
+// Make your link text descriptive.
+// 
+// <p><a href="#">I am a link</a></p>
+// <p><a href="#" class="no-border">I am a link without a border</a></p>
+// 
+// .no-border - A no border link.
+// 
+// Styleguide 1.1
+a {
+  border-bottom: 1px dotted $color-maroon;
+  color: $color-maroon;
+  font-weight: normal;
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px dotted $color-brick-red;
+    color: $color-brick-red;
+    text-decoration: none;
+  }
+
+  &.no-border {
+    border-bottom: 0;
+
+    &:hover,
+    &:focus {
+      border-bottom: 0;
+    }
+  }
+
+  // External Links
+  //
+  // These are used by the navigation. If a link is in a list, you can add
+  // `.external-link` to the `<li>` and the link will have an external icon
+  // on it.
+  // 
+  // <ul class="list-group" style="width: 300px;">
+  //   <li class="list-group-item external-link"><a href="#">I am a link</a>
+  // </ul>
+  //
+  // Styleguide 1.2
+  li.external-link &:before {
+    color: inherit;
+    content: '\f08e';
+    display: inline-block;
+    float: right;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    width: 10px;
+
+    .navbar & {
+      margin-top: 4px;
+    }
+  }
+}
