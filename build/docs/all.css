@@ -2019,7 +2019,7 @@ input[type="button"].btn-block {
 }
 @media (min-width: 992px) {
   .navbar-ws .navbar-nav > li:first-child > a:first-child {
-    padding: 21px 25px !important;
+    padding: 20.5px 25px !important;
   }
 }
 .navbar-ws .navbar-nav > li > a {
@@ -2028,7 +2028,7 @@ input[type="button"].btn-block {
   font-size: 15px;
   font-weight: bold;
   line-height: 1;
-  padding: 21px 16px;
+  padding: 20.5px 16px;
 }
 @media (max-width: 1200px) {
   .navbar-ws .navbar-nav > li > a {
