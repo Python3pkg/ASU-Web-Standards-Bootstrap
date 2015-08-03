@@ -641,14 +641,16 @@ code {
 }
 
 .site-content .container {
-  padding: 48px 0;
+  padding-bottom: 48px;
+  padding-top: 48px;
 }
 .container + .site-content .container {
   padding-top: 0;
 }
 .site-content .gray-back .container,
 .site-content .gold-back .container {
-  padding: 0;
+  padding-bottom: 0;
+  padding-top: 0;
 }
 
 #masthead {
