@@ -120,7 +120,8 @@ code {
 
 .site-content {
   .container {
-    padding: 48px 0;
+    padding-bottom: 48px;
+    padding-top: 48px;
 
     .container + & {
       padding-top: 0;
@@ -129,7 +130,8 @@ code {
 
   .gray-back .container,
   .gold-back .container {
-    padding: 0;
+    padding-bottom: 0;
+    padding-top: 0;
   }
 }
 
