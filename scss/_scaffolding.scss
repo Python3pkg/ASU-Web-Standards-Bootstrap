@@ -122,14 +122,14 @@ code {
   .container {
     padding: 48px 0;
 
-    .gray-back .container,
-    .gold-back .container {
-      padding: 0;
-    }
-
-    & + & {
+    .container + & {
       padding-top: 0;
     }
+  }
+
+  .gray-back .container,
+  .gold-back .container {
+    padding: 0;
   }
 }
 

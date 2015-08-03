@@ -643,12 +643,12 @@ code {
 .site-content .container {
   padding: 48px 0;
 }
-.site-content .container .gray-back .container,
-.site-content .container .gold-back .container {
-  padding: 0;
-}
-.site-content .container + .site-content .container {
+.container + .site-content .container {
   padding-top: 0;
+}
+.site-content .gray-back .container,
+.site-content .gold-back .container {
+  padding: 0;
 }
 
 #masthead {
