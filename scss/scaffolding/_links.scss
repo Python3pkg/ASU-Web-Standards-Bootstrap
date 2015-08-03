@@ -6,8 +6,10 @@
 // 
 // <p><a href="#">I am a link</a></p>
 // <p><a href="#" class="no-border">I am a link without a border</a></p>
+// <p><a href="#" class="no-decorate">I am a link with no decoration</a></p>
 // 
 // .no-border - A no border link.
+// .no-decorate - Undecorated Link
 // 
 // Styleguide 1.1
 a {
@@ -26,8 +28,21 @@ a {
     border-bottom: 0;
 
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
       border-bottom: 0;
+    }
+  }
+
+  &.no-decorate {
+    border: 0;
+    color: inherit;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border: 0;
+      color: inherit;
     }
   }
 
