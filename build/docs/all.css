@@ -2243,7 +2243,8 @@ input[type="button"].btn-block {
   border-bottom: 1px #fafafa solid;
 }
 .asu-breadcrumbs .container {
-  padding: 0;
+  padding-bottom: 0;
+  padding-top: 0;
 }
 .asu-breadcrumbs .breadcrumb {
   margin: 10px 0;
