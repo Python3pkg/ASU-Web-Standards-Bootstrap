@@ -1,0 +1,23 @@
+// Lists
+//
+// TODO document
+//
+// Styleguide 1.9
+ul,
+ol {
+  margin-bottom: ($line-height-computed);
+}
+
+dl {
+  margin-bottom: ($line-height-computed);
+}
+
+dt,
+dd {
+  line-height: ($line-height-base);
+}
+
+.listings {
+  list-style: none;
+  text-align: left;
+}

@@ -22,7 +22,7 @@
 //   </div>
 // </nav>
 // 
-// Styleguide 13.5
+// Styleguide 14.5
 .navbar {
   border-color: transparent;
   height: $nav-bar-height;
@@ -42,7 +42,7 @@
   }
 
   @media (max-width: $asu-screen-sm-max) {
-    height: $nav-bar-small-height;
+    height: auto;
     min-height: $nav-bar-small-height; // Override Bootstrap minheight
   }
 }

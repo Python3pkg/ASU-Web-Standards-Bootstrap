@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* ========================================================================
- * Web Standards: bootstrap-asu.css v0.1.8
+ * Web Standards: bootstrap-asu.css v0.1.9
  * ========================================================================
  * Copyright 2014 ASU
  * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
@@ -36,8 +36,16 @@ a:hover, a:focus {
 a.no-border {
   border-bottom: 0;
 }
-a.no-border:hover, a.no-border:focus {
+a.no-border:hover, a.no-border:focus, a.no-border:active {
   border-bottom: 0;
+}
+a.no-decorate {
+  border: 0;
+  color: inherit;
+}
+a.no-decorate:hover, a.no-decorate:focus, a.no-decorate:active {
+  border: 0;
+  color: inherit;
 }
 li.external-link a:before {
   color: inherit;
@@ -292,7 +300,9 @@ mark,
   color: #ffc425;
 }
 
-a.text-yellow:hover {
+a.text-yellow:hover,
+a.text-yellow:active,
+a.text-yellow:focus {
   color: #f1b000;
 }
 
@@ -300,15 +310,29 @@ a.text-yellow:hover {
   color: #568e14;
 }
 
-a.text-green:hover {
+a.text-green:hover,
+a.text-green:active,
+a.text-green:focus {
   color: #3b610e;
+}
+
+.text-maroon {
+  color: #903;
+}
+
+a.text-maroon:hover,
+a.text-maroon:active,
+a.text-maroon:focus {
+  color: #660022;
 }
 
 .text-primary {
   color: #903;
 }
 
-a.text-primary:hover {
+a.text-primary:hover,
+a.text-primary:active,
+a.text-primary:focus {
   color: #660022;
 }
 
@@ -316,7 +340,9 @@ a.text-primary:hover {
   color: #568e14;
 }
 
-a.text-success:hover {
+a.text-success:hover,
+a.text-success:active,
+a.text-success:focus {
   color: #3b610e;
 }
 
@@ -324,7 +350,9 @@ a.text-success:hover {
   color: #008ed6;
 }
 
-a.text-info:hover {
+a.text-info:hover,
+a.text-info:active,
+a.text-info:focus {
   color: #006ca3;
 }
 
@@ -332,7 +360,9 @@ a.text-info:hover {
   color: #ffc425;
 }
 
-a.text-warning:hover {
+a.text-warning:hover,
+a.text-warning:active,
+a.text-warning:focus {
   color: #f1b000;
 }
 
@@ -340,8 +370,20 @@ a.text-warning:hover {
   color: #f47c00;
 }
 
-a.text-danger:hover {
+a.text-danger:hover,
+a.text-danger:active,
+a.text-danger:focus {
   color: #c16200;
+}
+
+.text-white {
+  color: #fff;
+}
+
+a.text-white:hover,
+a.text-white:active,
+a.text-white:focus {
+  color: #e6e6e6;
 }
 
 .bg-primary {
@@ -401,6 +443,11 @@ dl {
 dt,
 dd {
   line-height: 1.44;
+}
+
+.listings {
+  list-style: none;
+  text-align: left;
 }
 
 blockquote {
@@ -542,11 +589,6 @@ pre {
   padding: 20px;
 }
 
-.listings {
-  list-style: none;
-  text-align: left;
-}
-
 .row-same-height {
   display: table;
 }
@@ -599,11 +641,16 @@ code {
 }
 
 .site-content .container {
-  padding: 48px 0;
+  padding-bottom: 48px;
+  padding-top: 48px;
 }
-.site-content .container .gray-back .container,
-.site-content .container .gold-back .container {
-  padding: 0;
+.container + .site-content .container {
+  padding-top: 0;
+}
+.site-content .gray-back .container,
+.site-content .gold-back .container {
+  padding-bottom: 0;
+  padding-top: 0;
 }
 
 #masthead {
@@ -1796,7 +1843,7 @@ input[type="button"].btn-block {
 }
 @media (max-width: 991px) {
   .navbar {
-    height: 36px;
+    height: auto;
     min-height: 36px;
   }
 }
@@ -1969,7 +2016,7 @@ input[type="button"].btn-block {
 }
 @media (min-width: 992px) {
   .navbar-ws .navbar-nav > li:first-child > a:first-child {
-    padding: 21px 25px !important;
+    padding: 20.5px 25px !important;
   }
 }
 .navbar-ws .navbar-nav > li > a {
@@ -1978,7 +2025,7 @@ input[type="button"].btn-block {
   font-size: 15px;
   font-weight: bold;
   line-height: 1;
-  padding: 21px 16px;
+  padding: 20.5px 16px;
 }
 @media (max-width: 1200px) {
   .navbar-ws .navbar-nav > li > a {
@@ -2189,6 +2236,10 @@ input[type="button"].btn-block {
 .asu-breadcrumbs {
   background-color: #f5f5f5;
   border-bottom: 1px #fafafa solid;
+}
+.asu-breadcrumbs .container {
+  padding-bottom: 0;
+  padding-top: 0;
 }
 .asu-breadcrumbs .breadcrumb {
   margin: 10px 0;
@@ -3180,7 +3231,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   }
 }
 .profile {
-  border: 5px solid #dbdbdb;
+  border: 1px solid #dbdbdb;
   margin-bottom: 24px;
 }
 .profile .profile-heading {
