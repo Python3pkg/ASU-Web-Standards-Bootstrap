@@ -11,7 +11,7 @@ body {
   font-weight: 200;
   line-height: $line-height-base;
 
-  @media (min-width: 1200px) {
+  @media (min-width: $asu-screen-lg-min) {
     font-size: $font-size-large;
   }
 }

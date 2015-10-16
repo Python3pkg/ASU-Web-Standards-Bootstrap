@@ -1629,7 +1629,15 @@ select[multiple].input-lg {
 
 .btn-block {
   display: block;
+  font-size: 16px;
+  padding-left: 5px;
+  padding-right: 5px;
   width: 100%;
+}
+@media (min-width: 1200px) {
+  .btn-block {
+    font-size: 18px;
+  }
 }
 .btn-block + .btn-block {
   margin-top: 15px;
