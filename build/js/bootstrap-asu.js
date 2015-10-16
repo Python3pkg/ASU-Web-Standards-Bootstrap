@@ -459,8 +459,11 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
       } )
 
       // Hacky fix for responsive width
+      // Set the sidebar's width to be the width of the
+      // parent.
       var responsiveFix = function () {
-        $this.width( $this.parent().width() )
+        var padding = $this.innerWidth() - $this.width()
+        $this.width( $this.parent().width() - padding )
       }
 
       $(window).smartresize( responsiveFix )
