@@ -232,7 +232,14 @@
 
 .btn-block {
   display: block;
+  font-size: $font-size-medium;
+  padding-left: $space-base;
+  padding-right: $space-base;
   width: 100%;
+
+  @media (min-width: $asu-screen-lg-min) {
+    font-size: $font-size-large;
+  }
 
   // Vertically space out multiple block buttons
   + .btn-block {
