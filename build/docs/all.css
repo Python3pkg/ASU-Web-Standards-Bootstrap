@@ -3374,6 +3374,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .footer .big-foot {
   background-color: #1e1e1e;
+  color: #fff;
   padding-bottom: 14px;
   padding-top: 40px;
 }
