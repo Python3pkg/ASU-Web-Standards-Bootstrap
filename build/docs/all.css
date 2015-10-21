@@ -2029,7 +2029,7 @@ input[type="button"].btn-block {
 }
 @media (min-width: 992px) {
   .navbar-ws .navbar-nav > li:first-child > a:first-child {
-    padding: 20.5px 25px !important;
+    padding: 21px 25px !important;
   }
 }
 .navbar-ws .navbar-nav > li > a {
