@@ -2024,7 +2024,7 @@ input[type="button"].btn-block {
 }
 @media (min-width: 992px) {
   .navbar-ws .navbar-nav > li:first-child > a:first-child {
-    padding: 20.5px 25px !important;
+    padding: 21px 25px !important;
   }
 }
 .navbar-ws .navbar-nav > li > a {
@@ -3404,7 +3404,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   text-decoration: none;
 }
 .footer .little-foot-nav > li > a:hover, .footer .little-foot-nav > li > a:focus {
-  color: #fff;
+  color: #666;
 }
 .footer .little-foot-nav > li:last-child > a {
   margin-right: 0;
