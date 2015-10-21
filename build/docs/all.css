@@ -3409,7 +3409,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   text-decoration: none;
 }
 .footer .little-foot-nav > li > a:hover, .footer .little-foot-nav > li > a:focus {
-  color: #fff;
+  color: #666;
 }
 .footer .little-foot-nav > li:last-child > a {
   margin-right: 0;
