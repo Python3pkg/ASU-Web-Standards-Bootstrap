@@ -3414,6 +3414,11 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   max-width: 87%;
   padding-top: 6px;
 }
+@media (max-width: 991px) {
+  .little-foot__innovate-image-wrapper img {
+    display: none;
+  }
+}
 
 .little-foot__right {
   padding: 15px 10px;
@@ -3422,6 +3427,11 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .little-foot__right__innovate {
   font-size: 21px;
   font-weight: 700;
+}
+@media (max-width: 767px) {
+  .little-foot__right__innovate {
+    font-size: 18px;
+  }
 }
 .little-foot__right__innovate a {
   border-bottom: 0;

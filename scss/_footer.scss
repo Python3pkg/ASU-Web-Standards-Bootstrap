@@ -166,6 +166,10 @@
 .little-foot__innovate-image-wrapper img {
   max-width: 87%;
   padding-top: 6px;
+
+  @media (max-width: $asu-screen-sm-max) {
+    display: none;
+  }
 }
 
 .little-foot__right {
@@ -175,6 +179,10 @@
 .little-foot__right__innovate {
   font-size: 21px;
   font-weight: 700;
+
+  @media(max-width: $asu-screen-xs-max) {
+    font-size: 18px;
+  }
 
   a {
     border-bottom: 0;
