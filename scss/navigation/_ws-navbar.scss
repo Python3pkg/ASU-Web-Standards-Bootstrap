@@ -84,7 +84,7 @@
     li:first-child > a {
       &:first-child {
         @media (min-width: $asu-screen-md-min) {
-          padding: 21px 25px !important;
+          padding: 20.5px 25px !important;
         }
       }
     }
@@ -96,7 +96,7 @@
       font-size: 15px;
       font-weight: bold;
       line-height: 1;
-      padding: 20.5px 16px;
+      padding: 21px 16px;
 
       @media (max-width: $asu-screen-lg-min) {
         padding-left: 14px;
