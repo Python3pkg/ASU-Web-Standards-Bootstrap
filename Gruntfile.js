@@ -115,7 +115,7 @@ module.exports = function (grunt) {
         }
       },
       files: [
-        'test/qunit/visual-index.html'
+        'test/qunit/qunit-index.html'
       ]
     },
     // SCSS Lint
@@ -217,8 +217,8 @@ module.exports = function (grunt) {
       options: {
         watchTask: true,
         server: {
-          baseDir: "./test/",
-          index: "qunit/visual-index.html"
+          baseDir: "./",
+          index: "test/qunit/visual-index.html"
         }
       }
     },
@@ -226,7 +226,7 @@ module.exports = function (grunt) {
     // =====
     watch: {
       core: {
-        files: ['scss/*.scss','js/*.js'],
+        files: ['<%= jshint.core.src %>', '<%= scsslint.allFiles %>'],
         tasks: [
           'test'
         ]
