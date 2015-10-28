@@ -44,6 +44,13 @@
       $blackout.hide();
     }
 
+    $( window ).smartresize( function () {
+      if ( ( window.matchMedia && window.matchMedia('(min-width: ' + ( mobileWidth + 1 ) + 'px)').matches ) ||
+          ( typeof window.matchMedia === 'undefined' && $( window ).width() > mobileWidth ) ) {
+        hideBlackout();
+      }
+    } )
+
     var mainSearch = document.getElementById( 'main-search' )
     if ( mainSearch === null ) {
       // ==========
