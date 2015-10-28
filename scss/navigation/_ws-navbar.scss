@@ -58,6 +58,8 @@
   border-radius: 0;
 
   @media (max-width: $asu-screen-sm-max) {
+    background-color: rgb(80, 85, 88);
+
     &.affix {
       position: static !important;
     }
@@ -68,8 +70,15 @@
     padding-right: 0;
 
     @media (max-width: $asu-screen-sm-max) {
-      // Not being used by official standards yet.
-      //width: 100%;
+      width: 100%;
+    }
+  }
+
+  .navbar-collapse {
+    @media(max-width: $asu-screen-sm-max) {
+      position: absolute;
+      width: 100%;
+      z-index: 10000;
     }
   }
 
@@ -78,76 +87,153 @@
     width: 100%;
     // admin bars usually have a z-index of 999999 and we want them to overlay on top of this affixed top menu
     z-index: 999998;
+
+    @media(max-width: $asu-screen-sm-max) {
+      position: absolute !important;
+    }
   }
 
-  .navbar-nav > {
-    li:first-child > a {
-      &:first-child {
-        @media (min-width: $asu-screen-md-min) {
-          padding: 20.5px 25px !important;
+  .navbar-nav {
+    > {
+      li:first-child > a {
+        &:first-child {
+          @media (min-width: $asu-screen-md-min) {
+            padding: 20.5px 25px !important;
+          }
         }
       }
-    }
 
-    li > a {
-      // TODO refactor these constants
-      background-color: transparent;
-      color: $color-gallery;
-      font-size: 15px;
-      font-weight: bold;
-      line-height: 1;
-      padding: 21px 16px;
+      li > a {
+        // TODO refactor these constants
+        background-color: transparent;
+        color: $color-gallery;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 1;
+        padding: 21px 16px;
 
-      @media (max-width: $asu-screen-lg-min) {
-        padding-left: 14px;
-        padding-right: 14px;
+        @media (max-width: $asu-screen-lg-min) {
+          padding-left: 14px;
+          padding-right: 14px;
+        }
+
+        // TODO carots should be $color-dove-gray (#666)
+
+        &:hover,
+        &:focus {
+          background-color: $color-black;
+          color: $color-sun;
+
+          // TODO carots should be #eee
+          
+          @media(max-width: $asu-screen-sm-max) {
+            background-color: rgb(220, 220, 220);
+            color: inherit;
+          }
+        }
       }
 
-      // TODO carots should be $color-dove-gray (#666)
-
-      &:hover,
-      &:focus {
+      li.hover > a {
         background-color: $color-black;
         color: $color-sun;
 
         // TODO carots should be #eee
+        
+        @media(max-width: $asu-screen-sm-max) {
+          background-color: rgb(220, 220, 220);
+          color: inherit;
+        }
       }
-    }
 
-    li.hover > a {
-      background-color: $color-black;
-      color: $color-sun;
-
-      // TODO carots should be #eee
-    }
-
-    li.open > a {
-      background-color: $color-black;
-      color: $color-sun;
-    }
-
-    .active > a {
-      background-color: $color-dark-cave;
-      // TODO the docs say this should be $color-selective-yellow, but
-      // everyone is using white
-      color: $color-white;
-    }
-
-    .disabled > a {
-      &,
-      &:hover,
-      &:focus {
-        background-color: transparent;
-        color: $color-silver;
-      }
-    }
-
-    > .open > a {
-      &,
-      &:hover,
-      &:focus {
-        background-color: $color-dark-cave;
+      li.open > a {
+        background-color: $color-black;
         color: $color-sun;
+
+        @media(max-width: $asu-screen-sm-max) {
+          background-color: rgb(240, 240, 240);
+          color: inherit;
+        }
+      }
+
+      .active > a {
+        background-color: $color-dark-cave;
+        // TODO the docs say this should be $color-selective-yellow, but
+        // everyone is using white
+        color: $color-white;
+
+        @media(max-width: $asu-screen-sm-max) {
+          background-color: rgb(240, 240, 240);
+          color: inherit;
+        }
+      }
+
+      .disabled > a {
+        &,
+        &:hover,
+        &:focus {
+          background-color: transparent;
+          color: $color-silver;
+        }
+      }
+
+      > .open > a {
+        &,
+        &:hover,
+        &:focus {
+          background-color: $color-dark-cave;
+          color: $color-sun;
+
+          @media(max-width: $asu-screen-sm-max) {
+            background-color: rgb(220, 220, 220);
+            color: inherit;
+          }
+        }
+      }
+
+      @media(max-width: $asu-screen-sm-max) {
+        li {
+          background-color: white;
+          border-bottom: 1px solid rgb(221, 221, 221);
+
+          > a {
+            color: rgb(80, 85, 88);
+            font-size: 15px;
+            font-weight: 600;
+            padding: 12px 15px;
+            position: relative;
+
+            .caret {
+              background-color: rgb(244, 244, 244);
+              border-bottom: 0;
+              border-left: 1px solid rgb(221, 221, 221);
+              border-right: 0;
+              border-top: 0;
+              box-sizing: content-box;
+              color: rgb(178, 178, 178);
+              cursor: pointer;
+              display: block;
+              font-family: FontAwesome;
+              font-size: 20px;
+              font-style: normal;
+              font-variant: normal;
+              font-weight: normal;
+              height: 13px;
+              line-height: 20px;
+              padding: 11px 10px 15px;
+              position: absolute;
+              right: 0;
+              speak: none;
+              text-align: center;
+              text-transform: none;
+              top: 0;
+              width: 35px;  
+
+              &:before {
+                content: '\f0d7';
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -168,6 +254,11 @@
 
     .navbar-text {
       color: $color-boulder;
+    }
+
+    @media(max-width: $asu-screen-sm-max) {
+      font-size: 15px;
+      font-weight: 600;
     }
   }
 
@@ -256,19 +347,37 @@
       overflow: hidden;
     }
 
-    > li > a {
-      color: $color-gallery;
-      font-size: $font-size-menu;
-      font-weight: normal;
-      line-height: $line-height-menu;
-      padding: $space-large $space-xxlarge;
+    > li {
+      @media(max-width: $asu-screen-sm-max) {
+        background-color: rgb(244, 244, 244);
+        border-top: 1px solid rgb(221, 221, 221);
+      }
 
-      &:hover,
-      &:focus {
-        background-color: $color-black;
-        border: 0;
+      > a {
         color: $color-gallery;
-        text-decoration: none;
+        font-size: $font-size-menu;
+        font-weight: normal;
+        line-height: $line-height-menu;
+        padding: $space-large $space-xxlarge;
+
+        @media(max-width: $asu-screen-sm-max) {
+          color: rgb(164, 43, 77);
+          font-size: 13.5px;
+          font-weight: 200;
+        }
+
+        &:hover,
+        &:focus {
+          background-color: $color-black;
+          border: 0;
+          color: $color-gallery;
+          text-decoration: none;
+
+          @media(max-width: $asu-screen-sm-max) {
+            background-color: inherit;
+            color: rgb(210, 48, 101);
+          }
+        }
       }
     }
 
@@ -284,6 +393,16 @@
     }
   }
 
+  .open.dropdown {
+    @media (max-width: $asu-screen-sm-max) {
+      .caret {
+        &:before {
+          content: '\f0d8';
+        }
+      }
+    }
+  }
+
   .open > .dropdown-menu {
     @include box-shadow(0 $space-base $space-large rgba(0, 0, 0, .2));
 
@@ -293,6 +412,8 @@
 
     @media (max-width: $asu-screen-sm-max) {
       @include box-shadow(none);
+
+      padding: 0;
     }
   }
 }
