@@ -2014,6 +2014,9 @@ input[type="button"].btn-block {
   border-radius: 0;
 }
 @media (max-width: 991px) {
+  .navbar-ws {
+    background-color: #505558;
+  }
   .navbar-ws.affix {
     position: static !important;
   }
@@ -2084,6 +2087,12 @@ input[type="button"].btn-block {
 }
 .navbar-ws .navbar-brand .navbar-text {
   color: #777;
+}
+@media (max-width: 991px) {
+  .navbar-ws .navbar-brand {
+    font-size: 15px;
+    font-weight: 600;
+  }
 }
 .navbar-ws .navbar-toggle {
   border: 0;

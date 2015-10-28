@@ -78,6 +78,18 @@
         e.preventDefault();
         e.stopPropagation();
       }
+
+      if ( $( e.target ).is( '.dropdown-title' ) ) {
+        if ( ( window.matchMedia &&
+               window.matchMedia('(max-width: ' + mobileWidth + 'px)').matches ) ||
+            ( typeof window.matchMedia === 'undefined' &&
+              $( window ).width() < mobileWidth ) ) {
+          e.preventDefault()
+          e.stopPropagation()
+
+          $( e.target ).closest('.column').toggleClass('active');
+        }
+      }
     })
   }
 

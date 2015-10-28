@@ -49,6 +49,11 @@ li.dropdown-title {
           color: $color-sun;
         }
       }
+
+      @media(max-width: $asu-screen-sm-max) {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
     }
 
     @media (min-width: 992px) {
@@ -89,6 +94,17 @@ li.dropdown-title {
       li {
         list-style: none;
 
+        @media(max-width: $asu-screen-sm-max) {
+          background-color: rgb(244, 244, 244);
+          border-top: 1px solid rgb(221, 221, 221);
+          padding-left: 10px;
+          width: 100%;
+
+          &:not(.dropdown-title) {
+            display: none;
+          }
+        }
+
         a {
           border-bottom: 0;
           clear: both;
@@ -99,11 +115,22 @@ li.dropdown-title {
           line-height: 1.4;
           padding: 9px 10px 10px;
 
+          @media(max-width: $asu-screen-sm-max) {
+            color: rgb(164, 43, 77);
+            font-size: 13.5px;
+            font-weight: 200;
+          }
+
           &:hover,
           &:focus {
             background-color: $color-black;
             color: $color-gallery;
             text-decoration: none;
+
+            @media(max-width: $asu-screen-sm-max) {
+              background-color: inherit;
+              color: rgb(210, 48, 101);
+            }
           }
         }
 
@@ -130,14 +157,68 @@ li.dropdown-title {
     font-weight: normal;
     line-height: 1.4;
     padding: 9px 10px 10px;
+
+    @media(max-width: $asu-screen-sm-max) {
+      background-color: rgb(244, 244, 244);
+      border-top: 1px solid rgb(221, 221, 221);
+      color: rgb(164, 43, 77);
+      font-size: 13.5px;
+      font-weight: 200;
+      width: 100%;
+
+      &:before {
+        background-color: rgb(244, 244, 244);
+        border-bottom: 0;
+        border-left: 1px solid rgb(221, 221, 221);
+        border-right: 0;
+        border-top: 0;
+        box-sizing: content-box;
+        color: rgb(178, 178, 178);
+        content: '\f0d7';
+        cursor: pointer;
+        display: block;
+        font-family: FontAwesome;
+        font-size: 20px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        height: 13px;
+        line-height: 20px;
+        padding: 10px 10px 15px;
+        position: absolute;
+        right: 0;
+        speak: none;
+        text-align: center;
+        text-transform: none;
+        top: 1px;
+        width: 35px;  
+      }
+    }
   }
 
   .row {
     margin-left: 0;
     margin-right: 0;
+
+    .column.active {
+      li:not(.dropdown-title) {
+        display: block;
+      }
+
+      li.dropdown-title {
+        &:before {
+          content: '\f0d8';
+        }
+      }
+    }
   }
 
   .vertical-border-right {
     border-right: 1px solid $color-tundora;
+
+    @media(max-width: $asu-screen-sm-max) {
+      border: 0;
+      min-height: 0;
+    }
   }
 }
