@@ -291,8 +291,8 @@ module.exports = function (grunt) {
     'kss'
   ]);
 
-  // Develop
-  grunt.registerTask('develop', [
+  // Serve
+  grunt.registerTask('serve', [
     'browserSync',
     'watch:core'
   ]);

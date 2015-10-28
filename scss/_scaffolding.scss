@@ -12,6 +12,11 @@
 @import 'scaffolding/background-variants';
 
 // TODO refactor
+header {
+  position: relative;
+  z-index: 10000;
+}
+
 .page-header {
   margin: 0 0 ($line-height-computed);
   padding-bottom: 11px;
