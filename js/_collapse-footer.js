@@ -22,6 +22,19 @@
     }
   }
 
+  $('.big-foot h2[data-toggle="collapse"]').click(function (e) {
+    if ( $(window).innerWidth() >= mobileWidth ) {
+      // Don't collapse!
+      e.preventDefault();
+
+      var id = $(this).attr('data-target');
+      $(id).addClass('in');
+
+      return false;
+    }
+  });
+
+
   $(document).ready(function () {
     // Keep all window resize scripts within the throttling function
     $(window).smartresize( collapseFooter )
