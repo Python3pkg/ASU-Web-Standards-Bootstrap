@@ -12,9 +12,11 @@
 @import 'scaffolding/background-variants';
 
 // TODO refactor
-header {
-  position: relative;
-  z-index: 10000;
+#asu_header {
+  header {
+    position: relative;
+    z-index: 100000;
+  }
 }
 
 .page-header {

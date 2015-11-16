@@ -431,9 +431,9 @@ a.bg-danger:hover {
   background-color: #c16200;
 }
 
-header {
+#asu_header header {
   position: relative;
-  z-index: 10000;
+  z-index: 100000;
 }
 
 .page-header {
