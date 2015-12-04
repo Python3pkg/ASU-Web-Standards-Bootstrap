@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* ========================================================================
- * Web Standards: bootstrap-asu.css v0.2.1
+ * Web Standards: bootstrap-asu.css v0.2.2
  * ========================================================================
  * Copyright 2014-2015 ASU
  * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
@@ -2039,10 +2039,8 @@ input[type="button"].btn-block {
     z-index: 10000;
   }
 }
-.navbar-ws.active {
-  position: fixed;
-}
 .navbar-ws.affix {
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 999998;
