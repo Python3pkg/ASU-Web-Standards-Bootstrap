@@ -1,8 +1,13 @@
 // Lists
 //
-// TODO document
+// Markup:
+// <ul>
+//    <li>List Item 1</li>
+//    <li>List Item 2</li>
+//    <li>List Item 3</li>
+// </ul>
 //
-// Styleguide 1.9
+// Styleguide scaffolding.lists
 ul,
 ol {
   margin-bottom: ($line-height-computed);
@@ -17,6 +22,16 @@ dd {
   line-height: ($line-height-base);
 }
 
+// Lists without bullets
+//
+// Markup:
+// <ul class="listings">
+//    <li>List Item 1</li>
+//    <li>List Item 2</li>
+//    <li>List Item 3</li>
+// </ul>
+//
+// Styleguide scaffolding.lists-without-bullets
 .listings {
   list-style: none;
   text-align: left;

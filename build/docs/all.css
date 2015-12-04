@@ -2044,6 +2044,9 @@ input[type="button"].btn-block {
     z-index: 10000;
   }
 }
+.navbar-ws.active {
+  position: fixed;
+}
 .navbar-ws.affix {
   top: 0;
   width: 100%;
