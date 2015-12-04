@@ -1,8 +1,34 @@
 // Spacing
 //
-// TODO document
+// There are a variety of spacing modifiers to help you tweak the spacing
+// between your elements, while still maintaining a standardized layout
+// 
+// .margin-top-0 - an alias for .space-top-0
+// .space-top-0 - 0px margin top
+// .space-top-sm - 10px margin top
+// .space-top-md - 20px margin top
+// .space-top-lg - 30px margin top
+// .space-top-xl - 40px margin top
+// .space-bot-0 - 0px margin bottom
+// .space-bot-sm - 10px margin bottom
+// .space-bot-md - 20px margin bottom
+// .space-bot-lg - 30px margin bottom
+// .space-bot-xl - 40px margin bottom
+// .mr-20 - margin right 20px
+// .pad-top-0 - 0px padding top
+// .pad-top-sm - 10px padding top
+// .pad-top-md - 20px padding top
+// .pad-top-lg - 30px padding top
+// .pad-top-xl - 40px padding top
+// .pad-bot-0 - 0px padding bottom
+// .pad-bot-sm - 10px padding bottom
+// .pad-bot-md - 20px padding bottom
+// .pad-bot-lg - 30px padding bottom
+// .pad-bot-xl - 40px padding bottom
+// .pad-zero - 0 padding all around
+// .pad-md - 20px padding all around
 //
-// Styleguide 1.10
+// Styleguide scaffolding.spacing
 
 .space-top-0,
 .margin-top-0 {
