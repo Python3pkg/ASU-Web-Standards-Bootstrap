@@ -4,8 +4,7 @@
 // themed. See [GetBootstrap](http://getbootstrap.com/css/#forms) for
 // more form details.
 // 
-// Example:
-// 
+// Markup:
 // <div class="form-group has-success">
 //   <label class="control-label" for="inputSuccess1">Input with success</label>
 //   <input type="text" class="form-control" id="inputSuccess1">
@@ -18,32 +17,8 @@
 //   <label class="control-label" for="inputError1">Input with error</label>
 //   <input type="text" class="form-control" id="inputError1">
 // </div>
-// <div class="has-success">
-//   <div class="checkbox">
-//     <label>
-//       <input type="checkbox" id="checkboxSuccess" value="option1">
-//       Checkbox with success
-//     </label>
-//   </div>
-// </div>
-// <div class="has-warning">
-//   <div class="checkbox">
-//     <label>
-//       <input type="checkbox" id="checkboxWarning" value="option1">
-//       Checkbox with warning
-//     </label>
-//   </div>
-// </div>
-// <div class="has-error">
-//   <div class="checkbox">
-//     <label>
-//       <input type="checkbox" id="checkboxError" value="option1">
-//       Checkbox with error
-//     </label>
-//   </div>
-// </div>
 // 
-// Styleguide 9
+// Styleguide forms
 ::-webkit-input-placeholder {
   color: $color-gray-boulder;
   font-weight: $font-weight-thin;
@@ -212,7 +187,45 @@ input[type="month"] {
   }
 }
 
-//== Special inputs
+// Checkboxes
+// 
+// Markup:
+// <div class="checkbox">
+//   <label>
+//     <input type="checkbox">
+//     <span class="outer-wrap"><i class="fa fa-check"></i></span>
+//     Unchecked
+//   </label>
+// </div>
+// <div class="checkbox">
+//   <label>
+//     <input type="checkbox" checked>
+//     <span class="outer-wrap"><i class="fa fa-check"></i></span>
+//     Checked
+//   </label>
+// </div>
+// 
+// Styleguide forms.checkboxes
+
+// Radio buttons
+// 
+// Markup:
+// <div class="radio">
+//   <label>
+//     <input type="radio" name="test1" value="option1">
+//     <span class="outer-wrap"><i class="fa fa-circle"></i></span>
+//     Radio off
+//   </label>
+// </div>
+// <div class="radio">
+//   <label>
+//     <input type="radio" name="test1" value="option2" checked="">
+//     <span class="outer-wrap"><i class="fa fa-circle"></i></span>
+//     Radio on
+//   </label>
+// </div>
+//
+// Styleguide forms.radio-buttons
 .radio,
 .checkbox {
   margin-bottom: $space-large;

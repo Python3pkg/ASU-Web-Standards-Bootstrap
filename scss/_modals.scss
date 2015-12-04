@@ -2,6 +2,7 @@
 // 
 // A rendered modal with header, body, and set of actions in the footer.
 // 
+// Markup:
 // <div class="static-modal">
 //   <div class="modal">
 //     <div class="modal-dialog">
@@ -22,7 +23,7 @@
 //   </div>
 // </div>
 // 
-// Styleguide 13
+// Styleguide modals
 .modal-content {
   border-radius: $border-radius;
 }

@@ -3,6 +3,7 @@
 // Related articles and links should be displayed at the bottom
 // of the page they are on before the footer.
 // 
+// Markup:
 // <div class="related-articles">
 //   <div class="container">
 //     <div class="row">
@@ -20,7 +21,7 @@
 //   </div>
 // </div>
 // 
-// Styleguide 19
+// Styleguide related-articles
 .related-articles {
   background-color: $color-alabaster;
   border-top: $space-xsmall solid darken($color-mine-shaft, 8);

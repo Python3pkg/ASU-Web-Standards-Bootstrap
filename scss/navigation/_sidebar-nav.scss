@@ -15,6 +15,7 @@
 // 
 // Example sidebar:
 //
+// Markup:
 // <div class="sidebar-nav">
 //   <h4>Sidebar Title</h4>
 //   <div class="list-group">
@@ -24,7 +25,7 @@
 // </div>
 //
 // 
-// Styleguide 14.7
+// Styleguide navigation.sidebar
 .sidebar-nav {
   border-top: $sidebar-border-top solid $color-maroon;
   margin-bottom: $space-xxlarge;

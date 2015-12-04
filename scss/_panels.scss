@@ -3,40 +3,30 @@
 // By default, all the `.panel` does is apply some basic border and padding to
 // contain some content.
 // 
+// Markup:
 // <div class="panel panel-default">
 //   <div class="panel-body">
 //     Basic panel example
 //   </div>
 // </div>
 // 
-// <div class="panel panel-primary">
-//   <div class="panel-heading"><h3 class="panel-title">Panel title</h3></div>
-//   <div class="panel-body">Panel content</div>
-// </div>
-// <div class="panel panel-success">
-//   <div class="panel-heading"><h3 class="panel-title">Panel title</h3></div>
-//   <div class="panel-body">Panel content</div>
-// </div>
-// <div class="panel panel-info">
-//   <div class="panel-heading"><h3 class="panel-title">Panel title</h3></div>
-//   <div class="panel-body">Panel content</div>
-// </div>
-// <div class="panel panel-warning">
-//   <div class="panel-heading"><h3 class="panel-title">Panel title</h3></div>
-//   <div class="panel-body">Panel content</div>
-// </div>
-// <div class="panel panel-danger">
+// Styleguide panels
+
+// Panel Modifiers
+// 
+// Markup:
+// <div class="panel {{modifier_class}}">
 //   <div class="panel-heading"><h3 class="panel-title">Panel title</h3></div>
 //   <div class="panel-body">Panel content</div>
 // </div>
 // 
-// .panel-primary -
-// .panel-success -
-// .panel-info    -
-// .panel-warning -
-// .panel-danger  -
+// .panel-primary - Primary panel
+// .panel-success - Successful panel
+// .panel-info    - Informational panel
+// .panel-warning - Warning panel
+// .panel-danger  - Danger panel
 // 
-// Styleguide 16
+// Styleguide panels.modifiers
 .panel {
   background-color: $color-alabaster;
   border: $space-xsmall solid $color-alto;
