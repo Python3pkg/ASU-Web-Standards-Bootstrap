@@ -431,9 +431,9 @@ a.bg-danger:hover {
   background-color: #c16200;
 }
 
-header {
+#asu_header header {
   position: relative;
-  z-index: 10000;
+  z-index: 100000;
 }
 
 .page-header {
@@ -2044,6 +2044,9 @@ input[type="button"].btn-block {
     z-index: 10000;
   }
 }
+.navbar-ws.active {
+  position: fixed;
+}
 .navbar-ws.affix {
   top: 0;
   width: 100%;
@@ -2368,6 +2371,12 @@ input[type="button"].btn-block {
   .sidebar-nav.affix {
     width: 360px;
   }
+}
+.sidebar-nav a.active {
+  background-color: #f5f5f5;
+  color: #903;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .breadcrumb {
