@@ -89,6 +89,15 @@
 .kss-style sub {
     bottom: -0.25em
 }
+.kss-style .kss-parameters-box {
+    margin: 28px;
+    border: 1px solid gainsboro;
+    padding: 10px;
+}
+.kiss-style .kss-parameters-box h3 {
+    margin-top: 0;
+}
+
 .kss-style ul.kss-parameters,
 .kss-style ol.kss-parameters,
 .kss-style ul.kss-nav__menu,
@@ -322,6 +331,7 @@
 }
 #kss-node .kss-modifier__wrapper {
     border: 1px solid #ccc;
+    margin: 0 30px;
     padding: 10px
 }
 #kss-node .kss-modifier__heading {
@@ -352,7 +362,7 @@
     margin: 0
 }
 #kss-node .kss-markup {
-    margin: -1px 0 24px 0;
+    margin: -1px 30px 24px;
     border: 1px solid #999
 }
 #kss-node .kss-markup pre {
