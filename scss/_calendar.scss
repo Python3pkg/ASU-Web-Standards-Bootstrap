@@ -3,6 +3,7 @@
 // A special web standards widget. Use the `.calendarPopover` class
 // to make calendars have a popover with a download widget.
 // 
+// Markup:
 // <div class="calendar-group">
 //   <div class="calendar-date calendarPopover" data-original-title="" title="">
 //     <time datetime="2014-01-01">
@@ -34,7 +35,7 @@
 //   </div>
 // </div>
 // 
-// Styleguide 6
+// Styleguide calendars
 .calendar-group {
   &:before,
   &:after {

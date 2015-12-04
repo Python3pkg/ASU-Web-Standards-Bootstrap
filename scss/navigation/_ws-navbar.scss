@@ -2,6 +2,7 @@
 // 
 // Just like in Bootstrap, but styled differently, uses `navbar`
 // 
+// Markup:
 // <nav class="navbar navbar-ws affix-top" role="navigation">
 //     <div class="container-fluid">
 //         <div class="navbar-header">
@@ -30,9 +31,14 @@
 //     </div>
 //     <!-- /.navbar-collapse -->
 // </nav>
+//
+// Styleguide navigation.web-standards
+
+// Navbar States
 // 
 // There are 4 main states that need to be consistent within the navbar:
 // 
+// Markup:
 // <nav class="navbar navbar-ws affix-top" role="navigation">
 //     <div class="container-fluid">
 //         <div class="collapse navbar-collapse">
@@ -50,8 +56,7 @@
 //     </div>
 // </nav>
 //
-// 
-// Styleguide 14.6
+// Styleguide navigation.web-standards.states
 .navbar-ws {
   background-color: $color-mine-shaft;
   border: 0;
