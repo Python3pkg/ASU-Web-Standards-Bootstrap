@@ -2,21 +2,25 @@
 // 
 // Can be used with `.nav-tabs`, or `.alterna-tabs`
 // 
+// Markup:
 // <ul class="nav nav-tabs nav-justified">
 //   <li role="presentation" class="active"><a href="#">Home</a></li>
 //   <li role="presentation"><a href="#">Profile</a></li>
 //   <li role="presentation"><a href="#">Messages</a></li>
 // </ul>
 // 
-// Or
+// Styleguide navigation.justified-navs
+
+// Justified Alternative Nav
 // 
+// Markup:
 // <ul class="nav nav-tabs alterna-tabs nav-justified">
 //   <li role="presentation" class="active"><a href="#">Home</a></li>
 //   <li role="presentation"><a href="#">Profile</a></li>
 //   <li role="presentation"><a href="#">Messages</a></li>
 // </ul>
 // 
-// Styleguide 14.3.
+// Styleguide navigation.justified-navs-alternative
 .nav-justified,
 .nav-tabs.nav-justified,
 .alterna-tabs.nav-justified { 

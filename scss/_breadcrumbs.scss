@@ -3,13 +3,14 @@
 // Breadcrumbs are supported, but when using WordPress, do not generate
 // them by hand.
 // 
+// Markup:
 // <ol class="breadcrumb">
 //   <li><a href="#">Home</a></li>
 //   <li><a href="#">Library</a></li>
 //   <li class="active">Data</li>
 // </ol>
 //
-// Styleguide 4
+// Styleguide breadcrumbs
 .breadcrumb {
   background-color: transparent;
   font-size: $font-size-small;
@@ -34,6 +35,7 @@
 // 
 // For use with the Yoast SEO plugin
 // 
+// Markup:
 // <div id="breadcrumbs" class="breadcrumb">
 //   <span xmlns:v="http://rdf.data-vocabulary.org/#">
 //     <span typeof="v:Breadcrumb">
@@ -48,7 +50,7 @@
 //   </span>
 // </div>
 // 
-// Stylegude 3.1
+// Styleguide breadcrumbs.asu
 .asu-breadcrumbs {
   background-color: $color-wild-sand;
   border-bottom: $space-xsmall $color-alabaster solid;

@@ -125,6 +125,14 @@
           <span class="kss-nav__ref">17</span
           ><span class="kss-nav__name">Panels</span>
         </a>
+        <ul class="kss-nav__menu-child">
+            <li class="kss-nav__menu-item">
+              <a href="section-panels.html#kssref-panels-modifiers">
+                <span class="kss-nav__ref">17.1</span
+                ><span class="kss-nav__name">Panel Modifiers</span>
+              </a>
+            </li>
+        </ul>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-profile.html">
@@ -172,12 +180,153 @@
   </nav>
 </div>
 <article role="main" class="kss-main">
-  <div id="kssref-0" class="kss-section kss-section--depth-0 kss-overview kss-style">
-     <h1 id="asu-web-standards-bootstrap">ASU Web Standards Bootstrap</h1>
-<p>This styleguide demonstrates all the available components, markup, and styles that are available in this
-CMS agnostic implementation of the ASU Web Standards set forth by the ASU Marketing Hub.</p>
 
+      <div     id="kssref-panels" class="kss-section kss-section--depth-1">
+
+    <div class="kss-style">
+      <h1 class="kss-title kss-title--level-1">
+        <a class="kss-title__permalink" href="#kssref-panels">
+          <span class="kss-title__ref">
+              17
+          </span>
+          Panels
+          <span class="kss-title__permalink-hash">
+              #panels
+          </span>
+        </a>
+      </h1>
+
+
+      <div class="kss-description">
+        <p>By default, all the <code>.panel</code> does is apply some basic border and padding to
+contain some content.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="panel panel-default">
+  <div class="panel-body">
+    Basic panel example
   </div>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;panel panel-default&quot;&gt;
+  &lt;div class=&quot;panel-body&quot;&gt;
+    Basic panel example
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </div>
+      <section id="kssref-panels-modifiers" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-panels-modifiers">
+          <span class="kss-title__ref">
+              17.1
+          </span>
+          Panel Modifiers
+          <span class="kss-title__permalink-hash">
+              #panels.modifiers
+          </span>
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class="panel [modifier class]">
+  <div class="panel-heading"><h3 class="panel-title">Panel title</h3></div>
+  <div class="panel-body">Panel content</div>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .panel-primary
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Primary panel
+        </div>
+        <div class="kss-modifier__example">
+          <div class="panel panel-primary">
+  <div class="panel-heading"><h3 class="panel-title">Panel title</h3></div>
+  <div class="panel-body">Panel content</div>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .panel-success
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Successful panel
+        </div>
+        <div class="kss-modifier__example">
+          <div class="panel panel-success">
+  <div class="panel-heading"><h3 class="panel-title">Panel title</h3></div>
+  <div class="panel-body">Panel content</div>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .panel-info
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Informational panel
+        </div>
+        <div class="kss-modifier__example">
+          <div class="panel panel-info">
+  <div class="panel-heading"><h3 class="panel-title">Panel title</h3></div>
+  <div class="panel-body">Panel content</div>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .panel-warning
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Warning panel
+        </div>
+        <div class="kss-modifier__example">
+          <div class="panel panel-warning">
+  <div class="panel-heading"><h3 class="panel-title">Panel title</h3></div>
+  <div class="panel-body">Panel content</div>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .panel-danger
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Danger panel
+        </div>
+        <div class="kss-modifier__example">
+          <div class="panel panel-danger">
+  <div class="panel-heading"><h3 class="panel-title">Panel title</h3></div>
+  <div class="panel-body">Panel content</div>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;panel [modifier class]&quot;&gt;
+  &lt;div class=&quot;panel-heading&quot;&gt;&lt;h3 class=&quot;panel-title&quot;&gt;Panel title&lt;/h3&gt;&lt;/div&gt;
+  &lt;div class=&quot;panel-body&quot;&gt;Panel content&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
 </article>
 
 <!-- SCRIPTS -->

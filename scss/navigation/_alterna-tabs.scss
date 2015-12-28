@@ -2,13 +2,14 @@
 // 
 // Used in conjunction with `.nav` and `.nav-tabs`
 // 
+// Markup:
 // <ul class="nav nav-tabs alterna-tabs">
 //    <li class="active"><a href="#">Record A</a></li>
 //    <li><a href="#">Record B</a></li>
 //    <li><a href="#">Record C</a></li>
 // </ul>
 // 
-// Styleguide 14.2.
+// Styleguide navigation.alternative-tabs
 .alterna-tabs {
   > li {
     border-bottom: $space-base solid transparent;

@@ -41,6 +41,14 @@
           <span class="kss-nav__ref">2</span
           ><span class="kss-nav__name">Badges</span>
         </a>
+        <ul class="kss-nav__menu-child">
+            <li class="kss-nav__menu-item">
+              <a href="section-badges.html#kssref-badges-nav">
+                <span class="kss-nav__ref">2.1</span
+                ><span class="kss-nav__name">Badges in Nav Pills</span>
+              </a>
+            </li>
+        </ul>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-breadcrumbs.html">
@@ -172,12 +180,87 @@
   </nav>
 </div>
 <article role="main" class="kss-main">
-  <div id="kssref-0" class="kss-section kss-section--depth-0 kss-overview kss-style">
-     <h1 id="asu-web-standards-bootstrap">ASU Web Standards Bootstrap</h1>
-<p>This styleguide demonstrates all the available components, markup, and styles that are available in this
-CMS agnostic implementation of the ASU Web Standards set forth by the ASU Marketing Hub.</p>
 
-  </div>
+      <div     id="kssref-badges" class="kss-section kss-section--depth-1">
+
+    <div class="kss-style">
+      <h1 class="kss-title kss-title--level-1">
+        <a class="kss-title__permalink" href="#kssref-badges">
+          <span class="kss-title__ref">
+              2
+          </span>
+          Badges
+          <span class="kss-title__permalink-hash">
+              #badges
+          </span>
+        </a>
+      </h1>
+
+
+      <div class="kss-description">
+        <p>Badges are available just like in Bootstrap</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <span class="badge">+ 1</span>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;span class=&quot;badge&quot;&gt;+ 1&lt;/span&gt;</code></pre>
+      </div>
+
+      </div>
+      <section id="kssref-badges-nav" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-badges-nav">
+          <span class="kss-title__ref">
+              2.1
+          </span>
+          Badges in Nav Pills
+          <span class="kss-title__permalink-hash">
+              #badges.nav
+          </span>
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Badges can also be used in nav pills:</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <ul class="nav nav-pills" role="tablist">
+  <li role="presentation" class="active"><a href="#">Home <span class="badge">42</span></a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages <span class="badge">3</span></a></li>
+</ul>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ul class=&quot;nav nav-pills&quot; role=&quot;tablist&quot;&gt;
+  &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home &lt;span class=&quot;badge&quot;&gt;42&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;Messages &lt;span class=&quot;badge&quot;&gt;3&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+      </div>
+
+      </section>
 </article>
 
 <!-- SCRIPTS -->
