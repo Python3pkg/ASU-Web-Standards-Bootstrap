@@ -71,6 +71,8 @@ li.dropdown-title {
     .row {
       /* Firefox bug requires `table`, not `table-row`; and `width:100%` */
       display: table;
+      margin-left: 0;
+      margin-right: 0;
       width: 100%;
 
       .column {
@@ -99,7 +101,7 @@ li.dropdown-title {
           border-top: 1px solid rgb(221, 221, 221);
           padding-left: 10px;
           width: 100%;
-
+ 
           &:not(.dropdown-title) {
             display: none;
           }
@@ -142,6 +144,28 @@ li.dropdown-title {
             color: $color-gallery;
             outline: 0;
             text-decoration: none;
+          }
+          // for the mobile menu it has a white/light gray background (rather than black)
+          @media(max-width: $asu-screen-sm-max) {
+            &,
+            &:hover,
+            &:focus {
+              background-color: #dcdcdc;
+              color: $color-black;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+
+      &.active {
+        li:not(.dropdown-title) {
+          display: block;
+        }
+
+        li.dropdown-title {
+          &:before {
+            content: '\f0d8';
           }
         }
       }
@@ -196,22 +220,7 @@ li.dropdown-title {
     }
   }
 
-  .row {
-    margin-left: 0;
-    margin-right: 0;
-
-    .column.active {
-      li:not(.dropdown-title) {
-        display: block;
-      }
-
-      li.dropdown-title {
-        &:before {
-          content: '\f0d8';
-        }
-      }
-    }
-  }
+  
 
   .vertical-border-right {
     border-right: 1px solid $color-tundora;

@@ -899,7 +899,7 @@ code {
 
 .table-hover > tbody > tr > td.warning:hover,
 .table-hover > tbody > tr > th.warning:hover, .table-hover > tbody > tr.warning:hover > td, .table-hover > tbody > tr:hover > .warning, .table-hover > tbody > tr.warning:hover > th {
-  background-color: #ffbd0b;
+  background-color: #ffbd0c;
 }
 
 .table > thead > tr > td.danger,
@@ -2701,7 +2701,7 @@ a.list-group-item-warning .list-group-item-heading {
   color: inherit;
 }
 a.list-group-item-warning:hover, a.list-group-item-warning:focus {
-  background-color: #ffbd0b;
+  background-color: #ffbd0c;
   color: #000;
 }
 a.list-group-item-warning.active, a.list-group-item-warning.active:hover, a.list-group-item-warning.active:focus {
@@ -3653,6 +3653,8 @@ li.dropdown-title {
 .mega-menu .dropdown-menu .row {
   /* Firefox bug requires `table`, not `table-row`; and `width:100%` */
   display: table;
+  margin-left: 0;
+  margin-right: 0;
   width: 100%;
 }
 .mega-menu .dropdown-menu .row .column {
@@ -3730,6 +3732,24 @@ li.dropdown-title {
   outline: 0;
   text-decoration: none;
 }
+@media (max-width: 991px) {
+  .mega-menu .dropdown-menu > .row > .column li.active > a, .mega-menu .dropdown-menu > .row > .column li.active > a:hover, .mega-menu .dropdown-menu > .row > .column li.active > a:focus,
+  .mega-menu .dropdown-menu > .li-row-container > .row > .column li.active > a,
+  .mega-menu .dropdown-menu > .li-row-container > .row > .column li.active > a:hover,
+  .mega-menu .dropdown-menu > .li-row-container > .row > .column li.active > a:focus {
+    background-color: #dcdcdc;
+    color: #000;
+    font-weight: 600;
+  }
+}
+.mega-menu .dropdown-menu > .row > .column.active li:not(.dropdown-title),
+.mega-menu .dropdown-menu > .li-row-container > .row > .column.active li:not(.dropdown-title) {
+  display: block;
+}
+.mega-menu .dropdown-menu > .row > .column.active li.dropdown-title:before,
+.mega-menu .dropdown-menu > .li-row-container > .row > .column.active li.dropdown-title:before {
+  content: '\f0d8';
+}
 .mega-menu .dropdown-title {
   border-bottom: 0;
   clear: both;
@@ -3776,16 +3796,6 @@ li.dropdown-title {
     top: 1px;
     width: 35px;
   }
-}
-.mega-menu .row {
-  margin-left: 0;
-  margin-right: 0;
-}
-.mega-menu .row .column.active li:not(.dropdown-title) {
-  display: block;
-}
-.mega-menu .row .column.active li.dropdown-title:before {
-  content: '\f0d8';
 }
 .mega-menu .vertical-border-right {
   border-right: 1px solid #414141;
