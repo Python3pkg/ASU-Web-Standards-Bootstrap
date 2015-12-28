@@ -71,9 +71,9 @@ li.dropdown-title {
     .row {
       /* Firefox bug requires `table`, not `table-row`; and `width:100%` */
       display: table;
-      width: 100%;
       margin-left: 0;
       margin-right: 0;
+      width: 100%;
 
       .column {
         display: table-cell;

@@ -3653,9 +3653,9 @@ li.dropdown-title {
 .mega-menu .dropdown-menu .row {
   /* Firefox bug requires `table`, not `table-row`; and `width:100%` */
   display: table;
-  width: 100%;
   margin-left: 0;
   margin-right: 0;
+  width: 100%;
 }
 .mega-menu .dropdown-menu .row .column {
   display: table-cell;
