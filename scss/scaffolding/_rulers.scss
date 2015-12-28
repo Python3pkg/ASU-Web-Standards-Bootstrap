@@ -1,8 +1,13 @@
 // Horizontal Rulers
 // 
-// <hr>
+// Visually split up elements using a horizontal rulers
 // 
-// Styleguide 1.4
+// Markup:
+// <p>First paragraph</p>
+// <hr>
+// <p>Second paragraph</p>
+// 
+// Styleguide scaffolding.rulers
 hr {
   border-top: 1px solid $color-nobel;
   margin-bottom: $line-height-computed;

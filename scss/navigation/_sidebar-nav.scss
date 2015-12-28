@@ -64,4 +64,11 @@
       width: $sidebar-large-width;
     }
   }
+
+  a.active {
+    background-color: $color-wild-sand;
+    color: $color-maroon;
+    font-weight: bold;
+    text-decoration: none;
+  }
 }

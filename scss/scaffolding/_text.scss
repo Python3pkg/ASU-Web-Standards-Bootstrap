@@ -1,17 +1,13 @@
 // Text
 // 
-// <p class="text-center">Centered Text</p>
-// <p class="lead">I am a Lead</p>
-// <p class="">You then follow up a <span class="mark">lead</span>
-// with some normal text.</p>
-// <p class="small">You can then add some small text.</p>
+// Markup: <p class="{{modifier_class}}">{{modifier_class}}</p>
 // 
-// .text-center - Center text.
-// .lead - enlarge text to emphasize that it is the start of a section.
-// .small - descrease the font by 25%.
-// .mark - highlight text.
+// .text-center - Center text
+// .lead - enlarge text to emphasize that it is the start of a section
+// .small - descrease the font by 25%
+// .mark - highlight text
 // 
-// Styleguide 1.6
+// Styleguide scaffolding.text
 p {
   font-weight: 200;
   line-height: 24px;

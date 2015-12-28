@@ -29,6 +29,28 @@
    * Don't use #main-search id for anything else!
    */
   function generateMarkup() {
+    var $blackout = $('<div class="blackout"></div>').appendTo('body').hide();
+
+    var showBlackout = function () {
+      if ( ( window.matchMedia &&
+             window.matchMedia('(max-width: ' + mobileWidth + 'px)').matches ) ||
+          ( typeof window.matchMedia === 'undefined' &&
+            $( window ).width() < mobileWidth ) ) {
+        $blackout.show();
+      }
+    }
+
+    var hideBlackout = function () {
+      $blackout.hide();
+    }
+
+    $( window ).smartresize( function () {
+      if ( ( window.matchMedia && window.matchMedia('(min-width: ' + ( mobileWidth + 1 ) + 'px)').matches ) ||
+          ( typeof window.matchMedia === 'undefined' && $( window ).width() > mobileWidth ) ) {
+        hideBlackout();
+      }
+    } )
+
     var mainSearch = document.getElementById( 'main-search' )
     if ( mainSearch === null ) {
       // ==========
@@ -127,6 +149,17 @@
         }
       } )
 
+      $blackout.click(function () {
+        // Close the menu
+        $( '.navbar-ws .navbar-collapse' ).waitFor( ':not(.in)', function () {
+          $mobileMenuButton.removeClass( 'fa-close' )
+          $mobileMenuButton.addClass( 'fa-navicon' )
+        } )
+
+        $menuHiddenButton.click()
+        hideBlackout();
+      } );
+
       $mobileMenuButton.click( function ( e ) {
         e.preventDefault();
         var $self = $( this )
@@ -138,6 +171,7 @@
           } )
 
           $menuHiddenButton.click()
+          hideBlackout();
         } else {
           // Open the menu
           $( '.navbar-ws .navbar-collapse' ).waitFor( '.in', function () {
@@ -146,6 +180,7 @@
           } )
 
           $menuHiddenButton.click()
+          showBlackout();
         }
       } )
     }

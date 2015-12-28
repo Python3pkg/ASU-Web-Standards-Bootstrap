@@ -96,14 +96,17 @@
       </h{{depth}}>
 
     {{#if parameters}}
-      <ul class="kss-parameters">
-      {{#eachParameter}}
-        <li class="kss-parameters__item">
-          <code class="kss-parameters__name">{{name}}</code>
-          <div class="kss-parameters__description">{{{description}}}</div>
-        </li>
-      {{/eachParameter}}
-      </ul>
+      <div class="kss-parameters-box">
+        <h3>Optional CSS Modifiers</h3>
+        <ul class="kss-parameters">
+        {{#eachParameter}}
+          <li class="kss-parameters__item">
+            <code class="kss-parameters__name">{{name}}</code>&nbsp;—&nbsp;
+            <div class="kss-parameters__description">{{{description}}}</div>
+          </li>
+        {{/eachParameter}}
+        </ul>
+      </div>
     {{/if}}
 
     {{#if description}}

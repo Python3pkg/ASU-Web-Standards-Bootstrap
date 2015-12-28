@@ -208,6 +208,6 @@ This project is being heavily used by:
 
 # Other Implementations of the ASU Web Standards
 
-- [ASU Webspark](https://drupal.asu.edu/fserver/webspark) - Drupal 7 Distribution
-- [ASU slimspark](https://drupal.asu.edu/fserver/asu_slimspark) - Drupal 7 Stand alone Theme
+- [ASU Webspark](https://brandguide.asu.edu/web-standards/webspark/) - Drupal 7 Distribution
+- [ASU slimspark](https://drupal.asu.edu/resources/docs/modules/asu-slimspark) - Drupal 7 Stand alone Theme
 

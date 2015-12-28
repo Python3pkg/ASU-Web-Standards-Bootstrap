@@ -2,9 +2,7 @@
 // 
 // Provide perspective, transition, and translation css
 
-// ===========
-// Scaffolding
-// ===========
+// Animation Scaffolding
 a,
 button {
   @include transition(all .25s ease-in-out);
@@ -43,6 +41,7 @@ tbody.collapse.in {
   position: relative;
 }
 
+// Disable Transitions
 .notransition {
   -moz-transition: none !important;
   -ms-transition: none !important;
@@ -51,9 +50,7 @@ tbody.collapse.in {
   transition: none !important;
 }
 
-// ==========
-// Navigation
-// ==========
+// Navigation scaffolding
 .navbar-ws {
   .dropdown-menu {
     @include perspective(100);
