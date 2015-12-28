@@ -2,14 +2,17 @@
 // 
 // Add any of the below mentioned modifier classes to change the appearance of a label.
 //
-// <span class="label label-default">Default</span>
-// <span class="label label-primary">Primary</span>
-// <span class="label label-success">Success</span>
-// <span class="label label-info">Info</span>
-// <span class="label label-warning">Warning</span>
-// <span class="label label-danger">Danger</span>
+// Markup:
+// <span class="label {{modifier_class}}">Label</span>
+//
+// .label-default - Default color
+// .label-primary - ASU maroon label
+// .label-success - Success label
+// .label-info - Informational label
+// .label-warning - Warning label
+// .label-danger - Danger label
 // 
-// Styleguide 11
+// Styleguide labels
 .label-primary {
   @include label-variant($color-maroon);
 }

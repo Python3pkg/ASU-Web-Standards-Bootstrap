@@ -35,8 +35,6 @@
           <span class="kss-nav__ref">1</span
           ><span class="kss-nav__name">Alerts</span>
         </a>
-        <ul class="kss-nav__menu-child">
-        </ul>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-badges.html">
@@ -73,6 +71,20 @@
           <span class="kss-nav__ref">7</span
           ><span class="kss-nav__name">Forms</span>
         </a>
+        <ul class="kss-nav__menu-child">
+            <li class="kss-nav__menu-item">
+              <a href="section-forms.html#kssref-forms-checkboxes">
+                <span class="kss-nav__ref">7.1</span
+                ><span class="kss-nav__name">Checkboxes</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-forms.html#kssref-forms-radio-buttons">
+                <span class="kss-nav__ref">7.2</span
+                ><span class="kss-nav__name">Radio buttons</span>
+              </a>
+            </li>
+        </ul>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-heros.html">
@@ -175,77 +187,182 @@
 </div>
 <article role="main" class="kss-main">
 
-      <div     id="kssref-alerts" class="kss-section kss-section--depth-1">
+      <div     id="kssref-forms" class="kss-section kss-section--depth-1">
 
     <div class="kss-style">
       <h1 class="kss-title kss-title--level-1">
-        <a class="kss-title__permalink" href="#kssref-alerts">
+        <a class="kss-title__permalink" href="#kssref-forms">
           <span class="kss-title__ref">
-              1
+              7
           </span>
-          Alerts
+          Forms
           <span class="kss-title__permalink-hash">
-              #alerts
+              #forms
           </span>
         </a>
       </h1>
+
+
+      <div class="kss-description">
+        <p>All of Bootstrap&#39;s form functionality is available and
+themed. See <a href="http://getbootstrap.com/css/#forms">GetBootstrap</a> for
+more form details.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="form-group has-success">
+  <label class="control-label" for="inputSuccess1">Input with success</label>
+  <input type="text" class="form-control" id="inputSuccess1">
+</div>
+<div class="form-group has-warning">
+  <label class="control-label" for="inputWarning1">Input with warning</label>
+  <input type="text" class="form-control" id="inputWarning1">
+</div>
+<div class="form-group has-error">
+  <label class="control-label" for="inputError1">Input with error</label>
+  <input type="text" class="form-control" id="inputError1">
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;form-group has-success&quot;&gt;
+  &lt;label class=&quot;control-label&quot; for=&quot;inputSuccess1&quot;&gt;Input with success&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputSuccess1&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group has-warning&quot;&gt;
+  &lt;label class=&quot;control-label&quot; for=&quot;inputWarning1&quot;&gt;Input with warning&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputWarning1&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group has-error&quot;&gt;
+  &lt;label class=&quot;control-label&quot; for=&quot;inputError1&quot;&gt;Input with error&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputError1&quot;&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </div>
+      <section id="kssref-forms-checkboxes" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-forms-checkboxes">
+          <span class="kss-title__ref">
+              7.1
+          </span>
+          Checkboxes
+          <span class="kss-title__permalink-hash">
+              #forms.checkboxes
+          </span>
+        </a>
+      </h2>
 
 
     </div>
 
       <div class="kss-modifier__wrapper">
         <div class="kss-modifier__heading kss-style">
-          Examples
-        </div>
-        <div class="kss-modifier__default-name kss-style">
-          Default styling
+          Example
         </div>
         <div class="kss-modifier__example">
-          <div class="alert [modifier class]">Alert!</div>
-        </div>
-        <div class="kss-modifier__name kss-style">
-          .alert-success
-        </div>
-        <div class="kss-modifier__description kss-style">
-          Green, successful alert variant. Let the user know all is good!
-        </div>
-        <div class="kss-modifier__example">
-          <div class="alert alert-success">Alert!</div>
-        </div>
-        <div class="kss-modifier__name kss-style">
-          .alert-info
-        </div>
-        <div class="kss-modifier__description kss-style">
-          Blue, info alert variant. Let the user know some info.
-        </div>
-        <div class="kss-modifier__example">
-          <div class="alert alert-info">Alert!</div>
-        </div>
-        <div class="kss-modifier__name kss-style">
-          .alert-warning
-        </div>
-        <div class="kss-modifier__description kss-style">
-          Orange, warning alert variant. Let the user know something is up!
-        </div>
-        <div class="kss-modifier__example">
-          <div class="alert alert-warning">Alert!</div>
-        </div>
-        <div class="kss-modifier__name kss-style">
-          .alert-danger
-        </div>
-        <div class="kss-modifier__description kss-style">
-          Red, danger alert variant. Let the user know something bad happened!
-        </div>
-        <div class="kss-modifier__example">
-          <div class="alert alert-danger">Alert!</div>
+          <div class="checkbox">
+  <label>
+    <input type="checkbox">
+    <span class="outer-wrap"><i class="fa fa-check"></i></span>
+    Unchecked
+  </label>
+</div>
+<div class="checkbox">
+  <label>
+    <input type="checkbox" checked>
+    <span class="outer-wrap"><i class="fa fa-check"></i></span>
+    Checked
+  </label>
+</div>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;alert [modifier class]&quot;&gt;Alert!&lt;/div&gt;</code></pre>
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;checkbox&quot;&gt;
+  &lt;label&gt;
+    &lt;input type=&quot;checkbox&quot;&gt;
+    &lt;span class=&quot;outer-wrap&quot;&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+    Unchecked
+  &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;checkbox&quot;&gt;
+  &lt;label&gt;
+    &lt;input type=&quot;checkbox&quot; checked&gt;
+    &lt;span class=&quot;outer-wrap&quot;&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+    Checked
+  &lt;/label&gt;
+&lt;/div&gt;</code></pre>
       </div>
 
+      </section>
+      <section id="kssref-forms-radio-buttons" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-forms-radio-buttons">
+          <span class="kss-title__ref">
+              7.2
+          </span>
+          Radio buttons
+          <span class="kss-title__permalink-hash">
+              #forms.radio-buttons
+          </span>
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="radio">
+  <label>
+    <input type="radio" name="test1" value="option1">
+    <span class="outer-wrap"><i class="fa fa-circle"></i></span>
+    Radio off
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="test1" value="option2" checked="">
+    <span class="outer-wrap"><i class="fa fa-circle"></i></span>
+    Radio on
+  </label>
+</div>
+        </div>
       </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;radio&quot;&gt;
+  &lt;label&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;test1&quot; value=&quot;option1&quot;&gt;
+    &lt;span class=&quot;outer-wrap&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+    Radio off
+  &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;radio&quot;&gt;
+  &lt;label&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;test1&quot; value=&quot;option2&quot; checked=&quot;&quot;&gt;
+    &lt;span class=&quot;outer-wrap&quot;&gt;&lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+    Radio on
+  &lt;/label&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
 </article>
 
 <!-- SCRIPTS -->
