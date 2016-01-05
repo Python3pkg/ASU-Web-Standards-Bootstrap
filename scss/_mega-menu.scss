@@ -21,7 +21,6 @@ li.dropdown-title {
 
 // scss-lint:enable SelectorDepth, NestingDepth, QualifyingElement
 
-
 .mega-menu {
   &.open > .dropdown-menu {
     border-width: 1px;
@@ -145,6 +144,7 @@ li.dropdown-title {
             outline: 0;
             text-decoration: none;
           }
+
           // for the mobile menu it has a white/light gray background (rather than black)
           @media(max-width: $asu-screen-sm-max) {
             &,
@@ -219,8 +219,6 @@ li.dropdown-title {
       }
     }
   }
-
-  
 
   .vertical-border-right {
     border-right: 1px solid $color-tundora;
