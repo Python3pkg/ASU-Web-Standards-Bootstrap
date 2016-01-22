@@ -8,3 +8,6 @@ before_install:
   - gem install scss-lint
 install: npm install
 sudo: false
+cache:
+  directories:
+    - node_modules
