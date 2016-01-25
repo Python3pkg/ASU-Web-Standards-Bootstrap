@@ -18,7 +18,7 @@ $color-abbey:            #4f5557 !default;
 
 // Variants
 $color-green-darkened:    desaturate(adjust_hue(darken($color-green, 14), 42), 1);
-$color-blue-darkened: desaturate(adjust_hue(darken($color-blue, 14), 42), 1);
+$color-blue-darkened:     desaturate(adjust_hue(darken($color-blue, 14), 42), 1);
 $color-yellow-darkened:   desaturate(darken($color-yellow, 18), 4);
 $color-orange-darkened:   desaturate(darken($color-orange, 18), 4);
 
