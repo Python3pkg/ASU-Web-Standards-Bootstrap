@@ -3,9 +3,11 @@ node_js:
   - "0.10"
 before_install: 
   - npm install -g grunt-cli
+  - npm install -g bower
   - gem update --system
   - gem install sass
   - gem install scss-lint
+  - bower install
 install: npm install
 sudo: false
 cache:
