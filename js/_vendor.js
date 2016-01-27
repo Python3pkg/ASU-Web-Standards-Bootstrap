@@ -1,10 +1,3 @@
-/* ========================================================================
- * Web Standards: vendor.js v0.0.1
- * ========================================================================
- * Copyright 2014 ASU
- * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
- * ======================================================================== */
-
 /* Modernizr 2.8.3 (Custom Build) | MIT & BSD
  * Build: http://modernizr.com/download/#-inlinesvg-svg-svgclippaths-cssclasses-load
  */

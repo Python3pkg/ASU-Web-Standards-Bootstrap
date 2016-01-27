@@ -1,10 +1,3 @@
-/* ========================================================================
- * Web Standards: smartresize.js v0.0.2
- * ========================================================================
- * Copyright 2014 ASU
- * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
- * ======================================================================== */
-
 /*
  * Throttle the window resize event for performance and smoothness.
  */
