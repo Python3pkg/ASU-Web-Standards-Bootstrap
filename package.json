@@ -24,8 +24,9 @@
     "karma": "^0.12.31",
     "karma-coverage": "^0.2.7",
     "karma-phantomjs-launcher": "^0.1.4",
-    "karma-qunit": "~0.1",
-    "phantomjs": "^1.9.16"
+    "karma-qunit": "^0.1.9",
+    "phantomjs": "^1.9.16",
+    "qunitjs": "^1.20.0"
   },
   "scripts": {
     "test": "grunt"
