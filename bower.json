@@ -20,5 +20,8 @@
     "template",
     "test",
     "tests"
-  ]
+  ],
+  "devDependencies": {
+    "font-awesome": "^4.5.0"
+  }
 }
