@@ -248,6 +248,24 @@ module.exports = function (grunt) {
           'build/docs' : ['scss']
         }
       }
+    },
+    // Grunt Bower
+    // ===========
+    bower: {
+      dev: {
+        dest: './build/',
+        options: {
+          keepExpandedHierarchy: false,
+          packageSpecific: {
+            'font-awesome': {
+              fonts_dest: './build/fonts',
+              files: [
+                'fonts/*'
+              ]
+            }
+          }
+        }
+      }
     }
   });
 
@@ -265,6 +283,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-kss');
+  grunt.loadNpmTasks('grunt-bower');
 
   grunt.registerTask('validate', [
     'jshint',
@@ -283,6 +302,7 @@ module.exports = function (grunt) {
     'concat',
     'uglify',
     'cssmin',
+    'bower',
   ]);
 
   // Documentation

@@ -1,7 +1,10 @@
-.sass-cache/*
-node_modules/*
 .yo-rc.json
+*.TMP
 npm-debug.log
 composer.phar
-*.TMP
-coverage
+
+
+/.sass-cache/
+/bower_components/
+/coverage/
+/node_modules/
