@@ -3817,7 +3817,7 @@ li.dropdown-title {
   clear: both;
   color: #ffb310;
   display: block;
-  font-size: mega-menu-dropdown-title__font-size;
+  font-size: 1rem;
   font-weight: normal;
   line-height: 1.4;
   padding: 9px 10px 10px;

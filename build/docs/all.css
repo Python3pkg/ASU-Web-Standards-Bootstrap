@@ -496,7 +496,7 @@ dd {
 }
 
 blockquote {
-  font-size: 20px;
+  font-size: 1.25rem;
   margin: 0 0 24px;
   padding: 12px 24px;
 }
@@ -521,7 +521,7 @@ kbd {
 }
 
 pre {
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 1.44;
   margin: 0 0 12px;
   padding: 11.5px;
@@ -2800,16 +2800,16 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   margin-bottom: 25px;
 }
 .panel h3 {
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 @media (max-width: 767px) {
   .panel h3 {
-    font-size: 26px;
+    font-size: 1.625rem;
   }
 }
 .panel p {
   font-size: 0.875rem;
-  line-height: 20px;
+  line-height: 1.25rem;
 }
 .panel > .panel-body + .table,
 .panel > .panel-body + .table-responsive {
@@ -2827,7 +2827,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 
 .panel-title {
-  font-size: 18px;
+  font-size: 1.125rem;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -2985,7 +2985,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 
 .close {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: normal;
 }
 
@@ -3822,7 +3822,7 @@ li.dropdown-title {
   clear: both;
   color: #ffb310;
   display: block;
-  font-size: mega-menu-dropdown-title__font-size;
+  font-size: 1rem;
   font-weight: normal;
   line-height: 1.4;
   padding: 9px 10px 10px;

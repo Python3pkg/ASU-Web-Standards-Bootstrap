@@ -72,16 +72,6 @@ $lead__font-weight:       200;
 $lead__line-height:       1.4;
 $lead__margin-bottom:     24px;
 
-// WEB STANDARDS NAVBAR
-$ws-nav-link__font-size:            pem(15);
-$ws-nav-link__font-size--small:     pem(14);
-$ws-nav-link__line-height:          1;
-
-$ws-navbar-brand__font-size--small: pem(15);
-
-$ws-menu__font-size:                $font-size-menu;
-$ws-menu__font-size--small:         pem(13.5);
-
 // #site-name-desktop
 $site-name-title__font-size: pem(24);
 
@@ -105,6 +95,16 @@ $hero-title__font-size--smallest: pem(24);
 $ratio-hero-title__font-size:     pem(50);
 
 $tall-hero-title__font-size:      pem(120);
+
+// WEB STANDARDS NAVBAR
+$ws-nav-link__font-size:            pem(15);
+$ws-nav-link__font-size--small:     pem(14);
+$ws-nav-link__line-height:          1;
+
+$ws-navbar-brand__font-size--small: pem(15);
+
+$ws-menu__font-size:                $font-size-menu;
+$ws-menu__font-size--small:         pem(13.5);
 
 // MEGA MENU
 $mega-menu-links__font-size:                 pem(15);
