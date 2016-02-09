@@ -54,6 +54,12 @@ $h6__margin-top:          24px;
 $a-list-external__font-size:   pem(14);
 $a-list-external__line-height: 1;
 
+// BLOCKQUOTE
+$blockquote__font-size: pem(20);
+
+// PRE
+$pre__font-size: pem(15);
+
 // P
 $p__font-weight:          200;
 $p__line-height:          pem(24);
@@ -67,11 +73,49 @@ $lead__line-height:       1.4;
 $lead__margin-bottom:     24px;
 
 // WEB STANDARDS NAVBAR
-$ws-nav-link__font-size:        pem(15);
-$ws-nav-link__font-size--small: pem(14);
-$ws-nav-link__line-height:      1;
+$ws-nav-link__font-size:            pem(15);
+$ws-nav-link__font-size--small:     pem(14);
+$ws-nav-link__line-height:          1;
 
 $ws-navbar-brand__font-size--small: pem(15);
 
 $ws-menu__font-size:                $font-size-menu;
 $ws-menu__font-size--small:         pem(13.5);
+
+// #site-name-desktop
+$site-name-title__font-size: pem(24);
+
+// CALENDAR
+$calendar-month__font-size:  pem(13);
+$calendar-date__font-size:   pem(50);
+
+// FOOTER
+$footer-h2__font-size:      pem(21);
+$footer-social__font-size:  pem(38);
+$footer-little-link__font-size: pem(19);
+
+$little-foot__right__innovate__font-size: pem(21);
+$little-foot__right__innovate__font-size--small: pem(18);
+
+// HEROS
+$hero-title__font-size:           pem(32);
+$hero-title__font-size--small:    pem(28);
+$hero-title__font-size--smallest: pem(24);
+
+$ratio-hero-title__font-size:     pem(50);
+
+$tall-hero-title__font-size:      pem(120);
+
+// MEGA MENU
+$mega-menu-links__font-size:                 pem(15);
+$mega-menu-links__font-size--small:          pem(13.5);
+$mega-menu-dropdown-title__font-size:        pem(16);
+$mega-menu-dropdown-title__font-size--small: pem(13.5);
+$mega-menu-dropdown-title-icon__font-size:   pem(20);
+
+// PANELS
+$pane-h3__font-size:        pem(30);
+$pane-h3__font-size--small: pem(26);
+$pane-p__font-size:         $font-size-small;
+$pane-p__line-height:       pem(20);
+$panel-title__font-size:    pem(18);

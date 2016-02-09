@@ -33,16 +33,16 @@
   margin-bottom: $space-xxlarge;
 
   h3 {
-    font-size: 30px;
+    font-size: $pane-h3__font-size;
 
     @media(max-width: $asu-screen-xs-max) {
-      font-size: 26px;
+      font-size: $pane-h3__font-size--small;
     }
   }
 
   p {
-    font-size: $font-size-small;
-    line-height: 20px;
+    font-size: $pane-p__font-size;
+    line-height: $pane-p__line-height;
   }
 
   > .panel-body + {
@@ -65,8 +65,8 @@
 }
 
 .panel-title {
-  font-size: 18px;
-  overflow: hidden;
+  font-size:     $panel-title__font-size;
+  overflow:      hidden;
   text-overflow: ellipsis;
 }
 

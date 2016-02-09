@@ -21,7 +21,7 @@
 
   h2 {
     color: $color-white;
-    font-size: 21px;
+    font-size: $footer-h2__font-size;
     font-weight: normal;
     margin-bottom: 16px;
   }
@@ -89,9 +89,9 @@
 
       > a {
         border-bottom: 0;
-        color: $color-dull-chalice;
-        font-size: 38px;
-        margin-right: 10px;
+        color:         $color-dull-chalice;
+        font-size:     $footer-social__font-size;
+        margin-right:  10px;
 
         &:hover,
         &:focus {
@@ -174,7 +174,7 @@
 
       > a {
         color: #333;
-        font-size: 18px;
+        font-size: $footer-little-link__font-size;
         font-weight: 400;
         margin-right: 30px;
         text-decoration: none;
@@ -206,17 +206,17 @@
 }
 
 .little-foot__right__innovate {
-  font-size: 21px;
+  font-size: $little-foot__right__innovate__font-size;
   font-weight: 700;
 
   @media(max-width: $asu-screen-xs-max) {
-    font-size: 18px;
+    font-size: $little-foot__right__innovate__font-size--small;
   }
 
   a {
     border-bottom: 0;
     color: #a30046 !important;
-    font-size: 21px !important;
+    font-size: $little-foot__right__innovate__font-size !important;
     font-weight: 700 !important;
     text-decoration: none;
 
