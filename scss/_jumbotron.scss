@@ -20,10 +20,10 @@
     border-radius: $border-radius;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $asu-screen-sm-min) {
     h1,
     .h1 {
-      font-size: $font-size-h1;
+      font-size: $h1__font-size--jumbo;
     }
   }
 }

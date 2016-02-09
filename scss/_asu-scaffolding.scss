@@ -155,7 +155,7 @@
 //== Site Name Desktop
 #site-name-desktop {
   h1 {
-    line-height: ($line-height-computed + 4);
+    line-height: ($line-height-base * 1.17);
     padding: 4px 6px 8px;
 
     &.site-title {
