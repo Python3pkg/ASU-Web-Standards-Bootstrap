@@ -826,7 +826,7 @@ code {
 }
 
 #site-name-desktop h1 {
-  line-height: 1.6848;
+  line-height: 1.75rem;
   padding: 4px 6px 8px;
 }
 #site-name-desktop h1.site-title {
@@ -3587,7 +3587,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .footer .little-foot-nav > li > a {
   color: #333;
-  font-size: 1.1875rem;
+  font-size: 1.125rem;
   font-weight: 400;
   margin-right: 30px;
   text-decoration: none;
