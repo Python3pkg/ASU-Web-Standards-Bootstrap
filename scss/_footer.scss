@@ -273,12 +273,11 @@
     height: 0;
 
     a {
-      display: block;
-    }
-
-    img { 
-      position: relative;
-      top: -55px;
+      border: 0;
+      display: inline-block;
+      height: 150px;
+      margin-top: -50px;
+      text-decoration: none;
     }
   }
 }
