@@ -40,7 +40,7 @@
 }
 
 legend {
-  font-size: $line-height-computed;
+  font-size: $line-height-pem;
   margin-bottom: $line-height-computed;
 }
 
@@ -251,7 +251,7 @@ input[type="month"] {
   .fa-circle, 
   .fa-check {
     color: white;
-    font-size: 23px;
+    font-size: pem(23);
     position: absolute;
 
     @media (min-width: $asu-screen-lg-min) {

@@ -1,7 +1,7 @@
 /* ========================================================================
- * Web Standards: bootstrap-asu.css v0.2.5
+ * Web Standards: bootstrap-asu.css v0.4.0
  * ========================================================================
- * Copyright 2014-2015 ASU
+ * Copyright 2014-2016 ASU
  * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
  * ======================================================================== */
 
@@ -50,7 +50,7 @@
 @import 'hover-effects';
 
 //== FontAwesome
-@import 'font_awesome/font-awesome';
+@import '../bower_components/font-awesome/scss/font-awesome';
 
 //== Custom
 // Uncomment this line if you plan on hosting the Roboto font yourself

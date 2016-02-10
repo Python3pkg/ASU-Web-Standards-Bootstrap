@@ -29,52 +29,8 @@
   <link href="/test/vendor/css/bootstrap.min.css" rel="stylesheet">
   <link href="/test/vendor/css/bootstrap-asu.css" rel="stylesheet">
 
-  <!-- QUnit -->
-  <script src="http://code.jquery.com/qunit/qunit-1.15.0.js"></script>
   <!-- jQuery -->
   <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-
-  <!-- QUnit -->
-    <style>
-      #qunit-tests > li.pass {
-        display: none;/* Make it easier to see failing tests is Sauce screencasts */
-      }
-    </style>
-    <script>
-      // See https://github.com/axemclion/grunt-saucelabs#test-result-details-with-qunit
-      var log = []
-      QUnit.done(function (testResults) {
-        var tests = []
-        for (var i = 0, len = log.length; i < len; i++) {
-          var details = log[i]
-          tests.push({
-            name: details.name,
-            result: details.result,
-            expected: details.expected,
-            actual: details.actual,
-            source: details.source
-          })
-        }
-        testResults.tests = tests
-
-        window.global_test_results = testResults
-      })
-
-      QUnit.testStart(function (testDetails) {
-        QUnit.log = function (details) {
-          if (!details.result) {
-            details.name = testDetails.name
-            log.push(details)
-          }
-        }
-      })
-
-      // Cleanup
-      QUnit.testDone(function () {
-        $('#qunit-fixture').empty()
-        $('#modal-test, .modal-backdrop').remove()
-      })
-    </script>
 </head>
 <body>
 
@@ -1461,7 +1417,7 @@
     </div><!-- /.container -->
   </div><!-- /.big-foot -->
 
-  <div class="little-foot">
+  <div class="little-foot__right">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -1500,11 +1456,5 @@
   <script src="../../js/_mobile-menu.js"></script>
   <script src="../../js/_sticky-nav.js"></script>
   <script src="../../js/_navs-click-and-hover.js"></script>
-
-  <!-- Unit tests -->
-  <script src="test/qunit/visual/colors-test.js"></script>
-  <script src="test/qunit/visual/home-icon-test.js"></script>
-  <script src="test/qunit/visual/title-test.js"></script>
-  <script src="test/qunit/visual/logo-test.js"></script>
 </body>
 </html>

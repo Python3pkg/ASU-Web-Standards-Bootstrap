@@ -1,5 +1,29 @@
 module.exports = function (grunt) {
   'use strict';
+
+  var customLaunchers = {
+    'PhantomJS_Mobile': {
+      base: 'PhantomJS',
+      options: {
+        windowName: 'ASU Bootstrap Tests',
+        viewportSize: {
+          width : 765,
+          height: 1000
+        }
+      }
+    },
+    'PhantomJS_Desktop': {
+      base: 'PhantomJS',
+      options: {
+        windowName: 'ASU Bootstrap Tests',
+        viewportSize: {
+          width: 1500,
+          height: 1000
+        }
+      }
+    }
+  };
+
   // Project configuration
   grunt.initConfig({
     // Metadata
@@ -61,19 +85,8 @@ module.exports = function (grunt) {
           { src : ['test/qunit/unit/*-test.js'] }
         ],
         singleRun: true,
-        browsers: ['PhantomJS_Mobile'],
-        customLaunchers: {
-          'PhantomJS_Mobile': {
-            base: 'PhantomJS',
-            options: {
-              windowName: 'ASU Bootstrap Tests',
-              viewportSize : {
-                width : 765,
-                height: 1000
-              }
-            }
-          }
-        }
+        browsers: ['PhantomJS_Mobile', 'PhantomJS_Desktop'],
+        customLaunchers: customLaunchers
       },
       //continuous integration mode: run tests once in PhantomJS browser.
       continuousMobile: {
@@ -87,19 +100,8 @@ module.exports = function (grunt) {
           { src : ['test/qunit/unit/*-test.js'] }
         ],
         singleRun: true,
-        browsers: ['PhantomJS_Mobile'],
-        customLaunchers: {
-          'PhantomJS_Mobile': {
-            base: 'PhantomJS',
-            options: {
-              windowName: 'ASU Bootstrap Tests',
-              viewportSize : {
-                width : 765,
-                height: 1000
-              }
-            }
-          }
-        }
+        browsers: ['PhantomJS_Mobile', 'PhantomJS_Desktop'],
+        customLaunchers: customLaunchers
       }
     },
     // QUnit
@@ -246,6 +248,24 @@ module.exports = function (grunt) {
           'build/docs' : ['scss']
         }
       }
+    },
+    // Grunt Bower
+    // ===========
+    bower: {
+      dev: {
+        dest: './build/',
+        options: {
+          keepExpandedHierarchy: false,
+          packageSpecific: {
+            'font-awesome': {
+              fonts_dest: './build/fonts',
+              files: [
+                'fonts/*'
+              ]
+            }
+          }
+        }
+      }
     }
   });
 
@@ -263,6 +283,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-kss');
+  grunt.loadNpmTasks('grunt-bower');
 
   grunt.registerTask('validate', [
     'jshint',
@@ -281,6 +302,7 @@ module.exports = function (grunt) {
     'concat',
     'uglify',
     'cssmin',
+    'bower',
   ]);
 
   // Documentation

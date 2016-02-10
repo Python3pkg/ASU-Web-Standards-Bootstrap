@@ -29,7 +29,7 @@
 
 
 blockquote {
-  font-size: 20px;
+  font-size: $blockquote__font-size;
   margin: 0 0 ($line-height-computed);
   padding: ($line-height-computed / 2) ($line-height-computed);
 
@@ -56,7 +56,7 @@ kbd {
 }
 
 pre {
-  font-size: 15px;
+  font-size: $pre__font-size;
   line-height: $line-height-base;
   margin: 0 0 ($line-height-computed / 2);
   padding: 11.5px;
