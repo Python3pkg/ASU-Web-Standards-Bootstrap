@@ -132,7 +132,7 @@
     }
 
     > a { 
-      line-height: $line-height-computed;
+      line-height: $line-height-pem;
 
       @media (min-width: $asu-screen-sm-min) {
         padding-bottom: $nav-item-padding;
