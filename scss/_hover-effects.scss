@@ -72,7 +72,7 @@ figure[class^="effect-"] {
     margin: 0;
 
     @media(max-width: $asu-screen-sm-max) {
-      font-size: 20px;
+      font-size: pem(20);
     }
   }
 

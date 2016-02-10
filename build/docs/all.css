@@ -1341,7 +1341,7 @@ select[multiple].input-lg {
 .checkbox .fa-circle,
 .checkbox .fa-check {
   color: white;
-  font-size: 23px;
+  font-size: 1.4375rem;
   position: absolute;
 }
 @media (min-width: 1200px) {
@@ -2186,7 +2186,7 @@ input[type="button"].btn-block {
     cursor: pointer;
     display: block;
     font-family: FontAwesome;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: normal;
     font-variant: normal;
     font-weight: normal;
@@ -4060,7 +4060,7 @@ figure[class^="effect-"] p {
 @media (max-width: 991px) {
   figure[class^="effect-"] h2,
   figure[class^="effect-"] p {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 figure[class^="effect-"] p {

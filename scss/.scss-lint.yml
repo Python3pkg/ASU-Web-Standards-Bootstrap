@@ -79,6 +79,12 @@ linters:
     enabled: true
     extra_properties: []
 
+  PropertyUnits:
+    enabled: true
+    properties: {
+      font-size: ['rem', 'vw', '%', 'em']
+    }
+
   QualifyingElement:
     enabled: false
 
