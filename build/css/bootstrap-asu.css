@@ -330,6 +330,11 @@ mark,
 .mark {
   background-color: #ffc627;
 }
+a > mark, a >
+.mark {
+  padding-left: 0;
+  padding-right: 0;
+}
 
 .text-yellow {
   color: #ffc627;
