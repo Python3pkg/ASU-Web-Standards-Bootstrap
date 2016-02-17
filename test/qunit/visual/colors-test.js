@@ -45,7 +45,7 @@ $(function () {
   test('links should be maroon', function() {
     var color = $($('a')[0]).css('color')
 
-    equal( color, "rgb(153, 0, 51)" , "links are #990033")
+    equal( color, "rgb(140, 29, 64)" , "links are #8C1D40")
   })
 
   // Primary color items
@@ -54,55 +54,55 @@ $(function () {
   test('primary buttons should be maroon', function () {
     var bg_color = $($('.btn-primary')[0]).css('background-color')
 
-    equal( bg_color, "rgb(153, 0, 51)" , "primary buttons are #990033")
+    equal( bg_color, "rgb(140, 29, 64)" , "primary buttons are #8C1D40")
   })
 
   // Gold color items
   // ===================
 
-  test('gold buttons should be #FFB310', function () {
+  test('gold buttons should be gold', function () {
     var bg_color = $($('.btn-gold')[0]).css('background-color')
 
-    equal( bg_color, "rgb(255, 179, 16)" , "primary buttons are #990033")
+    equal( bg_color, "rgb(255, 198, 39)" , "gold buttons are #FFC627")
   })
 
   // Blue color items
   // ===================
 
-  test('blue buttons should be #008ED6', function () {
+  test('blue buttons should be blue', function () {
     var bg_color = $($('.btn-blue')[0]).css('background-color')
 
-    equal( bg_color, "rgb(0, 142, 214)" , "primary buttons are #008ED6")
+    equal( bg_color, "rgb(0, 163, 224)" , "primary buttons are #00A3E0")
   })
 
   // Green (success) color items
   // ===================
 
-  test('success buttons should be #568E14', function () {
+  test('success buttons should be green', function () {
     var bg_color = $($('.btn-success')[0]).css('background-color')
 
-    equal( bg_color, "rgb(86, 142, 20)" , "primary buttons are #568E14")
+    equal( bg_color, "rgb(120, 190, 32)" , "primary buttons are #78BE20")
   })
 
-  test('success labels should be #568E14', function () {
+  test('success labels should be green', function () {
     var color = $($('.form-group.has-success label')[0]).css('color')
 
-    equal( color, "rgb(86, 142, 20)" , "success labels are #568E14")
+    equal( color, "rgb(120, 190, 32)" , "success labels are #78BE20")
   })
 
   // Danger (orange) (error) color items
   // ===================
 
-  test('danger buttons should be #F47C00', function () {
+  test('danger buttons should be #FF7F32', function () {
     var bg_color = $($('.btn-danger')[0]).css('background-color')
 
-    equal( bg_color, "rgb(244, 124, 0)" , "primary buttons are #F47C00")
+    equal( bg_color, "rgb(255, 127, 50)" , "primary buttons are #FF7F32")
   })
 
-  test('error labels should be #F47C00', function () {
+  test('error labels should be #FF7F32', function () {
     var color = $($('.form-group.has-error label')[0]).css('color')
 
-    equal( color, "rgb(244, 124, 0)" , "error labels are #F47C00")
+    equal( color, "rgb(255, 127, 50)" , "error labels are #FF7F32")
   })
 
   // Footer icon colors
