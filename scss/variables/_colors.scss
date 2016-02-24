@@ -5,14 +5,14 @@
 // @see https://hub.asu.edu/brand-hq/brand-standards/color-palette
 
 // Colors
-$color-maroon:           #903    !default;
+$color-maroon:           #8c1d40 !default;
 $color-brick-red:        #d23153 !default;
-$color-blue:             #008ed6 !default;
-$color-green:            #568e14 !default;
-$color-orange:           #f47c00 !default;
-$color-gold:             #f0ad4e !default;
-$color-yellow:           #ffc425 !default;
-$color-sun:              #ffb310 !default;
+$color-blue:             #00a3e0 !default;
+$color-green:            #78be20 !default;
+$color-orange:           #ff7f32 !default;
+$color-gold:             #ffc627 !default;
+$color-yellow:           $color-gold !default;
+$color-sun:              #ffb310 !default; // This is a slightly darker gold for text usage
 $color-selective-yellow: #ffb204 !default;
 $color-abbey:            #4f5557 !default;
 
@@ -22,6 +22,7 @@ $color-blue-darkened:     desaturate(adjust_hue(darken($color-blue, 14), 42), 1)
 $color-yellow-darkened:   desaturate(darken($color-yellow, 18), 4);
 $color-orange-darkened:   desaturate(darken($color-orange, 18), 4);
 
+// ASU gray is 5c6670
 // Grays
 $color-black:          #000    !default;
 $color-cod-gray:       #1e1e1e !default;

@@ -43,4 +43,9 @@ small,
 mark,
 .mark {
   background-color: $color-yellow;
+
+  a > & {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
