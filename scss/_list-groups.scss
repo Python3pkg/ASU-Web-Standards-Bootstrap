@@ -59,8 +59,11 @@ a.list-group-item {
 
   &:hover,
   &:focus {
-    color: $color-maroon;
-    font-weight: bold;
+    li.active &,
+    & {
+      color: $color-maroon;
+      font-weight: bold;
+    }
   }
 }
 

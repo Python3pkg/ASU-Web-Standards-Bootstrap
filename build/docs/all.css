@@ -2733,7 +2733,7 @@ a.list-group-item {
 a.list-group-item .list-group-item-heading {
   color: #8c1d40;
 }
-a.list-group-item:hover, a.list-group-item:focus {
+li.active a.list-group-item:hover, a.list-group-item:hover, li.active a.list-group-item:focus, a.list-group-item:focus {
   color: #8c1d40;
   font-weight: bold;
 }
