@@ -57,6 +57,7 @@ a.list-group-item {
     color: $color-maroon;
   }
 
+  li.active &,
   &:hover,
   &:focus {
     color: $color-maroon;
