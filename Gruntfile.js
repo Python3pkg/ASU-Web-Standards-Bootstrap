@@ -158,10 +158,8 @@ module.exports = function (grunt) {
     concat: {
       bootstrapAsu: {
         src: [
-          'bower_componets/modernizer/',
-          'bower_componets/fastclick/lib/fastclick.js',
-          'bower_componets/respond/dest/respond.min.js',
           'js/_license.js',
+          'js/_vendor.js',
           'js/_modernizr.js',
           'js/_iframe-overlay.js',
           'js/_smoothscroll.js',
