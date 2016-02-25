@@ -63,8 +63,8 @@ linters:
     force_nesting: true
 
   NameFormat:
-    enabled: true
-    convention: hyphenated_lowercase # or 'BEM', or a regex pattern
+    enabled: false
+    convention: 'BEM' # or 'BEM', or a regex pattern
 
   NestingDepth:
     enabled: false
@@ -78,6 +78,12 @@ linters:
   PropertySpelling:
     enabled: true
     extra_properties: []
+
+  PropertyUnits:
+    enabled: true
+    properties: {
+      font-size: ['rem', 'vw', '%', 'em']
+    }
 
   QualifyingElement:
     enabled: false
@@ -101,6 +107,7 @@ linters:
 
   SpaceAfterPropertyColon:
     enabled: true
+    style: at_least_one_space
 
   SpaceAfterPropertyName:
     enabled: true

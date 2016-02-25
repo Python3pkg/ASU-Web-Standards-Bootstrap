@@ -12,13 +12,13 @@
 // Styleguide scaffolding.links
 a {
   border-bottom: 1px dotted $color-maroon;
-  color: $color-maroon;
-  font-weight: normal;
+  color:         $color-maroon;
+  font-weight:   normal;
 
   &:hover,
   &:focus {
-    border-bottom: 1px dotted $color-brick-red;
-    color: $color-brick-red;
+    border-bottom:   1px dotted $color-brick-red;
+    color:           $color-brick-red;
     text-decoration: none;
   }
 
@@ -56,13 +56,18 @@ a {
   //
   // Styleguide scaffolding.links.external
   li.external-link &:before {
-    color: inherit;
-    content: '\f08e';
-    display: inline-block;
-    float: right;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    width: 10px;
+    color:        inherit;
+    content:      '\f08e';
+    display:      inline-block;
+    float:        right;
+    font-size:    $a-list-external__font-size;
+    font-style:   normal;
+    font-variant: normal;
+    font-weight:  normal;
+    line-height:  $a-list-external__line-height;
+    font-family:  FontAwesome;
+    font-size:    inherit;
+    width:        10px;
 
     .navbar & {
       margin-top: 4px;

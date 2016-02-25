@@ -105,13 +105,13 @@
 
   .month {
     float: left;
-    font-size: 13px;
+    font-size: $calendar-month__font-size;
     line-height: $line-height-calendar;
   }
 
   .date {
     float: right;
-    font-size: 50px;
+    font-size: $calendar-date__font-size;
     font-weight: 200;
     line-height: .9;
     width: 60px;

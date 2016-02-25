@@ -1,17 +1,18 @@
 // Basic Styles
 html {
   -webkit-font-smoothing: antialiased;
+  font-size:              $html__font-size;
 }
 
 body {
-  background-color: $color-white;
-  color: $color-dark-mine;
-  font-family: $font-family;
-  font-size: $font-size-medium;
-  font-weight: 200;
-  line-height: $line-height-base;
+  background-color: $body__background-color;
+  color:            $body__color;
+  font-family:      $body__font-family;
+  font-size:        $body__font-size;
+  font-weight:      $body__font-weight;
+  line-height:      $body__line-height;
 
   @media (min-width: $asu-screen-lg-min) {
-    font-size: $font-size-large;
+    font-size: $body__font-size--large;
   }
 }
