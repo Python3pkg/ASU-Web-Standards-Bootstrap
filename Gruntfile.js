@@ -224,6 +224,7 @@ module.exports = function (grunt) {
         }
       }
     },
+
     // Watch
     // =====
     watch: {
