@@ -106,6 +106,7 @@
       li:first-child > a {
         &:first-child {
           @media (min-width: $asu-screen-md-min) {
+            height: 57px;
             padding: 20.5px 25px !important;
           }
         }
