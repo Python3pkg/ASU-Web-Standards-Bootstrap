@@ -2137,6 +2137,7 @@ input[type="button"].btn-block {
 }
 @media (min-width: 992px) {
   .navbar-ws .navbar-nav > li:first-child > a:first-child {
+    height: 57px;
     padding: 20.5px 25px !important;
   }
 }
