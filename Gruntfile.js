@@ -264,7 +264,8 @@ module.exports = function (grunt) {
                 'fonts/*'
               ]
             }
-          }
+          },
+          ignorePackages: ['jquery', 'bootstrap']
         }
       }
     }
