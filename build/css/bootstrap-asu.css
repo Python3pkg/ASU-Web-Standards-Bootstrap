@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* ========================================================================
- * Web Standards: bootstrap-asu.css v0.4.1
+ * Web Standards: bootstrap-asu.css v0.4.4
  * ========================================================================
  * Copyright 2014-2016 ASU
  * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
@@ -323,7 +323,7 @@ p.text-center {
 
 small,
 .small {
-  font-size: 75%;
+  font-size: 75% !important;
 }
 
 mark,
@@ -939,7 +939,7 @@ code {
 
 .table-hover > tbody > tr > td.warning:hover,
 .table-hover > tbody > tr > th.warning:hover, .table-hover > tbody > tr.warning:hover > td, .table-hover > tbody > tr:hover > .warning, .table-hover > tbody > tr.warning:hover > th {
-  background-color: #ffbf0d;
+  background-color: #ffbf0e;
 }
 
 .table > thead > tr > td.danger,
@@ -2137,6 +2137,7 @@ input[type="button"].btn-block {
 }
 @media (min-width: 992px) {
   .navbar-ws .navbar-nav > li:first-child > a:first-child {
+    height: 57px;
     padding: 20.5px 25px !important;
   }
 }
@@ -2728,7 +2729,7 @@ a.list-group-item {
 a.list-group-item .list-group-item-heading {
   color: #8c1d40;
 }
-a.list-group-item:hover, a.list-group-item:focus {
+li.active a.list-group-item, a.list-group-item:hover, a.list-group-item:focus {
   color: #8c1d40;
   font-weight: bold;
 }
@@ -2787,7 +2788,7 @@ a.list-group-item-warning .list-group-item-heading {
   color: inherit;
 }
 a.list-group-item-warning:hover, a.list-group-item-warning:focus {
-  background-color: #ffbf0d;
+  background-color: #ffbf0e;
   color: #000;
 }
 a.list-group-item-warning.active, a.list-group-item-warning.active:hover, a.list-group-item-warning.active:focus {
