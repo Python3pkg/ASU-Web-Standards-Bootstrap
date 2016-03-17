@@ -3155,7 +3155,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .hero h2.pop,
 .hero p.pop {
   background-color: rgba(0, 0, 0, 0.8);
-  /* 
+  /*
    * table is a little trick to have an inline-block look, but
    * still break after each block
    */
@@ -3349,7 +3349,6 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 @media (max-width: 1199px) {
   .hero-slim .panel-pane {
     margin-bottom: 8px;
-    margin-top: 8px;
   }
 }
 @media (max-width: 1091px) {
