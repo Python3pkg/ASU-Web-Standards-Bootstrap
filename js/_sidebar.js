@@ -10,7 +10,7 @@
       var windowHeight = $(window).height();
 
       // only if the sidebarNav is taller than the page content then affix
-      if( sidebarHeight < (windowHeight - navbarHeight)) {
+      if ( sidebarHeight < (windowHeight - navbarHeight)) {
         $this.affix( {
           offset: {
             top : $this.offset().top - navbarHeight,
