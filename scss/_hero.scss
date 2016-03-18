@@ -1,12 +1,12 @@
 // Heros
-// 
+//
 // Heros are used at the top of pages to highlight the page name,
 // a description of the content, and an image to accent the page.
-// 
+//
 // Styleguide heros
 
 // Normal Hero
-// 
+//
 // Markup:
 // <div class="hero hero-bg-img" style="background-image: url(http://placehold.it/1000x800)">
 //   <div class="container-fluid">
@@ -26,7 +26,7 @@
 //     </div><!-- /.row -->
 //   </div><!-- /.container -->
 // </div>
-// 
+//
 // Styleguide heros.normal-hero
 .hero {
   background-color: darken($color-mine-shaft, 8);
@@ -51,7 +51,7 @@
   p {
     &.pop {
       background-color: rgba(0, 0, 0, .8);
-      /* 
+      /*
        * table is a little trick to have an inline-block look, but
        * still break after each block
        */
@@ -84,7 +84,7 @@
 
   h1,
   h2,
-  .h1, 
+  .h1,
   .h2 {
     color: $color-white;
     font-size: $font-size-hero-h1;
@@ -103,7 +103,7 @@
     font-size: $font-size-hero-p;
     font-weight: $font-weight-normal;
     max-width: 900px;
-    text-shadow: 0 0 $space-base rgba(0, 0, 0, .5); 
+    text-shadow: 0 0 $space-base rgba(0, 0, 0, .5);
   }
 
   .cite {
@@ -114,7 +114,7 @@
 }
 
 // Text Only Hero
-// 
+//
 // Markup:
 // <div class="hero hero-text-only">
 //   <div class="container-fluid">
@@ -127,7 +127,7 @@
 //     </div><!-- /.row -->
 //   </div><!-- /.container -->
 // </div>
-// 
+//
 // Styleguide heros.text-only-hero
 .hero-text-only {
   text-align: center;
@@ -150,7 +150,7 @@
 }
 
 // Text Only Dark Hero
-// 
+//
 // Markup:
 // <div class="hero hero-text-only hero-text-only-dark">
 //   <div class="container-fluid">
@@ -163,7 +163,7 @@
 //     </div><!-- /.row -->
 //   </div><!-- /.container -->
 // </div>
-// 
+//
 // Styleguide heros.text-only-hero.dark
 .hero-text-only-dark {
   background-color: $color-mine-shaft;
@@ -180,9 +180,9 @@
 }
 
 // Video Hero
-// 
+//
 // TODO document
-// 
+//
 // Styleguide heros.video-hero
 .hero-video {
   overflow: hidden;
@@ -216,9 +216,9 @@
 }
 
 // Mobile Hero
-// 
+//
 // Go mobile to view this section:
-// 
+//
 // Markup:
 // <div class="override">
 //     <div class="hero-mobile" style="background-color: #1e73be;">
@@ -228,7 +228,7 @@
 //         </div>
 //     </div>
 // </div>
-// 
+//
 // Styleguide heros.mobile-hero
 .hero-mobile {
   display: none;
@@ -256,7 +256,7 @@
 }
 
 // Ratio Hero
-// 
+//
 // Markup:
 // <div class="panel-display clearfix">
 //   <div class="hero-ratio">
@@ -285,11 +285,11 @@
 //       </div>
 //   </div>
 // </div>
-// 
+//
 // Styleguide heros.ratio
 
 // Slim Hero
-// 
+//
 // Markup:
 // <div class="panel-display clearfix">
 //     <section class="hero-slim theme-color-background" style="background-image: url(http://placehold.it/1000x50)">
@@ -298,7 +298,7 @@
 //                 <div class="fdt-home-container fdt-home-column-content clearfix panel-panel row-fluid container">
 //                     <div class="fdt-home-column-content-region fdt-home-row panel-panel span12">
 //                         <div class="panel-pane pane-fieldable-panels-pane pane-fpid-12 pane-bundle-text">
-//                             <h1 class="pane-title" style="color:">Title</h1> 
+//                             <h1 class="pane-title" style="color:">Title</h1>
 //                         </div>
 //                     </div>
 //                 </div>
@@ -306,7 +306,7 @@
 //         </div>
 //     </section>
 // </div>
-// 
+//
 // Styleguide heros.slim
 .hero-ratio,
 .hero-slim {
@@ -358,7 +358,6 @@
 
     @media(max-width: $asu-screen-md-max) {
       margin-bottom: 8px;
-      margin-top: 8px;
     }
 
     @media(max-width: $asu-screen-sm-max + 100) {
@@ -429,7 +428,7 @@
       margin: -14px 0 0;
       padding-top: 8px;
       text-shadow: rgba(0, 0, 0, .7) 1px 1px 1px;
-      
+
       @media(max-width: $asu-screen-md-max) {
         font-size: .9em;
         margin-top: -18px;
@@ -472,7 +471,7 @@ body.home,
 // scss-lint:enable QualifyingElement
 
 // Tall Hero
-// 
+//
 // Markup:
 // <div class="hero hero-bg-img hero-tall" style="background-image: url(http://placehold.it/1000x1000)">
 //   <div class="container-fluid">
@@ -492,7 +491,7 @@ body.home,
 //     </div><!-- /.row -->
 //   </div><!-- /.container -->
 // </div>
-// 
+//
 // Styleguide heros.tall
 .hero-tall {
   min-height: 50%;
