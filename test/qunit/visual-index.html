@@ -21,16 +21,16 @@
     doesn't need to be included in the final Drupal theme, as
     ASU includes it themselves across all sites.
   -->
-  <link href="/test/vendor/css/asu-nav.css" rel="stylesheet">
+  <link href="../vendor/css/asu-nav.css" rel="stylesheet">
 
   <link href='https://fonts.googleapis.com/css?family=Roboto:900,400,300,700,500' rel='stylesheet' type='text/css'>
 
   <!-- The main app css file -->
-  <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/test/vendor/css/bootstrap-asu.css" rel="stylesheet">
+  <link href="../../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/css/bootstrap-asu.css" rel="stylesheet">
 
   <!-- jQuery -->
-  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
 
@@ -48,7 +48,7 @@
            </a>
          </div><!-- /#asu_logo  -->
          <img src="http://www.asu.edu/asuthemes/4.0-rsp.1/images/logos/asu_logo_white.png" alt="Arizona State University" height="32" width="203" id="asu_print_logo">
-         
+
          <div id="asu_mobile_button" class="asushow"><a href="javascript:toggleASU();">Menu</a></div>
         </div><!-- /#asu_mobile_hdr  -->
         <div id="asu_mobile_menu" class="asutoggle_off">
@@ -130,9 +130,9 @@
 
     <div class="section" id="site-name-desktop">
       <div class="container">
-        <h1 class="site-title" id="asu_school_name">
-          <span class="first-word"><a href="School of Sustainability">Julie Ann Wrigley Global Institute of Sustainability</a></span>&nbsp;|&nbsp;              <a href="http://localhost/wordpress">Test Wordpress</a>
-        </h1>
+        <div class="site-title" id="asu_school_name">
+          <span class="first-word"><a href="School of Sustainability">Julie Ann Wrigley Global Institute of Sustainability</a></span>&nbsp;|&nbsp; <a href="http://localhost/wordpress">Test Wordpress</a>
+        </div>
       </div>
     </div>
   </div><!-- /#block-asu-brand-asu-brand-header -->
@@ -1277,7 +1277,7 @@
           <div class="col-md-12">
             <h3>Success Stories</h3>
             <p class="lead">Empowering people and projects &ndash; it&rsquo;s what we do.</p>
-            <div id="carouselHomepage" class="carousel slide row" data-ride="carousel">
+            <div id="carouselHomepage" class="carousel slide row" data-ride="carousel" data-interval="false">
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
                 <div class="item active">
@@ -1371,7 +1371,7 @@
               Phone: <a class="phone-link" href="tel:480-727-6963" id="phone-link-in-footer">480-727-6963</a><br>              Fax: 480-965-8087<br>            </address>
             <p><a class="contact-link" href="mailto:schoolofsustainability@asu.edu?subject=SOS%20Contact%20Us" id="contact-us-link-in-footer">Contact Us</a></p>            <ul class="social-media">
               <li><a href="https://www.facebook.com/ASUsustainability" title="Facebook" id="facebook-link-in-footer"><i class="fa fa-facebook-square"></i></a></li>              <li><a href="https://twitter.com/asugreen" title="Twitter" id="twitter-link-in-footer"><i class="fa fa-twitter-square"></i></a></li>              <li><a href="https://plus.google.com/+SchoolofSustainabilityTempe" title="Google+" id="google_plus-link-in-footer"><i class="fa fa-google-plus-square"></i></a></li><li><a href="https://sustainability.asu.edu/linkedin" title="LinkedIn" id="linkedin-link-in-footer"><i class="fa fa-linkedin-square"></i></a></li><li><a href="https://vimeo.com/sustainability" title="Vimeo" id="vimeo-link-in-footer"><i class="fa fa-vimeo-square"></i></a></li><li><a href="https://www.flickr.com/photos/asu-gios/" title="Flickr" id="flickr-link-in-footer"><i class="fa fa-flickr"></i></a></li>            </ul>
-            <a class="btn btn-primary" href="http://www.asufoundation.org/SchoolOfSustainability" id="contribute-button-in-footer">Contribute</a>            
+            <a class="btn btn-primary" href="http://www.asufoundation.org/SchoolOfSustainability" id="contribute-button-in-footer">Contribute</a>
           </div>
         <div class="col-md-2 col-sm-3 space-bot-md">
           <h2 data-toggle="collapse" data-target="#academics-menu">Academics <span class="caret hidden-sm hidden-md hidden-lg"></span></h2>
@@ -1440,7 +1440,7 @@
 
   <!-- JS Only -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <!-- bootstrap files can also be loaded separately -->
 
   <!-- Plugin sources -->
