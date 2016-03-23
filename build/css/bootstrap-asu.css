@@ -825,25 +825,35 @@ code {
   display: none;
 }
 
-#site-name-desktop h1 {
+#site-name-desktop h1,
+#site-name-desktop div {
   line-height: 1.75rem;
   padding: 4px 6px 8px;
 }
-#site-name-desktop h1.site-title {
+#site-name-desktop h1.container,
+#site-name-desktop div.container {
+  padding: 0 15px;
+}
+#site-name-desktop h1.site-title,
+#site-name-desktop div.site-title {
   font-size: 1.5rem;
   margin: 0;
   padding: 0 13px 13px 0;
 }
-#site-name-desktop h1.site-title a {
+#site-name-desktop h1.site-title a,
+#site-name-desktop div.site-title a {
   border-bottom-color: transparent;
   color: #4f5557;
   font-weight: normal;
   text-decoration: none;
 }
-#site-name-desktop h1.site-title a:first-child {
+#site-name-desktop h1.site-title a:first-child,
+#site-name-desktop div.site-title a:first-child {
   color: #000;
 }
-#site-name-desktop h1.site-title a:hover, #site-name-desktop h1.site-title a:focus {
+#site-name-desktop h1.site-title a:hover, #site-name-desktop h1.site-title a:focus,
+#site-name-desktop div.site-title a:hover,
+#site-name-desktop div.site-title a:focus {
   text-decoration: underline;
 }
 
