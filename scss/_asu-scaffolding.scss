@@ -1,7 +1,7 @@
 // ASU Specific Scaffolding
-// 
+//
 // Will style markup that is out of our control. Most of the
-// time this markup will have to be styled with IDs since 
+// time this markup will have to be styled with IDs since
 // classes are not provided.
 
 #masthead {
@@ -81,7 +81,7 @@
 
 #asu_mobile_menu_button {
   font-size: $font-size-mobile-menu;
-  padding: $asu-mobile-buttons-small-padding $space-base;  
+  padding: $asu-mobile-buttons-small-padding $space-base;
 
   a {
     display: none;
@@ -154,9 +154,14 @@
 
 //== Site Name Desktop
 #site-name-desktop {
-  h1 {
+  h1,
+  div {
     line-height: pem(28);
     padding: 4px 6px 8px;
+
+    &.container {
+      padding: 0 15px;
+    }
 
     &.site-title {
       font-size: $site-name-title__font-size;
@@ -189,4 +194,3 @@
   height: $asu-logo-height;
   width: $asu-logo-width;
 }
-
