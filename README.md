@@ -202,8 +202,9 @@ If you are releasing a new version, make sure to:
 
 This project is being heavily used by:
 
-- [ASU-Wordpress-Web-Standards-Theme](https://github.com/gios-asu/ASU-Wordpress-Web-Standards-Theme)
-- [gios-asu.github.io](https://github.com/gios-asu/gios-asu.github.io)
+- [Wordpress ASU Web Standards Theme](https://github.com/gios-asu/ASU-Wordpress-Web-Standards-Theme)
+- [Jekyll ASU Web Standards Theme](https://github.com/gios-asu/ASU-Web-Standards-Jekyll-Theme)
+- [Django ASU Web Standards Theme](https://github.com/asulibraries/django-asutheme)
 
 
 # Other Implementations of the ASU Web Standards
