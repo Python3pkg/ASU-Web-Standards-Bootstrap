@@ -690,11 +690,11 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
     } )
 
     var mainSearch = document.getElementById( 'main-search' )
+    var $menuHiddenButton = $( '.navbar-ws .navbar-toggle' )
     if ( mainSearch === null ) {
       // ==========
       // Navigation
       // ==========
-      var $menuHiddenButton = $( '.navbar-ws .navbar-toggle' )
       $menuHiddenButton.hide()
 
       // add asu menu items
@@ -744,7 +744,7 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
       searchMarkUp += '  </form>'
       searchMarkUp += '</div>'
 
-      var $search = $( searchMarkUp ).prependTo( '#block-asu-brand-asu-brand-header .content' )
+      $( searchMarkUp ).prependTo( '#block-asu-brand-asu-brand-header .content' )
 
       // =====
       // Icons
@@ -764,9 +764,13 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
       // the #asu_mobile_hdr like webspark does.
       // For now, we will append to #asu_mobile_hdr, but we should look into
       // this again in the future.
-      var $mobileMenuButton = $( mobileMenuMarkup ).appendTo( '#asu_mobile_hdr' )
-      var $searchButton = $( searchMenuMarkup ).appendTo( '#asu_mobile_hdr' )
-
+      $( mobileMenuMarkup ).appendTo( '#asu_mobile_hdr' )
+      $( searchMenuMarkup ).appendTo( '#asu_mobile_hdr' )
+    }
+    var $mobileMenuButton = $( '#asu_mobile_menu_button' );
+    var $searchButton = $( '#asu_mobile_search_button' );
+    var $search = $( '#main-search' );
+    if ( $searchButton && $search ) {
       // ===========
       // Icon Events
       // ===========
@@ -786,7 +790,9 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
           $search.find('input[type=text]').focus()
         }
       } )
+    }
 
+    if ( $blackout ) {
       $blackout.click(function () {
         // Close the menu
         $( '.navbar-ws .navbar-collapse' ).waitFor( ':not(.in)', function () {
@@ -797,7 +803,9 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
         $menuHiddenButton.click()
         hideBlackout();
       } );
+    }
 
+    if ( $mobileMenuButton ) {
       $mobileMenuButton.click( function ( e ) {
         e.preventDefault();
         var $self = $( this )
