@@ -3295,7 +3295,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   font-size: 1.25rem;
   font-weight: 500;
   margin: 0;
-  padding: 20px 25px 0;
+  padding: 20px 25px;
 }
 .hero-mobile .pane-content {
   color: white;
