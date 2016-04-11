@@ -438,3 +438,8 @@
   top: 0;
   z-index: 9999;
 }
+
+// per brand guide standards the home icon needs to be 16px font
+#home-icon-main-nav {
+  font-size: $ws-navbar-brand__font-size--home-icon;
+}

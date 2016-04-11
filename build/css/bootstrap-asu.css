@@ -2423,6 +2423,10 @@ input[type="button"].btn-block {
   z-index: 9999;
 }
 
+#home-icon-main-nav {
+  font-size: 1rem;
+}
+
 .sidebar-nav {
   border-top: 8px solid #8c1d40;
   margin-bottom: 25px;
