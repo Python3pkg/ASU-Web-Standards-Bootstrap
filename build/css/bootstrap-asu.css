@@ -3550,6 +3550,12 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   font-weight: normal;
   margin-bottom: 16px;
 }
+.footer h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: light;
+  margin-bottom: 16px;
+}
 .footer a:not(.btn),
 .footer address,
 .footer .phone-link {
@@ -3623,22 +3629,6 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .footer .big-foot img {
   max-width: 300px;
-}
-.footer .big-foot h1,
-.footer .big-foot h2,
-.footer .big-foot h3,
-.footer .big-foot h4,
-.footer .big-foot h5,
-.footer .big-foot h6,
-.footer .big-foot .h1,
-.footer .big-foot .h2,
-.footer .big-foot .h3,
-.footer .big-foot .h4,
-.footer .big-foot .h5,
-.footer .big-foot .h6,
-.footer .big-foot p,
-.footer .big-foot body {
-  color: #fff;
 }
 .footer .big-foot-nav > li {
   margin-bottom: 12px;
