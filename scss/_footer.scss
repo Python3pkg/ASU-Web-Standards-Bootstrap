@@ -117,23 +117,23 @@
     img {
       max-width: 300px;
     }
+
+    a {
+      border-bottom: 1px dotted;
+      border-bottom-color: $color-silver;
+      color: $color-dull-chalice;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: $color-white;
+      }
+    }
   }
 
   .big-foot-nav {
     > li {
       margin-bottom: 12px;
-
-      > a {
-        border-bottom: 1px dotted;
-        border-bottom-color: $color-silver;
-        color: $color-silver;
-        text-decoration: none;
-
-        &:hover,
-        &:focus {
-          color: $color-white;
-        }
-      }
     }
   }
 
