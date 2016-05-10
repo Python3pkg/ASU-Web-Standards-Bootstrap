@@ -2156,9 +2156,13 @@ input[type="button"].btn-block {
   color: #ededed;
   font-size: 0.9375rem;
   font-weight: bold;
-  height: 57px;
   line-height: 1;
   padding: 21px 16px;
+}
+@media (min-width: 992px) {
+  .navbar-ws .navbar-nav > li > a {
+    height: 57px;
+  }
 }
 @media (max-width: 1200px) {
   .navbar-ws .navbar-nav > li > a {
