@@ -26,11 +26,11 @@
     margin-bottom: 16px;
   }
 
-  h3 {
+  h3,
+  h4,
+  h5,
+  h6 {
     color: $color-white;
-    font-size: $footer-h3__font-size;
-    font-weight: light;
-    margin-bottom: 16px;
   }
 
   a:not(.btn),
