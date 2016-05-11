@@ -3538,7 +3538,9 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   width: 100%;
 }
 
-.footer p {
+.footer p,
+.footer div,
+.footer span {
   color: #fff;
 }
 .footer h1 {

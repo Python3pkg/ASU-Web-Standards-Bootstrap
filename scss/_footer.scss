@@ -7,7 +7,9 @@
 // TODO verify these paddings and margins when the HUB finalizing the
 // details
 .footer {
-  p {
+  p,
+  div,
+  span {
     color: $color-white;
   }
 
