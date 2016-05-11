@@ -12,6 +12,7 @@
 // It is also available as a Google Font:
 // http://www.google.com/fonts/specimen/Roboto
 $font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-mono: "Roboto Mono", "Inconsolata", Lucida Console, Monaco, monospace;
 
 @function pem($pixels) {
   @return #{$pixels/16}rem
