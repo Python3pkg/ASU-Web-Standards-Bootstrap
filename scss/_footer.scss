@@ -7,7 +7,9 @@
 // TODO verify these paddings and margins when the HUB finalizing the
 // details
 .footer {
-  p {
+  p,
+  div,
+  span {
     color: $color-white;
   }
 
@@ -24,6 +26,13 @@
     font-size: $footer-h2__font-size;
     font-weight: normal;
     margin-bottom: 16px;
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $color-white;
   }
 
   a:not(.btn),
@@ -117,6 +126,7 @@
     img {
       max-width: 300px;
     }
+
   }
 
   .big-foot-nav {
