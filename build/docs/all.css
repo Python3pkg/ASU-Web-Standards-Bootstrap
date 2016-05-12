@@ -3636,17 +3636,17 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .footer .big-foot img {
   max-width: 300px;
 }
-.footer .big-foot-nav > li {
-  margin-bottom: 12px;
-}
-.footer .big-foot-nav > li > a {
+.footer .big-foot a {
   border-bottom: 1px dotted;
-  border-bottom-color: #ccc;
-  color: #ccc;
+  border-bottom-color: #a9a9a9;
+  color: #a9a9a9;
   text-decoration: none;
 }
-.footer .big-foot-nav > li > a:hover, .footer .big-foot-nav > li > a:focus {
+.footer .big-foot a:hover, .footer .big-foot a:focus {
   color: #fff;
+}
+.footer .big-foot-nav > li {
+  margin-bottom: 12px;
 }
 .footer .little-foot {
   background-color: #e5e5e5;
