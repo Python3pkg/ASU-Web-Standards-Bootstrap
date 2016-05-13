@@ -130,15 +130,20 @@
           padding-right: 14px;
         }
 
-        // TODO carots should be $color-dove-gray (#666)
+        span.caret {
+          color: $color-dove-gray;
+        }
+
 
         &:hover,
         &:focus {
           background-color: $color-black;
           color: $color-sun;
 
-          // TODO carots should be #eee
-          
+          span.caret {
+            color: $color-gallery;
+          }
+
           @media(max-width: $asu-screen-sm-max) {
             background-color: rgb(220, 220, 220);
             color: inherit;
