@@ -336,6 +336,10 @@ a > mark, a >
   padding-right: 0;
 }
 
+.thin {
+  font-weight: 100;
+}
+
 .text-yellow {
   color: #ffc627;
 }
@@ -513,6 +517,13 @@ address {
 }
 address strong {
   font-weight: normal;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: "Roboto Mono", Lucida Console, Monaco, monospace;
 }
 
 kbd {
