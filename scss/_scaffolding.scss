@@ -1,5 +1,5 @@
 // Scaffolding
-// 
+//
 // Styleguide scaffolding
 
 @import 'scaffolding/basic';
@@ -48,6 +48,10 @@ address {
   strong {
     font-weight: normal;
   }
+}
+
+code, kbd, pre, samp {
+  font-family: $font-family-mono;
 }
 
 kbd {
