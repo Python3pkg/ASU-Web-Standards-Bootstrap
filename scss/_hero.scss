@@ -88,7 +88,7 @@
   .h2 {
     color: $color-white;
     font-size: $font-size-hero-h1;
-    font-weight: $font-weight-medium;
+    font-weight: $font-weight-normal;
     line-height: 1;
     margin-bottom: $space-large;
     text-shadow: 0 0 $space-base rgba(0, 0, 0, .5);
@@ -101,7 +101,7 @@
   p {
     color: $color-white;
     font-size: $font-size-hero-p;
-    font-weight: $font-weight-medium;
+    font-weight: $font-weight-normal;
     max-width: 900px;
     text-shadow: 0 0 $space-base rgba(0, 0, 0, .5);
   }
@@ -239,7 +239,7 @@
     color: white;
     display: block;
     font-size: $font-size-xlarge;
-    font-weight: $font-weight-medium;
+    font-weight: $font-weight-normal;
     margin: 0;
     padding: $space-xlarge $space-xxlarge;
   }
