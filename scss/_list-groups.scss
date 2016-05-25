@@ -17,7 +17,7 @@
 .list-group-item {
   border: 0;
   border-top: 1px solid $color-alto;
-  font-weight: normal;
+  font-weight: $font-weight-normal;
   /* Override the margin-bottom: -1px; that bootstrap provides */
   margin-bottom: 0;
   padding: 10px 5px;
@@ -40,7 +40,7 @@
       border-color: $color-alto;
       color: darken($color-maroon, 20%);
       // This used to be bold, but bolding a font changes its size
-      font-weight: normal;
+      font-weight: $font-weight-normal;
 
       .list-group-item-text {
         color: $color-white;
@@ -61,7 +61,7 @@ a.list-group-item {
   &:hover,
   &:focus {
     color: $color-maroon;
-    font-weight: bold;
+    font-weight: $font-weight-bold;
   }
 }
 
@@ -98,7 +98,7 @@ a.list-group-item {
 
     &:after {
       content: '|';
-      font-weight: normal;
+      font-weight: $font-weight-normal;
       margin: 0 5px;
     }
 
