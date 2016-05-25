@@ -60,7 +60,7 @@ body {
 a {
   border-bottom: 1px dotted #8c1d40;
   color: #8c1d40;
-  font-weight: 400;
+  font-weight: normal;
 }
 a:hover, a:focus {
   border-bottom: 1px dotted #d23153;
@@ -89,7 +89,7 @@ li.external-link a:before {
   font-size: 0.875rem;
   font-style: normal;
   font-variant: normal;
-  font-weight: 400;
+  font-weight: normal;
   line-height: 1;
   font-family: FontAwesome;
   font-size: inherit;
@@ -145,7 +145,7 @@ h6,
 .h6 {
   color: #000;
   font-family: inherit;
-  font-weight: 400;
+  font-weight: normal;
 }
 .sidebar-nav > h1, .panel-body > h1, .sidebar-nav >
 h2, .panel-body >
@@ -242,7 +242,7 @@ h4,
 h5,
 .h5 {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 1.5rem;
   margin-bottom: 10px;
   margin-top: 24px;
@@ -272,7 +272,7 @@ h3 .small,
 .h3 .small {
   color: #777;
   font-size: 65%;
-  font-weight: 400;
+  font-weight: normal;
   line-height: 1;
 }
 
@@ -290,7 +290,7 @@ h6 .small,
 .h6 .small {
   color: #777;
   font-size: 75%;
-  font-weight: 400;
+  font-weight: normal;
   line-height: 1;
 }
 
@@ -516,7 +516,7 @@ address {
   margin-bottom: 24px;
 }
 address strong {
-  font-weight: 400;
+  font-weight: normal;
 }
 
 code,
@@ -855,7 +855,7 @@ code {
 #site-name-desktop div.site-title a {
   border-bottom-color: transparent;
   color: #4f5557;
-  font-weight: 400;
+  font-weight: normal;
   text-decoration: none;
 }
 #site-name-desktop h1.site-title a:first-child,
@@ -1113,7 +1113,7 @@ legend {
 
 label {
   font-size: 0.875rem;
-  font-weight: 400;
+  font-weight: normal;
 }
 
 output {
@@ -1686,7 +1686,7 @@ select[multiple].input-lg {
   border-radius: 0;
   color: #8c1d40;
   cursor: pointer;
-  font-weight: 400;
+  font-weight: normal;
 }
 .btn-link, .btn-link:active, .btn-link[disabled], fieldset[disabled] .btn-link {
   -moz-box-shadow: none;
@@ -2161,7 +2161,7 @@ input[type="button"].btn-block {
   background-color: transparent;
   color: #ededed;
   font-size: 0.9375rem;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 1;
   padding: 21px 16px;
 }
@@ -2238,7 +2238,7 @@ input[type="button"].btn-block {
   .navbar-ws .navbar-nav > li > a {
     color: #505558;
     font-size: 0.9375rem;
-    font-weight: 700;
+    font-weight: bold;
     padding: 12px 15px;
     position: relative;
   }
@@ -2256,7 +2256,7 @@ input[type="button"].btn-block {
     font-size: 1.25rem;
     font-style: normal;
     font-variant: normal;
-    font-weight: 400;
+    font-weight: normal;
     height: 13px;
     line-height: 20px;
     padding: 11px 10px 15px;
@@ -2290,7 +2290,7 @@ input[type="button"].btn-block {
 @media (max-width: 991px) {
   .navbar-ws .navbar-brand {
     font-size: 0.9375rem;
-    font-weight: 700;
+    font-weight: bold;
   }
 }
 .navbar-ws .navbar-toggle {
@@ -2371,7 +2371,7 @@ input[type="button"].btn-block {
 .navbar-ws .dropdown-menu > li > a {
   color: #ededed;
   font-size: 0.9375rem;
-  font-weight: 400;
+  font-weight: normal;
   line-height: 1;
   padding: 10px 25px;
 }
@@ -2479,7 +2479,7 @@ input[type="button"].btn-block {
 .sidebar-nav a.active {
   background-color: #f5f5f5;
   color: #8c1d40;
-  font-weight: 700;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -2723,7 +2723,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 .list-group-item {
   border: 0;
   border-top: 1px solid #dbdbdb;
-  font-weight: 400;
+  font-weight: normal;
   /* Override the margin-bottom: -1px; that bootstrap provides */
   margin-bottom: 0;
   padding: 10px 5px;
@@ -2740,7 +2740,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   background-color: #fff;
   border-color: #dbdbdb;
   color: #380b19;
-  font-weight: 400;
+  font-weight: normal;
 }
 .list-group-item.active .list-group-item-text, .list-group-item.active:hover .list-group-item-text, .list-group-item.active:focus .list-group-item-text {
   color: #fff;
@@ -2755,7 +2755,7 @@ a.list-group-item .list-group-item-heading {
 }
 li.active a.list-group-item, a.list-group-item:hover, a.list-group-item:focus {
   color: #8c1d40;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .list-group-item-success {
@@ -2858,7 +2858,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .inline-link-list li:after {
   content: '|';
-  font-weight: 400;
+  font-weight: normal;
   margin: 0 5px;
 }
 .inline-link-list li:last-child:after {
@@ -3057,7 +3057,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 
 .close {
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: normal;
 }
 
 .modal-content {
@@ -3211,7 +3211,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .hero-bg-img .h2 {
   color: #fff;
   font-size: 3.125rem;
-  font-weight: 400;
+  font-weight: normal;
   line-height: 1;
   margin-bottom: 10px;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
@@ -3227,13 +3227,13 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .hero-bg-img p {
   color: #fff;
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: normal;
   max-width: 900px;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 .hero-bg-img .cite {
   color: #fff;
-  font-weight: 700;
+  font-weight: bold;
   margin-bottom: 1.3em;
 }
 
@@ -3307,7 +3307,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   color: white;
   display: block;
   font-size: 1.25rem;
-  font-weight: 400;
+  font-weight: normal;
   margin: 0;
   padding: 20px 25px;
 }
@@ -3337,7 +3337,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   color: white;
   display: block;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: bold;
   margin: 0;
   padding: 0;
   text-shadow: rgba(0, 0, 0, 0.7) 1px 1px 1px;
@@ -3427,7 +3427,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .hero-ratio .panel-pane .pane-content {
   color: white;
-  font-weight: 700;
+  font-weight: bold;
   margin: -14px 0 0;
   padding-top: 8px;
   text-shadow: rgba(0, 0, 0, 0.7) 1px 1px 1px;
@@ -3444,7 +3444,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   }
 }
 .hero-ratio .panel-pane p {
-  font-weight: 700;
+  font-weight: bold;
   margin: 0 0 14px;
 }
 @media (max-width: 1199px) {
@@ -3552,14 +3552,14 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .footer h1 {
   color: #fff;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 1.2;
   margin-bottom: 16px;
 }
 .footer h2 {
   color: #fff;
   font-size: 1.3125rem;
-  font-weight: 400;
+  font-weight: normal;
   margin-bottom: 16px;
 }
 .footer h3,
@@ -3666,7 +3666,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .footer .little-foot-nav > li > a {
   color: #333;
   font-size: 1.125rem;
-  font-weight: 400;
+  font-weight: normal;
   margin-right: 30px;
   text-decoration: none;
 }
@@ -3693,7 +3693,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 
 .little-foot__right__innovate {
   font-size: 1.3125rem;
-  font-weight: 700;
+  font-weight: bold;
 }
 @media (max-width: 767px) {
   .little-foot__right__innovate {
@@ -3704,7 +3704,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   border-bottom: 0;
   color: #a30046 !important;
   font-size: 1.3125rem !important;
-  font-weight: 700 !important;
+  font-weight: bold !important;
   text-decoration: none;
 }
 .little-foot__right__innovate a:hover {
@@ -3724,7 +3724,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   border-bottom: 0;
   color: black;
   font-size: x-large;
-  font-weight: 700;
+  font-weight: bold;
 }
 #innovation-bar a:hover {
   border-bottom: dotted 1px;
@@ -3744,7 +3744,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 /* Menu and ASU mobile nav gone */
 li.dropdown-title {
   color: #ffb310;
-  font-weight: 400;
+  font-weight: normal;
   padding: 3px 25px 7px;
 }
 
@@ -3839,7 +3839,7 @@ li.dropdown-title {
   color: #ededed;
   display: block;
   font-size: 0.9375rem;
-  font-weight: 400;
+  font-weight: normal;
   line-height: 1.4;
   padding: 9px 10px 10px;
 }
@@ -3882,7 +3882,7 @@ li.dropdown-title {
   .mega-menu .dropdown-menu > .li-row-container > .row > .column li.active > a:focus {
     background-color: #dcdcdc;
     color: #000;
-    font-weight: 700;
+    font-weight: bold;
   }
 }
 @media (max-width: 991px) {
@@ -3901,7 +3901,7 @@ li.dropdown-title {
   color: #ffb310;
   display: block;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: normal;
   line-height: 1.4;
   padding: 9px 10px 10px;
 }
@@ -3929,7 +3929,7 @@ li.dropdown-title {
     font-size: 1.25rem;
     font-style: normal;
     font-variant: normal;
-    font-weight: 400;
+    font-weight: normal;
     height: 13px;
     line-height: 20px;
     padding: 10px 10px 15px;
@@ -4129,7 +4129,7 @@ figure[class^="effect-"] h2 {
   word-spacing: -.15em;
 }
 figure[class^="effect-"] h2 span {
-  font-weight: 700;
+  font-weight: bold;
 }
 figure[class^="effect-"] h2,
 figure[class^="effect-"] p {
