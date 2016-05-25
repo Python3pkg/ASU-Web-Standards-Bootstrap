@@ -1,9 +1,9 @@
 // Forms
-// 
+//
 // All of Bootstrap's form functionality is available and
 // themed. See [GetBootstrap](http://getbootstrap.com/css/#forms) for
 // more form details.
-// 
+//
 // Markup:
 // <div class="form-group has-success">
 //   <label class="control-label" for="inputSuccess1">Input with success</label>
@@ -17,26 +17,26 @@
 //   <label class="control-label" for="inputError1">Input with error</label>
 //   <input type="text" class="form-control" id="inputError1">
 // </div>
-// 
+//
 // Styleguide forms
 ::-webkit-input-placeholder {
   color: $color-gray-boulder;
-  font-weight: $font-weight-thin;
+  font-weight: $font-weight-light;
 }
 
 :-moz-placeholder {
   color: $color-gray-boulder;
-  font-weight: $font-weight-thin;
+  font-weight: $font-weight-light;
 }
 
 ::-moz-placeholder {
   color: $color-gray-boulder;
-  font-weight: $font-weight-thin;
+  font-weight: $font-weight-light;
 }
 
 :-ms-input-placeholder {
   color: $color-gray-boulder;
-  font-weight: $font-weight-thin;
+  font-weight: $font-weight-light;
 }
 
 legend {
@@ -46,7 +46,7 @@ legend {
 
 label {
   font-size: $font-size-small;
-  font-weight: $font-weight-normal;
+  font-weight: $font-weight-medium;
 }
 
 output {
@@ -61,9 +61,9 @@ output {
   border: $space-xsmall solid $color-silver-chalice;
   color: $color-emperor;
   font-size: $font-size-medium;
-  font-weight: $font-weight-thin;
+  font-weight: $font-weight-light;
   height: $form-control-height;
-  line-height: $line-height-base; 
+  line-height: $line-height-base;
 }
 
 .form-control:focus {
@@ -75,7 +75,7 @@ input[type="date"],
 input[type="time"],
 input[type="datetime-local"],
 input[type="month"] {
-  line-height: $form-control-height; 
+  line-height: $form-control-height;
   // IE8+ misaligns the text within date inputs, so we reset
   line-height: $line-height-base #{\0};
 
@@ -85,18 +85,6 @@ input[type="month"] {
 
   &.input-lg {
     line-height: $input-height-large;
-  } 
-}
-
-.radio, 
-.checkbox {
-  margin-bottom: $space-base;
-  margin-top: $space-base;
-  min-height: 24px;
-
-  .inline {
-    display: inline-block;
-    margin-right: $space-large;
   }
 }
 
@@ -106,21 +94,21 @@ input[type="month"] {
 // height and font-size of form controls.
 
 @include input-size(
-  '.input-sm', 
-  $input-height-small, 
-  $space-base, 
-  $space-large, 
-  $font-size-small, 
-  $line-height-small, 
+  '.input-sm',
+  $input-height-small,
+  $space-base,
+  $space-large,
+  $font-size-small,
+  $line-height-small,
   $border-radius);
 
 @include input-size(
-  '.input-lg', 
-  $input-height-large, 
-  $space-large, 
-  $space-xxlarge, 
-  $font-size-large, 
-  $line-height-large, 
+  '.input-lg',
+  $input-height-large,
+  $space-large,
+  $space-xxlarge,
+  $font-size-large,
+  $line-height-large,
   $border-radius);
 
 .has-feedback {
@@ -151,22 +139,22 @@ input[type="month"] {
 // Feedback states
 .has-success {
   @include form-control-validation(
-    $color-green, 
+    $color-green,
     $color-green-darkened,
     $color-white);
 }
 
 .has-warning {
   @include form-control-validation(
-    $color-yellow, 
-    $color-yellow-darkened, 
+    $color-yellow,
+    $color-yellow-darkened,
     $color-black);
 }
 
 .has-error {
   @include form-control-validation(
-    $color-orange, 
-    $color-orange-darkened, 
+    $color-orange,
+    $color-orange-darkened,
     $color-white);
 }
 
@@ -180,15 +168,15 @@ input[type="month"] {
     min-height: 31px;
   }
 
-  .form-group-lg .control-label { 
-    @media (min-width: $asu-screen-sm-min) { 
+  .form-group-lg .control-label {
+    @media (min-width: $asu-screen-sm-min) {
       padding-top: 16.96px;
     }
   }
 }
 
 // Checkboxes
-// 
+//
 // Markup:
 // <div class="checkbox">
 //   <label>
@@ -204,11 +192,11 @@ input[type="month"] {
 //     Checked
 //   </label>
 // </div>
-// 
+//
 // Styleguide forms.checkboxes
 
 // Radio buttons
-// 
+//
 // Markup:
 // <div class="radio">
 //   <label>
@@ -229,6 +217,13 @@ input[type="month"] {
 .radio,
 .checkbox {
   margin-bottom: $space-large;
+  margin-top: $space-base;
+  min-height: 24px;
+
+  .inline {
+    display: inline-block;
+    margin-right: $space-large;
+  }
 
   .outer-wrap {
     background-color: $color-white;
@@ -244,11 +239,11 @@ input[type="month"] {
 
   label {
     font-size: $font-size-medium;
-    font-weight: $font-weight-thin;
+    font-weight: $font-weight-light;
     padding-left: 0;
   }
 
-  .fa-circle, 
+  .fa-circle,
   .fa-check {
     color: white;
     font-size: pem(23);
