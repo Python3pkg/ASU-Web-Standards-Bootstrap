@@ -15,7 +15,7 @@ body {
   color: #2a2a2a;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.44;
 }
 @media (min-width: 1200px) {
@@ -60,7 +60,7 @@ body {
 a {
   border-bottom: 1px dotted #8c1d40;
   color: #8c1d40;
-  font-weight: normal;
+  font-weight: 400;
 }
 a:hover, a:focus {
   border-bottom: 1px dotted #d23153;
@@ -89,7 +89,7 @@ li.external-link a:before {
   font-size: 0.875rem;
   font-style: normal;
   font-variant: normal;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1;
   font-family: FontAwesome;
   font-size: inherit;
@@ -145,7 +145,7 @@ h6,
 .h6 {
   color: #000;
   font-family: inherit;
-  font-weight: normal;
+  font-weight: 400;
 }
 .sidebar-nav > h1, .panel-body > h1, .sidebar-nav >
 h2, .panel-body >
@@ -242,7 +242,7 @@ h4,
 h5,
 .h5 {
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.5rem;
   margin-bottom: 10px;
   margin-top: 24px;
@@ -252,7 +252,7 @@ h6,
 .h6 {
   font-size: 1rem;
   font-style: italic;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.5rem;
   margin-bottom: 10px;
   margin-top: 24px;
@@ -272,7 +272,7 @@ h3 .small,
 .h3 .small {
   color: #777;
   font-size: 65%;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1;
 }
 
@@ -290,12 +290,12 @@ h6 .small,
 .h6 .small {
   color: #777;
   font-size: 75%;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1;
 }
 
 p {
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.5rem;
   margin: 0 0 1.5rem;
 }
@@ -310,7 +310,7 @@ p.text-center {
 
 .lead {
   font-size: 1.25rem;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.4;
   margin-bottom: 24px;
   max-width: 1000px;
@@ -511,19 +511,19 @@ blockquote .small {
 }
 
 address {
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.44;
   margin-bottom: 24px;
 }
 address strong {
-  font-weight: normal;
+  font-weight: 400;
 }
 
 code,
 kbd,
 pre,
 samp {
-  font-family: "Roboto Mono", Lucida Console, Monaco, monospace;
+  font-family: "Roboto Mono", "Lucida Console", Monaco, monospace;
 }
 
 kbd {
@@ -855,7 +855,7 @@ code {
 #site-name-desktop div.site-title a {
   border-bottom-color: transparent;
   color: #4f5557;
-  font-weight: normal;
+  font-weight: 400;
   text-decoration: none;
 }
 #site-name-desktop h1.site-title a:first-child,
@@ -1088,22 +1088,22 @@ code {
 
 ::-webkit-input-placeholder {
   color: #7f7f7f;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 :-moz-placeholder {
   color: #7f7f7f;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 ::-moz-placeholder {
   color: #7f7f7f;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 :-ms-input-placeholder {
   color: #7f7f7f;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 legend {
@@ -1113,7 +1113,7 @@ legend {
 
 label {
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 output {
@@ -1129,7 +1129,7 @@ output {
   border: 1px solid #b0b0b0;
   color: #505050;
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 300;
   height: 38px;
   line-height: 1.44;
 }
@@ -1159,18 +1159,6 @@ input[type="time"].input-lg,
 input[type="datetime-local"].input-lg,
 input[type="month"].input-lg {
   line-height: 53px;
-}
-
-.radio,
-.checkbox {
-  margin-bottom: 5px;
-  margin-top: 5px;
-  min-height: 24px;
-}
-.radio .inline,
-.checkbox .inline {
-  display: inline-block;
-  margin-right: 10px;
 }
 
 .input-sm {
@@ -1338,6 +1326,13 @@ select[multiple].input-lg {
 .radio,
 .checkbox {
   margin-bottom: 10px;
+  margin-top: 5px;
+  min-height: 24px;
+}
+.radio .inline,
+.checkbox .inline {
+  display: inline-block;
+  margin-right: 10px;
 }
 .radio .outer-wrap,
 .checkbox .outer-wrap {
@@ -1354,7 +1349,7 @@ select[multiple].input-lg {
 .radio label,
 .checkbox label {
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 300;
   padding-left: 0;
 }
 .radio .fa-circle,
@@ -1691,7 +1686,7 @@ select[multiple].input-lg {
   border-radius: 0;
   color: #8c1d40;
   cursor: pointer;
-  font-weight: normal;
+  font-weight: 400;
 }
 .btn-link, .btn-link:active, .btn-link[disabled], fieldset[disabled] .btn-link {
   -moz-box-shadow: none;
@@ -2166,7 +2161,7 @@ input[type="button"].btn-block {
   background-color: transparent;
   color: #ededed;
   font-size: 0.9375rem;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1;
   padding: 21px 16px;
 }
@@ -2243,7 +2238,7 @@ input[type="button"].btn-block {
   .navbar-ws .navbar-nav > li > a {
     color: #505558;
     font-size: 0.9375rem;
-    font-weight: 600;
+    font-weight: 700;
     padding: 12px 15px;
     position: relative;
   }
@@ -2261,7 +2256,7 @@ input[type="button"].btn-block {
     font-size: 1.25rem;
     font-style: normal;
     font-variant: normal;
-    font-weight: normal;
+    font-weight: 400;
     height: 13px;
     line-height: 20px;
     padding: 11px 10px 15px;
@@ -2295,7 +2290,7 @@ input[type="button"].btn-block {
 @media (max-width: 991px) {
   .navbar-ws .navbar-brand {
     font-size: 0.9375rem;
-    font-weight: 600;
+    font-weight: 700;
   }
 }
 .navbar-ws .navbar-toggle {
@@ -2376,7 +2371,7 @@ input[type="button"].btn-block {
 .navbar-ws .dropdown-menu > li > a {
   color: #ededed;
   font-size: 0.9375rem;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1;
   padding: 10px 25px;
 }
@@ -2384,7 +2379,7 @@ input[type="button"].btn-block {
   .navbar-ws .dropdown-menu > li > a {
     color: #a42b4d;
     font-size: 0.84375rem;
-    font-weight: 200;
+    font-weight: 300;
   }
 }
 .navbar-ws .dropdown-menu > li > a:hover, .navbar-ws .dropdown-menu > li > a:focus {
@@ -2484,7 +2479,7 @@ input[type="button"].btn-block {
 .sidebar-nav a.active {
   background-color: #f5f5f5;
   color: #8c1d40;
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -2728,7 +2723,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 .list-group-item {
   border: 0;
   border-top: 1px solid #dbdbdb;
-  font-weight: normal;
+  font-weight: 400;
   /* Override the margin-bottom: -1px; that bootstrap provides */
   margin-bottom: 0;
   padding: 10px 5px;
@@ -2745,7 +2740,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   background-color: #fff;
   border-color: #dbdbdb;
   color: #380b19;
-  font-weight: normal;
+  font-weight: 400;
 }
 .list-group-item.active .list-group-item-text, .list-group-item.active:hover .list-group-item-text, .list-group-item.active:focus .list-group-item-text {
   color: #fff;
@@ -2760,7 +2755,7 @@ a.list-group-item .list-group-item-heading {
 }
 li.active a.list-group-item, a.list-group-item:hover, a.list-group-item:focus {
   color: #8c1d40;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .list-group-item-success {
@@ -2863,7 +2858,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .inline-link-list li:after {
   content: '|';
-  font-weight: normal;
+  font-weight: 400;
   margin: 0 5px;
 }
 .inline-link-list li:last-child:after {
@@ -3062,7 +3057,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 
 .close {
   font-size: 1.5rem;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .modal-content {
@@ -3154,7 +3149,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .calendar-date .date {
   float: right;
   font-size: 3.125rem;
-  font-weight: 200;
+  font-weight: 300;
   line-height: .9;
   width: 60px;
 }
@@ -3216,7 +3211,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .hero-bg-img .h2 {
   color: #fff;
   font-size: 3.125rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1;
   margin-bottom: 10px;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
@@ -3232,13 +3227,13 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .hero-bg-img p {
   color: #fff;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 400;
   max-width: 900px;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 .hero-bg-img .cite {
   color: #fff;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 1.3em;
 }
 
@@ -3306,13 +3301,13 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .hero-mobile {
   display: none;
   font-size: 1.25rem;
-  font-weight: 200;
+  font-weight: 300;
 }
 .hero-mobile .pane-title {
   color: white;
   display: block;
   font-size: 1.25rem;
-  font-weight: 500;
+  font-weight: 400;
   margin: 0;
   padding: 20px 25px;
 }
@@ -3333,7 +3328,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .hero-ratio .panel-pane,
 .hero-slim .panel-pane {
-  font-weight: 200;
+  font-weight: 300;
   line-height: 30px;
   margin-top: 3%;
 }
@@ -3342,7 +3337,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   color: white;
   display: block;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0;
   padding: 0;
   text-shadow: rgba(0, 0, 0, 0.7) 1px 1px 1px;
@@ -3432,7 +3427,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .hero-ratio .panel-pane .pane-content {
   color: white;
-  font-weight: bold;
+  font-weight: 700;
   margin: -14px 0 0;
   padding-top: 8px;
   text-shadow: rgba(0, 0, 0, 0.7) 1px 1px 1px;
@@ -3449,7 +3444,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   }
 }
 .hero-ratio .panel-pane p {
-  font-weight: bold;
+  font-weight: 700;
   margin: 0 0 14px;
 }
 @media (max-width: 1199px) {
@@ -3557,14 +3552,14 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .footer h1 {
   color: #fff;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.2;
   margin-bottom: 16px;
 }
 .footer h2 {
   color: #fff;
   font-size: 1.3125rem;
-  font-weight: normal;
+  font-weight: 400;
   margin-bottom: 16px;
 }
 .footer h3,
@@ -3749,7 +3744,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 /* Menu and ASU mobile nav gone */
 li.dropdown-title {
   color: #ffb310;
-  font-weight: normal;
+  font-weight: 400;
   padding: 3px 25px 7px;
 }
 
@@ -3844,7 +3839,7 @@ li.dropdown-title {
   color: #ededed;
   display: block;
   font-size: 0.9375rem;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1.4;
   padding: 9px 10px 10px;
 }
@@ -3853,7 +3848,7 @@ li.dropdown-title {
   .mega-menu .dropdown-menu > .li-row-container > .row > .column li a {
     color: #a42b4d;
     font-size: 0.84375rem;
-    font-weight: 200;
+    font-weight: 300;
   }
 }
 .mega-menu .dropdown-menu > .row > .column li a:hover, .mega-menu .dropdown-menu > .row > .column li a:focus,
@@ -3887,7 +3882,7 @@ li.dropdown-title {
   .mega-menu .dropdown-menu > .li-row-container > .row > .column li.active > a:focus {
     background-color: #dcdcdc;
     color: #000;
-    font-weight: 600;
+    font-weight: 700;
   }
 }
 @media (max-width: 991px) {
@@ -3906,7 +3901,7 @@ li.dropdown-title {
   color: #ffb310;
   display: block;
   font-size: 1rem;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1.4;
   padding: 9px 10px 10px;
 }
@@ -3916,7 +3911,7 @@ li.dropdown-title {
     border-top: 1px solid #dddddd;
     color: #a42b4d;
     font-size: 0.84375rem;
-    font-weight: 200;
+    font-weight: 300;
     width: 100%;
   }
   .mega-menu .dropdown-title:before {
@@ -3934,7 +3929,7 @@ li.dropdown-title {
     font-size: 1.25rem;
     font-style: normal;
     font-variant: normal;
-    font-weight: normal;
+    font-weight: 400;
     height: 13px;
     line-height: 20px;
     padding: 10px 10px 15px;
@@ -4134,7 +4129,7 @@ figure[class^="effect-"] h2 {
   word-spacing: -.15em;
 }
 figure[class^="effect-"] h2 span {
-  font-weight: 800;
+  font-weight: 700;
 }
 figure[class^="effect-"] h2,
 figure[class^="effect-"] p {
