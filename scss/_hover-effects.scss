@@ -59,11 +59,11 @@ figure[class^="effect-"] {
   }
 
   h2 {
-    font-weight: 300;
+    font-weight: $font-weight-light;
     word-spacing: -.15em;
 
     span {
-      font-weight: 800;
+      font-weight: $font-weight-bold;
     }
   }
 

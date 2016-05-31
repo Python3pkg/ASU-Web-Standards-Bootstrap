@@ -117,7 +117,7 @@
         background-color: transparent;
         color:            $color-gallery;
         font-size:        $ws-nav-link__font-size;
-        font-weight:      bold;
+        font-weight:      $font-weight-bold;
         line-height:      $ws-nav-link__line-height;
         padding:          21px 16px;
 
@@ -216,7 +216,7 @@
           > a {
             color:       rgb(80, 85, 88);
             font-size:   $ws-nav-link__font-size;
-            font-weight: 600;
+            font-weight: $font-weight-bold;
             padding:     12px 15px;
             position:    relative;
 
@@ -234,7 +234,7 @@
               font-size: pem(20);
               font-style: normal;
               font-variant: normal;
-              font-weight: normal;
+              font-weight: $font-weight-normal;
               height: 13px;
               line-height: 20px;
               padding: 11px 10px 15px;
@@ -276,7 +276,7 @@
 
     @media(max-width: $asu-screen-sm-max) {
       font-size:   $ws-navbar-brand__font-size--small;
-      font-weight: 600;
+      font-weight: $font-weight-bold;
     }
   }
 
@@ -374,14 +374,14 @@
       > a {
         color: $color-gallery;
         font-size: $ws-menu__font-size;
-        font-weight: normal;
+        font-weight: $font-weight-normal;
         line-height: $line-height-menu;
         padding: $space-large $space-xxlarge;
 
         @media(max-width: $asu-screen-sm-max) {
           color: rgb(164, 43, 77);
           font-size: $ws-menu__font-size--small;
-          font-weight: 200;
+          font-weight: $font-weight-light;
         }
 
         &:hover,
