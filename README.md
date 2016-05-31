@@ -72,6 +72,16 @@ Please remember to include all of the [dependencies](#dependencies).  Include al
 
 For developers or when debugging, consider using the non-minified JavaScript files and adding the `*.map` files to where your `*.css` files are.
 
+## Webfonts
+
+You also need to add the following lines to your site's header, in order for browser clients to download the webfonts used by the ASU Web Standards Theme:
+
+```html
+<!-- Google Webfonts for ASU Bootstrap Standards -->
+<link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Mono:300' rel='stylesheet' type='text/css'>
+```
+
 ## Favicons
 
 Favorite Icons are provided in the `build/img/favicon` folder, below is some sample HTML that you should include
