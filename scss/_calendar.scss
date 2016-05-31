@@ -112,7 +112,7 @@
   .date {
     float: right;
     font-size: $calendar-date__font-size;
-    font-weight: 200;
+    font-weight: $font-weight-light;
     line-height: .9;
     width: 60px;
   }
