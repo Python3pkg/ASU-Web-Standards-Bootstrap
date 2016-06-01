@@ -1,0 +1,52 @@
+// ==========================================================================
+// Print style
+// Inlined to avoid the additional HTTP request:
+// http://www.phpied.com/delay-loading-your-print-css/
+//
+// Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css
+// ==========================================================================
+
+@media print {
+  *,
+  *:before,
+  *:after,
+  *:first-letter,
+  *:first-line {
+    background: transparent !important;
+    color: #000 !important; /* Black prints faster:
+                               http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+
+  #asu-mobile-menu,
+  #asu_mobile_menu_button,
+  #asu_mobile_search_button,
+  #asu-search {
+    display: none;
+  }
+
+
+  .navbar .navbar-ws {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .social-media .a:after {
+    display: none;
+  }
+}
