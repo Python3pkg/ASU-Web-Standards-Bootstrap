@@ -1,31 +1,31 @@
 // Panels
-// 
+//
 // By default, all the `.panel` does is apply some basic border and padding to
 // contain some content.
-// 
+//
 // Markup:
 // <div class="panel panel-default">
 //   <div class="panel-body">
 //     Basic panel example
 //   </div>
 // </div>
-// 
+//
 // Styleguide panels
 
 // Panel Modifiers
-// 
+//
 // Markup:
 // <div class="panel {{modifier_class}}">
 //   <div class="panel-heading"><h3 class="panel-title">Panel title</h3></div>
 //   <div class="panel-body">Panel content</div>
 // </div>
-// 
+//
 // .panel-primary - Primary panel
 // .panel-success - Successful panel
 // .panel-info    - Informational panel
 // .panel-warning - Warning panel
 // .panel-danger  - Danger panel
-// 
+//
 // Styleguide panels.modifiers
 .panel {
   background-color: $color-alabaster;
@@ -77,40 +77,40 @@
 // Contextual variations
 .panel-primary {
   @include panel-variant(
-    $color-maroon, 
-    $color-white, 
-    $color-maroon, 
+    $color-maroon,
+    $color-white,
+    $color-maroon,
     $color-maroon);
 }
 
 .panel-success {
   @include panel-variant(
-    $color-green-darkened, 
-    $color-white, 
-    $color-green, 
+    $color-green-darkened,
+    $color-white,
+    $color-green,
     $color-green-darkened);
 }
 
 .panel-info {
   @include panel-variant(
-    $color-blue-darkened, 
-    $color-white, 
-    $color-blue, 
+    $color-blue-darkened,
+    $color-white,
+    $color-blue,
     $color-blue-darkened);
 }
 
 .panel-warning {
   @include panel-variant(
-    $color-yellow-darkened, 
+    $color-yellow-darkened,
     $color-white,
-    $color-yellow, 
+    $color-yellow,
     $color-yellow-darkened);
 }
 
 .panel-danger {
   @include panel-variant(
-    $color-orange-darkened, 
-    $color-white, 
-    $color-orange, 
+    $color-orange-darkened,
+    $color-white,
+    $color-orange,
     $color-orange-darkened);
 }

@@ -1,7 +1,7 @@
 // Web Standards Navbar
-// 
+//
 // Just like in Bootstrap, but styled differently, uses `navbar`
-// 
+//
 // Markup:
 // <nav class="navbar navbar-ws affix-top" role="navigation">
 //     <div class="container-fluid">
@@ -35,9 +35,9 @@
 // Styleguide navigation.web-standards
 
 // Navbar States
-// 
+//
 // There are 4 main states that need to be consistent within the navbar:
-// 
+//
 // Markup:
 // <nav class="navbar navbar-ws affix-top" role="navigation">
 //     <div class="container-fluid">
@@ -156,7 +156,7 @@
         color: $color-sun;
 
         // TODO carots should be #eee
-        
+
         @media(max-width: $asu-screen-sm-max) {
           background-color: rgb(220, 220, 220);
           color: inherit;
@@ -244,7 +244,7 @@
               text-align: center;
               text-transform: none;
               top: 0;
-              width: 35px;  
+              width: 35px;
 
               &:before {
                 content: '\f0d7';
@@ -351,7 +351,7 @@
     padding: 0;
     position: relative;
     width: 100%;
-    
+
 
     @media (min-width: $asu-screen-sm-max) {
       position: absolute;

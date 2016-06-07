@@ -1,18 +1,18 @@
 // Sidebar
-// 
+//
 // Can be used with `.affix`. If you do want the sidebar to be affixed, you need
 // to add `id="sidebarNav"` and `class="affix"`. You should also use the push
 // and pull variants of the `col-*-*` classes.
-// 
+//
 // Here is an example of the columns, note that even though the sidebar
 // comes first in the markup, it will be on the *right* hand side of the
 // page:
-// 
+//
 // ```
 // <div class="col-sm-4 col-sm-push-8">[sidebar goes here]</div>
 // <div class="col-sm-8 col-sm-pull-4">[content goes here]</div>
 // ```
-// 
+//
 // Example sidebar:
 //
 // Markup:
@@ -24,7 +24,7 @@
 //   </div>
 // </div>
 //
-// 
+//
 // Styleguide navigation.sidebar
 .sidebar-nav {
   border-top: $sidebar-border-top solid $color-maroon;

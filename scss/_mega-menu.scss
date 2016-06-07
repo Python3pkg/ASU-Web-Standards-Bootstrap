@@ -13,7 +13,7 @@ li.dropdown-title {
 
 .navbar-ws .navbar-nav > .current-menu-ancestor > a {
   color: $color-sun;
-  
+
   span {
     color: $color-selective-yellow;
   }
@@ -103,7 +103,7 @@ li.dropdown-title {
           border-top: 1px solid rgb(221, 221, 221);
           padding-left: 10px;
           width: 100%;
- 
+
           &:not(.dropdown-title) {
             display: none;
           }
@@ -221,7 +221,7 @@ li.dropdown-title {
         text-align: center;
         text-transform: none;
         top: 1px;
-        width: 35px;  
+        width: 35px;
       }
     }
   }

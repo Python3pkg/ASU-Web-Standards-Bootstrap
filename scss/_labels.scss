@@ -1,5 +1,5 @@
 // Labels
-// 
+//
 // Add any of the below mentioned modifier classes to change the appearance of a label.
 //
 // Markup:
@@ -11,7 +11,7 @@
 // .label-info - Informational label
 // .label-warning - Warning label
 // .label-danger - Danger label
-// 
+//
 // Styleguide labels
 .label-primary {
   @include label-variant($color-maroon);
