@@ -1,6 +1,6 @@
 // Web Standards Navbar
 //
-// Just like in Bootstrap, but styled differently, uses `navbar`
+// Just like in Bootstrap, but styled differently, uses `navbar`. Dropdown menus must include caret icon as styled here.
 //
 // Markup:
 // <nav class="navbar navbar-ws affix-top" role="navigation">
@@ -18,13 +18,11 @@
 //             <ul id="menu-header-menu" class="nav navbar-nav">
 //                 <li><a href="#" id="home-icon-main-nav"><span class="fa fa-home hidden-xs hidden-sm" aria-hidden="true"></span><span class="hidden-md hidden-lg">Home</span></a>
 //                 </li>
-//                 <li class="menu-item"><a title="Outreach" href="#" id="nav-item_outreach">Outreach</a>
+//                 <li class="menu-item"><a title="Simple Dropdown" href="#" id="nav-item_outreach">Simple Dropdown <span class="caret"></span></a>
 //                 </li>
-//                 <li class="menu-item"><a title="Research" href="#" id="nav-item_research">Research</a>
+//                 <li class="menu-item"><a title="Super Menu" href="#" id="nav-item_research">Super Menu <span class="caret"></span></a>
 //                 </li>
-//                 <li class="menu-item"><a title="Solutions" href="#" id="nav-item_solutions">Solutions</a>
-//                 </li>
-//                 <li class="menu-item"><a title="Operations" href="#" id="nav-item_operations">Operations</a>
+//                 <li class="menu-item"><a title="Tabbed Menu" href="#" id="nav-item_solutions">Tabbed Menu</a>
 //                 </li>
 //             </ul>
 //         </div>
