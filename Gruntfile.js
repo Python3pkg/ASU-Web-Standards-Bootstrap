@@ -170,7 +170,8 @@ module.exports = function (grunt) {
           'js/_wait-for.js',
           'js/_mobile-menu.js',
           'js/_sticky-nav.js',
-          'js/_navs-click-and-hover.js'
+          'js/_navs-click-and-hover.js',
+          'js/_print-footnote-links.js'
         ],
         dest: 'build/js/bootstrap-asu.js'
       },
