@@ -13,9 +13,9 @@
   *:first-letter,
   *:first-line {
     background: transparent !important;
+    box-shadow: none !important;
     color: #000 !important; /* Black prints faster:
                                http://www.sanbeiji.com/archives/953 */
-    box-shadow: none !important;
     text-shadow: none !important;
   }
 
@@ -25,9 +25,7 @@
   }
 
   a[href]:after {
-    content: " (" attr(href) ")";
-    font-size: 90%;
-    word-wrap: break-word;
+    content: none;
   }
 
   #asu-mobile-menu,
