@@ -1000,6 +1000,8 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
+ *
+ * @see https://github.com/dompuiu/jquery-footnote-links
  */
 
 if (typeof Object.create !== 'function') {
@@ -1097,7 +1099,7 @@ if (typeof Object.create !== 'function') {
      * @return jQueryRef The links references.
      */
     getLinks: function () {
-      var links = $('a[href]', this.$elem);
+      var links = $('a[href]', this.$elem).filter(':visible');
       if (this.options.ignoreCls) {
         if (this.options.ignoreCls[0] !== '.') {
           this.options.ignoreCls = '.' + this.options.ignoreCls;
@@ -1212,4 +1214,4 @@ if (typeof Object.create !== 'function') {
   };
 }(jQuery));
 
-$('body').footnoteLinks();
+$('body').footnoteLinks({ ignoreCls: 'sr-only' });

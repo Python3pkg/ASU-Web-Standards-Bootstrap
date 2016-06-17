@@ -4265,6 +4265,21 @@ figure[class^="effect-"].effect-sarah p {
     text-shadow: none !important;
   }
 
+  html {
+    font-size: 75%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    clear: both;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    page-break-after: avoid;
+  }
+
   a,
   a:visited {
     text-decoration: underline;
@@ -4274,23 +4289,56 @@ figure[class^="effect-"].effect-sarah p {
     content: none;
   }
 
+  .site-content .container,
+  .gray-back {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .asu-breadcrumbs .container {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .hr {
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+
+  .btn {
+    padding-right: 5px;
+  }
+
+  img,
+  .img-100,
+  .btn-block {
+    width: 33% !important;
+  }
+
+  .embed-responsive-16by9 {
+    padding-bottom: 0;
+  }
+
   #asu-mobile-menu,
   #asu_mobile_menu_button,
   #asu_mobile_search_button,
-  #asu-search {
-    display: none;
-  }
-
-  .navbar .navbar-ws {
-    display: none;
-  }
-
-  .footer {
-    display: none;
-  }
-
+  #asu-search,
+  #asu-mobile-menu a,
+  #asu_mobile_menu_button a,
+  #asu_mobile_search_button a,
+  #asu-search a,
+  .footer,
+  .hero-ratio,
   .social-media .a:after {
-    display: none;
+    display: none !important;
+  }
+
+  .navbar {
+    display: initial;
+  }
+
+  .navbar-ws .navbar-brand {
+    font-size: 1.9rem;
   }
 }
 /*!
