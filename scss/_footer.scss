@@ -7,14 +7,16 @@
 // TODO verify these paddings and margins when the HUB finalizing the
 // details
 .footer {
-  p {
+  p,
+  div,
+  span {
     color: $color-white;
   }
 
   h1 {
     color: $color-white;
     font-size: $font-size-medium;
-    font-weight: bold;
+    font-weight: $font-weight-bold;
     line-height: 1.2;
     margin-bottom: 16px;
   }
@@ -22,8 +24,15 @@
   h2 {
     color: $color-white;
     font-size: $footer-h2__font-size;
-    font-weight: normal;
+    font-weight: $font-weight-normal;
     margin-bottom: 16px;
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $color-white;
   }
 
   a:not(.btn),
@@ -117,23 +126,23 @@
     img {
       max-width: 300px;
     }
+
+    a {
+      border-bottom: 1px dotted;
+      border-bottom-color: $color-dull-chalice;
+      color: $color-dull-chalice;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: $color-white;
+      }
+    }
   }
 
   .big-foot-nav {
     > li {
       margin-bottom: 12px;
-
-      > a {
-        border-bottom: 1px dotted;
-        border-bottom-color: $color-silver;
-        color: $color-silver;
-        text-decoration: none;
-
-        &:hover,
-        &:focus {
-          color: $color-white;
-        }
-      }
     }
   }
 
@@ -175,7 +184,7 @@
       > a {
         color: #333;
         font-size: $footer-little-link__font-size;
-        font-weight: 400;
+        font-weight: $font-weight-normal;
         margin-right: 30px;
         text-decoration: none;
 
@@ -207,7 +216,7 @@
 
 .little-foot__right__innovate {
   font-size: $little-foot__right__innovate__font-size;
-  font-weight: 700;
+  font-weight: $font-weight-bold;
 
   @media(max-width: $asu-screen-xs-max) {
     font-size: $little-foot__right__innovate__font-size--small;
@@ -217,7 +226,7 @@
     border-bottom: 0;
     color: #a30046 !important;
     font-size: $little-foot__right__innovate__font-size !important;
-    font-weight: 700 !important;
+    font-weight: $font-weight-bold !important;
     text-decoration: none;
 
     &:hover {
@@ -261,7 +270,7 @@
     border-bottom: 0;
     color: black;
     font-size: x-large;
-    font-weight: 700;
+    font-weight: $font-weight-bold;
   }
 
   a:hover {

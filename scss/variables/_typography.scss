@@ -1,17 +1,18 @@
 // ==============================
 // Typography
 // ==============================
-// 
+//
 // Font as designated by the University Standards.  Do not use
 // Roboto Condensed.
 //
-// You can download this font directly from 
+// You can download this font directly from
 // the Android developers site:
 // http://developer.android.com/design/downloads/index.html
-// 
+//
 // It is also available as a Google Font:
 // http://www.google.com/fonts/specimen/Roboto
 $font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-mono: "Roboto Mono", "Lucida Console", Monaco, monospace;
 
 @function pem($pixels) {
   @return #{$pixels/16}rem
@@ -20,8 +21,10 @@ $font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 // ============
 // Font Weights
 // ============
-$font-weight-thin:   200;
-$font-weight-normal: 500;
+$font-weight-thin:   100;
+$font-weight-light:  300;
+$font-weight-normal: normal;
+$font-weight-bold:   bold;
 
 // ============
 // Line Heights

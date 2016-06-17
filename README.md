@@ -72,6 +72,16 @@ Please remember to include all of the [dependencies](#dependencies).  Include al
 
 For developers or when debugging, consider using the non-minified JavaScript files and adding the `*.map` files to where your `*.css` files are.
 
+## Webfonts
+
+This theme uses the Google Font Roboto.  If you do not include Roboto in your website using the instructions provided on [Google Font's website](http://www.google.com/fonts/specimen/Roboto), the font will default to 'Helvetica Neue', then Helvetica, then Arial, then the browser's default sans-serif font. It is recommended that you add the following lines to your site's header, in order for browser clients to download the webfonts used by the ASU Web Standards Theme:
+
+```html
+<!-- Google Webfonts for ASU Bootstrap Standards -->
+<link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Mono:300' rel='stylesheet' type='text/css'>
+```
+
 ## Favicons
 
 Favorite Icons are provided in the `build/img/favicon` folder, below is some sample HTML that you should include
@@ -104,14 +114,7 @@ in your `<head>`. Be sure to adjust the path to match their location on your sit
 
 This theme uses [Font Awesome](http://fortawesome.github.io/Font-Awesome/).
 
-Bootstrap natively provides [Glyphicons](http://getbootstrap.com/components/#glyphicons), which means both can be used in tandiem. The HUB documentation
-recommends using Font Awesome icons.
-
-This theme uses the Google Font Roboto.  If you do not include Roboto in your website using the instructions provided on [Google Font's website](http://www.google.com/fonts/specimen/Roboto), the font will default to 'Helvetica Neue', then Helvetica, then Arial, then the browser's default sans-serif font. It is recommended that you include the Normal, Light, and Bold version of the font:
-
-```html
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
-```
+Bootstrap natively provides [Glyphicons](http://getbootstrap.com/components/#glyphicons), which means both can be used in tandiem. The HUB documentation recommends using Font Awesome icons.
 
 # Developers
 

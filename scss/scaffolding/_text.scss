@@ -1,12 +1,12 @@
 // Text
-// 
+//
 // Markup: <p class="{{modifier_class}}">{{modifier_class}}</p>
-// 
+//
 // .text-center - Center text
 // .lead - enlarge text to emphasize that it is the start of a section
 // .small - descrease the font by 25%
 // .mark - highlight text
-// 
+//
 // Styleguide scaffolding.text
 p {
   font-weight: $p__font-weight;
@@ -48,4 +48,10 @@ mark,
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+// Testing - Roboto Thin
+// May need to also consider adjusting other font properties (e.g. increase font size & line height)
+.thin {
+  font-weight: 100;
 }

@@ -7,7 +7,7 @@
 
 li.dropdown-title {
   color: $color-sun;
-  font-weight: normal;
+  font-weight: $font-weight-normal;
   padding: 3px 25px 7px;
 }
 
@@ -112,14 +112,14 @@ li.dropdown-title {
           color: $color-gallery;
           display: block;
           font-size: $mega-menu-links__font-size;
-          font-weight: normal;
+          font-weight: $font-weight-normal;
           line-height: 1.4;
           padding: 9px 10px 10px;
 
           @media(max-width: $asu-screen-sm-max) {
             color: rgb(164, 43, 77);
             font-size: $mega-menu-links__font-size--small;
-            font-weight: 200;
+            font-weight: $font-weight-light;
           }
 
           &:hover,
@@ -152,7 +152,7 @@ li.dropdown-title {
             &:focus {
               background-color: #dcdcdc;
               color: $color-black;
-              font-weight: 600;
+              font-weight: $font-weight-bold;
             }
           }
         }
@@ -180,7 +180,7 @@ li.dropdown-title {
     color: $color-sun;
     display: block;
     font-size: $mega-menu-dropdown-title__font-size;
-    font-weight: normal;
+    font-weight: $font-weight-normal;
     line-height: 1.4;
     padding: 9px 10px 10px;
 
@@ -189,7 +189,7 @@ li.dropdown-title {
       border-top: 1px solid rgb(221, 221, 221);
       color: rgb(164, 43, 77);
       font-size: $mega-menu-dropdown-title__font-size--small;
-      font-weight: 200;
+      font-weight: $font-weight-light;
       width: 100%;
 
       &:before {
@@ -207,7 +207,7 @@ li.dropdown-title {
         font-size: $mega-menu-dropdown-title-icon__font-size;
         font-style: normal;
         font-variant: normal;
-        font-weight: normal;
+        font-weight: $font-weight-normal;
         height: 13px;
         line-height: 20px;
         padding: 10px 10px 15px;
