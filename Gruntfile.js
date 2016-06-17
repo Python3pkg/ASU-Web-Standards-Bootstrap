@@ -1,4 +1,4 @@
-module.exports = function (grunt) {
+module.exports = function(grunt) {
   'use strict';
 
   var customLaunchers = {
@@ -7,7 +7,7 @@ module.exports = function (grunt) {
       options: {
         windowName: 'ASU Bootstrap Tests',
         viewportSize: {
-          width : 765,
+          width: 765,
           height: 1000
         }
       }
@@ -70,19 +70,33 @@ module.exports = function (grunt) {
         frameworks: ['qunit'],
         reporters: ['coverage'],
         preprocessors: {
-            "js/*.js": "coverage"
+          "js/*.js": "coverage"
         },
         coverageReporter: {
-            type: "lcov",
-            dir: "coverage/"
+          type: "lcov",
+          dir: "coverage/"
         },
         plugins: ['karma-qunit', 'karma-phantomjs-launcher', 'karma-coverage'],
         files: [
-          { src : ['bower_components/jquery/dist/jquery.min.js'], served: true },
-          { src : ['bower_components/bootstrap/dist/js/bootstrap.min.js'], served: true },
-          { src : ['test/qunit/unit/_qunit-fixture.js'], served: true },
-          { src : ['<%= concat.bootstrapAsu.src %>'], served: true },
-          { src : ['test/qunit/unit/*-test.js'] }
+          {
+            src: ['bower_components/jquery/dist/jquery.min.js'],
+            served: true
+          },
+          {
+            src: ['bower_components/bootstrap/dist/js/bootstrap.min.js'],
+            served: true
+          },
+          {
+            src: ['test/qunit/unit/_qunit-fixture.js'],
+            served: true
+          },
+          {
+            src: ['<%= concat.bootstrapAsu.src %>'],
+            served: true
+          },
+          {
+            src: ['test/qunit/unit/*-test.js']
+          }
         ],
         singleRun: true,
         browsers: ['PhantomJS_Mobile', 'PhantomJS_Desktop'],
@@ -93,11 +107,25 @@ module.exports = function (grunt) {
         frameworks: ['qunit'],
         plugins: ['karma-qunit', 'karma-phantomjs-launcher'],
         files: [
-          { src : ['bower_components/jquery/dist/jquery.min.js'], served: true },
-          { src : ['bower_components/bootstrap/dist/js/bootstrap.min.js'], served: true },
-          { src : ['test/qunit/unit/_qunit-fixture.js'], served: true },
-          { src : ['<%= concat.bootstrapAsu.src %>'], served: true },
-          { src : ['test/qunit/unit/*-test.js'] }
+          {
+            src: ['bower_components/jquery/dist/jquery.min.js'],
+            served: true
+          },
+          {
+            src: ['bower_components/bootstrap/dist/js/bootstrap.min.js'],
+            served: true
+          },
+          {
+            src: ['test/qunit/unit/_qunit-fixture.js'],
+            served: true
+          },
+          {
+            src: ['<%= concat.bootstrapAsu.src %>'],
+            served: true
+          },
+          {
+            src: ['test/qunit/unit/*-test.js']
+          }
         ],
         singleRun: true,
         browsers: ['PhantomJS_Mobile', 'PhantomJS_Desktop'],
@@ -110,9 +138,9 @@ module.exports = function (grunt) {
       options: {
         inject: 'test/qunit/phantom.js',
         // size the viewport for mobile
-        page : {
-          viewportSize : {
-            width : 766
+        page: {
+          viewportSize: {
+            width: 766
           }
         }
       },
@@ -129,7 +157,7 @@ module.exports = function (grunt) {
         'scss/theme/*.scss',
         'scss/navigation/*.scss',
         'scss/variables/*.scss',
-        // Not font_awesome
+      // Not font_awesome
       ],
       options: {
         config: 'scss/.scss-lint.yml'
@@ -144,12 +172,12 @@ module.exports = function (grunt) {
       },
       dist: {
         files: {
-          'build/css/bootstrap-asu.css' : 'scss/bootstrap-asu.scss'
-       }
+          'build/css/bootstrap-asu.css': 'scss/bootstrap-asu.scss'
+        }
       },
       fortesting: {
         files: {
-          'test/vendor/css/bootstrap-asu.css' : 'scss/bootstrap-asu.scss',
+          'test/vendor/css/bootstrap-asu.css': 'scss/bootstrap-asu.scss',
         }
       }
     },
@@ -175,7 +203,7 @@ module.exports = function (grunt) {
         ],
         dest: 'build/js/bootstrap-asu.js'
       },
-      kss : {
+      kss: {
         src: [
           'test/vendor/css/bootstrap.min.css',
           'test/vendor/css/bootstrap-asu.css',
@@ -212,7 +240,7 @@ module.exports = function (grunt) {
     // ============
     browserSync: {
       bsFiles: {
-        src : [
+        src: [
           '<%= watch.core.files %>',
           './test/vendor/css/*.css'
         ]
@@ -238,7 +266,7 @@ module.exports = function (grunt) {
     },
     // KSS
     // ===
-    kss : {
+    kss: {
       options: {
         css: [
           'all.css'
@@ -247,7 +275,7 @@ module.exports = function (grunt) {
       },
       dist: {
         files: {
-          'build/docs' : ['scss']
+          'build/docs': ['scss']
         }
       }
     },
@@ -323,7 +351,7 @@ module.exports = function (grunt) {
   ]);
 
   // Just Test
-  grunt.registerTask('test',  [
+  grunt.registerTask('test', [
     'validate',
     'test-base',
     'karma:coverageMobile',
