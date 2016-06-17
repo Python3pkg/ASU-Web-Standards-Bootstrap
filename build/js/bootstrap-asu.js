@@ -511,7 +511,7 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
       // Remove collapse open class
       $('.big-foot-nav').removeClass('in')
       // Arpit Changes
-      $('.big-foot h2 span').removeClass('footer-caret-down')
+      $('.big-foot h2[data-toggle="collapse"]').addClass('collapsed')
     }
   }
 
@@ -522,19 +522,6 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
       var id = $(this).attr('data-target');
       $(id).addClass('in');
       return false;
-    } else {
-      var id1 = $(this).attr('data-target');
-      if ( $('.big-foot-nav').hasClass('in') ) {
-         // Arpit caret down remove on click
-        $('.big-foot h2[data-target="' + id1 + '"] span').removeClass('footer-caret-down')
-        // Arpit Changes for caret left
-        $('.big-foot h2[data-target="' + id1 + '"]  span').addClass('footer-caret')
-      } else {
-        // Arpit caret left remove on click
-        $('.big-foot h2[data-target="' + id1 + '"] span').removeClass('footer-caret')
-        // Arpit Changes for caret down
-        $('.big-foot h2[data-target="' + id1 + '"]  span').addClass('footer-caret-down')
-      }
     }
   });
 
