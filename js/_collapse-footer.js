@@ -12,7 +12,7 @@
     } else {
       // Remove collapse open class
       $('.big-foot-nav').removeClass('in')
-      // Arpit Changes
+      // Adding collapsed class to accomodate caret symbol changes upon window resizing
       $('.big-foot h2[data-toggle="collapse"]').addClass('collapsed')
     }
   }
