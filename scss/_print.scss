@@ -23,6 +23,10 @@
     font-size: 75%;
   }
 
+  body {
+    font-size: 1rem;
+  }
+
   h1,
   h2,
   h3,
@@ -44,9 +48,9 @@
   }
 
   .site-content .container,
-  .gray-back {
-    padding-bottom: 10px;
-    padding-top: 10px;
+  .gray-back,
+  article.post {
+    padding: 5px !important;
   }
 
   .asu-breadcrumbs .container {
@@ -66,7 +70,7 @@
   img,
   .img-100,
   .btn-block {
-    width: 33% !important;
+    max-width: 33% !important;
   }
 
   .embed-responsive-16by9 {
@@ -83,7 +87,8 @@
   #asu-search a,
   .footer,
   .hero-ratio,
-  .social-media .a:after {
+  .navbar,
+  .social-media {
     display: none !important;
   }
 
