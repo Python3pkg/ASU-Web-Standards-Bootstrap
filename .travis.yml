@@ -22,7 +22,7 @@ install:
 
 script:
   - grunt
-  # - cd test/wraith
+  - cd test/wraith
   - wraith latest configs/history.yaml
 
 sudo: false
