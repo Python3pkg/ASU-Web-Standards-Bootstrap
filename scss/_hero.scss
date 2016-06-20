@@ -108,7 +108,7 @@
 
   .cite {
     color: $color-white;
-    font-weight: bold;
+    font-weight: $font-weight-bold;
     margin-bottom: 1.3em;
   }
 }
@@ -233,7 +233,7 @@
 .hero-mobile {
   display: none;
   font-size: $font-size-xlarge;
-  font-weight: $font-weight-thin;
+  font-weight: $font-weight-light;
 
   .pane-title {
     color: white;
@@ -241,7 +241,7 @@
     font-size: $font-size-xlarge;
     font-weight: $font-weight-normal;
     margin: 0;
-    padding: $space-xlarge $space-xxlarge 0;
+    padding: $space-xlarge $space-xxlarge;
   }
 
   .pane-content {
@@ -315,7 +315,7 @@
   width: 100%;
 
   .panel-pane {
-    font-weight: $font-weight-thin;
+    font-weight: $font-weight-light;
     line-height: 30px;
     margin-top: 3%;
 
@@ -323,7 +323,7 @@
       color: white;
       display: block;
       font-size: $hero-title__font-size;
-      font-weight: 600;
+      font-weight: $font-weight-bold;
       margin: 0;
       padding: 0;
       text-shadow: rgba(0, 0, 0, .7) 1px 1px 1px;
@@ -424,7 +424,7 @@
 
     .pane-content {
       color: white;
-      font-weight: bold;
+      font-weight: $font-weight-bold;
       margin: -14px 0 0;
       padding-top: 8px;
       text-shadow: rgba(0, 0, 0, .7) 1px 1px 1px;
@@ -440,7 +440,7 @@
     }
 
     p {
-      font-weight: bold;
+      font-weight: $font-weight-bold;
       margin: 0 0 14px;
 
       @media(max-width: $asu-screen-md-max) {

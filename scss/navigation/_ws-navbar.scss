@@ -1,7 +1,7 @@
 // Web Standards Navbar
-// 
-// Just like in Bootstrap, but styled differently, uses `navbar`
-// 
+//
+// Just like in Bootstrap, but styled differently, uses `navbar`. Dropdown menus must include caret icon as styled here.
+//
 // Markup:
 // <nav class="navbar navbar-ws affix-top" role="navigation">
 //     <div class="container-fluid">
@@ -18,13 +18,11 @@
 //             <ul id="menu-header-menu" class="nav navbar-nav">
 //                 <li><a href="#" id="home-icon-main-nav"><span class="fa fa-home hidden-xs hidden-sm" aria-hidden="true"></span><span class="hidden-md hidden-lg">Home</span></a>
 //                 </li>
-//                 <li class="menu-item"><a title="Outreach" href="#" id="nav-item_outreach">Outreach</a>
+//                 <li class="menu-item"><a title="Simple Dropdown" href="#" id="nav-item_outreach">Simple Dropdown <span class="caret"></span></a>
 //                 </li>
-//                 <li class="menu-item"><a title="Research" href="#" id="nav-item_research">Research</a>
+//                 <li class="menu-item"><a title="Super Menu" href="#" id="nav-item_research">Super Menu <span class="caret"></span></a>
 //                 </li>
-//                 <li class="menu-item"><a title="Solutions" href="#" id="nav-item_solutions">Solutions</a>
-//                 </li>
-//                 <li class="menu-item"><a title="Operations" href="#" id="nav-item_operations">Operations</a>
+//                 <li class="menu-item"><a title="Tabbed Menu" href="#" id="nav-item_solutions">Tabbed Menu</a>
 //                 </li>
 //             </ul>
 //         </div>
@@ -35,9 +33,9 @@
 // Styleguide navigation.web-standards
 
 // Navbar States
-// 
+//
 // There are 4 main states that need to be consistent within the navbar:
-// 
+//
 // Markup:
 // <nav class="navbar navbar-ws affix-top" role="navigation">
 //     <div class="container-fluid">
@@ -117,25 +115,33 @@
         background-color: transparent;
         color:            $color-gallery;
         font-size:        $ws-nav-link__font-size;
-        font-weight:      bold;
-        height:           57px;
+        font-weight:      $font-weight-bold;
         line-height:      $ws-nav-link__line-height;
         padding:          21px 16px;
+
+        @media (min-width: $asu-screen-md-min) {
+          height:           57px;
+        }
 
         @media (max-width: $asu-screen-lg-min) {
           padding-left:  14px;
           padding-right: 14px;
         }
 
-        // TODO carots should be $color-dove-gray (#666)
+        span.caret {
+          color: $color-dove-gray;
+        }
+
 
         &:hover,
         &:focus {
           background-color: $color-black;
           color: $color-sun;
 
-          // TODO carots should be #eee
-          
+          span.caret {
+            color: $color-gallery;
+          }
+
           @media(max-width: $asu-screen-sm-max) {
             background-color: rgb(220, 220, 220);
             color: inherit;
@@ -148,7 +154,7 @@
         color: $color-sun;
 
         // TODO carots should be #eee
-        
+
         @media(max-width: $asu-screen-sm-max) {
           background-color: rgb(220, 220, 220);
           color: inherit;
@@ -208,7 +214,7 @@
           > a {
             color:       rgb(80, 85, 88);
             font-size:   $ws-nav-link__font-size;
-            font-weight: 600;
+            font-weight: $font-weight-bold;
             padding:     12px 15px;
             position:    relative;
 
@@ -226,7 +232,7 @@
               font-size: pem(20);
               font-style: normal;
               font-variant: normal;
-              font-weight: normal;
+              font-weight: $font-weight-normal;
               height: 13px;
               line-height: 20px;
               padding: 11px 10px 15px;
@@ -236,7 +242,7 @@
               text-align: center;
               text-transform: none;
               top: 0;
-              width: 35px;  
+              width: 35px;
 
               &:before {
                 content: '\f0d7';
@@ -268,7 +274,7 @@
 
     @media(max-width: $asu-screen-sm-max) {
       font-size:   $ws-navbar-brand__font-size--small;
-      font-weight: 600;
+      font-weight: $font-weight-bold;
     }
   }
 
@@ -343,7 +349,7 @@
     padding: 0;
     position: relative;
     width: 100%;
-    
+
 
     @media (min-width: $asu-screen-sm-max) {
       position: absolute;
@@ -366,14 +372,14 @@
       > a {
         color: $color-gallery;
         font-size: $ws-menu__font-size;
-        font-weight: normal;
+        font-weight: $font-weight-normal;
         line-height: $line-height-menu;
         padding: $space-large $space-xxlarge;
 
         @media(max-width: $asu-screen-sm-max) {
           color: rgb(164, 43, 77);
           font-size: $ws-menu__font-size--small;
-          font-weight: 200;
+          font-weight: $font-weight-light;
         }
 
         &:hover,
@@ -437,4 +443,9 @@
   right: 0;
   top: 0;
   z-index: 9999;
+}
+
+// per brand guide standards the home icon needs to be 16px font
+#home-icon-main-nav {
+  font-size: $ws-navbar-brand__font-size--home-icon;
 }

@@ -1,5 +1,5 @@
 // Pagination
-// 
+//
 // Markup:
 // <nav>
 //   <ul class="pagination">
@@ -20,7 +20,7 @@
 //     </li>
 //   </ul>
 // </nav>
-// 
+//
 // Styleguide pagination
 .pagination {
   margin: $space-xxlarge 0;
@@ -61,16 +61,16 @@
       &:first-child > {
         a,
         span {
-          border-bottom-left-radius: $border-radius; 
-          border-top-left-radius: $border-radius; 
+          border-bottom-left-radius: $border-radius;
+          border-top-left-radius: $border-radius;
         }
       }
 
       &:last-child > {
         a,
         span {
-          border-bottom-left-radius: $border-radius; 
-          border-top-left-radius: $border-radius; 
+          border-bottom-left-radius: $border-radius;
+          border-top-left-radius: $border-radius;
         }
       }
     }
@@ -89,16 +89,16 @@
       &:first-child > {
         a,
         span {
-          border-bottom-left-radius: $border-radius; 
-          border-top-left-radius: $border-radius; 
+          border-bottom-left-radius: $border-radius;
+          border-top-left-radius: $border-radius;
         }
       }
 
       &:last-child > {
         a,
         span {
-          border-bottom-left-radius: $border-radius; 
-          border-top-left-radius: $border-radius; 
+          border-bottom-left-radius: $border-radius;
+          border-top-left-radius: $border-radius;
         }
       }
     }

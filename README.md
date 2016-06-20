@@ -2,7 +2,7 @@ ASU Web Standards Bootstrap
 ===========================
 
 [![Travis](http://img.shields.io/travis/gios-asu/ASU-Web-Standards-Bootstrap.svg?style=flat)](https://travis-ci.org/gios-asu/ASU-Web-Standards-Bootstrap)
-[![Code Climate](http://img.shields.io/codeclimate/github/gios-asu/ASU-Web-Standards-Bootstrap.svg?style=flat)](https://codeclimate.com/github/gios-asu/ASU-Web-Standards-Bootstrap) 
+[![Code Climate](http://img.shields.io/codeclimate/github/gios-asu/ASU-Web-Standards-Bootstrap.svg?style=flat)](https://codeclimate.com/github/gios-asu/ASU-Web-Standards-Bootstrap)
 [![Stories in Ready](https://badge.waffle.io/gios-asu/asu-web-standards-bootstrap.svg?label=issues-ready&title=Issues+Ready)](http://waffle.io/gios-asu/asu-web-standards-bootstrap)
 
 [![Github release](https://img.shields.io/github/release/gios-asu/ASU-Web-Standards-Bootstrap.svg?style=flat)](https://github.com/gios-asu/ASU-Web-Standards-Bootstrap/releases)
@@ -34,7 +34,7 @@ The following must be added to your website in order to use the ASU Web Standard
 - [Twitter Bootstrap](http://getbootstrap.com/) - Required
 - [jQuery](http://jquery.com/) - Required
 - [ASU Header](https://drupal.asu.edu/build/asu-header-footer-version-40) - Recommended for University Websites
-- [RespondJS](https://github.com/scottjehl/Respond) - to make media queries work on 
+- [RespondJS](https://github.com/scottjehl/Respond) - to make media queries work on
 IE 6-8 - Optional
 - [Lightning Touch](https://github.com/ucsf-ckm/LightningTouch) - makes links responsive without the several hundred millisecond delay typical in a hendheld touchscreen browser - Optional
 
@@ -43,34 +43,61 @@ The following are bundled into the ASU Web Standards Bootstrap files for your co
 - [Modernizr](http://modernizr.com/)
 - [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
 - [Moment JS](http://momentjs.com/) - Used for calendar ICS files.
+  [Font Awesome](http://fontawesome.io/)
 
 
 # Quick Start
 
 You can use one of the following ways to use this repo:
 
-- [Download the latest release](https://github.com/gios-asu/ASU-Web-Standards-Bootstrap/releases).
-- Clone the repo: `git clone https://github.com/gios-asu/ASU-Web-Standards-Bootstrap.git`.
+1. [Download the latest release](https://github.com/gios-asu/ASU-Web-Standards-Bootstrap/releases).
+2. Clone the repo: `git clone https://github.com/gios-asu/ASU-Web-Standards-Bootstrap.git`,
+3. or [install this package via Bower](#Using-Bower)
 
-The files that you should include in your website are the ones in `/build`.
+The files that you should include in your website are in `/build`.
 
 Add the following to your head (after your stylesheets for Bootstrap):
 
 ```html
 <!-- ASU Bootstrap Standards -->
-<link href="/css/bootstrap-asu.css" rel="stylesheet">
+<link href="/bower_components/bootstrap-asu/build/css/bootstrap-asu.min.css" rel="stylesheet">
 ```
 
 Add the following to the end of your `<body>` before the closing `</body>` tag, but after your other script tags:
 
 ```html
 <!-- ASU Bootstrap Standards -->
-<script src="./js/bootstrap-asu.min.js"></script>
+<script src="/bower_components/bootstrap-asu/build/js/bootstrap-asu.min.js"></script>
 ```
 
 Please remember to include all of the [dependencies](#dependencies).  Include all 3rd party stylesheets and scripts BEFORE including the stylesheets and scripts provided in this repo.
 
 For developers or when debugging, consider using the non-minified JavaScript files and adding the `*.map` files to where your `*.css` files are.
+
+
+## Using Bower
+1. [Install bower](https://bower.io/)
+2. Add the *ASU Web Standards Bootstrap theme* to your dependencies in `bower.json`
+```js
+"dependencies": {
+  "bootstrap-asu": "^0.4"
+}
+```
+3. Run `bower install`
+4. Include these assets in the bower_components/bootstrap-asu/:
+  * build/css/bootstrap-asu.min.css
+  * build/js/bootstrap-asu.min.js
+
+
+## Webfonts
+
+This theme uses the Google Font Roboto.  If you do not include Roboto in your website using the instructions provided on [Google Font's website](http://www.google.com/fonts/specimen/Roboto), the font will default to 'Helvetica Neue', then Helvetica, then Arial, then the browser's default sans-serif font. It is recommended that you add the following lines to your site's header, in order for browser clients to download the webfonts used by the ASU Web Standards Theme:
+
+```html
+<!-- Google Webfonts for ASU Bootstrap Standards -->
+<link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Mono:300' rel='stylesheet' type='text/css'>
+```
 
 ## Favicons
 
@@ -100,18 +127,12 @@ in your `<head>`. Be sure to adjust the path to match their location on your sit
 <meta name="msapplication-square310x310logo" content="img/favicon/mstile-310x310.png" />
 ```
 
+
 # Theme Details
 
 This theme uses [Font Awesome](http://fortawesome.github.io/Font-Awesome/).
 
-Bootstrap natively provides [Glyphicons](http://getbootstrap.com/components/#glyphicons), which means both can be used in tandiem. The HUB documentation
-recommends using Font Awesome icons.
-
-This theme uses the Google Font Roboto.  If you do not include Roboto in your website using the instructions provided on [Google Font's website](http://www.google.com/fonts/specimen/Roboto), the font will default to 'Helvetica Neue', then Helvetica, then Arial, then the browser's default sans-serif font. It is recommended that you include the Normal, Light, and Bold version of the font:
-
-```html
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
-```
+However, bootstrap natively provides [Glyphicons](http://getbootstrap.com/components/#glyphicons), which means both can be used in tandiem. The HUB documentation recommends using Font Awesome icons.
 
 # Developers
 
@@ -129,7 +150,7 @@ This repository uses grunt to:
 - Compile all JS files into one file.
 - Uglify the JS.
 
-Run `grunt` from the root of the project and it will create files in the `/build` folder.  These files will get overwritten when grunt is run and they should never be modified directly. 
+Run `grunt` from the root of the project and it will create files in the `/build` folder.  These files will get overwritten when grunt is run and they should never be modified directly.
 
 Note: currently, `/build/fonts/*` is not generated by grunt.  These are the only static files that you can modify without worrying about grunt overwriting them.
 
@@ -211,4 +232,3 @@ This project is being heavily used by:
 
 - [ASU Webspark](https://brandguide.asu.edu/web-standards/webspark/) - Drupal 7 Distribution
 - [ASU slimspark](https://drupal.asu.edu/resources/docs/modules/asu-slimspark) - Drupal 7 Stand alone Theme
-

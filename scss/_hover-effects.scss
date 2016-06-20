@@ -59,11 +59,11 @@ figure[class^="effect-"] {
   }
 
   h2 {
-    font-weight: 300;
+    font-weight: $font-weight-light;
     word-spacing: -.15em;
 
     span {
-      font-weight: 800;
+      font-weight: $font-weight-bold;
     }
   }
 
@@ -218,7 +218,7 @@ figure[class^="effect-"] {
       -webkit-transform: translate3d(100%, 0, 0);
       transform: translate3d(100%, 0, 0);
       -webkit-transition: opacity $sarah-speed, -webkit-transform $sarah-speed;
-      transition: opacity $sarah-speed, transform $sarah-speed;  
+      transition: opacity $sarah-speed, transform $sarah-speed;
     }
   }
 }

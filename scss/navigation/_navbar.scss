@@ -1,9 +1,9 @@
 // Navbars
-// 
+//
 // Just like in Bootstrap, but styled differently.
-// 
+//
 // Note that `.navbar-brand` is hidden on large screens.
-// 
+//
 // Markup:
 // <nav class="navbar navbar-default">
 //   <div class="container-fluid">
@@ -22,7 +22,7 @@
 //     </ul>
 //   </div>
 // </nav>
-// 
+//
 // Styleguide navigation.navbar
 .navbar {
   border-color: transparent;
@@ -110,8 +110,8 @@
   }
 }
 
-.navbar-nav { 
-  margin: 1px -15px; 
+.navbar-nav {
+  margin: 1px -15px;
 
   @media (min-width: $asu-screen-sm-min) {
     float: none;
@@ -131,7 +131,7 @@
       float: left;
     }
 
-    > a { 
+    > a {
       line-height: $line-height-pem;
 
       @media (min-width: $asu-screen-sm-min) {
@@ -152,16 +152,16 @@
       width: auto;
     }
 
-    > li > a, 
+    > li > a,
     .dropdown-header {
       @media (max-width: $asu-screen-sm-max) {
         white-space: normal;
       }
     }
 
-    > li > a { 
+    > li > a {
       @media (max-width: $asu-screen-sm-min) {
-        line-height: inherit;   
+        line-height: inherit;
       }
     }
   }

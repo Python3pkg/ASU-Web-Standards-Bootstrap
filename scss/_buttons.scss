@@ -1,7 +1,7 @@
 // Buttons
-// 
+//
 // Use the button classes on `<a>`, `<button>`, or `<input>`.
-// 
+//
 // Markup:
 // <div>
 //  <a class="btn btn-default" href="#" role="button">Link</a>
@@ -13,17 +13,17 @@
 // Styleguide buttons
 .btn {
   @include button-size(
-    $space-base, 
-    $space-xlarge, 
-    $font-size-medium, 
-    $line-height-base, 
+    $space-base,
+    $space-xlarge,
+    $font-size-medium,
+    $line-height-base,
     $border-radius);
 
   &,
   &:active,
   &.active {
     &:focus {
-      outline: 0; 
+      outline: 0;
       outline-offset: none;
     }
   }
@@ -47,7 +47,7 @@
   fieldset[disabled] & {
     @include box-shadow(none);
     @include opacity(.65);
-    
+
     cursor: not-allowed;
     // Future-proof disabling of clicks
     pointer-events: none;
@@ -56,9 +56,9 @@
 
 
 // Alternative Buttons
-// 
+//
 // Use any of the available button classes to quickly create a styled button.
-// 
+//
 // Markup:
 // <button type="button" class="btn {{modifier_class}}">{{modifier_class}}</button>
 //
@@ -97,8 +97,8 @@
 
 .btn-gold {
   @include button-variant(
-    $color-dark-mine, 
-    $color-gold, 
+    $color-dark-mine,
+    $color-gold,
     $color-gold);
 }
 
@@ -109,7 +109,6 @@
     $color-blue);
 }
 
-// Success appears as green
 .btn-success {
   @include button-variant(
     $color-white,
@@ -117,27 +116,24 @@
     $color-green-darkened);
 }
 
-// Info appears as blue-green
 .btn-info {
   @include button-variant(
-    $color-white, 
-    $color-blue, 
+    $color-white,
+    $color-blue,
    $color-blue-darkened);
 }
 
-// Warning appears as orange
 .btn-warning {
   @include button-variant(
-    $color-black, 
-    $color-yellow, 
+    $color-black,
+    $color-yellow,
     $color-yellow-darkened);
 }
 
-// Danger and error appear as red
 .btn-danger {
   @include button-variant(
-    $color-white, 
-    $color-orange, 
+    $color-white,
+    $color-orange,
     $color-orange-darkened);
 }
 
@@ -146,7 +142,7 @@
   border-radius: 0;
   color: $color-maroon;
   cursor: pointer;
-  font-weight: normal;
+  font-weight: $font-weight-normal;
 
   &,
   &:active,
@@ -182,15 +178,15 @@
 }
 
 // Button Sizes
-// 
+//
 // Fancy larger or smaller buttons? Add `.btn-lg`, `.btn-sm`, or `.btn-xs` for additional sizes.
-// 
+//
 // Markup:
 // <p>
 //   <button type="button" class="btn btn-primary {{modifier_class}}">Button Text</button>
 //   <button type="button" class="btn btn-default {{modifier_class}}">Button Text</button>
 // </p>
-// 
+//
 // .btn-lg - Large button
 // .btn-sm - Small button
 // .btn-xs - Extra small button
@@ -200,38 +196,38 @@
   // line-height: ensure even-numbered height of button next to large input
   @include button-size(
     $space-large,
-    $space-xxlarge, 
-    $font-size-large, 
-    $line-height-large, 
+    $space-xxlarge,
+    $font-size-large,
+    $line-height-large,
     $border-radius);
 }
 
 .btn-sm {
   // line-height: ensure proper height of button next to small input
   @include button-size(
-    $space-base, 
-    $space-large, 
-    $font-size-small, 
-    $line-height-small, 
+    $space-base,
+    $space-large,
+    $font-size-small,
+    $line-height-small,
     $border-radius);
 }
 
 .btn-xs {
   @include button-size(
-    $space-xsmall, 
-    $space-base, 
-    $font-size-small, 
-    $line-height-small, 
+    $space-xsmall,
+    $space-base,
+    $font-size-small,
+    $line-height-small,
     $border-radius);
 }
 
 // Button Block
-// 
+//
 // Create block level buttons—those that span the full width of a parent— by adding `.btn-block`.
-// 
+//
 // Markup:
 // <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-// 
+//
 // Styleguide buttons.block
 .btn-block {
   display: block;

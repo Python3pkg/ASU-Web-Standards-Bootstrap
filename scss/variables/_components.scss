@@ -7,7 +7,7 @@ $body__color:             $color-dark-mine;
 $body__font-family:       $font-family;
 $body__font-size:         $font-size-medium;
 $body__font-size--large:  $font-size-large;
-$body__font-weight:       200;
+$body__font-weight:       $font-weight-light;
 $body__line-height:       $line-height-base;
 
 // H1
@@ -61,14 +61,14 @@ $blockquote__font-size: pem(20);
 $pre__font-size: pem(15);
 
 // P
-$p__font-weight:          200;
+$p__font-weight:          $font-weight-light;
 $p__line-height:          pem(24);
 $p__margin-bottom:        pem(24);
 
 // LEAD
 $lead__font-size:         pem(20);
 $lead__font-size--large:  pem(24);
-$lead__font-weight:       200;
+$lead__font-weight:       $font-weight-light;
 $lead__line-height:       1.4;
 $lead__margin-bottom:     24px;
 
@@ -102,6 +102,7 @@ $ws-nav-link__font-size--small:     pem(14);
 $ws-nav-link__line-height:          1;
 
 $ws-navbar-brand__font-size--small: pem(15);
+$ws-navbar-brand__font-size--home-icon: pem(16);
 
 $ws-menu__font-size:                $font-size-menu;
 $ws-menu__font-size--small:         pem(13.5);
