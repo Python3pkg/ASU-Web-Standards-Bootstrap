@@ -15,7 +15,7 @@ body {
   color: #2a2a2a;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.44;
 }
 @media (min-width: 1200px) {
@@ -252,7 +252,7 @@ h6,
 .h6 {
   font-size: 1rem;
   font-style: italic;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.5rem;
   margin-bottom: 10px;
   margin-top: 24px;
@@ -295,7 +295,7 @@ h6 .small,
 }
 
 p {
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.5rem;
   margin: 0 0 1.5rem;
 }
@@ -310,7 +310,7 @@ p.text-center {
 
 .lead {
   font-size: 1.25rem;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.4;
   margin-bottom: 24px;
   max-width: 1000px;
@@ -334,6 +334,10 @@ a > mark, a >
 .mark {
   padding-left: 0;
   padding-right: 0;
+}
+
+.thin {
+  font-weight: 100;
 }
 
 .text-yellow {
@@ -507,12 +511,19 @@ blockquote .small {
 }
 
 address {
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.44;
   margin-bottom: 24px;
 }
 address strong {
   font-weight: normal;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: "Roboto Mono", "Lucida Console", Monaco, monospace;
 }
 
 kbd {
@@ -1077,22 +1088,22 @@ code {
 
 ::-webkit-input-placeholder {
   color: #7f7f7f;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 :-moz-placeholder {
   color: #7f7f7f;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 ::-moz-placeholder {
   color: #7f7f7f;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 :-ms-input-placeholder {
   color: #7f7f7f;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 legend {
@@ -1102,7 +1113,7 @@ legend {
 
 label {
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: normal;
 }
 
 output {
@@ -1118,7 +1129,7 @@ output {
   border: 1px solid #b0b0b0;
   color: #505050;
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 300;
   height: 38px;
   line-height: 1.44;
 }
@@ -1148,18 +1159,6 @@ input[type="time"].input-lg,
 input[type="datetime-local"].input-lg,
 input[type="month"].input-lg {
   line-height: 53px;
-}
-
-.radio,
-.checkbox {
-  margin-bottom: 5px;
-  margin-top: 5px;
-  min-height: 24px;
-}
-.radio .inline,
-.checkbox .inline {
-  display: inline-block;
-  margin-right: 10px;
 }
 
 .input-sm {
@@ -1327,6 +1326,13 @@ select[multiple].input-lg {
 .radio,
 .checkbox {
   margin-bottom: 10px;
+  margin-top: 5px;
+  min-height: 24px;
+}
+.radio .inline,
+.checkbox .inline {
+  display: inline-block;
+  margin-right: 10px;
 }
 .radio .outer-wrap,
 .checkbox .outer-wrap {
@@ -1343,7 +1349,7 @@ select[multiple].input-lg {
 .radio label,
 .checkbox label {
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 300;
   padding-left: 0;
 }
 .radio .fa-circle,
@@ -2232,7 +2238,7 @@ input[type="button"].btn-block {
   .navbar-ws .navbar-nav > li > a {
     color: #505558;
     font-size: 0.9375rem;
-    font-weight: 600;
+    font-weight: bold;
     padding: 12px 15px;
     position: relative;
   }
@@ -2284,7 +2290,7 @@ input[type="button"].btn-block {
 @media (max-width: 991px) {
   .navbar-ws .navbar-brand {
     font-size: 0.9375rem;
-    font-weight: 600;
+    font-weight: bold;
   }
 }
 .navbar-ws .navbar-toggle {
@@ -2373,7 +2379,7 @@ input[type="button"].btn-block {
   .navbar-ws .dropdown-menu > li > a {
     color: #a42b4d;
     font-size: 0.84375rem;
-    font-weight: 200;
+    font-weight: 300;
   }
 }
 .navbar-ws .dropdown-menu > li > a:hover, .navbar-ws .dropdown-menu > li > a:focus {
@@ -3143,7 +3149,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .calendar-date .date {
   float: right;
   font-size: 3.125rem;
-  font-weight: 200;
+  font-weight: 300;
   line-height: .9;
   width: 60px;
 }
@@ -3205,7 +3211,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .hero-bg-img .h2 {
   color: #fff;
   font-size: 3.125rem;
-  font-weight: 500;
+  font-weight: normal;
   line-height: 1;
   margin-bottom: 10px;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
@@ -3221,7 +3227,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .hero-bg-img p {
   color: #fff;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: normal;
   max-width: 900px;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
@@ -3295,13 +3301,13 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .hero-mobile {
   display: none;
   font-size: 1.25rem;
-  font-weight: 200;
+  font-weight: 300;
 }
 .hero-mobile .pane-title {
   color: white;
   display: block;
   font-size: 1.25rem;
-  font-weight: 500;
+  font-weight: normal;
   margin: 0;
   padding: 20px 25px;
 }
@@ -3322,7 +3328,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .hero-ratio .panel-pane,
 .hero-slim .panel-pane {
-  font-weight: 200;
+  font-weight: 300;
   line-height: 30px;
   margin-top: 3%;
 }
@@ -3331,7 +3337,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   color: white;
   display: block;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: bold;
   margin: 0;
   padding: 0;
   text-shadow: rgba(0, 0, 0, 0.7) 1px 1px 1px;
@@ -3660,7 +3666,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .footer .little-foot-nav > li > a {
   color: #333;
   font-size: 1.125rem;
-  font-weight: 400;
+  font-weight: normal;
   margin-right: 30px;
   text-decoration: none;
 }
@@ -3687,7 +3693,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 
 .little-foot__right__innovate {
   font-size: 1.3125rem;
-  font-weight: 700;
+  font-weight: bold;
 }
 @media (max-width: 767px) {
   .little-foot__right__innovate {
@@ -3698,7 +3704,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   border-bottom: 0;
   color: #a30046 !important;
   font-size: 1.3125rem !important;
-  font-weight: 700 !important;
+  font-weight: bold !important;
   text-decoration: none;
 }
 .little-foot__right__innovate a:hover {
@@ -3762,7 +3768,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   border-bottom: 0;
   color: black;
   font-size: x-large;
-  font-weight: 700;
+  font-weight: bold;
 }
 #innovation-bar a:hover {
   border-bottom: dotted 1px;
@@ -3886,7 +3892,7 @@ li.dropdown-title {
   .mega-menu .dropdown-menu > .li-row-container > .row > .column li a {
     color: #a42b4d;
     font-size: 0.84375rem;
-    font-weight: 200;
+    font-weight: 300;
   }
 }
 .mega-menu .dropdown-menu > .row > .column li a:hover, .mega-menu .dropdown-menu > .row > .column li a:focus,
@@ -3920,7 +3926,7 @@ li.dropdown-title {
   .mega-menu .dropdown-menu > .li-row-container > .row > .column li.active > a:focus {
     background-color: #dcdcdc;
     color: #000;
-    font-weight: 600;
+    font-weight: bold;
   }
 }
 @media (max-width: 991px) {
@@ -3949,7 +3955,7 @@ li.dropdown-title {
     border-top: 1px solid #dddddd;
     color: #a42b4d;
     font-size: 0.84375rem;
-    font-weight: 200;
+    font-weight: 300;
     width: 100%;
   }
   .mega-menu .dropdown-title:before {
@@ -4167,7 +4173,7 @@ figure[class^="effect-"] h2 {
   word-spacing: -.15em;
 }
 figure[class^="effect-"] h2 span {
-  font-weight: 800;
+  font-weight: bold;
 }
 figure[class^="effect-"] h2,
 figure[class^="effect-"] p {

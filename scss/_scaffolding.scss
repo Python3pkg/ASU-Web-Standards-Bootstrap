@@ -1,5 +1,5 @@
 // Scaffolding
-// 
+//
 // Styleguide scaffolding
 
 @import 'scaffolding/basic';
@@ -41,13 +41,20 @@ blockquote {
 }
 
 address {
-  font-weight: 200;
+  font-weight: $font-weight-light;
   line-height: $line-height-base;
   margin-bottom: ($line-height-computed);
 
   strong {
-    font-weight: normal;
+    font-weight: $font-weight-normal;
   }
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: $font-family-mono;
 }
 
 kbd {
