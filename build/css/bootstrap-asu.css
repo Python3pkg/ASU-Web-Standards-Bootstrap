@@ -2176,9 +2176,15 @@ input[type="button"].btn-block {
     padding-right: 14px;
   }
 }
+.navbar-ws .navbar-nav > li > a span.caret {
+  color: #666;
+}
 .navbar-ws .navbar-nav > li > a:hover, .navbar-ws .navbar-nav > li > a:focus {
   background-color: #000;
   color: #ffb310;
+}
+.navbar-ws .navbar-nav > li > a:hover span.caret, .navbar-ws .navbar-nav > li > a:focus span.caret {
+  color: #ededed;
 }
 @media (max-width: 991px) {
   .navbar-ws .navbar-nav > li > a:hover, .navbar-ws .navbar-nav > li > a:focus {
@@ -3818,6 +3824,8 @@ li.dropdown-title {
 .mega-menu .dropdown-menu > .row > .column li,
 .mega-menu .dropdown-menu > .li-row-container > .row > .column li {
   list-style: none;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 @media (max-width: 991px) {
   .mega-menu .dropdown-menu > .row > .column li,
@@ -3841,7 +3849,7 @@ li.dropdown-title {
   font-size: 0.9375rem;
   font-weight: normal;
   line-height: 1.4;
-  padding: 9px 10px 10px;
+  padding: 9px 25px 10px;
 }
 @media (max-width: 991px) {
   .mega-menu .dropdown-menu > .row > .column li a,
@@ -3903,7 +3911,7 @@ li.dropdown-title {
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.4;
-  padding: 9px 10px 10px;
+  padding: 9px 25px 10px;
 }
 @media (max-width: 991px) {
   .mega-menu .dropdown-title {
@@ -3943,7 +3951,7 @@ li.dropdown-title {
   }
 }
 .mega-menu .vertical-border-right {
-  border-right: 1px solid #414141;
+  border-right: 1px solid #a9a9a9;
 }
 @media (max-width: 991px) {
   .mega-menu .vertical-border-right {
