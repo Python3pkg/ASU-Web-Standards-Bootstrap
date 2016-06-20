@@ -1,14 +1,14 @@
 // Alternative Tabs
-// 
+//
 // Used in conjunction with `.nav` and `.nav-tabs`
-// 
+//
 // Markup:
 // <ul class="nav nav-tabs alterna-tabs">
 //    <li class="active"><a href="#">Record A</a></li>
 //    <li><a href="#">Record B</a></li>
 //    <li><a href="#">Record C</a></li>
 // </ul>
-// 
+//
 // Styleguide navigation.alternative-tabs
 .alterna-tabs {
   > li {
@@ -50,8 +50,8 @@
       }
     }
 
-    &.active > a, 
-    &.active > a:hover, 
+    &.active > a,
+    &.active > a:hover,
     &.active > a:focus {
       background: none;
       border: 0;

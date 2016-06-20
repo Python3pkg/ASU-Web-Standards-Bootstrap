@@ -1,8 +1,8 @@
 // List groups
-// 
+//
 // List groups are a flexible and powerful component for displaying not only simple
 // lists of elements, but complex ones with custom content.
-// 
+//
 // Markup:
 // <ul class="list-group">
 //   <li class="list-group-item">Cras justo odio</li>
@@ -11,7 +11,7 @@
 //   <li class="list-group-item">Porta ac consectetur ac</li>
 //   <li class="list-group-item">Vestibulum at eros</li>
 // </ul>
-// 
+//
 // Styleguide list-groups
 
 .list-group-item {
@@ -26,15 +26,15 @@
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
-  
+
   &:last-child {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
 
   &.active {
-    &, 
-    &:hover, 
+    &,
+    &:hover,
     &:focus {
       background-color: $color-white;
       border-color: $color-alto;
@@ -65,17 +65,17 @@ a.list-group-item {
   }
 }
 
-@include list-group-item-variant(success, 
-  $color-green, 
+@include list-group-item-variant(success,
+  $color-green,
   $color-white);
-@include list-group-item-variant(info, 
-  $color-blue, 
+@include list-group-item-variant(info,
+  $color-blue,
   $color-white);
-@include list-group-item-variant(warning, 
-  $color-yellow, 
+@include list-group-item-variant(warning,
+  $color-yellow,
   $color-black);
-@include list-group-item-variant(danger, 
-  $color-orange, 
+@include list-group-item-variant(danger,
+  $color-orange,
   $color-white);
 
 

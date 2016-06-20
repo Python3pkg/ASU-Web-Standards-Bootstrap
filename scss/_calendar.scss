@@ -1,8 +1,8 @@
 // Calendars
-// 
+//
 // A special web standards widget. Use the `.calendarPopover` class
 // to make calendars have a popover with a download widget.
-// 
+//
 // Markup:
 // <div class="calendar-group">
 //   <div class="calendar-date calendarPopover" data-original-title="" title="">
@@ -34,7 +34,7 @@
 //     </time>
 //   </div>
 // </div>
-// 
+//
 // Styleguide calendars
 .calendar-group {
   &:before,
@@ -100,7 +100,7 @@
     font-size: $font-size-calendar;
     line-height: $line-height-calendar;
     margin-bottom: $space-base;
-    
+
   }
 
   .month {

@@ -1,6 +1,6 @@
 // Base Navigation
 .nav {
-  > li > a { 
+  > li > a {
     border-bottom: 0;
     padding: $space-large;
   }
@@ -8,12 +8,12 @@
   .open > a {
     &,
     &:hover,
-    &:focus { 
+    &:focus {
       border-color: $color-maroon;
     }
   }
 
-  .nav-divider { 
+  .nav-divider {
     margin: $space-large 0;
   }
 }
