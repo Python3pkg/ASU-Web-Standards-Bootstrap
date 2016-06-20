@@ -43,6 +43,7 @@ The following are bundled into the ASU Web Standards Bootstrap files for your co
 - [Modernizr](http://modernizr.com/)
 - [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
 - [Moment JS](http://momentjs.com/) - Used for calendar ICS files.
+  [Font Awesome](http://fontawesome.io/)
 
 
 # Quick Start
@@ -131,7 +132,7 @@ in your `<head>`. Be sure to adjust the path to match their location on your sit
 
 This theme uses [Font Awesome](http://fortawesome.github.io/Font-Awesome/).
 
-Bootstrap natively provides [Glyphicons](http://getbootstrap.com/components/#glyphicons), which means both can be used in tandiem. The HUB documentation recommends using Font Awesome icons.
+However, bootstrap natively provides [Glyphicons](http://getbootstrap.com/components/#glyphicons), which means both can be used in tandiem. The HUB documentation recommends using Font Awesome icons.
 
 # Developers
 
