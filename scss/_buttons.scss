@@ -109,7 +109,6 @@
     $color-blue);
 }
 
-// Success appears as green
 .btn-success {
   @include button-variant(
     $color-white,
@@ -117,7 +116,6 @@
     $color-green-darkened);
 }
 
-// Info appears as blue-green
 .btn-info {
   @include button-variant(
     $color-white,
@@ -125,7 +123,6 @@
    $color-blue-darkened);
 }
 
-// Warning appears as orange
 .btn-warning {
   @include button-variant(
     $color-black,
@@ -133,7 +130,6 @@
     $color-yellow-darkened);
 }
 
-// Danger and error appear as red
 .btn-danger {
   @include button-variant(
     $color-white,
