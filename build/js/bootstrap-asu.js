@@ -510,6 +510,8 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
     } else {
       // Remove collapse open class
       $('.big-foot-nav').removeClass('in')
+      // Adding collapsed class to accomodate caret symbol changes upon window resizing
+      $('.big-foot h2[data-toggle="collapse"]').addClass('collapsed')
     }
   }
 
@@ -517,10 +519,8 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
     if ( $(window).innerWidth() >= mobileWidth ) {
       // Don't collapse!
       e.preventDefault();
-
       var id = $(this).attr('data-target');
       $(id).addClass('in');
-
       return false;
     }
   });
