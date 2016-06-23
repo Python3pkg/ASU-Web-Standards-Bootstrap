@@ -8,3 +8,4 @@ composer.phar
 /bower_components/
 /coverage/
 /node_modules/
+template/node_modules

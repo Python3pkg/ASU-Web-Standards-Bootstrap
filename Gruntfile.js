@@ -298,6 +298,15 @@ module.exports = function(grunt) {
           ignorePackages: ['jquery', 'bootstrap']
         }
       }
+    },
+    bootlint: {
+      options: {
+        stoponerror: false,
+        relaxerror: {
+          'E002': [] // Found one or more uses of outdated Bootstrap v2 `.spanN` grid classes
+        }
+      },
+      files: './build/docs/*.html'
     }
   });
 
@@ -316,6 +325,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-kss');
   grunt.loadNpmTasks('grunt-bower');
+  grunt.loadNpmTasks('grunt-bootlint');
 
   grunt.registerTask('validate', [
     'jshint',
@@ -337,12 +347,20 @@ module.exports = function(grunt) {
     'bower',
   ]);
 
+  grunt.registerTask('build-docs', [
+    'sass:fortesting',
+    'concat:kss',
+    'kss',
+  ]);
+
+
   // Documentation
   grunt.registerTask('docs', [
     'validate',
     'sass:fortesting',
     'concat:kss',
-    'kss'
+    'kss',
+    'bootlint'
   ]);
 
   // Serve
