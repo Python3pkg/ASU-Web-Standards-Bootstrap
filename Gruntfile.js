@@ -38,7 +38,8 @@ module.exports = function(grunt) {
     // =======
     jshint: {
       options: {
-        jshintrc: 'js/.jshintrc'
+        jshintrc: 'js/.jshintrc',
+        reporterOutput: '' // Null reporterOutput creates a bug, readmore: https://github.com/jshint/jshint/issues/2922
       },
       core: {
         src: [
