@@ -27,12 +27,6 @@
 .kss-style p {
   margin: 12px 0 24px 0;
 }
-.kss-style h1,
-.kss-style h2,
-.kss-style h3,
-.kss-style h4,
-.kss-style h5,
-.kss-style h6,
 .kss-style h1.ksss,
 .kss-style h2.ksss,
 .kss-style h3.ksss,
@@ -44,27 +38,27 @@
   color: #111;
   line-height: 1.15em;
 }
-.kss-style h4,
-.kss-style h5,
-.kss-style h6 {
+.kss-style h4.ksss,
+.kss-style h5.ksss,
+.kss-style h6.ksss {
   font-weight: bold;
 }
-.kss-style h1 {
+.kss-style h1.ksss {
   font-size: 40px;
 }
-.kss-style h2 {
+.kss-style h2.ksss {
   font-size: 36px;
 }
-.kss-style h3 {
+.kss-style h3.ksss {
   font-size: 34px;
 }
-.kss-style h4 {
+.kss-style h4.ksss {
   font-size: 32px;
 }
-.kss-style h5 {
+.kss-style h5.ksss {
   font-size: 30px;
 }
-.kss-style h6 {
+.kss-style h6.ksss {
   font-size: 28px;
 }
 .kss-style blockquote {
@@ -521,4 +515,16 @@
 #kss-node ol.linenums li.L6,
 #kss-node ol.linenums li.L8 {
   background: #fcfcfc;
+}
+.static-modal {
+  background-color: gray;
+}
+.static-modal .modal {
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  z-index: 1;
+  display: block;
 }
