@@ -43,7 +43,7 @@ The following are bundled into the ASU Web Standards Bootstrap files for your co
 - [Modernizr](http://modernizr.com/)
 - [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
 - [Moment JS](http://momentjs.com/) - Used for calendar ICS files.
-  [Font Awesome](http://fontawesome.io/)
+- [Font Awesome](http://fontawesome.io/)
 
 
 # Quick Start
