@@ -2183,8 +2183,10 @@ input[type="button"].btn-block {
   background-color: #000;
   color: #ffb310;
 }
-.navbar-ws .navbar-nav > li > a:hover span.caret, .navbar-ws .navbar-nav > li > a:focus span.caret {
-  color: #ededed;
+@media (min-width: 991px) {
+  .navbar-ws .navbar-nav > li > a:hover span.caret, .navbar-ws .navbar-nav > li > a:focus span.caret {
+    color: #ededed;
+  }
 }
 @media (max-width: 991px) {
   .navbar-ws .navbar-nav > li > a:hover, .navbar-ws .navbar-nav > li > a:focus {
