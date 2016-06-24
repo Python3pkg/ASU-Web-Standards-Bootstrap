@@ -5,7 +5,7 @@
     "url": "git://github.com/gios-asu/ASU-Web-Standards-Bootstrap.git"
   },
   "devDependencies": {
-    "bower": "~1.7",
+    "bower": "~1.7.9",
     "grunt": "~1.0",
     "grunt-bootlint": "~0.10",
     "grunt-bower": "^0.21.2",
