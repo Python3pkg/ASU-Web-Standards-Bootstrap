@@ -272,7 +272,7 @@ module.exports = function(grunt) {
         css: [
           'all.css'
         ],
-        template: 'template'
+        template: 'kss-template'
       },
       dist: {
         files: {
@@ -295,7 +295,7 @@ module.exports = function(grunt) {
               ]
             }
           },
-          ignorePackages: ['bootstrap-sass']
+          ignorePackages: ['bootstrap-sass', 'qunit']
         }
       }
     },
