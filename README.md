@@ -4,6 +4,8 @@ ASU Web Standards Bootstrap
 [![Travis](http://img.shields.io/travis/gios-asu/ASU-Web-Standards-Bootstrap.svg?style=flat)](https://travis-ci.org/gios-asu/ASU-Web-Standards-Bootstrap)
 [![Code Climate](http://img.shields.io/codeclimate/github/gios-asu/ASU-Web-Standards-Bootstrap.svg?style=flat)](https://codeclimate.com/github/gios-asu/ASU-Web-Standards-Bootstrap)
 [![Stories in Ready](https://badge.waffle.io/gios-asu/asu-web-standards-bootstrap.svg?label=issues-ready&title=Issues+Ready)](http://waffle.io/gios-asu/asu-web-standards-bootstrap)
+[![Dependency Status](https://david-dm.org/gios-asu/ASU-Web-Standards-Bootstrap.svg)](https://david-dm.org/gios-asu/ASU-Web-Standards-Bootstrap)
+[![devDependency Status](https://david-dm.org/gios-asu/ASU-Web-Standards-Bootstrap/dev-status.svg)](https://david-dm.org/gios-asu/ASU-Web-Standards-Bootstrap#info=devDependencies)
 
 [![Github release](https://img.shields.io/github/release/gios-asu/ASU-Web-Standards-Bootstrap.svg?style=flat)](https://github.com/gios-asu/ASU-Web-Standards-Bootstrap/releases)
 [![Github issues](https://img.shields.io/github/issues/gios-asu/ASU-Web-Standards-Bootstrap.svg?style=flat)](https://github.com/gios-asu/ASU-Web-Standards-Bootstrap/issues)
