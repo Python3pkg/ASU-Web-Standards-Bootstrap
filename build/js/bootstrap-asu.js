@@ -461,11 +461,16 @@ case"millisecond":return Math.floor(24*b*60*60*1e3)+this._milliseconds;default:t
         top : 0
       })
     })
-
+    // Arpit Changes
+    var pageHeight = $('.col-sm-8').outerHeight();
+    var sideHeight = $('#sidebarNav').outerHeight();
     /*
      * Add a top offset so that the sidebar is not behing the navbar
      */
     affixed.on('affix.bs.affix', function () {
+      if ( sideHeight > pageHeight ) {
+        affixed.css('position','relative')
+      }
       affixed.css({
         top : navbarHeight + 'px'
       })

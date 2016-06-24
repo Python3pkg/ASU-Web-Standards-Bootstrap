@@ -71,11 +71,16 @@
         top : 0
       })
     })
-
+    // Arpit Changes
+    var pageHeight = $('.col-sm-8').outerHeight();
+    var sideHeight = $('#sidebarNav').outerHeight();
     /*
      * Add a top offset so that the sidebar is not behing the navbar
      */
     affixed.on('affix.bs.affix', function () {
+      if ( sideHeight > pageHeight ) {
+        affixed.css('position','relative')
+      }
       affixed.css({
         top : navbarHeight + 'px'
       })
