@@ -284,7 +284,7 @@ module.exports = function(grunt) {
     // ===========
     bower: {
       dev: {
-        dest: './build/',
+        dest: './build/docs',
         options: {
           keepExpandedHierarchy: false,
           packageSpecific: {
@@ -295,7 +295,7 @@ module.exports = function(grunt) {
               ]
             }
           },
-          ignorePackages: ['jquery', 'bootstrap']
+          ignorePackages: ['bootstrap-sass']
         }
       }
     },
