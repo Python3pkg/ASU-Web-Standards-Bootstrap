@@ -347,26 +347,26 @@ module.exports = function(grunt) {
     'bower',
   ]);
 
+  // just for building the docs quickly
   grunt.registerTask('build-docs', [
     'sass:fortesting',
     'concat:kss',
     'kss',
   ]);
 
-
-  // Documentation
+  // building and validating the docs
   grunt.registerTask('docs', [
     'validate',
     'sass:fortesting',
     'concat:kss',
     'kss',
-    'bootlint'
+    'bootlint',
   ]);
 
   // Serve
   grunt.registerTask('serve', [
     'browserSync',
-    'watch:core'
+    'watch:core',
   ]);
 
   // Just Test
