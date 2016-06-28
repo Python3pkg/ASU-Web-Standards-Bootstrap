@@ -98,7 +98,8 @@
 //
 // Styleguide tables.bordered
 .table-bordered {
-  border: 1px solid $color-nobel;
+  border-bottom: 1px solid $color-nobel;
+  border-left: 1px solid $color-nobel;
 
   > {
     thead,
@@ -107,11 +108,12 @@
       > tr > {
         th,
         td {
-          border: 1px solid $color-nobel;
+          border-right: 1px solid $color-nobel;
         }
       }
     }
   }
+
 }
 
 // Striped Rows
@@ -224,6 +226,8 @@
 }
 
 // Bordered and Striped
+//
+// See: [even more examples from Bootstrap](https://getbootstrap.com/css/#tables)
 //
 // Markup:
 // <table class="table table-bordered table-striped">
