@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* ========================================================================
- * Web Standards: bootstrap-asu.css v0.4.8
+ * Web Standards: bootstrap-asu.css v0.4.9
  * ========================================================================
  * Copyright 2014-2016 ASU
  * Licensed under MIT (https://github.com/gios-asu/ASU-Bootstrap-Addon/blob/master/LICENSE)
@@ -893,7 +893,8 @@ code {
 }
 
 .table-bordered {
-  border: 1px solid #b7b7b7;
+  border-bottom: 1px solid #b7b7b7;
+  border-left: 1px solid #b7b7b7;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > thead > tr > td,
@@ -901,7 +902,7 @@ code {
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > th,
 .table-bordered > tfoot > tr > td {
-  border: 1px solid #b7b7b7;
+  border-right: 1px solid #b7b7b7;
 }
 
 .table-striped > tbody > tr:nth-child(odd) > td,
@@ -2183,8 +2184,10 @@ input[type="button"].btn-block {
   background-color: #000;
   color: #ffb310;
 }
-.navbar-ws .navbar-nav > li > a:hover span.caret, .navbar-ws .navbar-nav > li > a:focus span.caret {
-  color: #ededed;
+@media (min-width: 991px) {
+  .navbar-ws .navbar-nav > li > a:hover span.caret, .navbar-ws .navbar-nav > li > a:focus span.caret {
+    color: #ededed;
+  }
 }
 @media (max-width: 991px) {
   .navbar-ws .navbar-nav > li > a:hover, .navbar-ws .navbar-nav > li > a:focus {
@@ -3720,6 +3723,50 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 @media (max-width: 991px) {
   .footer h2 {
     cursor: pointer;
+  }
+}
+/* 
+ *
+ * Caret Changes for footer dropdown
+ *
+ */
+@media (max-width: 768px) {
+  .foot-menu-border {
+    border-top: 1px solid #383d3e;
+    margin-bottom: 0;
+  }
+
+  .footer .menu h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 16px;
+    padding-top: 24px;
+  }
+
+  div.footer h2.collapsed > span.caret {
+    /* Caret Left */
+    border-bottom: 6px solid transparent;
+    border-left: 0 dotted;
+    border-right: 6px solid;
+    border-top: 6px solid transparent;
+    display: inline-block;
+    left: 94%;
+    margin-top: 10px;
+    position: absolute;
+    vertical-align: left;
+  }
+
+  div.footer h2 > span.caret {
+    /* Caret Down */
+    border-bottom: 0 dotted;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid;
+    display: inline-block;
+    left: 94%;
+    margin-top: 10px;
+    position: absolute;
+    vertical-align: left;
   }
 }
 #innovation-bar {

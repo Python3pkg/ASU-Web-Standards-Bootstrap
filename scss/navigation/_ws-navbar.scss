@@ -138,8 +138,10 @@
           background-color: $color-black;
           color: $color-sun;
 
-          span.caret {
-            color: $color-gallery;
+          @media(min-width: $asu-screen-sm-max) {
+            span.caret {
+              color: $color-gallery;
+            }
           }
 
           @media(max-width: $asu-screen-sm-max) {

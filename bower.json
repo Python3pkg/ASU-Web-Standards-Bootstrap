@@ -23,8 +23,11 @@
     "test",
     "tests"
   ],
-  "dependencies": {
+  "devDependencies": {
     "font-awesome": "~4.6",
+    "qunit": "~1.15.0"
+  },
+  "dependencies": {
     "bootstrap": "^3.3.6"
   }
 }

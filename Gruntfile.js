@@ -38,7 +38,8 @@ module.exports = function(grunt) {
     // =======
     jshint: {
       options: {
-        jshintrc: 'js/.jshintrc'
+        jshintrc: 'js/.jshintrc',
+        reporterOutput: '' // Null reporterOutput creates a bug, readmore: https://github.com/jshint/jshint/issues/2922
       },
       core: {
         src: [
@@ -271,7 +272,7 @@ module.exports = function(grunt) {
         css: [
           'all.css'
         ],
-        template: 'template'
+        template: 'kss-template'
       },
       dist: {
         files: {
@@ -283,7 +284,7 @@ module.exports = function(grunt) {
     // ===========
     bower: {
       dev: {
-        dest: './build/',
+        dest: './build/docs',
         options: {
           keepExpandedHierarchy: false,
           packageSpecific: {
@@ -294,9 +295,18 @@ module.exports = function(grunt) {
               ]
             }
           },
-          ignorePackages: ['jquery', 'bootstrap']
+          ignorePackages: ['bootstrap-sass', 'qunit']
         }
       }
+    },
+    bootlint: {
+      options: {
+        stoponerror: false,
+        relaxerror: {
+          'E002': [] // Found one or more uses of outdated Bootstrap v2 `.spanN` grid classes
+        }
+      },
+      files: './build/docs/*.html'
     }
   });
 
@@ -315,6 +325,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-kss');
   grunt.loadNpmTasks('grunt-bower');
+  grunt.loadNpmTasks('grunt-bootlint');
 
   grunt.registerTask('validate', [
     'jshint',
@@ -336,18 +347,26 @@ module.exports = function(grunt) {
     'bower',
   ]);
 
-  // Documentation
+  // just for building the docs quickly
+  grunt.registerTask('build-docs', [
+    'sass:fortesting',
+    'concat:kss',
+    'kss',
+  ]);
+
+  // building and validating the docs
   grunt.registerTask('docs', [
     'validate',
     'sass:fortesting',
     'concat:kss',
-    'kss'
+    'kss',
+    'bootlint',
   ]);
 
   // Serve
   grunt.registerTask('serve', [
     'browserSync',
-    'watch:core'
+    'watch:core',
   ]);
 
   // Just Test
