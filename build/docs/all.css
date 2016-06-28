@@ -893,7 +893,8 @@ code {
 }
 
 .table-bordered {
-  border: 1px solid #b7b7b7;
+  border-bottom: 1px solid #b7b7b7;
+  border-left: 1px solid #b7b7b7;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > thead > tr > td,
@@ -901,7 +902,7 @@ code {
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > th,
 .table-bordered > tfoot > tr > td {
-  border: 1px solid #b7b7b7;
+  border-right: 1px solid #b7b7b7;
 }
 
 .table-striped > tbody > tr:nth-child(odd) > td,
