@@ -240,8 +240,10 @@
     font-size: $font-size-large;
   }
 
-  // Vertically space out multiple block buttons
-  + .btn-block {
+  // Vertically space out multiple block buttons (including when footnotes for print media
+  // have been inserted between the buttons)
+  + .btn-block,
+  + .footnote + .btn-block {
     margin-top: ($space-large + $space-base);
   }
 }
