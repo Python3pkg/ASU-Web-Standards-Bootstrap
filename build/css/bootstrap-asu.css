@@ -1548,29 +1548,66 @@ select[multiple].input-lg {
   color: #ffc627;
 }
 
-.btn-blue {
+.btn-blue,
+.btn-degree-programs {
   color: #fff;
   background-color: #00a3e0;
   border-color: #00a3e0;
 }
-.btn-blue:hover, .btn-blue:focus, .btn-blue:active, .btn-blue.active, .open > .btn-blue.dropdown-toggle {
+.btn-blue:hover, .btn-blue:focus, .btn-blue:active, .btn-blue.active, .open > .btn-blue.dropdown-toggle,
+.btn-degree-programs:hover,
+.btn-degree-programs:focus,
+.btn-degree-programs:active,
+.btn-degree-programs.active, .open >
+.btn-degree-programs.dropdown-toggle {
   background-color: #007ead;
   border-color: #0076a3;
   color: #fff;
 }
-.btn-blue:active, .btn-blue.active, .open > .btn-blue.dropdown-toggle {
+.btn-blue:active, .btn-blue.active, .open > .btn-blue.dropdown-toggle,
+.btn-degree-programs:active,
+.btn-degree-programs.active, .open >
+.btn-degree-programs.dropdown-toggle {
   background-image: none;
 }
-.btn-blue:active:focus, .btn-blue:active.focus, .btn-blue:active:hover, .btn-blue:active.hover, .btn-blue.active:focus, .btn-blue.active.focus, .btn-blue.active:hover, .btn-blue.active.hover, .open > .btn-blue.dropdown-toggle:focus, .open > .btn-blue.dropdown-toggle.focus, .open > .btn-blue.dropdown-toggle:hover, .open > .btn-blue.dropdown-toggle.hover {
+.btn-blue:active:focus, .btn-blue:active.focus, .btn-blue:active:hover, .btn-blue:active.hover, .btn-blue.active:focus, .btn-blue.active.focus, .btn-blue.active:hover, .btn-blue.active.hover, .open > .btn-blue.dropdown-toggle:focus, .open > .btn-blue.dropdown-toggle.focus, .open > .btn-blue.dropdown-toggle:hover, .open > .btn-blue.dropdown-toggle.hover,
+.btn-degree-programs:active:focus,
+.btn-degree-programs:active.focus,
+.btn-degree-programs:active:hover,
+.btn-degree-programs:active.hover,
+.btn-degree-programs.active:focus,
+.btn-degree-programs.active.focus,
+.btn-degree-programs.active:hover,
+.btn-degree-programs.active.hover, .open >
+.btn-degree-programs.dropdown-toggle:focus, .open >
+.btn-degree-programs.dropdown-toggle.focus, .open >
+.btn-degree-programs.dropdown-toggle:hover, .open >
+.btn-degree-programs.dropdown-toggle.hover {
   background-color: #007ead;
   border-color: #0076a3;
   color: #fff;
 }
-.btn-blue.disabled, .btn-blue.disabled:hover, .btn-blue.disabled:focus, .btn-blue.disabled:active, .btn-blue.disabled.active, .btn-blue[disabled], .btn-blue[disabled]:hover, .btn-blue[disabled]:focus, .btn-blue[disabled]:active, .btn-blue[disabled].active, fieldset[disabled] .btn-blue, fieldset[disabled] .btn-blue:hover, fieldset[disabled] .btn-blue:focus, fieldset[disabled] .btn-blue:active, fieldset[disabled] .btn-blue.active {
+.btn-blue.disabled, .btn-blue.disabled:hover, .btn-blue.disabled:focus, .btn-blue.disabled:active, .btn-blue.disabled.active, .btn-blue[disabled], .btn-blue[disabled]:hover, .btn-blue[disabled]:focus, .btn-blue[disabled]:active, .btn-blue[disabled].active, fieldset[disabled] .btn-blue, fieldset[disabled] .btn-blue:hover, fieldset[disabled] .btn-blue:focus, fieldset[disabled] .btn-blue:active, fieldset[disabled] .btn-blue.active,
+.btn-degree-programs.disabled,
+.btn-degree-programs.disabled:hover,
+.btn-degree-programs.disabled:focus,
+.btn-degree-programs.disabled:active,
+.btn-degree-programs.disabled.active,
+.btn-degree-programs[disabled],
+.btn-degree-programs[disabled]:hover,
+.btn-degree-programs[disabled]:focus,
+.btn-degree-programs[disabled]:active,
+.btn-degree-programs[disabled].active, fieldset[disabled]
+.btn-degree-programs, fieldset[disabled]
+.btn-degree-programs:hover, fieldset[disabled]
+.btn-degree-programs:focus, fieldset[disabled]
+.btn-degree-programs:active, fieldset[disabled]
+.btn-degree-programs.active {
   background-color: #00a3e0;
   border-color: #00a3e0;
 }
-.btn-blue .badge {
+.btn-blue .badge,
+.btn-degree-programs .badge {
   background-color: #fff;
   color: #00a3e0;
 }
@@ -1741,7 +1778,8 @@ select[multiple].input-lg {
     font-size: 1.125rem;
   }
 }
-.btn-block + .btn-block {
+.btn-block + .btn-block,
+.btn-block + .footnote + .btn-block {
   margin-top: 15px;
 }
 
@@ -3660,7 +3698,8 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .footer .big-foot a:hover, .footer .big-foot a:focus {
   color: #fff;
 }
-.footer .big-foot a.btn, .footer .big-foot button {
+.footer .big-foot a.btn,
+.footer .big-foot button {
   border: inherit;
   color: inherit;
 }
