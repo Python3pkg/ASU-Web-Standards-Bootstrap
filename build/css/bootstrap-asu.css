@@ -3660,6 +3660,10 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .footer .big-foot a:hover, .footer .big-foot a:focus {
   color: #fff;
 }
+.footer .big-foot a.btn, .footer .big-foot button {
+  border: inherit;
+  color: inherit;
+}
 .footer .big-foot-nav > li {
   margin-bottom: 12px;
 }
@@ -3725,7 +3729,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
     cursor: pointer;
   }
 }
-/* 
+/*
  *
  * Caret Changes for footer dropdown
  *
