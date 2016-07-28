@@ -139,7 +139,8 @@
       }
     }
     // Dont over-ride buttons in the footer
-    a.btn, button {
+    a.btn,
+    button {
       border: inherit;
       color: inherit;
     }
