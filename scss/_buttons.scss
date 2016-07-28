@@ -66,7 +66,7 @@
 // .btn-primary - ASU maroon color
 // .btn-secondary - Gray button
 // .btn-gold - Gold button
-// .btn-blue - Blue button
+// .btn-degree-programs - Only for use with degree programs. (Formally .btn-blue)
 // .btn-success - Success action color
 // .btn-info - Information action color
 // .btn-warning - Warning color
@@ -102,7 +102,8 @@
     $color-gold);
 }
 
-.btn-blue {
+.btn-blue,
+.btn-degree-programs {
   @include button-variant(
     $color-white,
     $color-blue,
@@ -240,8 +241,10 @@
     font-size: $font-size-large;
   }
 
-  // Vertically space out multiple block buttons
-  + .btn-block {
+  // Vertically space out multiple block buttons (including when footnotes for print media
+  // have been inserted between the buttons)
+  + .btn-block,
+  + .footnote + .btn-block {
     margin-top: ($space-large + $space-base);
   }
 }
