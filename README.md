@@ -35,7 +35,7 @@ The following must be added to your website in order to use the ASU Web Standard
 
 - [Twitter Bootstrap](http://getbootstrap.com/) - Required
 - [jQuery](http://jquery.com/) - Required
-- [ASU Header](https://drupal.asu.edu/build/asu-header-footer-version-40) - Recommended for University Websites
+- [ASU Header v4.0](https://brandguide.asu.edu/web-standards/enterprise/asu-global-header#quicktabs-global_asu_header=2) - Recommended for University Websites (note this is not the most current version)
 - [RespondJS](https://github.com/scottjehl/Respond) - to make media queries work on
 IE 6-8 - Optional
 - [Lightning Touch](https://github.com/ucsf-ckm/LightningTouch) - makes links responsive without the several hundred millisecond delay typical in a hendheld touchscreen browser - Optional
