@@ -78,28 +78,32 @@
   @include button-variant(
     $color-emperor,
     $color-wild-sand,
-    $color-silver-chalice);
+    $color-silver-chalice,
+    !important);
 }
 
 .btn-primary {
   @include button-variant(
     $color-white,
     $color-maroon,
-    $color-maroon);
+    $color-maroon,
+    !important);
 }
 
 .btn-secondary {
   @include button-variant(
     $color-black,
     $color-alto,
-    $color-alto);
+    $color-alto,
+    !important);
 }
 
 .btn-gold {
   @include button-variant(
     $color-dark-mine,
     $color-gold,
-    $color-gold);
+    $color-gold,
+    !important);
 }
 
 .btn-blue,
@@ -107,35 +111,40 @@
   @include button-variant(
     $color-white,
     $color-blue,
-    $color-blue);
+    $color-blue,
+    !important);
 }
 
 .btn-success {
   @include button-variant(
     $color-white,
     $color-green,
-    $color-green-darkened);
+    $color-green-darkened,
+    !important);
 }
 
 .btn-info {
   @include button-variant(
     $color-white,
     $color-blue,
-   $color-blue-darkened);
+   $color-blue-darkened,
+   !important);
 }
 
 .btn-warning {
   @include button-variant(
     $color-black,
     $color-yellow,
-    $color-yellow-darkened);
+    $color-yellow-darkened,
+    !important);
 }
 
 .btn-danger {
   @include button-variant(
     $color-white,
     $color-orange,
-    $color-orange-darkened);
+    $color-orange-darkened,
+    !important);
 }
 
 // Make a button look and behave like a link
@@ -231,9 +240,9 @@
 //
 // Styleguide buttons.navbar
 .btn-navbar {
-  height: 35px;
-  margin: 11px $space-large;
-  padding: 10px 20px;
+  height: 35px !important;
+  margin: 11px $space-large !important;
+  padding: 10px 20px !important;
 }
 
 // Button Block
