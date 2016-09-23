@@ -78,32 +78,28 @@
   @include button-variant(
     $color-emperor,
     $color-wild-sand,
-    $color-silver-chalice,
-    !important);
+    $color-silver-chalice);
 }
 
 .btn-primary {
   @include button-variant(
     $color-white,
     $color-maroon,
-    $color-maroon,
-    !important);
+    $color-maroon);
 }
 
 .btn-secondary {
   @include button-variant(
     $color-black,
     $color-alto,
-    $color-alto,
-    !important);
+    $color-alto);
 }
 
 .btn-gold {
   @include button-variant(
     $color-dark-mine,
     $color-gold,
-    $color-gold,
-    !important);
+    $color-gold);
 }
 
 .btn-blue,
@@ -111,40 +107,35 @@
   @include button-variant(
     $color-white,
     $color-blue,
-    $color-blue,
-    !important);
+    $color-blue);
 }
 
 .btn-success {
   @include button-variant(
     $color-white,
     $color-green,
-    $color-green-darkened,
-    !important);
+    $color-green-darkened);
 }
 
 .btn-info {
   @include button-variant(
     $color-white,
     $color-blue,
-   $color-blue-darkened,
-   !important);
+   $color-blue-darkened);
 }
 
 .btn-warning {
   @include button-variant(
     $color-black,
     $color-yellow,
-    $color-yellow-darkened,
-    !important);
+    $color-yellow-darkened);
 }
 
 .btn-danger {
   @include button-variant(
     $color-white,
     $color-orange,
-    $color-orange-darkened,
-    !important);
+    $color-orange-darkened);
 }
 
 // Make a button look and behave like a link
@@ -229,20 +220,6 @@
     $font-size-small,
     $line-height-small,
     $border-radius);
-}
-
-// Navbar Button
-//
-// Create a button in the [Web Standards Navbar](section-navigation.html#kssref-navigation-web-standards).
-//
-// Markup:
-// <li><a href="" class="btn-navbar btn btn-gold">Sign In</a></li>
-//
-// Styleguide buttons.navbar
-.btn-navbar {
-  height: 35px !important;
-  margin: 11px $space-large !important;
-  padding: 10px 20px !important;
 }
 
 // Button Block

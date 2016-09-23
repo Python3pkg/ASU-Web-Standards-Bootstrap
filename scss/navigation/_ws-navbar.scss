@@ -2,6 +2,8 @@
 //
 // Just like in Bootstrap, but styled differently, uses `navbar`. Dropdown menus must include caret icon as styled here.
 //
+// Additionally, a Navbar Button is available for special uses. All Alternative Button Colors are available for styling the Navbar Button.
+//
 // Markup:
 // <nav class="navbar navbar-ws affix-top" role="navigation">
 //     <div class="container-fluid">
@@ -23,6 +25,8 @@
 //                 <li class="menu-item"><a title="Super Menu" href="#" id="nav-item_research">Super Menu <span class="caret"></span></a>
 //                 </li>
 //                 <li class="menu-item"><a title="Tabbed Menu" href="#" id="nav-item_solutions">Tabbed Menu</a>
+//                 </li>
+//                 <li class="menu-item"><a title="Navbar Button" href="#" id="nav-item_button" class="btn-navbar btn btn-gold">Navbar Button</a>
 //                 </li>
 //             </ul>
 //         </div>
@@ -132,6 +136,75 @@
           color: $color-dove-gray;
         }
 
+        &.btn-navbar {
+          height: 35px;
+          margin: 11px $space-large;
+          padding: 10px 20px;
+        }
+
+        &.btn-default {
+          @include button-variant(
+            $color-emperor,
+            $color-wild-sand,
+            $color-silver-chalice);
+        }
+
+        &.btn-primary {
+          @include button-variant(
+            $color-white,
+            $color-maroon,
+            $color-maroon);
+        }
+
+        &.btn-secondary {
+          @include button-variant(
+            $color-black,
+            $color-alto,
+            $color-alto);
+        }
+
+        &.btn-gold {
+          @include button-variant(
+            $color-dark-mine,
+            $color-gold,
+            $color-gold);
+        }
+
+        &.btn-blue,
+        &.btn-degree-programs {
+          @include button-variant(
+            $color-white,
+            $color-blue,
+            $color-blue);
+        }
+
+        &.btn-success {
+          @include button-variant(
+            $color-white,
+            $color-green,
+            $color-green-darkened);
+        }
+
+        &.btn-info {
+          @include button-variant(
+            $color-white,
+            $color-blue,
+           $color-blue-darkened);
+        }
+
+        &.btn-warning {
+          @include button-variant(
+            $color-black,
+            $color-yellow,
+            $color-yellow-darkened);
+        }
+
+        &.btn-danger {
+          @include button-variant(
+            $color-white,
+            $color-orange,
+            $color-orange-darkened);
+        }
 
         &:hover,
         &:focus {
