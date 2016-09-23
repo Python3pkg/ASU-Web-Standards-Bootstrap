@@ -222,6 +222,20 @@
     $border-radius);
 }
 
+// Navbar Button
+//
+// Create a button in the [Web Standards Navbar](section-navigation.html#kssref-navigation-web-standards).
+//
+// Markup:
+// <li><a href="" class="btn-navbar btn btn-gold">Sign In</a></li>
+//
+// Styleguide buttons.navbar
+.btn-navbar {
+  height: 35px;
+  margin: 11px $space-large;
+  padding: 10px 20px;
+}
+
 // Button Block
 //
 // Create block level buttons—those that span the full width of a parent— by adding `.btn-block`.
