@@ -626,6 +626,8 @@ page:</p>
 
       <div class="kss-description">
         <p>Just like in Bootstrap, but styled differently, uses <code>navbar</code>. Dropdown menus must include caret icon as styled here.</p>
+<p>Additionally, a Navbar Button is available for special uses. All Alternative Button Colors are available for styling the Navbar Button.</p>
+<p>Note: Because Bootstrap v3 does not support button classes on anchors within navbar-nav (<a href="https://github.com/twbs/bootlint/wiki/E043">See Bootlint docs</a>), a Navbar button must be implemented as <button type="button"></button>. Since this requires Javascript to enable redirect functionality (as the likely use-case), the button HTML should also be inserted into the DOM via Javascript, so it will only be rendered for clients who have Javascript enabled.</p>
 
       </div>
     </div>
@@ -656,6 +658,8 @@ page:</p>
                 </li>
                 <li class="menu-item"><a title="Tabbed Menu" href="#" id="nav-item_solutions">Tabbed Menu</a>
                 </li>
+                <li class="menu-item"><button title="Navbar Button" id="nav-item_button" type="button" class="btn-navbar btn btn-gold">Navbar Button</button>
+                </li>
             </ul>
         </div>
     </div>
@@ -685,6 +689,8 @@ page:</p>
                 &lt;li class=&quot;menu-item&quot;&gt;&lt;a title=&quot;Super Menu&quot; href=&quot;#&quot; id=&quot;nav-item_research&quot;&gt;Super Menu &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
                 &lt;/li&gt;
                 &lt;li class=&quot;menu-item&quot;&gt;&lt;a title=&quot;Tabbed Menu&quot; href=&quot;#&quot; id=&quot;nav-item_solutions&quot;&gt;Tabbed Menu&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=&quot;menu-item&quot;&gt;&lt;button title=&quot;Navbar Button&quot; id=&quot;nav-item_button&quot; type=&quot;button&quot; class=&quot;btn-navbar btn btn-gold&quot;&gt;Navbar Button&lt;/button&gt;
                 &lt;/li&gt;
             &lt;/ul&gt;
         &lt;/div&gt;
