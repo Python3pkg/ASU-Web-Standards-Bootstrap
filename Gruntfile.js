@@ -189,7 +189,6 @@ module.exports = function(grunt) {
         src: [
           'js/_license.js',
           'js/_vendor.js',
-          'js/_modernizr.js',
           'js/_iframe-overlay.js',
           'js/_smoothscroll.js',
           'js/_smartresize.js',
