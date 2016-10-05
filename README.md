@@ -131,7 +131,7 @@ in your `<head>`. Be sure to adjust the path to match their location on your sit
 
 This theme uses [Font Awesome](http://fortawesome.github.io/Font-Awesome/).
 
-However, bootstrap natively provides [Glyphicons](http://getbootstrap.com/components/#glyphicons), which means both can be used in tandiem. The HUB documentation recommends using Font Awesome icons.
+However, bootstrap natively provides [Glyphicons](http://getbootstrap.com/components/#glyphicons), which means both can be used in tandem. The HUB documentation recommends using Font Awesome icons.
 
 # Developers
 
