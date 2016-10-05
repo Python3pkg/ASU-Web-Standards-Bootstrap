@@ -185,6 +185,15 @@ module.exports = function(grunt) {
     // JS Compile
     // ==========
     concat: {
+      vendor: {
+        src: [
+          'bower_components/fastclick/lib/fastclick.js',
+          'bower_components/skip-link-focus/skip-link-focus.js',
+          'bower_components/smooth-scroll/dist/js/smooth-scroll.js',
+          'bower_components/moment/moment.js'
+        ],
+        dest: 'js/_vendor.js'
+      },
       bootstrapAsu: {
         src: [
           'js/_license.js',
