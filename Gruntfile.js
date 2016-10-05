@@ -224,7 +224,7 @@ module.exports = function(grunt) {
     // =========
     uglify: {
       options: {
-        preserveComments: 'some',
+        preserveComments: /^!/, // this replaces the old, non-working 'some' option
         sourceMap: true
       },
       core: {
