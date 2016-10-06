@@ -43,8 +43,7 @@ module.exports = function(grunt) {
       },
       core: {
         src: [
-          'js/*.js',
-          '!js/_vendor.js'
+          'js/*.js'
         ]
       }
     },
@@ -185,24 +184,17 @@ module.exports = function(grunt) {
     // JS Compile
     // ==========
     concat: {
-      vendor: {
-        src: [
-          'bower_components/fastclick/lib/fastclick.js',
-          'bower_components/skip-link-focus/skip-link-focus.js',
-          'bower_components/smooth-scroll/dist/js/smooth-scroll.js',
-          'bower_components/moment/moment.js'
-        ],
-        dest: 'js/_vendor.js'
-      },
       bootstrapAsu: {
         src: [
           'js/_license.js',
-          'js/_vendor.js',
+          'bower_components/fastclick/lib/fastclick.js',
           'js/_fastclick.js',
-          'js/_iframe-overlay.js',
+          'bower_components/smooth-scroll/dist/js/smooth-scroll.js',
           'js/_smoothscroll.js',
-          'js/_smartresize.js',
+          'bower_components/moment/moment.js',
           'js/_calendar.js',
+          'js/_iframe-overlay.js',
+          'js/_smartresize.js',
           'js/_sidebar.js',
           'js/_collapse-footer.js',
           'js/_wait-for.js',
