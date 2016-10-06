@@ -328,7 +328,8 @@ module.exports = function(grunt) {
       options: {
         stoponerror: false,
         relaxerror: {
-          'E002': [] // Found one or more uses of outdated Bootstrap v2 `.spanN` grid classes
+          'E002': [], // Found one or more uses of outdated Bootstrap v2 `.spanN` grid classes
+          'E043': [] // This won't be an issue in Bootstrap v4, so just ignore for now
         }
       },
       files: './build/docs/*.html'
