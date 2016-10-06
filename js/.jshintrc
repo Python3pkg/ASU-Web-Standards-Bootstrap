@@ -12,8 +12,8 @@
   "strict"   : true,
   "undef"    : true,
   "unused"   : true,
-  "predef": [ 
-    "Modernizr",
-    "smoothScroll"
+  "predef": [
+    "smoothScroll",
+    "FastClick"
     ]
 }
