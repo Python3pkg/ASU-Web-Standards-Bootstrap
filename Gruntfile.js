@@ -91,6 +91,18 @@ module.exports = function(grunt) {
             served: true
           },
           {
+            src: ['bower_components/fastclick/lib/fastclick.js'],
+            served: true
+          },
+          {
+            src: ['bower_components/smooth-scroll/dist/js/smooth-scroll.js'],
+            served: true
+          },
+          {
+            src: ['bower_components/moment/moment.js'],
+            served: true
+          },
+          {
             src: ['<%= concat.bootstrapAsu.src %>'],
             served: true
           },
@@ -117,6 +129,18 @@ module.exports = function(grunt) {
           },
           {
             src: ['test/qunit/unit/_qunit-fixture.js'],
+            served: true
+          },
+          {
+            src: ['bower_components/fastclick/lib/fastclick.js'],
+            served: true
+          },
+          {
+            src: ['bower_components/smooth-scroll/dist/js/smooth-scroll.js'],
+            served: true
+          },
+          {
+            src: ['bower_components/moment/moment.js'],
             served: true
           },
           {
