@@ -4,8 +4,6 @@
 //
 // Additionally, a Navbar Button is available for special uses. All Alternative Button Colors are available for styling the Navbar Button.
 //
-// Note: Because Bootstrap v3 does not support button classes on anchors within navbar-nav ([See Bootlint docs](https://github.com/twbs/bootlint/wiki/E043)), a Navbar button must be implemented as <button type="button"></button>. Since this requires Javascript to enable redirect functionality (as the likely use-case), the button HTML should also be inserted into the DOM via Javascript, so it will only be rendered for clients who have Javascript enabled.
-//
 // Markup:
 // <nav class="navbar navbar-ws affix-top" role="navigation">
 //     <div class="container-fluid">
@@ -28,7 +26,7 @@
 //                 </li>
 //                 <li class="menu-item"><a title="Tabbed Menu" href="#" id="nav-item_solutions">Tabbed Menu</a>
 //                 </li>
-//                 <li class="menu-item"><button title="Navbar Button" id="nav-item_button" type="button" class="btn-navbar btn btn-gold">Navbar Button</button>
+//                 <li class="menu-item"><a title="Navbar Button" href="#" id="nav-item_button" class="btn-navbar btn btn-gold">Navbar Button</a>
 //                 </li>
 //             </ul>
 //         </div>
@@ -138,55 +136,6 @@
           color: $color-dove-gray;
         }
 
-        &:hover,
-        &:focus {
-          background-color: $color-black;
-          color: $color-sun;
-
-          @media(min-width: $asu-screen-sm-max) {
-            span.caret {
-              color: $color-gallery;
-            }
-          }
-
-          @media(max-width: $asu-screen-sm-max) {
-            background-color: rgb(220, 220, 220);
-            color: inherit;
-          }
-        }
-      }
-
-      li.hover > a {
-        background-color: $color-black;
-        color: $color-sun;
-
-        // TODO carots should be #eee
-
-        @media(max-width: $asu-screen-sm-max) {
-          background-color: rgb(220, 220, 220);
-          color: inherit;
-        }
-      }
-
-      li.open > a {
-        background-color: $color-black;
-        color: $color-sun;
-
-        @media(max-width: $asu-screen-sm-max) {
-          background-color: rgb(240, 240, 240);
-          color: inherit;
-        }
-      }
-
-      li > button {
-        // TODO refactor these constants
-        background-color: transparent;
-        color:            $color-gallery;
-        font-size:        $ws-nav-link__font-size;
-        font-weight:      $font-weight-bold;
-        line-height:      $ws-nav-link__line-height;
-        padding:          21px 16px;
-
         &.btn-navbar {
           height: 35px;
           margin: 11px $space-large;
@@ -255,6 +204,45 @@
             $color-white,
             $color-orange,
             $color-orange-darkened);
+        }
+
+        &:hover,
+        &:focus {
+          background-color: $color-black;
+          color: $color-sun;
+
+          @media(min-width: $asu-screen-sm-max) {
+            span.caret {
+              color: $color-gallery;
+            }
+          }
+
+          @media(max-width: $asu-screen-sm-max) {
+            background-color: rgb(220, 220, 220);
+            color: inherit;
+          }
+        }
+      }
+
+      li.hover > a {
+        background-color: $color-black;
+        color: $color-sun;
+
+        // TODO carots should be #eee
+
+        @media(max-width: $asu-screen-sm-max) {
+          background-color: rgb(220, 220, 220);
+          color: inherit;
+        }
+      }
+
+      li.open > a {
+        background-color: $color-black;
+        color: $color-sun;
+
+        @media(max-width: $asu-screen-sm-max) {
+          background-color: rgb(240, 240, 240);
+          color: inherit;
         }
       }
 
