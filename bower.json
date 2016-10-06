@@ -25,7 +25,11 @@
   ],
   "devDependencies": {
     "font-awesome": "~4.6",
-    "qunit": "~1.15.0"
+    "jquery": "~2.2.0",
+    "qunit": "~1.15.0",
+    "moment": "^2.15.1",
+    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git#^10.1.0",
+    "fastclick": "^1.0.6"
   },
   "dependencies": {
     "bootstrap": "^3.3.6"
