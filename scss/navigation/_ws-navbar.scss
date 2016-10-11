@@ -114,6 +114,10 @@
         }
       }
 
+      li.menu-btn-navbar {
+        padding: $space-large+1 0;
+      }
+
       li > a {
         // TODO refactor these constants
         background-color: transparent;
@@ -138,8 +142,8 @@
 
         &.btn-navbar {
           height: 35px;
-          margin: 11px $space-large;
-          padding: 10px 20px;
+          margin: 0 $space-large;
+          padding: $space-large $space-xlarge;
         }
 
         &.btn-default {
