@@ -67,8 +67,6 @@
   z-index: 10000;
 
   @media (max-width: $asu-screen-sm-max) {
-    background-color: rgb(80, 85, 88);
-
     &.affix {
       position: static !important;
     }
@@ -287,8 +285,7 @@
 
       @media(max-width: $asu-screen-sm-max) {
         li {
-          background-color: white;
-          border-bottom: 1px solid rgb(221, 221, 221);
+          border-bottom: 1px solid $color-abbey;
 
           > a {
             color:       rgb(80, 85, 88);
@@ -384,6 +381,7 @@
 
   .navbar-collapse,
   .navbar-form {
+    background-color: $color-mine-shaft;
     border-color: $color-black;
   }
 
@@ -508,6 +506,7 @@
     @media (max-width: $asu-screen-sm-max) {
       @include box-shadow(none);
 
+      background-color: $color-gallery;
       padding: 0;
     }
   }
