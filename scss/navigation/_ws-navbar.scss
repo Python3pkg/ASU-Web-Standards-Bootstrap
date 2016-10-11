@@ -134,8 +134,16 @@
           padding-right: 14px;
         }
 
-        span.caret {
-          color: $color-dove-gray;
+        @media (min-width: $asu-screen-sm-min) {
+          span.caret {
+            color: $color-dove-gray;
+          }
+        }
+
+        @media (max-width: $asu-screen-sm-max) {
+          span.caret {
+            color: $color-gallery;
+          }
         }
 
         &.btn-navbar {
