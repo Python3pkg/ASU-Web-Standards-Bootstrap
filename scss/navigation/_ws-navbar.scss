@@ -226,34 +226,17 @@
               color: $color-gallery;
             }
           }
-
-          @media(max-width: $asu-screen-sm-max) {
-            background-color: rgb(220, 220, 220);
-            color: inherit;
-          }
         }
       }
 
       li.hover > a {
         background-color: $color-black;
         color: $color-sun;
-
-        // TODO carots should be #eee
-
-        @media(max-width: $asu-screen-sm-max) {
-          background-color: rgb(220, 220, 220);
-          color: inherit;
-        }
       }
 
       li.open > a {
         background-color: $color-black;
         color: $color-sun;
-
-        @media(max-width: $asu-screen-sm-max) {
-          background-color: rgb(240, 240, 240);
-          color: inherit;
-        }
       }
 
       .active > a {
@@ -261,11 +244,6 @@
         // TODO the docs say this should be $color-selective-yellow, but
         // everyone is using white
         color: $color-white;
-
-        @media(max-width: $asu-screen-sm-max) {
-          background-color: rgb(240, 240, 240);
-          color: inherit;
-        }
       }
 
       .disabled > a {
@@ -283,11 +261,6 @@
         &:focus {
           background-color: $color-dark-cave;
           color: $color-sun;
-
-          @media(max-width: $asu-screen-sm-max) {
-            background-color: rgb(220, 220, 220);
-            color: inherit;
-          }
         }
       }
 
@@ -296,20 +269,17 @@
           border-bottom: 1px solid $color-abbey;
 
           > a {
-            color:       rgb(80, 85, 88);
             font-size:   $ws-nav-link__font-size;
             font-weight: $font-weight-bold;
             padding:     12px 15px;
             position:    relative;
 
             .caret {
-              background-color: rgb(244, 244, 244);
               border-bottom: 0;
-              border-left: 1px solid rgb(221, 221, 221);
+              border-left: 1px solid $color-abbey;
               border-right: 0;
               border-top: 0;
               box-sizing: content-box;
-              color: rgb(178, 178, 178);
               cursor: pointer;
               display: block;
               font-family: FontAwesome;
@@ -449,11 +419,6 @@
     }
 
     > li {
-      @media(max-width: $asu-screen-sm-max) {
-        background-color: rgb(244, 244, 244);
-        border-top: 1px solid rgb(221, 221, 221);
-      }
-
       > a {
         color: $color-gallery;
         font-size: $ws-menu__font-size;
@@ -462,9 +427,9 @@
         padding: $space-large $space-xxlarge;
 
         @media(max-width: $asu-screen-sm-max) {
-          color: rgb(164, 43, 77);
+          color: $color-cod-gray;
           font-size: $ws-menu__font-size--small;
-          font-weight: $font-weight-light;
+          font-weight: $font-weight-normal;
         }
 
         &:hover,
@@ -476,7 +441,7 @@
 
           @media(max-width: $asu-screen-sm-max) {
             background-color: inherit;
-            color: rgb(210, 48, 101);
+            color: $color-maroon;
           }
         }
       }
