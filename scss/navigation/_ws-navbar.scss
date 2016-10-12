@@ -154,66 +154,75 @@
 
         &.btn-default {
           @include button-variant(
-            $color-emperor,
-            $color-wild-sand,
-            $color-silver-chalice);
+            $color: $color-emperor,
+            $background: $color-wild-sand,
+            $border: $color-silver-chalice,
+            $lighten: true);
         }
 
         &.btn-primary {
           @include button-variant(
-            $color-white,
-            $color-maroon,
-            $color-maroon);
+            $color: $color-white,
+            $background: $color-maroon,
+            $border: $color-maroon,
+            $lighten: true);
         }
 
         &.btn-secondary {
           @include button-variant(
-            $color-black,
-            $color-alto,
-            $color-alto);
+            $color: $color-black,
+            $background: $color-alto,
+            $border: $color-alto,
+            $lighten: true);
         }
 
         &.btn-gold {
           @include button-variant(
-            $color-dark-mine,
-            $color-gold,
-            $color-gold);
+            $color: $color-dark-mine,
+            $background: $color-gold,
+            $border: $color-gold,
+            $lighten: true);
         }
 
         &.btn-blue,
         &.btn-degree-programs {
           @include button-variant(
-            $color-white,
-            $color-blue,
-            $color-blue);
+            $color: $color-white,
+            $background: $color-blue,
+            $border: $color-blue,
+            $lighten: true);
         }
 
         &.btn-success {
           @include button-variant(
-            $color-white,
-            $color-green,
-            $color-green-darkened);
+            $color: $color-white,
+            $background: $color-green,
+            $border: $color-green-darkened,
+            $lighten: true);
         }
 
         &.btn-info {
           @include button-variant(
-            $color-white,
-            $color-blue,
-           $color-blue-darkened);
+            $color: $color-white,
+            $background: $color-blue,
+            $border: $color-blue-darkened,
+            $lighten: true);
         }
 
         &.btn-warning {
           @include button-variant(
-            $color-black,
-            $color-yellow,
-            $color-yellow-darkened);
+            $color: $color-black,
+            $background: $color-yellow,
+            $border: $color-yellow-darkened,
+            $lighten: true);
         }
 
         &.btn-danger {
           @include button-variant(
-            $color-white,
-            $color-orange,
-            $color-orange-darkened);
+            $color: $color-white,
+            $background: $color-orange,
+            $border: $color-orange-darkened,
+            $lighten: true);
         }
 
         &:hover,
