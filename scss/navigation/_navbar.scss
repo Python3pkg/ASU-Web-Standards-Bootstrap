@@ -172,17 +172,6 @@
   margin-top: $space-base;
 }
 
-.navbar-btn {
-  margin-bottom: $space-base;
-  margin-top: $space-base;
-
-  &.btn-sm,
-  .btn-group-sm > &.btn {
-    margin-bottom: 8.5px;
-    margin-top: 8.5px;
-  }
-}
-
 .navbar-text {
   margin-bottom: $nav-item-padding;
   margin-top: $nav-item-padding;
