@@ -43,8 +43,7 @@ module.exports = function(grunt) {
       },
       core: {
         src: [
-          'js/*.js',
-          '!js/_vendor.js'
+          'js/*.js'
         ]
       }
     },
@@ -92,6 +91,18 @@ module.exports = function(grunt) {
             served: true
           },
           {
+            src: ['bower_components/fastclick/lib/fastclick.js'],
+            served: true
+          },
+          {
+            src: ['bower_components/smooth-scroll/dist/js/smooth-scroll.js'],
+            served: true
+          },
+          {
+            src: ['bower_components/moment/moment.js'],
+            served: true
+          },
+          {
             src: ['<%= concat.bootstrapAsu.src %>'],
             served: true
           },
@@ -118,6 +129,18 @@ module.exports = function(grunt) {
           },
           {
             src: ['test/qunit/unit/_qunit-fixture.js'],
+            served: true
+          },
+          {
+            src: ['bower_components/fastclick/lib/fastclick.js'],
+            served: true
+          },
+          {
+            src: ['bower_components/smooth-scroll/dist/js/smooth-scroll.js'],
+            served: true
+          },
+          {
+            src: ['bower_components/moment/moment.js'],
             served: true
           },
           {
@@ -188,12 +211,14 @@ module.exports = function(grunt) {
       bootstrapAsu: {
         src: [
           'js/_license.js',
-          'js/_vendor.js',
-          'js/_modernizr.js',
-          'js/_iframe-overlay.js',
+          'bower_components/fastclick/lib/fastclick.js',
+          'js/_fastclick.js',
+          'bower_components/smooth-scroll/dist/js/smooth-scroll.js',
           'js/_smoothscroll.js',
-          'js/_smartresize.js',
+          'bower_components/moment/moment.js',
           'js/_calendar.js',
+          'js/_iframe-overlay.js',
+          'js/_smartresize.js',
           'js/_sidebar.js',
           'js/_collapse-footer.js',
           'js/_wait-for.js',
@@ -216,7 +241,7 @@ module.exports = function(grunt) {
     // =========
     uglify: {
       options: {
-        preserveComments: 'some',
+        preserveComments: /^!/, // this replaces the old, non-working 'some' option
         sourceMap: true
       },
       core: {
@@ -303,7 +328,8 @@ module.exports = function(grunt) {
       options: {
         stoponerror: false,
         relaxerror: {
-          'E002': [] // Found one or more uses of outdated Bootstrap v2 `.spanN` grid classes
+          'E002': [], // Found one or more uses of outdated Bootstrap v2 `.spanN` grid classes
+          'E043': [] // This won't be an issue in Bootstrap v4, so just ignore for now
         }
       },
       files: './build/docs/*.html'

@@ -11,7 +11,7 @@ $(function () {
 
   // Icon Font Properties
   // ====================
-  
+
   test('home icon normal state', function () {
     var homeIconLi     = $('.navbar-ws ul.nav li:first');
     var a              = homeIconLi.find('a');
@@ -21,7 +21,7 @@ $(function () {
 
     equal( computedStyles['font-family'], 'FontAwesome', 'The icon uses font awesome' )
     equal( computedStyles['font-size'], '15px', 'The icon should be 15px' )
-    equal( computedStyles['color'], 'rgb(80, 85, 88)', 'The icon should a special color on mobile' )
+    equal( computedStyles['color'], 'rgb(237, 237, 237)', 'The icon should be a specific color on mobile' )
     equal( computedStyles['font-style'], 'normal', 'The icon should be normal' )
     equal( computedStyles['font-weight'], 'normal', 'The icon should be normal' )
     equal( computedStyles['line-height'], '15px', 'The icon should be line height = 1' )
@@ -35,8 +35,8 @@ $(function () {
     equal( computedStyles['font-family'], 'FontAwesome', 'The icon uses font awesome' )
     equal( computedStyles['font-size'], '15px', 'The icon should be 15px' )
     // Old test is for desktop
-    //equal( computedStyles['color'], 'rgb(255, 255, 255)', 'The icon should be white' )
-    equal( computedStyles['color'], 'rgb(42, 42, 42)', 'The icon should be rgb(42, 42, 42)' )
+    equal( computedStyles['color'], 'rgb(255, 255, 255)', 'The icon should be white' )
+    //equal( computedStyles['color'], 'rgb(42, 42, 42)', 'The icon should be rgb(42, 42, 42)' )
     equal( computedStyles['font-style'], 'normal', 'The icon should be normal' )
     equal( computedStyles['font-weight'], 'normal', 'The icon should be normal' )
     equal( computedStyles['line-height'], '15px', 'The icon should be line height = 1' )
@@ -50,8 +50,8 @@ $(function () {
     equal( computedStyles['font-family'], 'FontAwesome', 'The icon uses font awesome' )
     equal( computedStyles['font-size'], '15px', 'The icon should be 15px' )
     // Old test is for desktop
-    //equal( computedStyles['color'], 'rgb(255, 179, 16)', 'The icon should be #ffb310' )
-    equal( computedStyles['color'], 'rgb(42, 42, 42)', 'The icon should be rgb(42, 42, 42)' )
+    equal( computedStyles['color'], 'rgb(255, 179, 16)', 'The icon should be #ffb310' )
+    //equal( computedStyles['color'], 'rgb(42, 42, 42)', 'The icon should be rgb(42, 42, 42)' )
     equal( computedStyles['font-style'], 'normal', 'The icon should be normal' )
     equal( computedStyles['font-weight'], 'normal', 'The icon should be normal' )
     equal( computedStyles['line-height'], '15px', 'The icon should be line height = 1' )
