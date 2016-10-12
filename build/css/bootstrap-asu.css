@@ -2607,6 +2607,11 @@ input[type="button"].btn-block {
     width: auto;
   }
 }
+@media (max-width: 991px) {
+  .navbar-ws .dropdown-menu {
+    border-radius: 0;
+  }
+}
 .navbar-ws .dropdown-menu .divider {
   background-color: #000;
   height: 1px;
