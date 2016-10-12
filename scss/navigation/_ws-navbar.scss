@@ -420,6 +420,10 @@
       width: auto;
     }
 
+    @media (max-width: $asu-screen-sm-max) {
+      border-radius: 0;
+    }
+
     .divider {
       background-color: $color-black;
       height: $space-xsmall;
