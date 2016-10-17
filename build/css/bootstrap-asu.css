@@ -4211,9 +4211,9 @@ li.dropdown-title {
   .mega-menu .dropdown-title {
     background-color: #f4f4f4;
     border-top: 1px solid #dddddd;
-    color: #a42b4d;
+    color: #1e1e1e;
     font-size: 0.84375rem;
-    font-weight: 300;
+    font-weight: normal;
     width: 100%;
   }
   .mega-menu .dropdown-title:before {
