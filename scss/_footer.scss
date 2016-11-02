@@ -188,6 +188,7 @@
       padding-bottom: 12px;
 
       > a {
+        border-bottom: 0;
         color: #333;
         font-size: $footer-little-link__font-size;
         font-weight: $font-weight-normal;
@@ -196,6 +197,7 @@
 
         &:hover,
         &:focus {
+          border-bottom: dotted 1px;
           color: $color-dove-gray;
         }
       }

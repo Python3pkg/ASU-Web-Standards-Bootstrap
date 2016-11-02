@@ -41,14 +41,15 @@
 //=== ASU Logo
 
 #asu_logo {
-  padding: $asu-logo-padding 0 !important;
-
+  // padding: $asu-logo-padding 0 !important;
+  // font-size: 1.25rem;
   @media (max-width: $asu-screen-sm-max) {
     min-width: 100px !important;
 
     a,
     a img {
       margin-top: 0 !important;
+      height: 36px;
     }
   }
 }
@@ -190,7 +191,13 @@
 // ========
 // ASU Logo
 // ========
-#asu_hdr img {
-  height: $asu-logo-height;
-  width: $asu-logo-width;
+#asu_hdr {
+  img {
+    height: $asu-logo-height;
+    width: $asu-logo-width;
+  }
+
+  a {
+    border-bottom: 0;
+  }
 }
