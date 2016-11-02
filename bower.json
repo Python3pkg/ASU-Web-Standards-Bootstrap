@@ -32,6 +32,6 @@
     "fastclick": "^1.0.6"
   },
   "dependencies": {
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.3.7"
   }
 }
