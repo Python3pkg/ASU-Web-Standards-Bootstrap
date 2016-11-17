@@ -25,9 +25,8 @@
 .pagination {
   margin: $space-xxlarge 0;
 
-  > li > {
-    a,
-    span {
+  > li {
+    > a {
       color: $color-maroon;
       line-height: $line-height-base;
       padding: $space-base $space-xlarge;
