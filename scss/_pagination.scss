@@ -75,6 +75,11 @@
       border-color: $color-maroon;
       color: $color-white;
     }
+
+    .pagination-dropdown__select--inactive {
+      background-color: $color-white;
+      color: $color-maroon;
+    }
   }
 }
 
