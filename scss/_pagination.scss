@@ -12,7 +12,7 @@
 //     <li class="disabled"><a href="#/"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a></li>
 //     <li class="pagination-dropdown active">
 //       <a href="#/" onclick="return false;" class="pagination-dropdown__link">
-//         <select id="selector-randnum" class="pagination-dropdown__select pagination-dropdown__select--active">
+//         <select id="pagination-selector" class="pagination-dropdown__select pagination-dropdown__select--active">
 //           <option value="1">1</option>
 //           <option value="2">2</option>
 //           <option value="3">3</option>
@@ -23,6 +23,15 @@
 //         </select>
 //       </a>
 //     </li>
+//     <!-- The following script needs to be passed the base url to use
+//       in the redirection. -->
+//     <script>
+//       /*
+//       document.getElementById ( 'pagination-selector' ).onchange = function ( e ) {
+//         window.location.href = '$base_url' + e.target.value;
+//       };
+//       */
+//     </script>
 //     <li class="disabled"><a href="#/"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a></li>
 //     <li><a href="#/">5</a></li>
 //     <li><a href="#/">6</a></li>

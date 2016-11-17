@@ -229,7 +229,7 @@
     <li class="disabled"><a href="#/"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a></li>
     <li class="pagination-dropdown active">
       <a href="#/" onclick="return false;" class="pagination-dropdown__link">
-        <select id="selector-randnum" class="pagination-dropdown__select pagination-dropdown__select--active">
+        <select id="pagination-selector" class="pagination-dropdown__select pagination-dropdown__select--active">
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -240,6 +240,15 @@
         </select>
       </a>
     </li>
+    <!-- The following script needs to be passed the base url to use
+      in the redirection. -->
+    <script>
+      /*
+      document.getElementById ( 'pagination-selector' ).onchange = function ( e ) {
+        window.location.href = '$base_url' + e.target.value;
+      };
+      */
+    </script>
     <li class="disabled"><a href="#/"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a></li>
     <li><a href="#/">5</a></li>
     <li><a href="#/">6</a></li>
@@ -260,7 +269,7 @@
     &lt;li class=&quot;disabled&quot;&gt;&lt;a href=&quot;#/&quot;&gt;&lt;i class=&quot;fa fa-ellipsis-h&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;li class=&quot;pagination-dropdown active&quot;&gt;
       &lt;a href=&quot;#/&quot; onclick=&quot;return false;&quot; class=&quot;pagination-dropdown__link&quot;&gt;
-        &lt;select id=&quot;selector-randnum&quot; class=&quot;pagination-dropdown__select pagination-dropdown__select--active&quot;&gt;
+        &lt;select id=&quot;pagination-selector&quot; class=&quot;pagination-dropdown__select pagination-dropdown__select--active&quot;&gt;
           &lt;option value=&quot;1&quot;&gt;1&lt;/option&gt;
           &lt;option value=&quot;2&quot;&gt;2&lt;/option&gt;
           &lt;option value=&quot;3&quot;&gt;3&lt;/option&gt;
@@ -271,6 +280,15 @@
         &lt;/select&gt;
       &lt;/a&gt;
     &lt;/li&gt;
+    &lt;!-- The following script needs to be passed the base url to use
+      in the redirection. --&gt;
+    &lt;script&gt;
+      /*
+      document.getElementById ( &#x27;pagination-selector&#x27; ).onchange = function ( e ) {
+        window.location.href = &#x27;$base_url&#x27; + e.target.value;
+      };
+      */
+    &lt;/script&gt;
     &lt;li class=&quot;disabled&quot;&gt;&lt;a href=&quot;#/&quot;&gt;&lt;i class=&quot;fa fa-ellipsis-h&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;#/&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;#/&quot;&gt;6&lt;/a&gt;&lt;/li&gt;
