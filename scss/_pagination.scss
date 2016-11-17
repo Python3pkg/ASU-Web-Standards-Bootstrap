@@ -36,12 +36,17 @@
         color: $color-brick-red;
       }
     }
+
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: $color-maroon;
+        border-color: $color-maroon;
+      }
+    }
   }
 
-  > .active > a {
-    &,
-    &:hover,
-    &:focus {
       background-color: $color-maroon;
       border-color: $color-maroon;
     }
