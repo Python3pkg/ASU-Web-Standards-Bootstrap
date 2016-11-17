@@ -1,23 +1,76 @@
 // Pagination
 //
 // Markup:
-// <nav>
+// <nav aria-label="Pagination">
 //   <ul class="pagination">
-//     <li>
-//       <a href="#" aria-label="Previous">
-//         <span aria-hidden="true">&laquo;</span>
+//     <li><a href="#/"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></li>
+//     <li><a href="#/">1</a></li>
+//     <li class="active"><a href="#/">2</a></li>
+//     <li><a href="#/">3</a></li>
+//     <li class="disabled"><a href="#/"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a></li>
+//     <li class="pagination-dropdown">
+//       <a href="#/" onclick="return false;" class="pagination-dropdown__link">
+//         <select id="selector-randnum" class="pagination-dropdown__select pagination-dropdown__select--inactive">
+//           <option value="1">1</option>
+//           <option value="2" selected="selected">2</option>
+//           <option value="3">3</option>
+//           <option value="4">4</option>
+//           <option value="5">5</option>
+//           <option value="6">6</option>
+//           <option value="7">7</option>
+//         </select>
 //       </a>
 //     </li>
-//     <li><a href="#">1</a></li>
-//     <li><a href="#">2</a></li>
-//     <li><a href="#">3</a></li>
-//     <li><a href="#">4</a></li>
-//     <li><a href="#">5</a></li>
-//     <li>
-//       <a href="#" aria-label="Next">
-//         <span aria-hidden="true">&raquo;</span>
+//     <script>
+//       /*
+//       document.getElementById( 'selector-randnum' ).onchange = function ( e ) {
+//         window.location.href = 'example.gios.asu.edu/events?pagenum=' + e.target.value;
+//       };
+//       */
+//     </script>
+//     <li class="disabled"><a href="#/"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a></li>
+//     <li><a href="#/">5</a></li>
+//     <li><a href="#/">6</a></li>
+//     <li><a href="#/">7</a></li>
+//     <li><a href=""><i class="fa fa-arrow-right"></i></a></li>
+//   </ul>
+// </nav>
+//
+// Alternate view when current page is not one of the visible page segments on the paginator.
+//
+// Markup:
+// <nav aria-label="Pagination">
+//   <ul class="pagination">
+//     <li><a href="#/"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></li>
+//     <li><a href="#/">1</a></li>
+//     <li><a href="#/">2</a></li>
+//     <li><a href="#/">3</a></li>
+//     <li class="disabled"><a href="#/"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a></li>
+//     <li class="pagination-dropdown active">
+//       <a href="#/" onclick="return false;" class="pagination-dropdown__link">
+//         <select id="selector-randnum" class="pagination-dropdown__select pagination-dropdown__select--active">
+//           <option value="1">1</option>
+//           <option value="2">2</option>
+//           <option value="3">3</option>
+//           <option value="4" selected="selected">4</option>
+//           <option value="5">5</option>
+//           <option value="6">6</option>
+//           <option value="7">7</option>
+//         </select>
 //       </a>
 //     </li>
+//     <script>
+//       /*
+//       document.getElementById( 'selector-randnum' ).onchange = function ( e ) {
+//         window.location.href = 'example.gios.asu.edu/events?pagenum=' + e.target.value;
+//       };
+//       */
+//     </script>
+//     <li class="disabled"><a href="#/"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a></li>
+//     <li><a href="#/">5</a></li>
+//     <li><a href="#/">6</a></li>
+//     <li><a href="#/">7</a></li>
+//     <li><a href=""><i class="fa fa-arrow-right"></i></a></li>
 //   </ul>
 // </nav>
 //
