@@ -47,8 +47,33 @@
     }
   }
 
+  .pagination-dropdown {
+    .pagination-dropdown--large {
+      font-size: $font-size-large;
+    }
+
+    .pagination-dropdown--small {
+      font-size: $font-size-small;
+    }
+
+    .pagination-dropdown__link {
+      height: 37px;
+      padding: 0;
+    }
+
+    .pagination-dropdown__select {
+      border: 0;
+      border-radius: 0;
+      font-size: $font-size-large;
+      height: 30px;
+      margin: 0; /* remove default margins */
+      padding: 3px 10px;
+    }
+
+    .pagination-dropdown__select--active {
       background-color: $color-maroon;
       border-color: $color-maroon;
+      color: $color-white;
     }
   }
 }
