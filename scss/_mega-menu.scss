@@ -191,9 +191,9 @@ li.dropdown-title {
     @media(max-width: $asu-screen-sm-max) {
       background-color: rgb(244, 244, 244);
       border-top: 1px solid rgb(221, 221, 221);
-      color: rgb(164, 43, 77);
+      color: $color-cod-gray;
       font-size: $mega-menu-dropdown-title__font-size--small;
-      font-weight: $font-weight-light;
+      font-weight: $font-weight-normal;
       width: 100%;
 
       &:before {
