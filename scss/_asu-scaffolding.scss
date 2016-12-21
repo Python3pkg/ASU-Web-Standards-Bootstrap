@@ -193,11 +193,13 @@
 // ========
 #asu_hdr {
   a {
-    font-size: $font-size-small;
     border-bottom: 0;
+    font-size: $font-size-small;
   }
 }
 
-#asu_universal_nav ul a:focus+ul,  #asu_universal_nav ul ul.asu_head_hover {
+#asu_universal_nav ul a:focus+ul,  
+#asu_universal_nav ul ul.asu_head_hover, 
+#asu_nav_menu * {
   z-index: 101 !important;
 }
