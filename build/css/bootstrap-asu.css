@@ -840,6 +840,7 @@ code {
 #site-name-desktop div {
   line-height: 1.75rem;
   padding: 4px 6px 8px;
+  letter-spacing: -0.5px;
 }
 #site-name-desktop h1.container,
 #site-name-desktop div.container {
@@ -1978,6 +1979,9 @@ input[type="button"].btn-block {
   border-color: transparent;
   height: 57px;
   margin-bottom: 0;
+}
+.navbar > .container .navbar-brand {
+  letter-spacing: -0.5px;
 }
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand {
