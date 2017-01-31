@@ -855,7 +855,7 @@ code {
 #site-name-desktop div.site-title a {
   border-bottom-color: transparent;
   color: #4f5557;
-  font-weight: normal;
+  font-weight: bold;
   text-decoration: none;
 }
 #site-name-desktop h1.site-title a:first-child,
