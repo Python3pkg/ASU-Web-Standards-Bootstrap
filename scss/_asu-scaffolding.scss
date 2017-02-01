@@ -156,9 +156,9 @@
 #site-name-desktop {
   h1,
   div {
+    letter-spacing: -.5px;
     line-height: pem(28);
     padding: 4px 6px 8px;
-    letter-spacing: -0.5px;
 
     &.container {
       padding: 0 15px;
