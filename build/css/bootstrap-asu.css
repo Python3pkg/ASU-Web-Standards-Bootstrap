@@ -838,9 +838,9 @@ code {
 
 #site-name-desktop h1,
 #site-name-desktop div {
+  letter-spacing: -.5px;
   line-height: 1.75rem;
   padding: 4px 6px 8px;
-  letter-spacing: -0.5px;
 }
 #site-name-desktop h1.container,
 #site-name-desktop div.container {
@@ -1981,7 +1981,7 @@ input[type="button"].btn-block {
   margin-bottom: 0;
 }
 .navbar > .container .navbar-brand {
-  letter-spacing: -0.5px;
+  letter-spacing: -.5px;
 }
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand {
