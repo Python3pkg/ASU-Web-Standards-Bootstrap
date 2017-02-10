@@ -2473,7 +2473,7 @@ input[type="button"].btn-block {
 }
 .navbar-ws .navbar-nav > .active > a {
   background-color: #1f1f1f;
-  color: #fff;
+  color: #ffb204;
 }
 .navbar-ws .navbar-nav > .disabled > a, .navbar-ws .navbar-nav > .disabled > a:hover, .navbar-ws .navbar-nav > .disabled > a:focus {
   background-color: transparent;
