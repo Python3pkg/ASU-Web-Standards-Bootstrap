@@ -35,7 +35,7 @@ $(function () {
     equal( computedStyles['font-family'], 'FontAwesome', 'The icon uses font awesome' )
     equal( computedStyles['font-size'], '15px', 'The icon should be 15px' )
     // Old test is for desktop
-    equal( computedStyles['color'], 'rgb(255, 255, 255)', 'The icon should be white' )
+    equal( computedStyles['color'], 'rgb(255, 178, 4)', 'The icon should be yellow/gold' )
     //equal( computedStyles['color'], 'rgb(42, 42, 42)', 'The icon should be rgb(42, 42, 42)' )
     equal( computedStyles['font-style'], 'normal', 'The icon should be normal' )
     equal( computedStyles['font-weight'], 'normal', 'The icon should be normal' )
