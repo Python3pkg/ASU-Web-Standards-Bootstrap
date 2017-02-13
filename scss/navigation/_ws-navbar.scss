@@ -250,9 +250,7 @@
 
       .active > a {
         background-color: $color-dark-cave;
-        // TODO the docs say this should be $color-selective-yellow, but
-        // everyone is using white
-        color: $color-white;
+        color: $color-selective-yellow;
       }
 
       .disabled > a {
