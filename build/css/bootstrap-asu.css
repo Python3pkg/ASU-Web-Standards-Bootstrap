@@ -2733,6 +2733,47 @@ input[type="button"].btn-block {
   font-weight: bold;
   text-decoration: none;
 }
+.sidebar-nav .menu {
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+.sidebar-nav li.menu-item {
+  border: 0;
+  border-top: 1px solid #dbdbdb;
+  font-weight: normal;
+  list-style: none;
+  /* Override the margin-bottom: -1px; that bootstrap provides */
+  margin-bottom: 0;
+  padding: 10px 5px;
+}
+.sidebar-nav li.menu-item:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.sidebar-nav li.menu-item:last-child {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.sidebar-nav li.menu-item.active, .sidebar-nav li.menu-item.active:hover, .sidebar-nav li.menu-item.active:focus {
+  background-color: #fff;
+  border-color: #dbdbdb;
+  color: #380b19;
+  font-weight: normal;
+}
+.sidebar-nav li.menu-item.active .menu-item-text, .sidebar-nav li.menu-item.active:hover .menu-item-text, .sidebar-nav li.menu-item.active:focus .menu-item-text {
+  color: #fff;
+}
+.sidebar-nav a.menu-item {
+  border-bottom: 0;
+  color: #8c1d40;
+}
+.sidebar-nav a.menu-item .menu-item-heading {
+  color: #8c1d40;
+}
+li.active .sidebar-nav a.menu-item, .sidebar-nav a.menu-item:hover, .sidebar-nav a.menu-item:focus {
+  color: #8c1d40;
+  font-weight: bold;
+}
 
 .breadcrumb {
   background-color: transparent;
