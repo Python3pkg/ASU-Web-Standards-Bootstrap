@@ -156,6 +156,7 @@
 #site-name-desktop {
   h1,
   div {
+    letter-spacing: -.5px;
     line-height: pem(28);
     padding: 4px 6px 8px;
 
@@ -171,7 +172,7 @@
       a {
         border-bottom-color: transparent;
         color: $color-abbey;
-        font-weight: $font-weight-normal;
+        font-weight: $font-weight-bold;
         text-decoration: none;
 
         &:first-child {
@@ -185,12 +186,4 @@
       }
     }
   }
-}
-
-// ========
-// ASU Logo
-// ========
-#asu_hdr img {
-  height: $asu-logo-height;
-  width: $asu-logo-width;
 }
